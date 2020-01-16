@@ -1,7 +1,7 @@
 /* Written in INS Marseille*/
 data {
     int nn; \\number of brain regions
-    int nt;  \\number of data points per time series
+    int nt;  \\number of data points per brain region
     real dt; \\time step in Euler integration
     real tau0; \\time scale in Eipleptor model
     real I1; \\input current in in Eipleptor model
