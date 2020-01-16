@@ -1,5 +1,6 @@
 # BVEP
-Bayesian Virtual Epileptic Patient (BVEP) to simulate and infer the spatial distribution of excitability in a personalized large-scale brain model of epilepsy spread.
+Bayesian Virtual Epileptic Patient (BVEP) to invert a individualized whole-brain model of epilepsy spread by PPLs using No-U-Turn Sam-
+pler (NUTS) and Automatic Differentiation Variational Inference (ADVI).
 
 Installation: 
 
