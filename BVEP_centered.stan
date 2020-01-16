@@ -1,21 +1,21 @@
 /* Written in INS Marseille*/
 data {
-    int nn;
-    int nt;
-    real dt;
-    real tau0;
-    real I1;
-    real Ks;
-    matrix[nn, nt] Obs;
-    matrix [nn, nn] SC;
+    int nn; \\number of brain regions
+    int nt;  \\number of data points per time series
+    real dt; \\time step in Euler integration
+    real tau0; \\time scale in Eipleptor model
+    real I1; \\input current in in Eipleptor model
+    real Ks; \\global connectivity parameter
+    matrix [nn, nn] SC; \\ brain structural connectivity
+    matrix[nn, nt] Obs; \\fast activity variable at source-level
 }
 
 transformed data {
     vector[2] initial_val;
     vector[nn*nt] xs;
-    xs=to_vector(Obs);
-    initial_val[1]=-1.5;
-    initial_val[2]=+3.5;
+    xs=to_vector(Obs); \\vectorize observations
+    initial_val[1]=-1.5; \\initial condition of fast activity variable in Epileoptor
+    initial_val[2]=+3.5; \\initial condition of Epileoptor slow variable in Epileoptor
 }
 
 parameters {
