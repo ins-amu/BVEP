@@ -24,11 +24,17 @@ def dz(x, z, SC, K, eta, tau0):
 
 ####################################################################################################
 
+def step_ode(x_prev, z_prev, dt, SC, K, x0, I1, tau0):
+    x_next = x_prev + dt*dx(x_prev, z_prev, I1)
+    z_next = z_prev + dt*dz(x_prev, z_prev, SC, K, x0, tau0)
+    return x_next, z_next
+
+####################################################################################################
+
 def step_sde(x_eta, z_eta, x_prev, z_prev, dt, SC, K, eta, I1, tau0, sig):
     x_next = x_prev + dt*dx(x_prev, z_prev, I1) + tt.sqrt(dt)*x_eta*sig
     z_next = z_prev + dt*dz(x_prev, z_prev, SC, K, eta, tau0)+ tt.sqrt(dt)*z_eta*sig
     return x_next, z_nex
-
 
 ####################################################################################################
 
