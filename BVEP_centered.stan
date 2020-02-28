@@ -66,7 +66,7 @@ model {
                          }
                      }
        
-    xhat=amplitude*(to_vector(x) + offset);
+    xhat=amplitude*to_vector(x) + offset;
 
     /* sampling*/
 
@@ -78,7 +78,7 @@ generated quantities {
     vector[nn*nt] xhat_qqc;
     vector[nn*nt] x_ppc;
 
-    xhat_qqc=amplitude*(to_vector(x) + offset);
+    xhat_qqc=amplitude*to_vector(x) + offset;
 
     for (i in 1:(nn*nt)){
         x_ppc[i] = normal_rng(xhat_qqc[i], eps);
