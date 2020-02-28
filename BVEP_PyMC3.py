@@ -70,7 +70,7 @@ class BVEP_cen:
             x = pm.Normal('x', mu=x_sym, sd=tt.sqrt(time_step)*sig, shape=(self.consts['nt'], self.consts['nn']))
             z = pm.Normal('z', mu=z_sym, sd=tt.sqrt(time_step)*sig, shape=(self.consts['nt'], self.consts['nn']))
 
-            xhat = pm.Deterministic('xhat', amplitude * (x + offset))
+            xhat = pm.Deterministic('xhat', amplitude * x + offset)
 
             xs = pm.Normal('xs', mu=xhat, sd=eps, shape=(self.consts['nt'], self.consts['nn']), observed=self.obs['xs'])
 
@@ -116,7 +116,7 @@ class BVEP_noncen:
             x = pm.Deterministic('x', x_sym)
             z = pm.Deterministic('z', z_sym)
 
-            xhat = pm.Deterministic('xhat', amplitude * (x_sym + offset))
+            xhat = pm.Deterministic('xhat', amplitude * x_sym + offset)
 
             xs = pm.Normal('xs', mu=xhat, sd=eps, shape=(self.consts['nt'], self.consts['nn']), observed=self.obs['xs'])
 
