@@ -290,10 +290,10 @@ for folder in all_folders:
 
 
                                                             if measure_level=='SL':                                                           
-                                                                    Obs_est =  amplitude*(x + offset)
+                                                                    Obs_est =  amplitude*x + offset
                                                             else:                            
                                                                     gain = npz['gain']
-                                                                    Obs_est =  amplitude*((x.dot(gain.T)) + offset)
+                                                                    Obs_est =  amplitude*(x.dot(gain.T) + offset
 
                                                             print ("-"*60)
                                                             print ("computing error metrics...")
