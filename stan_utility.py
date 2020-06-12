@@ -1,3 +1,6 @@
+"""
+The code written by Stan team (from Michael Betancourt)
+"""
 import pystan
 import pickle
 import numpy
