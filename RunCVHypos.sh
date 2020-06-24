@@ -4,10 +4,13 @@ cwd=$(pwd)
 
 alg="hmc"
 
-num_warmup=200
-num_samples=200
-delta=0.95
+num_warmup=2000
+num_samples=2000
+delta=0.99
 max_depth=10
+
+iter=50000
+tol_rel_obj=0.000001
 
 
 Nchain=5
@@ -51,25 +54,59 @@ do
                 j=1
 
                 while [ $j -le $Max_run ] 
-                do
+                do   
 
-                    if [ ${alg} == "advi" ]; then
-                            echo "...running ADVI"$j" started..." >> ${log_file}
+                    if [ ${alg} == "opt" ]; then
+
+                            echo "...running opt"$j" started..." >> ${log_file}
 
                             ./$model id=$((100*$j+$k))\
-                                variational\
-                                iter=$iter tol_rel_obj=0.0001 \
+                                optimize\
                                 data file=data_input2D/data_input2D$k.R\
                                 output diagnostic_file=data_output_CV_${alg}_${model}/output_${alg}_diagnostic_${model}_$k-$j.R\
                                 file=data_output_CV_${alg}_${model}/output_${alg}_${model}_$k-$j.csv refresh=1 \
                                 &> data_output_CV_${alg}_${model}/output_${alg}_${model}_$k-$j.out 
+  
+
+                            echo "...checking convergence of opt"$j"..." >> ${log_file}
+                            opt_convergence_check=$(python checking_converged_${alg}.py data_output_CV_${alg}_${model}/output_${alg}_${model}_$k-$j.out   2>&1 )
+                            echo $opt_convergence_check >> ${log_file}
+
+                            if [ "$opt_convergence_check" == "opt converged" ]; then
+                                    echo "Opt converged for run"$j >> ${log_file}                                   
+                                    ((j++))
+                            else
+                                    echo "...removing output_opt"$j"..."
+                                    rm -rf data_output_CV_${alg}_${model}/output_${alg}_${model}_$k-$j.{out, R, csv}
+                            fi
+                            if [ $j -eq $Nchain ]; then
+                                    echo "opt converged for all chains." >> ${log_file}
+                                    break
+                            fi  
+                            if [ $j -eq $Max_run ]; then
+                                    echo "opt arrived max iterations." >> ${log_file}
+                                    break
+                            fi  
+
+
+                    elif [ ${alg} == "advi" ]; then
+                            echo "...running ADVI"$j" started..." >> ${log_file}
+
                     
+                            ./$model id=$((100*$j+$k))\
+                                variational\
+                                iter=$iter tol_rel_obj=0.000001 \
+                                data file=data_input2D/data_input2D$k.R\
+                                output diagnostic_file=data_output_CV_${alg}_${model}/output_${alg}_diagnostic_${model}_$k-$j.R\
+                                file=data_output_CV_${alg}_${model}/output_${alg}_${model}_$k-$j.csv refresh=1 \
+                                &> data_output_CV_${alg}_${model}/output_${alg}_${model}_$k-$j.out
+
                             echo "...checking convergence of advi"$j"..." >> ${log_file}
                             advi_convergence_check=$(python checking_converged_${alg}.py data_output_CV_${alg}_${model}/output_${alg}_${model}_$k-$j.out   2>&1 )
                             echo $advi_convergence_check >> ${log_file}
 
                             if [ "$advi_convergence_check" == "advi converged" ]; then
-                                    echo "ADVI converged for run"$j >> ${log_file}
+                                    echo "ADVI converged for run"$j >> ${log_file}                                   
                                     ((j++))
                             else
                                     echo "...removing output_advi"$j"..."
@@ -83,6 +120,7 @@ do
                                     echo "ADVI arrived max iterations." >> ${log_file}
                                     break
                             fi  
+
 
                     else
                             echo "...running HMC"$j" started..." >> ${log_file}
@@ -107,7 +145,7 @@ do
                                     ((j++))
                             else
                                     echo "...removing output_hmc"$j"..."
-                                    rm -rf data_output_CV_${alg}_${model}/output_${alg}_${model}_$j.{out, R, csv}
+                                    rm -rf data_output_CV_${alg}_${model}/output_${alg}_${model}_$k-$j.{out, R, csv}
                             fi
                             if [ $j -eq $Nchain ]; then
                                     echo "HMC converged for all chains." >> ${log_file}
