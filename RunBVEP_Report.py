@@ -143,7 +143,7 @@ counter_Notconverged_csv = 0
 
 
 for folder in all_folders:
-            if folder.startswith("data_output"):
+            if folder.startswith("data_output_hmc") or folder.startswith("data_output_advi"):
                 
                             cwd_=os.path.join(cwd, folder)
                             os.chdir(cwd_)
@@ -166,13 +166,13 @@ for folder in all_folders:
                             print ("-"*60)
                             print ("loading ground-truth...")
 
-                            eta_true_inx, eta_true_mu, eta_true_sd = np.loadtxt(Mainpath+"ExperimentalData"+"/"+"eta_"+str(measure_level)+'_'+str(patient_name)+".txt", delimiter=',', usecols=(0,1,2), skiprows=1, ).T 
+                            eta_true_inx, eta_true_mu, eta_true_sd = np.loadtxt(Mainpath+"ExperimentalData"+"/"+"eta_"+str(patient_name)+".txt", delimiter=',', usecols=(0,1,2), skiprows=1, ).T 
 
-                            with open(Mainpath+"ExperimentalData"+"/"+"true_labels_nodes_"+str(measure_level)+'_'+str(patient_name)+".txt", 'r') as filehandle:  
+                            with open(Mainpath+"ExperimentalData"+"/"+"true_labels_nodes_"+str(patient_name)+".txt", 'r') as filehandle:  
                                     true_labels_nodes = json.load(filehandle)
 
                             print ("loading data-input...")
-                            npz = np.load(Mainpath+"data_input_files/"+str(patient_name)+"/"+str(level_name)+"/"+str(datafile_name)+"_"+str(patient_name)+".npz")
+                            npz = np.load(Mainpath+"data_input_files/"+str(datafile_name)+"_"+str(patient_name)+".npz")
 
                             print ("-"*60)
                            
@@ -196,14 +196,17 @@ for folder in all_folders:
 
 
                             if patient_name=='patient1':
+                                eta_ez= -1.6
+                                eta_pz= -2.4
+                                eta_hz= -3.65
+
+
+                            if patient_name=='patient2':
                                 eta_ez= -1.5
                                 eta_pz= -2.6
                                 eta_hz= -3.4
 
-                            if patient_name=='patient2':
-                                eta_ez= -1.6
-                                eta_pz= -2.4
-                                eta_hz= -3.65
+
 
                             print('eta_ez:', eta_ez)
                             print('eta_pz:', eta_pz)
@@ -422,15 +425,15 @@ for folder in all_folders:
                                                                     from report_plots import plot_features, plot_zscore_shrinkage,  plot_posterior, ppplot, plot_obs_x, plot_obs_z, plot_hiddenstates_x, plot_hiddenstates_z, plot_confusion_matrix
 
                                                                     if patient_name=='patient1':
-                                                                        showpicks = f_vector_int(np.r_[int(Hz_indices[0]), int(Pz_indices[3]), int(Ez_indices[0])])
-                                                                        showpicks=showpicks.tolist()
-                                                                        print("Shown nodes are:", [(x+1) for x in showpicks])
-                                                                    if patient_name=='patient2':
                                                                         showpicks = f_vector_int(np.r_[int(Hz_indices[0]), int(Pz_indices[0]), int(Ez_indices[0])])
                                                                         showpicks=showpicks.tolist()
                                                                         print("Shown nodes are:", [(x+1) for x in showpicks])
 
-                                
+                                                                    if patient_name=='patient2':
+                                                                        showpicks = f_vector_int(np.r_[int(Hz_indices[0]), int(Pz_indices[3]), int(Ez_indices[0])])
+                                                                        showpicks=showpicks.tolist()
+                                                                        print("Shown nodes are:", [(x+1) for x in showpicks])
+
 
                                                                     plt.figure(figsize=(12, 5))  
                                                                     grid = plt.GridSpec(2, 4)  

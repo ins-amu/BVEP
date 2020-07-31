@@ -282,7 +282,7 @@ def plot_znullcline(i, nodes, roots):
     plt.plot(xz_range,ys[i,:], 'blue', linewidth=1.5)
 ############################################################################################################
 def plot_phasespace(csv, npz, nodes, showpicks, SC, eta, K, true_roots, true_roots_K0, estimated_roots, estimated_roots_K0):
-    fig=plt.figure(figsize=(10, 4))
+    #fig=plt.figure(figsize=(12, 5))
 
     obs_x, obs_z = npz['Obs'], npz['Obs2']   
     plt.subplot(2, len(showpicks), 1)   
@@ -296,6 +296,7 @@ def plot_phasespace(csv, npz, nodes, showpicks, SC, eta, K, true_roots, true_roo
     plt.yticks(fontsize=12)
     plt.grid(True)
     plt.ylabel(r'$ z_{i}$', fontsize=18);   
+    plt.title('Simulated HZ', fontsize=12)
 
     plt.subplot(2, len(showpicks), 2)   
     plt.plot(obs_x[:, showpicks[1]], obs_z[:, showpicks[1]], 'y', alpha=.7, linewidth=2., zorder=3, label=f'node {showpicks[1]+1} (PZ)')
@@ -307,6 +308,7 @@ def plot_phasespace(csv, npz, nodes, showpicks, SC, eta, K, true_roots, true_roo
     plt.xticks(fontsize=12)
     plt.yticks(fontsize=12)
     plt.grid(True)
+    plt.title('Simulated PZ', fontsize=12)
 
     plt.subplot(2, len(showpicks),  3)   
     plt.plot(obs_x[:, showpicks[2]], obs_z[:, showpicks[2]], 'r', alpha=0.7, linewidth=2., zorder=3, label=f'node {showpicks[2]+1} (EZ)')   
@@ -318,6 +320,7 @@ def plot_phasespace(csv, npz, nodes, showpicks, SC, eta, K, true_roots, true_roo
     plt.xticks(fontsize=12)
     plt.yticks(fontsize=12)
     plt.grid(True)
+    plt.title('Simulated EZ', fontsize=12)
 
     x, z = csv['x'], csv['z'] 
     Nsamples=4
@@ -335,6 +338,7 @@ def plot_phasespace(csv, npz, nodes, showpicks, SC, eta, K, true_roots, true_roo
     plt.grid(True)
     plt.ylabel(r'$ z_{i}$', fontsize=18);   
     plt.xlabel(r'$ x_{1,i}$', fontsize=18);     
+    plt.title('Inferred HZ', fontsize=12)
 
     plt.subplot(2, len(showpicks), 5)   
     for j in range(Nsamples):
@@ -349,6 +353,7 @@ def plot_phasespace(csv, npz, nodes, showpicks, SC, eta, K, true_roots, true_roo
     plt.yticks(fontsize=12)
     plt.grid(True)
     plt.xlabel(r'$ x_{1,i}$', fontsize=18);   
+    plt.title('Inferred PZ', fontsize=12)
 
     plt.subplot(2, len(showpicks),  6)   
     for j in range(Nsamples):
@@ -359,16 +364,18 @@ def plot_phasespace(csv, npz, nodes, showpicks, SC, eta, K, true_roots, true_roo
     plt.scatter(estimated_roots[2*showpicks[2]],estimated_roots[2*showpicks[2]+1] , s=28, facecolors='none', linewidth=1., edgecolors='k', zorder=4) 
     plt.axis((-4,3,0,7))
     plt.legend(loc=1, fontsize=8)
-    plt.xticks(fontsize=12)
-    plt.yticks(fontsize=12)
+    plt.xticks(fontsize=14)
+    plt.yticks(fontsize=14)
     plt.grid(True)
     plt.xlabel(r'$ x_{1,i}$', fontsize=18);   
+    plt.title('Inferred EZ', fontsize=12)
+
     plt.tight_layout()
 
-    for i, label in enumerate(('A', 'B', 'C', 'D', 'E', 'F' )):
-        ax = fig.add_subplot(2,3,i+1)
-        ax.text(-0.05, 1.13, label, transform=ax.transAxes,
-          fontsize=18, fontweight='bold', va='top', ha='right')
+    # for i, label in enumerate(('A', 'B', 'C', 'D', 'E', 'F' )):
+    #     ax = fig.add_subplot(2,3,i+1)
+    #     ax.text(-0.05, 1.13, label, transform=ax.transAxes,
+    #       fontsize=24, fontweight='bold', va='top', ha='right')
 
 
 
