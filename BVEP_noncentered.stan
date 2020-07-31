@@ -6,8 +6,10 @@ data {
     real tau0; //time scale in Eipleptor model
     real I1; //input current in in Eipleptor model
     real Ks; //global connectivity parameter
+    real zlim[2]; 
+    real xlim[2]; 
     matrix [nn, nn] SC; // brain structural connectivity
-    matrix[nn, nt] Obs; //fast activity variable at source-level
+    matrix[nt, nn] Obs; //fast activity variable at source-level
 }
 
 transformed data {
@@ -19,14 +21,14 @@ transformed data {
 }
 
 parameters {
-    vector[nn] x_init;
-    vector[nn] z_init;
+    vector<lower=xlim[1], upper=xlim[2]>[nn] x_init;
+    vector<lower=zlim[1], upper=zlim[2]>[nn] z_init;
     matrix[nn, nt-1] x_eta;
     matrix[nn, nt-1] z_eta;
     vector[nn] eta_star;
-    real <lower=0.0> K_star;
-    real <lower=0.0> amplitude_star;
-    real offset; 
+    real K_star;
+    real<lower=0.0> amplitude_star;
+    real offset_star; 
     real<lower=0.0> eps;
     real<lower=0.0> sig; 
 }
@@ -35,10 +37,12 @@ transformed parameters {
     vector[nn] eta;
     real K;
     real amplitude;
+    real offset;
 
     eta = -2.5 + eta_star;
-    K = Ks+ K_star;
-    amplitude = 1.0 + amplitude_star;
+    K = Ks+ 0.1*K_star;
+    amplitude = 0.0 + amplitude_star;
+    offset = 0.0 + offset_star;
 }
 
 model {
@@ -53,7 +57,7 @@ model {
 
     eta_star ~ normal(0.0, 1.0);  
     amplitude_star ~ normal(0.0, 1.0);
-    offset ~ normal(0.0, 1.0);
+    offset_star ~ normal(0.0, 1.0);
     K_star ~ normal(0.0, 1.0);  
     eps ~ normal(0.0, 1.0);   
     sig ~ normal(0.0, 1.0);   
@@ -83,7 +87,7 @@ model {
                          }
                      }   
 
-    xhat=amplitude*to_vector(x) + offset;
+    xhat=amplitude*to_vector(x') + offset;
 
     /* sampling*/
 
@@ -96,6 +100,9 @@ generated quantities {
     matrix[nn, nt] z;
     vector[nn*nt] xhat_qqc;
     vector[nn*nt] x_ppc;
+    vector[nn*nt] log_lik;
+    vector[nt] log_lik_sum = rep_vector(0,nt);
+
     real gx;
     real dx;
     real dz;
@@ -118,10 +125,19 @@ generated quantities {
                      }  
 
 
-    xhat_qqc=amplitude*to_vector(x) + offset;
+    xhat_qqc=amplitude*to_vector(x') + offset;
 
     for (i in 1:(nn*nt)){
         x_ppc[i] = normal_rng(xhat_qqc[i], eps);
       }
+
+    for (i in 1:(nn*nt)){
+        log_lik[i] = normal_lpdf(xs[i]| xhat_qqc[i], eps);
+      }  
+      
+    for (i in 1:nt){
+        for (j in 1:nn)
+            log_lik_sum[i] += normal_lpdf(Obs[i,j]| amplitude*x'[i,j] + offset, eps);
+      }         
 }
 

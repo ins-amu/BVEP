@@ -82,20 +82,21 @@ def run_summary(filepath, inputfile):
     head, tail = os.path.split(os.path.split(inputfile)[0])
     fit_filefoder= inputfile.split("/")[-2]
     fit_filename = inputfile.split("/")[-1]
+    print('fit_filefoder:', fit_filefoder )
+    print('fit_filename:', fit_filename )
     mycsvfile=filepath+str(fit_filefoder)+'/'+str(fit_filename)
-    
+    print('mycsvfile:', mycsvfile)
+    os.chdir(filepath+str(fit_filefoder)+'/')
     run_stan_summary=True
     for fname in os.listdir(filepath+str(fit_filefoder)+'/'):
         if  os.path.exists("summary"+"_"+str(fit_filename)):
             print('summary already exisited!')
             run_stan_summary=False
-  
     if run_stan_summary==True:
-       print('running stan summary!')
-       Input = subprocess.getoutput("/home/meysam/cmdstan/bin/stansummary --csv_file=summary"+"_"+str(fit_filename)+" " +str(mycsvfile))
-       print('finished stan summary!')
-
-    return pd.read_csv(str("summary"+"_"+str(fit_filename)),  comment='#') 
+        print('running stan summary!')
+        Input = subprocess.getoutput("/home/meysam/cmdstan/bin/stansummary --csv_file=summary"+"_"+str(fit_filename)+" " +str(mycsvfile))
+        print('finished stan summary!')
+    return pd.read_csv(str("summary"+"_"+str(fit_filename)),  comment='#')
 ##########################################################################################################
 ##########################################################################################################
 def maxlike(log_lik):
@@ -151,7 +152,7 @@ def Nuts_plot(dict_samples_diagnostics, fit_summary):
     plt.plot(rhats[names.index])
     plt.hlines(y=1.1, xmin=0., xmax=rhats[names.index].shape[0], linewidth=1.5, color = 'red', linestyle='--', zorder=5)
     #plt.text(-1, 1.4,  r'$\hat R > 1.1:\ \ $'+str(Rhat_large_percent)+r'$/$' + str( len(rhats[names.index])) , size=8, color = 'red', zorder=4)
-    plt.text(-1, 1.11,  r'$\hat R > 1.1:\ \ $'+str(Rhat_large_percent)+r'$\%$' , size=8, color = 'red', zorder=4)
+    plt.text(-1, 1.11,  r'$\hat R > 1.1:\ \ $'+"{:.2f}".format(Rhat_large_percent)+r'$\%$' , size=8, color = 'red', zorder=4)
     plt.grid()
     plt.xlabel('Parameters')
     plt.ylabel(r'$\hat R$')

@@ -49,22 +49,22 @@ def plot_prior(nodes, Prior):
     plt.ylabel("$Prior~(x_0)$")
     plt.tight_layout()   
 ##########################################################################################################      
-def plot_posterior(nodes ,eta_c, delta_eta, eta_hz, eta_ez, eta_pz, Hz_idx, Ez_idx, Pz_idx, eta_est): 
+def plot_posterior(nodes, eta_c, delta_eta, eta_hz, eta_ez, eta_pz, Hz_idx, Ez_idx, Pz_idx, eta_est): 
         parts= plt.violinplot(eta_est, widths=0.7, showmeans=True, showextrema=True);
         plt.plot(Ez_idx+1, eta_ez*np.ones((len(Ez_idx))) ,'o', color='k', alpha=0.9, markersize=3)
         plt.plot(Pz_idx+1, eta_pz*np.ones((len(Pz_idx))) ,'o', color='k', alpha=0.9, markersize=3)
         plt.plot(Hz_idx+1, eta_hz*np.ones((len(Hz_idx))),'o' , color='k', alpha=0.9, markersize=3)
         plt.axhline(y=eta_c, linewidth=.8, color = 'r', linestyle='--')
         plt.axhline(y=eta_c-delta_eta, linewidth=.8, color = 'y', linestyle='--')
-        plt.text(-1.85, -1.7, "$EZ$", size=10, color = 'r')
-        plt.text(-1.85, -2.6, "$PZ$", size=10, color = 'y')
-        plt.text(-1.85, -3.7, "$HZ$", size=10, color = 'g')
+        text(-2.85, -1.7, "$EZ$", size=12, color = 'r')
+        text(-2.85, -2.6, "$PZ$", size=12, color = 'y')
+        text(-2.85, -3.7, "$HZ$", size=12, color = 'g')
         #plt.xticks(np.r_[1:len(nodes)+1], np.r_[1:len(nodes)+1], rotation=90, fontsize=8)  
-        plt.xticks(np.arange(1,len(nodes)+2, step=2),np.arange(1, len(nodes)+1, step=2), fontsize=8, rotation=0)
-        plt.ylabel(' Posterior ' +r'${(\eta_i)}$', fontsize=12);  
-        plt.xlabel('Brain nodes', fontsize=12); 
+        plt.xticks(np.arange(1,len(nodes)+2, step=2),np.arange(1, len(nodes)+1, step=2), fontsize=10, rotation=0)
+        plt.ylabel(' Posterior ' +r'${(\eta_i)}$', fontsize=14);  
+        plt.xlabel('Brain nodes', fontsize=14); 
         plt.tight_layout()
-        plt.text(-9.2, -.9, "B" ,fontsize=22, fontweight='bold')
+        plt.text(-9.2, -.9, "B" ,fontsize=24, fontweight='bold')
 
         for pc in parts['bodies'][0:nodes.shape[0]]:
             pc.set_facecolor('g')
@@ -88,15 +88,18 @@ def plot_posterior(nodes ,eta_c, delta_eta, eta_hz, eta_ez, eta_pz, Hz_idx, Ez_i
         
 ##########################################################################################################
 def plot_features(ts, Obs, Obs_est, showpicks):
-       plt.plot(ts, Obs[:, showpicks[0]], color='green',alpha=.7, linestyle='--', marker= '.' , markersize=4, linewidth=.4, label=f'node {showpicks[0]+1} (HZ)')
-       plt.plot(ts, Obs[:, showpicks[1]], color='y',alpha=.7,  linestyle='--', marker= '.' , markersize=6, linewidth=.4, label=f'node {showpicks[1]+1} (PZ)')
-       plt.plot(ts, Obs[:, showpicks[2]], color='red', alpha=.7, linestyle='--', marker= '.' , markersize=6, linewidth=.4, label=f'node {showpicks[2]+1} (EZ)')
 
        Obs_lo, Obs_hi = np.percentile(Obs_est, [5, 95], axis=0)
        t_Obs = np.r_[:Obs_lo.shape[0]]
-       plt.fill_between(ts, Obs_lo[:, showpicks[0]], Obs_hi[:, showpicks[0]], color='darkgreen', alpha=1.) 
-       plt.fill_between(ts, Obs_lo[:, showpicks[1]], Obs_hi[:, showpicks[1]], color='darkgoldenrod', alpha=1.) 
-       plt.fill_between(ts, Obs_lo[:, showpicks[2]], Obs_hi[:, showpicks[2]], color='darkred', alpha=1.) 
+
+       plt.fill_between(ts, Obs_lo[:, showpicks[0]], Obs_hi[:, showpicks[0]], color='green', alpha=.6, zorder=8) 
+       plt.fill_between(ts, Obs_lo[:, showpicks[1]], Obs_hi[:, showpicks[1]], color='darkgoldenrod', alpha=.9, zorder=8) 
+       plt.fill_between(ts, Obs_lo[:, showpicks[2]], Obs_hi[:, showpicks[2]], color='darkred', alpha=.5, zorder=8) 
+
+       plt.plot(ts, Obs[:, showpicks[0]], color='g',alpha=.4, linestyle='--', marker= '.' , markersize=14, linewidth=1, label=f'node {showpicks[0]+1} (HZ)', zorder=4)
+       plt.plot(ts, Obs[:, showpicks[1]], color='y',alpha=.7,  linestyle='--', marker= '.' , markersize=14, linewidth=1, label=f'node {showpicks[1]+1} (PZ)', zorder=4)
+       plt.plot(ts, Obs[:, showpicks[2]], color='red', alpha=.8, linestyle='--', marker= '.' , markersize=14, linewidth=1, label=f'node {showpicks[2]+1} (EZ)', zorder=4)
+
 
        #for i, (pl_lo, pl_hi) in enumerate(zip(Obs_lo.T, Obs_hi.T)):
        #     if i in showpicks:
@@ -105,12 +108,13 @@ def plot_features(ts, Obs, Obs_est, showpicks):
        # for i in  showpicks :
        #      leg.append(f'node {i+1}')
        # plt.legend(leg)
-       plt.legend(fontsize=8)
-       plt.ylabel('Obs. vs fitted '+r'$ x_{1,i}(t)$', fontsize=11);        
-       plt.xlabel('Time (s)', fontsize=12); 
-       plt.xticks(fontsize=12)
-       plt.yticks(fontsize=12)
-       plt.text(-23.0, 1.35, "A" ,fontsize=22, fontweight='bold')
+
+       plt.legend(fontsize=9)
+       plt.ylabel('Obs. vs fitted '+r'$ x_{1,i}(t)$', fontsize=14);        
+       plt.xlabel('Time (s)', fontsize=14); 
+       plt.xticks(fontsize=14)
+       plt.yticks(fontsize=14)
+       plt.text(-23.0, 1.5, "A" ,fontsize=24, fontweight='bold')
 ##########################################################################################################
 def ppplot(eta_est,  eta_hz, eta_ez, eta_pz, showpicks):
        prior_sd =1.0
@@ -166,11 +170,13 @@ def plot_hiddenstates_z(fit_z):
 def plot_zscore_shrinkage(nodes, eta_true_mu, eta_est_mu, eta_est_std, prior_std):
     z_score_eta=z_score(eta_true_mu, eta_est_mu, eta_est_std)
     colors= np.random.rand(z_score_eta.shape[0])
-    plt.scatter(shrinkage([prior_std]*nodes.shape[0], eta_est_std), z_score_eta ,s=80, c=colors, alpha=0.5)
-    plt.xlabel("Posterior shrinkages", fontsize=12)
-    plt.ylabel("Posterior z-scores", fontsize=12)
+    plt.scatter(shrinkage([prior_std]*nodes.shape[0], eta_est_std), z_score_eta ,s=120, c='blue')
+    plt.xlabel("Posterior shrinkages", fontsize=14)
+    plt.ylabel("Posterior z-scores", fontsize=14)
+    plt.xticks(fontsize=12)
+    plt.yticks(fontsize=12)
     plt.axis((0,1.1,0,10))
-    plt.text(-.25, 10., "C" ,fontsize=22, fontweight='bold')
+    plt.text(-.4, 10.4, "C" ,fontsize=24, fontweight='bold')
 ##########################################################################################################
 def pair_plots_params(csv, keys, skip=0):
     n = len(keys)
@@ -182,16 +188,48 @@ def pair_plots_params(csv, keys, skip=0):
             for csvi in csv:
                 if i==j:
                     plt.hist(csvi[key_i][skip:], 20, log=False)
-                    plt.xticks(fontsize = 4)   
-                    plt.yticks(fontsize = 4)  
+                    plt.xticks(fontsize = 10)   
+                    plt.yticks(fontsize = 10)  
                 else:
                     plt.plot(csvi[key_j][skip:], csvi[key_i][skip:], '.')
-                    plt.xticks(fontsize = 4)   
-                    plt.yticks(fontsize = 4)  
+                    plt.xticks(fontsize = 10)   
+                    plt.yticks(fontsize = 10)  
             if i==0:
-                plt.title(key_j)
+                plt.title(key_j, fontsize = 14)
             if j==0:
-                plt.ylabel(key_i)
+                plt.ylabel(key_i, fontsize = 14)
+
+##########################################################################################################
+def pair_plots(samples, params, figname='', sampler=None):
+    import numpy as np
+    import matplotlib.pyplot as plt
+    div_iters = np.where(samples['divergent__'] == 1)[0] if sampler == 'HMC' else []
+    plt.figure(figsize=(23, 13))
+    nParams = len(params)
+    for i in range(nParams):
+        for j in range(nParams):
+            plt.subplot(nParams, nParams, i * nParams + (j + 1))
+            if (i == j):
+                plt.hist(samples[params[i]].flatten(), bins=20, color='black')
+            else:
+                xvals = np.mean(
+                    samples[params[j]], axis=1) if len(
+                        samples[params[j]].shape) > 1 else samples[params[j]]
+                yvals = np.mean(
+                    samples[params[i]], axis=1) if len(
+                        samples[params[i]].shape) > 1 else samples[params[i]]
+                for k in range(xvals.shape[0]):
+                    if (k in div_iters):
+                        plt.plot(xvals[k], yvals[k], 'ro', alpha=0.8)
+                    else:
+                        plt.plot(xvals[k], yvals[k], 'ko', alpha=0.1)
+            if (i == 0):
+                plt.title(params[j], fontsize=13)
+            if (j == 0):
+                plt.ylabel(params[i], fontsize=13, rotation=90)
+    plt.tight_layout()
+    if (figname):
+        plt.savefig(figname)                
 ##########################################################################################################
 def func_2DepileptorEqs(y, eta, K, I, SC):  
     num_nodes= int(SC.shape[0])
@@ -421,9 +459,11 @@ def plot_confusion_matrix(cm, target_names, title='Confusion matrix', cmap=None,
                      color="white" if cm[i, j] > thresh else "black")
 
     #plt.tight_layout()
-    plt.ylabel('True nodes')
-    plt.xlabel('Predicted nodes\naccuracy={:0.4f}; misclass={:0.4f}'.format(accuracy, misclass))
-    plt.text(-1.8, -.5, "D" ,fontsize=22, fontweight='bold')
-
+    plt.title('Confusion matrix', fontsize=14)
+    plt.xticks(fontsize=12)
+    plt.yticks(fontsize=12)
+    plt.ylabel('True nodes', fontsize=12)
+    plt.xlabel('Predicted nodes\naccuracy={:0.4f}; misclass={:0.4f}'.format(accuracy, misclass), fontsize=12)
+    plt.text(-1.8, -.6, "D" ,fontsize=24, fontweight='bold')
 ##########################################################################################################        
 ##########################################################################################################        

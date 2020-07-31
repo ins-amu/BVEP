@@ -6,8 +6,10 @@ data {
     real tau0; //time scale in Eipleptor model
     real I1; //input current in in Eipleptor model
     real Ks; //global connectivity parameter
+    real zlim[2]; 
+    real xlim[2]; 
     matrix [nn, nn] SC; // brain structural connectivity
-    matrix[nn, nt] Obs; //fast activity variable at source-level
+    matrix[nt, nn] Obs; //fast activity variable at source-level
 }
 
 transformed data {
@@ -41,9 +43,9 @@ model {
     /* priors*/
 
     eta ~ normal(-2.5, 1.0);       
-    amplitude ~ normal(1.0 , 1.0);
+    amplitude ~ normal(0.0 , 1.0);
     offset ~ normal(0.0, 1.0);
-    K ~ normal(Ks, 1.0);  
+    K ~ normal(Ks, 0.1);  
     eps ~ normal(0.0, 1.0);   
     sig ~ normal(0.0, 1.0);   
 
@@ -66,7 +68,7 @@ model {
                          }
                      }
        
-    xhat=amplitude*to_vector(x) + offset;
+    xhat=amplitude*to_vector(x') + offset;
 
     /* sampling*/
 
@@ -77,10 +79,22 @@ model {
 generated quantities {
     vector[nn*nt] xhat_qqc;
     vector[nn*nt] x_ppc;
-
-    xhat_qqc=amplitude*to_vector(x) + offset;
+    vector[nn*nt] log_lik;
+    vector[nt] log_lik_sum = rep_vector(0,nt);
+    
+    xhat_qqc=amplitude*to_vector(x') + offset;
 
     for (i in 1:(nn*nt)){
         x_ppc[i] = normal_rng(xhat_qqc[i], eps);
       } 
+
+
+    for (i in 1:(nn*nt)){
+        log_lik[i] = normal_lpdf(xs[i]| xhat_qqc[i], eps);
+      }  
+      
+    for (i in 1:nt){
+        for (j in 1:nn)
+            log_lik_sum[i] += normal_lpdf(Obs[i,j]| amplitude*x'[i,j] + offset, eps);
+      }     
 }
