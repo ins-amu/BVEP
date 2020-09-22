@@ -50,7 +50,7 @@ class BVEP_cen:
             eta = pm.Normal('eta', mu=self.prior_mu['eta'] , sd=1.0, shape=self.consts['nn'])
             amplitude = pm.TruncatedNormal('amplitude', mu=self.prior_mu['amplitude'] , sd=1.0, lower=0)
             offset = pm.TruncatedNormal('offset', mu=self.prior_mu['offset'], sd=1.0)
-            K = pm.TruncatedNormal('K', mu=self.prior_mu['K'] , sd= 1., lower=0.0)
+            K = pm.TruncatedNormal('K', mu=self.prior_mu['K'] , sd= 0.1, lower=0.0)
             eps = pm.TruncatedNormal('eps', mu=.0, sd=1.0, lower=0.0)
             sig = pm.TruncatedNormal('sig', mu=.0, sd=1.0, lower=0.0)
             x_init = pm.Normal('x_init', mu=self.prior_mu['x_init'],  sd=1., shape=self.consts['nn'])
@@ -86,19 +86,22 @@ class BVEP_noncen:
             BoundedNormal = pm.Bound(pm.Normal, lower=0.0)
             eta_star = pm.Normal('eta_star', mu=0.0, sd=1.0,  shape=self.consts['nn'])
             eta = pm.Deterministic('eta', self.prior_mu['eta'] + eta_star)
-            amplitude_star = pm.Normal('amplitude_star', mu=.0, sd=1.0)
+            amplitude_star = pm.Normal('amplitude_star', mu=0.0, sd=1.0)
             amplitude = pm.Deterministic('amplitude', self.prior_mu['amplitude'] + amplitude_star)
             offset_star = pm.Normal('offset_star', mu=0.0, sd=1.0)
             offset = pm.Deterministic('offset', self.prior_mu['offset']+ offset_star)
             K_star = pm.Normal('K_star', mu=0.0, sd=1.0)
-            K = pm.Deterministic('K', self.prior_mu['K'] + K_star)
+            K = pm.Deterministic('K', self.prior_mu['K'] + 0.1*K_star)
             eps = BoundedNormal('eps', mu=.0, sd=1.0)
             sig = BoundedNormal('sig', mu=.0, sd=1.0)
             
-            x_init_star = pm.Normal('x_init_star',  mu=0, sd=1., shape=self.consts['nn'])
+            x_init_star = pm.TruncatedNormal('x_init_star',  mu=0, sd=1., lower=-3.0, upper=2.0, shape=self.consts['nn'])
             x_init = pm.Deterministic('x_init', self.prior_mu['x_init'] + x_init_star)
-            z_init_star = pm.Normal('z_init_star',  mu=0, sd=1.,  shape=self.consts['nn'])
+
+            z_init_star = pm.TruncatedNormal('z_init_star',  mu=0, sd=1., lower=0.0, upper=8.0, shape=self.consts['nn'])
             z_init = pm.Deterministic('z_init', self.prior_mu['z_init'] + z_init_star)
+
+
             x_eta = pm.Normal('x_eta', mu=0, sd=1.0, shape=(self.consts['nt'], self.consts['nn']))
             z_eta = pm.Normal('z_eta', mu=0, sd=1.0, shape=(self.consts['nt'], self.consts['nn']))
 
