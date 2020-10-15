@@ -16,8 +16,8 @@ transformed data {
     vector[2] initial_val;
     vector[nn*nt] xs;
     xs=to_vector(Obs); //vectorize observations
-    initial_val[1]=-1.5; //initial condition of fast activity variable in Epileoptor
-    initial_val[2]=+3.5; //initial condition of Epileoptor slow variable in Epileoptor
+    initial_val[1]=-1.5; //initial condition of fast activity variable in Epileptor
+    initial_val[2]=+3.5; //initial condition of Epileoptor slow variable in Epileptor
 }
 
 parameters {
