@@ -23,9 +23,9 @@ https://docs.pymc.io/
 
 
 ### Ref:
-*M. Hashemi, A.N. Vattikonda, V. Sip, M. Guye, F. Bartolomei, M.M. Woodman, V.K. Jirsa,
+M. Hashemi, A.N. Vattikonda, V. Sip, M. Guye, F. Bartolomei, M.M. Woodman, V.K. Jirsa,
 The Bayesian Virtual Epileptic Patient: A probabilistic framework designed to infer the spatial map of epileptogenicity in a personalized large-scale brain model of epilepsy spread,
-NeuroImage,
+*NeuroImage,
 Volume 217,
 2020,
 116839,
