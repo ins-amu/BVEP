@@ -32,5 +32,8 @@ Volume 217,
 ISSN 1053-8119,
 https://doi.org/10.1016/j.neuroimage.2020.116839.
 (http://www.sciencedirect.com/science/article/pii/S1053811920303268)
+
+
 Abstract: Despite the importance and frequent use of Bayesian frameworks in brain network modeling for parameter inference and model prediction, the advanced sampling algorithms implemented in probabilistic programming languages to overcome the inference difficulties have received relatively little attention in this context. In this technical note, we propose a probabilistic framework, namely the Bayesian Virtual Epileptic Patient (BVEP), which relies on the fusion of structural data of individuals to infer the spatial map of epileptogenicity in a personalized large-scale brain model of epilepsy spread. To invert the individualized whole-brain model employed in this study, we use the recently developed algorithms known as No-U-Turn Sampler (NUTS) as well as Automatic Differentiation Variational Inference (ADVI). Our results indicate that NUTS and ADVI accurately estimate the degree of epileptogenicity of brain regions, therefore, the hypothetical brain areas responsible for the seizure initiation and propagation, while the convergence diagnostics and posterior behavior analysis validate the reliability of the estimations. Moreover, we illustrate the efficiency of the transformed non-centered parameters in comparison to centered form of parameterization. The Bayesian framework used in this work proposes an appropriate patient-specific strategy for estimating the epileptogenicity of the brain regions to improve outcome after epilepsy surgery.
+
 Keywords: Bayesian inference; Personalized brain network model; Epileptic seizures; Epileptogenicity
