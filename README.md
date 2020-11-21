@@ -22,7 +22,7 @@ For inference using PyMC3:
 https://docs.pymc.io/
 
 
-Ref:
+## Ref:
 M. Hashemi, A.N. Vattikonda, V. Sip, M. Guye, F. Bartolomei, M.M. Woodman, V.K. Jirsa,
 The Bayesian Virtual Epileptic Patient: A probabilistic framework designed to infer the spatial map of epileptogenicity in a personalized large-scale brain model of epilepsy spread,
 NeuroImage,
@@ -39,4 +39,4 @@ Abstract: Despite the importance and frequent use of Bayesian frameworks in brai
 Keywords: Bayesian inference; Personalized brain network model; Epileptic seizures; Epileptogenicity
 
 
-Fundings:  the French National Research Agency (ANR) as part of the second “Investissements d’Avenir” program (ANR-17-RHUS-0004, EPINOV), European Union's Horizon 2020 research and innovation programme under grant agreement No. 785907 (SGA2), and No. 945539 (SGA3) Human Brain Project, and the SATT Sud-Est (827-SA-16-UAM).
+### Fundings:  the French National Research Agency (ANR) as part of the second “Investissements d’Avenir” program (ANR-17-RHUS-0004, EPINOV), European Union's Horizon 2020 research and innovation programme under grant agreement No. 785907 (SGA2), and No. 945539 (SGA3) Human Brain Project, and the SATT Sud-Est (827-SA-16-UAM).
