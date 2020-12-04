@@ -40,4 +40,4 @@ https://doi.org/10.1016/j.neuroimage.2020.116839.
 
 
 ### Fundings: 
-the French National Research Agency (ANR) as part of the second “Investissements d’Avenir” program (ANR-17-RHUS-0004, EPINOV), European Union's Horizon 2020 research and innovation programme under grant agreement No. 785907 (SGA2), and No. 945539 (SGA3) Human Brain Project, and the SATT Sud-Est (827-SA-16-UAM).
+The French National Research Agency (ANR) as part of the second “Investissements d’Avenir” program (ANR-17-RHUS-0004, EPINOV), European Union's Horizon 2020 research and innovation programme under grant agreement No. 785907 (SGA2), and No. 945539 (SGA3) Human Brain Project, and the SATT Sud-Est (827-SA-16-UAM).
