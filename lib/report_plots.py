@@ -64,7 +64,7 @@ def plot_posterior(nodes, eta_c, delta_eta, eta_hz, eta_ez, eta_pz, Hz_idx, Ez_i
         plt.ylabel(' Posterior ' +r'${(\eta_i)}$', fontsize=14);  
         plt.xlabel('Brain nodes', fontsize=14); 
         plt.tight_layout()
-        plt.text(-9.2, -.9, "B" ,fontsize=24, fontweight='bold')
+        #plt.text(-9.2, -.9, "B" ,fontsize=24, fontweight='bold')
 
         for pc in parts['bodies'][0:nodes.shape[0]]:
             pc.set_facecolor('g')
@@ -114,7 +114,7 @@ def plot_features(ts, Obs, Obs_est, showpicks):
        plt.xlabel('Time (s)', fontsize=14); 
        plt.xticks(fontsize=14)
        plt.yticks(fontsize=14)
-       plt.text(-23.0, 1.5, "A" ,fontsize=24, fontweight='bold')
+       #plt.text(-23.0, 1.5, "A" ,fontsize=24, fontweight='bold')
 ##########################################################################################################
 def ppplot(eta_est,  eta_hz, eta_ez, eta_pz, showpicks):
        prior_sd =1.0
@@ -133,7 +133,7 @@ def ppplot(eta_est,  eta_hz, eta_ez, eta_pz, showpicks):
        plt.xlabel(r'$ (x_{0,i})$', fontsize=10);
        plt.xticks(fontsize=10)
        plt.yticks(fontsize=10)
-       plt.text(-6.75, 2.5, "B" ,fontsize=16, fontweight='bold')
+       #plt.text(-6.75, 2.5, "B" ,fontsize=16, fontweight='bold')
 ##########################################################################################################
 def plot_obs_x(obs_x):
     ts = np.r_[:obs_x.shape[0]]
@@ -176,7 +176,7 @@ def plot_zscore_shrinkage(nodes, eta_true_mu, eta_est_mu, eta_est_std, prior_std
     plt.xticks(fontsize=12)
     plt.yticks(fontsize=12)
     plt.axis((0,1.1,0,10))
-    plt.text(-.4, 10.4, "C" ,fontsize=24, fontweight='bold')
+    #plt.text(-.4, 10.4, "C" ,fontsize=24, fontweight='bold')
 ##########################################################################################################
 def pair_plots_params(csv, keys, skip=0):
     n = len(keys)
@@ -284,7 +284,12 @@ def plot_znullcline(i, nodes, roots):
 def plot_phasespace(csv, npz, nodes, showpicks, SC, eta, K, true_roots, true_roots_K0, estimated_roots, estimated_roots_K0):
     #fig=plt.figure(figsize=(12, 5))
 
-    obs_x, obs_z = npz['Obs'], npz['Obs2']   
+    if 'Obs_seeg' in data_input.files :
+            obs_x, obs_z = npz['x_source'], npz['z_source'] 
+    else:
+            obs_x, obs_z = npz['Obs'], npz['Obs2'] 
+
+
     plt.subplot(2, len(showpicks), 1)   
     plt.plot(obs_x[:, showpicks[0]]-.28, obs_z[:, showpicks[0]]+1.44, 'g', alpha=0.4, linewidth=6., zorder=4, label=f'node {showpicks[0]+1} (HZ)')    
     plot_znullcline(showpicks[0], nodes, estimated_roots)    
@@ -471,6 +476,6 @@ def plot_confusion_matrix(cm, target_names, title='Confusion matrix', cmap=None,
     plt.yticks(fontsize=12)
     plt.ylabel('True nodes', fontsize=12)
     plt.xlabel('Predicted nodes\naccuracy={:0.4f}; misclass={:0.4f}'.format(accuracy, misclass), fontsize=12)
-    plt.text(-1.8, -.6, "D" ,fontsize=24, fontweight='bold')
+    #plt.text(-1.8, -.6, "D" ,fontsize=24, fontweight='bold')
 ##########################################################################################################        
 ##########################################################################################################        
