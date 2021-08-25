@@ -123,7 +123,7 @@ def Nuts_plot(dict_samples_diagnostics, fit_summary):
     rhats=pd.to_numeric(Rhat_values, errors='coerce')
     rhats = rhats[~np.isnan(rhats)]   
     names = fit_summary['name']
-    prefixes = ["log_lik", "x_ppc", "xhat_q", "num_data", "num_params", "lp__", "divergent__",  "treedepth__", "energy__"]
+    prefixes = ["log_lik", "log_lik_sum",  "Seeg_qqc", "Seeg_ppc", "Seeg_qqc_vect", "x_ppc", "xhat_q",  "num_data", "num_params", "lp__", "accept_stat__",  "stepsize__",  "treedepth__", "n_leapfrog__",  "divergent__",  "energy__"]
     names= names.loc[~names.str.startswith(tuple(prefixes))]  
     names.index = pd.to_numeric(names.index)
 
@@ -136,8 +136,8 @@ def Nuts_plot(dict_samples_diagnostics, fit_summary):
 
     Rhat_large_percent=i/j
     Rhat_large_sum=((rhats > 1.1).sum())
-    Rhat_large_sum_percent=((rhats > 1.1).sum()/len(rhats[names.index]))*100
-
+    Rhat_large_sum_percent=((rhats > 1.1).sum()/len(rhats.reindex(names.index)))*100
+    
     grid = plt.GridSpec(4, 2)  
     i=0
     for key, val in dict_samples_diagnostics.items():
@@ -149,17 +149,17 @@ def Nuts_plot(dict_samples_diagnostics, fit_summary):
         plt.grid(1)
         i += 1                     
     plt.subplot(grid[3:, 0])
-    plt.plot(rhats[names.index])
-    plt.hlines(y=1.1, xmin=0., xmax=rhats[names.index].shape[0], linewidth=1.5, color = 'red', linestyle='--', zorder=5)
+    plt.plot(rhats.reindex(names.index))
+    plt.hlines(y=1.1, xmin=0., xmax=rhats.reindex(names.index).shape[0], linewidth=1.5, color = 'red', linestyle='--', zorder=5)
     #plt.text(-1, 1.4,  r'$\hat R > 1.1:\ \ $'+str(Rhat_large_percent)+r'$/$' + str( len(rhats[names.index])) , size=8, color = 'red', zorder=4)
     plt.text(-1, 1.11,  r'$\hat R > 1.1:\ \ $'+"{:.2f}".format(Rhat_large_percent)+r'$\%$' , size=8, color = 'red', zorder=4)
     plt.grid()
     plt.xlabel('Parameters')
     plt.ylabel(r'$\hat R$')
     plt.subplot(grid[3:, 1])
-    plt.hist(rhats, bins=100)
+    plt.hist(rhats.dropna().values, bins=100, range=(1.,2.))
     plt.xlabel(r'$\hat R$ values')
-    plt.ylabel('Count')
+    plt.ylabel('Count')   
 ##########################################################################################################
 def Elbo_plot(Iter, Elbo):
     fig, ax = plt.subplots(1, 1, figsize=(12, 4))
@@ -185,4 +185,3 @@ def ks_plot(loglik, len_seizure, num_seizure):
     plt.ylabel('ks')
     plt.xlabel('data points')
 ##########################################################################################################
-
