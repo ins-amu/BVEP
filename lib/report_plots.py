@@ -284,7 +284,7 @@ def plot_znullcline(i, nodes, roots):
 def plot_phasespace(csv, npz, nodes, showpicks, SC, eta, K, true_roots, true_roots_K0, estimated_roots, estimated_roots_K0):
     #fig=plt.figure(figsize=(12, 5))
 
-    if 'Obs_seeg' in data_input.files :
+    if 'Obs_seeg' in npz.files :
             obs_x, obs_z = npz['x_source'], npz['z_source'] 
     else:
             obs_x, obs_z = npz['Obs'], npz['Obs2'] 

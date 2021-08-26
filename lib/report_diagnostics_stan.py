@@ -157,7 +157,8 @@ def Nuts_plot(dict_samples_diagnostics, fit_summary):
     plt.xlabel('Parameters')
     plt.ylabel(r'$\hat R$')
     plt.subplot(grid[3:, 1])
-    plt.hist(rhats.dropna().values, bins=100, range=(1.,2.))
+    plt.hist(rhats.dropna().values, bins=100)
+    #plt.hist(rhats.dropna().values, bins=100, range=(1.,1.5))
     plt.xlabel(r'$\hat R$ values')
     plt.ylabel('Count')   
 ##########################################################################################################
@@ -185,3 +186,4 @@ def ks_plot(loglik, len_seizure, num_seizure):
     plt.ylabel('ks')
     plt.xlabel('data points')
 ##########################################################################################################
+
