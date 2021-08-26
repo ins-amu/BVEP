@@ -291,7 +291,7 @@ def plot_phasespace(csv, npz, nodes, showpicks, SC, eta, K, true_roots, true_roo
 
 
     plt.subplot(2, len(showpicks), 1)   
-    plt.plot(obs_x[:, showpicks[0]]-.28, obs_z[:, showpicks[0]]+1.44, 'g', alpha=0.4, linewidth=6., zorder=4, label=f'node {showpicks[0]+1} (HZ)')    
+    plt.plot(obs_x[:, showpicks[0]], obs_z[:, showpicks[0]], 'g', alpha=0.4, linewidth=6., zorder=4, label=f'node {showpicks[0]+1} (HZ)')    
     plot_znullcline(showpicks[0], nodes, estimated_roots)    
     plot_nullclines(showpicks[0], npz, nodes, SC, eta, K)
     plt.scatter(estimated_roots[2*showpicks[0]],estimated_roots[2*showpicks[0]+1], s=18, facecolors='k', edgecolors='k', linewidth=1., zorder=3)
