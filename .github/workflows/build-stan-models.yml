@@ -23,7 +23,7 @@ jobs:
           load: true
           tags: cmdstan
 
-      - run: docker run --rm -v $PWD:/build -w /build cmdstan scl enable devtoolset-10 "make -C /work/cmdstan-$stan_ver $PWD/Stan/BVEP_seeg_noncentered_reparam"
+      - run: docker run --rm -v $PWD:/build -w /build cmdstan scl enable devtoolset-10 "make -C /work/cmdstan-$stan_ver /build/Stan/BVEP_seeg_noncentered_reparam"
 
       - uses: actions/upload-artifact@v2
         with:
