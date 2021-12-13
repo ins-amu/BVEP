@@ -7,7 +7,7 @@ RUN yum install devtoolset-10 -y
 
 WORKDIR /work
 
-RUN curl -LO https://github.com/stan-dev/cmdstan/releases/download/v${ver}/cmdstan-${stan_ver}.tar.gz \
+RUN curl -LO https://github.com/stan-dev/cmdstan/releases/download/v${stan_ver}/cmdstan-${stan_ver}.tar.gz \
  && tar xzf cmdstan-${stan_ver}.tar.gz \
  && rm $fname \
  && cd cmdstan-$stan_ver \
