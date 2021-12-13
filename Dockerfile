@@ -9,7 +9,6 @@ WORKDIR /work
 
 RUN curl -LO https://github.com/stan-dev/cmdstan/releases/download/v${stan_ver}/cmdstan-${stan_ver}.tar.gz \
  && tar xzf cmdstan-${stan_ver}.tar.gz \
- && rm $fname \
  && cd cmdstan-$stan_ver \
  && scl enable devtoolset-10 "make build -j1"
 
