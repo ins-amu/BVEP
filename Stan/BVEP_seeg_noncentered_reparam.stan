@@ -103,7 +103,8 @@ model {
   
   Seeg_vect=to_vector(Seeg);
   
-  for(i in (10*ns+1):(nt*ns)){
+  //for(i in (10*ns+1):(nt*ns)){
+  for(i in 1:(nt*ns)){
     target+=  normal_lpdf(Obs_seeg_vect[i]| Seeg_vect[i], eps);  
   }
 }  
