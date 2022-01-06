@@ -12,9 +12,14 @@ data {
   matrix[nn, nn] SC;           // brain structural connectivity
   matrix[ns, nn] Gr;           // gain (projection matrix)
   matrix[nn, nn] eigen_vec;   // eigen vectors of dot(Gr.T, Gr)
+
+  // debugging
+  real min_amplitude;  
+  real offset_tol;
  
-  real zlim[2]; 
-  real xlim[2]; 
+  // unused
+  // real zlim[2]; 
+  // real xlim[2]; 
 
 }
 
@@ -46,7 +51,8 @@ transformed parameters {
   x_init= -2.0 +0.1*eigen_vec*x_init_star;
   z_init= 5.0+0.1*eigen_vec*z_init_star;
   K =  Ks + 0.1*K_star;
-  amplitude = 1.0 + amplitude_star;
+  // amplitude = 1.0 + amplitude_star;
+  amplitude = min_amplitude + exp(amplitude_star);
   offset=offset_star+10.0;
   eps=exp(0.33*eps_star);
 }
@@ -68,7 +74,7 @@ model {
   z_init_star ~ normal(0, 1.0);
   K_star ~ normal(0., 1.);  
   amplitude_star ~ normal(0. ,1.);
-  offset_star ~ normal(0.,1.);
+  offset_star ~ normal(0.,offset_tol);
   eps_star ~ normal(0.,1.);
 
   
