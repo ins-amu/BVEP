@@ -16,6 +16,7 @@ data {
   // debugging
   real min_amplitude;  
   real offset_tol;
+  real offset_offset;
  
   // unused
   // real zlim[2]; 
@@ -48,12 +49,12 @@ transformed parameters {
   real eps;
   
   eta =  -3.5+0.1*eigen_vec*eta_star;
-  x_init= -2.0 +0.1*eigen_vec*x_init_star;
-  z_init= 5.0+0.1*eigen_vec*z_init_star;
+  x_init= rep_vector(-2.0,nn);// +0.1*eigen_vec*x_init_star;
+  z_init= rep_vector(5.0,nn);//+0.1*eigen_vec*z_init_star;
   K =  Ks + 0.1*K_star;
   // amplitude = 1.0 + amplitude_star;
   amplitude = min_amplitude + exp(amplitude_star);
-  offset=offset_star+10.0;
+  offset=offset_star+offset_offset;
   eps=exp(0.33*eps_star);
 }
 
@@ -63,9 +64,9 @@ model {
   matrix[nt, ns] Seeg;
   vector[nt*ns] Seeg_vect;
   
-  real dx;
-  real dz;
-  real gx;
+  vector[nn] dx;
+  vector[nn] dz;
+  vector[nn] gx;
   
   /* priors*/
   
@@ -80,11 +81,16 @@ model {
   
   /* integrate & predict */
     
+/*
     for (i in 1:nn) {
       x[i, 1] =  x_init[i];
       z[i, 1] =  z_init[i];
     } 
+*/
+  x[,1] = x_init;
+  z[,1] = z_init;
   
+  /*
   for (t in 1:(nt-1)) {
     for (i in 1:nn) {
       gx = 0;
@@ -96,6 +102,15 @@ model {
       z[i, t+1] = z[i, t] + dt*dz ; 
     }
   }   
+  */
+
+  for (t in 1:(nt - 1)) {
+    gx = SC * x[,t];
+    dx = 1.0 - x[,t].*x[,t].*x[,t] - 2.0*x[,t].*x[,t] - z[,t] + I1;
+    dz = (1/tau0)*(4*(x[,t] - eta) - z[,t] - K*gx);
+    x[,t+1] = x[,t] + dt*dx ; 
+    z[,t+1] = z[,t] + dt*dz ; 
+  }
   
   for(i in 1:nt){
     Seeg[i,]=to_row_vector(amplitude*(Gr*x[,i])+offset);
@@ -104,9 +119,10 @@ model {
   Seeg_vect=to_vector(Seeg);
   
   //for(i in (10*ns+1):(nt*ns)){
-  for(i in 1:(nt*ns)){
-    target+=  normal_lpdf(Obs_seeg_vect[i]| Seeg_vect[i], eps);  
-  }
+  //for(i in 1:(nt*ns)){
+  //  target+=  normal_lpdf(Obs_seeg_vect[i]| Seeg_vect[i], eps);  
+  //}
+  target += normal_lpdf(Obs_seeg_vect | Seeg_vect, eps);
 }  
 
 generated quantities {
