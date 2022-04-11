@@ -22,7 +22,7 @@ model {
   row_vector[ns] Seeg_model[nt];
 
   for(i in 1:nn){
-      X_est[:,i] ~ normal(-2.,1.);
+      X_est[:,i] ~ normal(-2.1,.5);
   }
 
   eps ~ normal(0.,1.);
