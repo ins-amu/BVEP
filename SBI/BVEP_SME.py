@@ -138,7 +138,7 @@ def plot_confusion_matrix(cm, target_names,  cmap=None, normalize=False):
                      horizontalalignment="center",
                      color="white" if cm[i, j] > thresh else "black", fontsize=24)
 
-    #plt.tight_layout()
+    plt.tight_layout()
     plt.title('Confusion matrix', fontsize=28)
     plt.xticks(fontsize=24)
     plt.yticks(fontsize=24)
