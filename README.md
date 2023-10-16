@@ -31,9 +31,9 @@ https://docs.pymc.io/
 
 ** Vattikonda AN, Hashemi M, Sip V, Woodman MM, Bartolomei F, Jirsa VK. Identifying spatio-temporal seizure propagation patterns in epilepsy using Bayesian inference. Communications biology. 2021 Nov 1;4(1):1244.
 
-**Jha J, Hashemi M, Vattikonda AN, Wang H, Jirsa V. Fully Bayesian estimation of virtual brain parameters with self-tuning Hamiltonian Monte Carlo. Machine Learning: Science and Technology. 2022 Sep 26;3(3):035016.
+** Jha J, Hashemi M, Vattikonda AN, Wang H, Jirsa V. Fully Bayesian estimation of virtual brain parameters with self-tuning Hamiltonian Monte Carlo. Machine Learning: Science and Technology. 2022 Sep 26;3(3):035016.
 
-**Hashemi M, Vattikonda AN, Jha J, Sip V, Woodman MM, Bartolomei F, Jirsa VK. Amortized Bayesian inference on generative dynamical network models of epilepsy using deep neural density estimators. Neural Networks. 2023 Jun 1;163:178-94.
+** Hashemi M, Vattikonda AN, Jha J, Sip V, Woodman MM, Bartolomei F, Jirsa VK. Amortized Bayesian inference on generative dynamical network models of epilepsy using deep neural density estimators. Neural Networks. 2023 Jun 1;163:178-94.
 
 ### Fundings: 
 The French National Research Agency (ANR) as part of the second “Investissements d’Avenir” program (ANR-17-RHUS-0004, EPINOV), European Union's Horizon 2020 research and innovation programme under grant agreement No. 785907 (SGA2), and No. 945539 (SGA3) Human Brain Project, and the SATT Sud-Est (827-SA-16-UAM).
