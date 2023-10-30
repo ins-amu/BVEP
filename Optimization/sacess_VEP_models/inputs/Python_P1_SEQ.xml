@@ -1,0 +1,54 @@
+<xml>
+    <run>
+        <typebench> pythonNLP </typebench>
+	<id> 1 </id>
+        <log_scale> 1 </log_scale>
+        <output>  1 </output>
+	<verbose> 1 </verbose>
+        <local_search> 1 </local_search>
+        <stopping_criteria>
+           <maxevaluation> 1e10 </maxevaluation>
+           <maxtime> 10800 </maxtime>
+           <vtr> -1e10 </vtr>
+        </stopping_criteria>
+    </run>
+    <method name="ScatterSearch">
+        <user_options>
+            <weight> default </weight>
+            <tolc> default </tolc>
+            <prob_bound>  default </prob_bound>
+            <nstuck_solution> default  </nstuck_solution>
+        </user_options>
+        <global_options>
+            <dim_ref> default </dim_ref>
+            <ndiverse> default </ndiverse>
+            <combination> default </combination>
+            <n_stuck> default </n_stuck>
+        </global_options>
+        <local_options>
+            <solver> dhc </solver>
+            <tol> 2 </tol>
+	    <evalmax> 8500 </evalmax>
+            <iterprint> 0 </iterprint>
+            <n1> 1 </n1>
+            <n2> 10 </n2>
+            <balance> 0.25 </balance>
+            <bestx> default </bestx>
+        </local_options>
+    </method>
+
+    <problem>
+        <dim> 85 </dim>
+        <ineq> 0 </ineq>
+	<neq> 0 </neq>
+        <int_var> 0 </int_var>
+        <bin_var> 0 </bin_var>
+        <lb>
+-5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, 0.0
+        </lb>
+        <ub>
+0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.0
+        </ub>
+    </problem>
+
+</xml>
