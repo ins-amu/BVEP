@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="structscattersearchtypes_1_1time__ess" kind="type" prot="public">
+    <compoundname>scattersearchtypes::time_ess</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structscattersearchtypes_1_1time__ess_1abfe9a3b6157945f98006fc0d859fb7e8" prot="public" static="no" mutable="no">
+        <type>real(c_double)</type>
+        <definition>real(c_double) scattersearchtypes::time_ess::timeparallel</definition>
+        <argsstring></argsstring>
+        <name>timeparallel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1time__ess_1addb1337635dec91ba25d12da038aff16" prot="public" static="no" mutable="no">
+        <type>real(c_double)</type>
+        <definition>real(c_double) scattersearchtypes::time_ess::localsolvertime</definition>
+        <argsstring></argsstring>
+        <name>localsolvertime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1time__ess_1ad9df2f4f585afcf84619d6008cf7ba52" prot="public" static="no" mutable="no">
+        <type>real(c_double)</type>
+        <definition>real(c_double) scattersearchtypes::time_ess::starttime</definition>
+        <argsstring></argsstring>
+        <name>starttime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1time__ess_1ab1d82205d00a139d763b32bbf2191cd8" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::time_ess::clock_rate</definition>
+        <argsstring></argsstring>
+        <name>clock_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1time__ess_1aa445f905606ded8c67ad532d58894d78" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::time_ess::clock_start</definition>
+        <argsstring></argsstring>
+        <name>clock_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1time__ess_1abaa23e70e15a9a64ef14c3bb7019bbe3" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::time_ess::clock_stop</definition>
+        <argsstring></argsstring>
+        <name>clock_stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="66" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="structscattersearchtypes_1_1time__ess_1ab1d82205d00a139d763b32bbf2191cd8" prot="public" virt="non-virtual"><scope>scattersearchtypes::time_ess</scope><name>clock_rate</name></member>
+      <member refid="structscattersearchtypes_1_1time__ess_1aa445f905606ded8c67ad532d58894d78" prot="public" virt="non-virtual"><scope>scattersearchtypes::time_ess</scope><name>clock_start</name></member>
+      <member refid="structscattersearchtypes_1_1time__ess_1abaa23e70e15a9a64ef14c3bb7019bbe3" prot="public" virt="non-virtual"><scope>scattersearchtypes::time_ess</scope><name>clock_stop</name></member>
+      <member refid="structscattersearchtypes_1_1time__ess_1addb1337635dec91ba25d12da038aff16" prot="public" virt="non-virtual"><scope>scattersearchtypes::time_ess</scope><name>localsolvertime</name></member>
+      <member refid="structscattersearchtypes_1_1time__ess_1ad9df2f4f585afcf84619d6008cf7ba52" prot="public" virt="non-virtual"><scope>scattersearchtypes::time_ess</scope><name>starttime</name></member>
+      <member refid="structscattersearchtypes_1_1time__ess_1abfe9a3b6157945f98006fc0d859fb7e8" prot="public" virt="non-virtual"><scope>scattersearchtypes::time_ess</scope><name>timeparallel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

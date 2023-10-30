@@ -1,0 +1,519 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="def__errors_8h" kind="file">
+    <compoundname>def_errors.h</compoundname>
+    <includedby refid="main__file_8c" local="no">src/main_file.c</includedby>
+    <includedby refid="setup__benchmarks_8c" local="no">src/setup_benchmarks.c</includedby>
+    <includedby refid="input__module_8c" local="no">src/input_module/input_module.c</includedby>
+    <includedby refid="common__solver__operations_8c" local="no">src/method_module/common_solver_operations.c</includedby>
+    <includedby refid="evaluationinterface_8c" local="no">src/method_module/evaluationinterface.c</includedby>
+    <includedby refid="structure__paralleltestbed_8c" local="no">src/method_module/structure_paralleltestbed.c</includedby>
+    <invincdepgraph>
+      <node id="15">
+        <label>src/input_module/input_module.c</label>
+        <link refid="input__module_8c"/>
+      </node>
+      <node id="13">
+        <label>src/main_file.c</label>
+        <link refid="main__file_8c"/>
+      </node>
+      <node id="17">
+        <label>src/method_module/evaluationinterface.c</label>
+        <link refid="evaluationinterface_8c"/>
+      </node>
+      <node id="16">
+        <label>src/method_module/common_solver_operations.c</label>
+        <link refid="common__solver__operations_8c"/>
+      </node>
+      <node id="18">
+        <label>src/method_module/structure_paralleltestbed.c</label>
+        <link refid="structure__paralleltestbed_8c"/>
+      </node>
+      <node id="12">
+        <label>include/error/def_errors.h</label>
+        <link refid="def_errors.h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>src/setup_benchmarks.c</label>
+        <link refid="setup__benchmarks_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="def__errors_8h_1ad560f4fafe0501c60af470503a656d47" prot="public" static="no">
+        <name>error1</name>
+        <initializer>&quot;\n*\tERROR[1]: Unknown option in XML for selection algorithm.&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="1" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1a7133b7b994d54dbf4f95b296d0bbc6ef" prot="public" static="no">
+        <name>error2</name>
+        <initializer>&quot;\n*\tERROR[2]: Unknown option in XML for replace algorithm.&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="2" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1a115b45f53da8412878efc4c7ea7f205c" prot="public" static="no">
+        <name>error3</name>
+        <initializer>&quot;\n*\tERROR[3]: Unknown option in XML for mutation strategy.&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="3" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1adbb6bee87c04a8f7ee0753932d78f5bc" prot="public" static="no">
+        <name>error4</name>
+        <initializer>&quot;\n*\tERROR[4]: Unknown option in XML for parallel topology.&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="4" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1ab7e59da67755db8e4fece27f78e8dfcc" prot="public" static="no">
+        <name>error5</name>
+        <initializer>&quot;\n*\tERROR[5]: Unknown option in XML for parallel parametters strategy.&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="5" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1ab93b34e96ad927e05f67341a05d9663e" prot="public" static="no">
+        <name>error6</name>
+        <initializer>&quot;\n*\tERROR[6]: Processor population matrix has an inadequate size. Remember: Proc matrix population = (NP / NPROC).&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="6" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1a678a86808e2e7d3f4bab9e4f1f7c41d0" prot="public" static="no">
+        <name>error7</name>
+        <initializer>&quot;\n*\tERROR[7]: The program is implemented with more than one processor, but the program is configured for sequential execution.&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="7" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1a8efef96b9cc53f1a91810676286e70a6" prot="public" static="no">
+        <name>error8</name>
+        <initializer>&quot;\n*\tERROR[8]: There was an error in the execution of the solver.&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="8" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1a9e6e88f1d219c1ba2f0e4dc005daba1a" prot="public" static="no">
+        <name>error9</name>
+        <initializer>&quot;\n*\tERROR[9]: Unknown option in XML for parallelization kind.&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="9" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1abeaca5f577e4d649aa1a31beea7930a6" prot="public" static="no">
+        <name>error10</name>
+        <initializer>&quot;\n*\tERROR[10]: Unknown benchmark in XML.&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="10" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1addfb630834c0fae837139d5236a16045" prot="public" static="no">
+        <name>error11</name>
+        <initializer>&quot;\n*\tERROR[11]: N2sol benchmark is specific for System Biology problems&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="11" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1a28d1d27e086373fae45dffe7e4ffa357" prot="public" static="no">
+        <name>error12</name>
+        <initializer>&quot;\n*\tERROR[12]: Unknown global solver in XML&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="12" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1af8945ef58fc36b991a22293cc5abf0a4" prot="public" static="no">
+        <name>error13</name>
+        <initializer>&quot;\n*\tERROR[13]: Unknown local solver in XML&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="13" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1addc3faa9a81e83d1fd80411995351c07" prot="public" static="no">
+        <name>error14</name>
+        <initializer>&quot;\n*\tERROR[14]: Incorrect ID in Systems Biology problem.&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="14" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1aac617d51a5fd17e1e57c6ce9021e36a6" prot="public" static="no">
+        <name>error15</name>
+        <initializer>&quot;\n*\tERROR[15]: Incorrect ID in noiselessBBOB benchmark. Range of ID 1-24&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="15" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1af163c3ad4d4b84f6d9c03d88a8f5b5e2" prot="public" static="no">
+        <name>error16</name>
+        <initializer>&quot;\n*\tERROR[16]: Incorrect ID in noiseBBOB benchmark. Range of ID 101-130&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="16" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1a743411e224e1a47a66439935ffba6082" prot="public" static="no">
+        <name>error17</name>
+        <initializer>&quot;\n*\tERROR[17]: typebench field must appear in XML input file&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="17" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1a311be43bcf02a89c18cc4f135c1895b9" prot="public" static="no">
+        <name>error18</name>
+        <initializer>&quot;\n*\tERROR[18]: id field must appear in XML input file&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="18" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1adccfaa09446e71302e98dc2b804faeda" prot="public" static="no">
+        <name>error19</name>
+        <initializer>&quot;\n*\tERROR[19]: evaluation field must appear in XML input file&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="19" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1a5ff96bf98189863ad1220a56ac967bae" prot="public" static="no">
+        <name>error20</name>
+        <initializer>&quot;\n*\tERROR[20]: log_scale field must appear in XML input file&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="20" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1a6ef4eb2d225bb2b0e0d254ec93c0f68a" prot="public" static="no">
+        <name>error21</name>
+        <initializer>&quot;\n*\tERROR[21]: output field must appear in XML input file&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="21" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1a91e3042e14e9087bc3988eb84a94ba16" prot="public" static="no">
+        <name>error22</name>
+        <initializer>&quot;\n*\tERROR[22]: verbose field must appear in XML input file&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="22" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1af68ea2325550012611afd7a97f65ad56" prot="public" static="no">
+        <name>error23</name>
+        <initializer>&quot;\n*\tERROR[23]: local_search field must appear in XML input file&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="23" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1aab0f974618045917e99660f70413b93d" prot="public" static="no">
+        <name>error24</name>
+        <initializer>&quot;\n*\tERROR[24]: ineq field must appear in XML input file&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="24" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1af551133cb9f944e24dfda32b3840fe18" prot="public" static="no">
+        <name>error25</name>
+        <initializer>&quot;\n*\tERROR[25]: int_var field must appear in XML input file&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="25" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1a5d82db6eeb680e078569aa2d3984dfd8" prot="public" static="no">
+        <name>error26</name>
+        <initializer>&quot;\n*\tERROR[26]: bin_var field must appear in XML input file&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="26" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1ad24ff7be1c6f50fc65ec20d9dd851e88" prot="public" static="no">
+        <name>error27</name>
+        <initializer>&quot;\n*\tERROR[27]: parallelization field must appear in XML input file&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="27" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1a85b67318e4be388678b861dcbb82533d" prot="public" static="no">
+        <name>error28</name>
+        <initializer>&quot;\n*\tERROR[28]: run field must appear in XML input file&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="28" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1a8ef68a2e16b9d7d964fa47a82047ce27" prot="public" static="no">
+        <name>error29</name>
+        <initializer>&quot;\n*\tERROR[29]: method field must appear in XML input file&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="29" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1a64ff2c2ae47732791463d0626999bf29" prot="public" static="no">
+        <name>error30</name>
+        <initializer>&quot;\n*\tERROR[30]: VTR field must appear in XML input file&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="30" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1ac91faec992eb4affdde6e84c78fe98f0" prot="public" static="no">
+        <name>error31</name>
+        <initializer>&quot;\n*\tERROR[31]: Not run sequential eSS with MPI!&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="31" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1add091e40a5bb171fc11e92ca2f7498d7" prot="public" static="no">
+        <name>error32</name>
+        <initializer>&quot;\n*\tERROR[32]: Use MPI with this solver!&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="32" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1a90051ffb375fe77d695d93212781c2ab" prot="public" static="no">
+        <name>error33</name>
+        <initializer>&quot;\n*\tERROR[33]: Use -DOPENMP flag in the compilation!&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="33" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1a1f680d2047f4179d6b4107e1af8519b7" prot="public" static="no">
+        <name>error34</name>
+        <initializer>&quot;\n*\tERROR[34]: problem field must appear in XML input file&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="34" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1a9762fe29bd386f54e6e0c42080db3618" prot="public" static="no">
+        <name>error35</name>
+        <initializer>&quot;\n*\tERROR[35]: dim field must appear in metadata problem in the XML input file&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="35" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1a50c34ea589a15c94eb04000a229db043" prot="public" static="no">
+        <name>error36</name>
+        <initializer>&quot;\n*\tERROR[36]: upper bounds have to be defined in XML&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="36" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1a22cfcaa9fc6286c49dac6bf0acbdd767" prot="public" static="no">
+        <name>error37</name>
+        <initializer>&quot;\n*\tERROR[37]: number of bounds != dimension of the problem&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="37" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="def__errors_8h_1afdacf3469a3301ecd9d90e97f30afa08" prot="public" static="no">
+        <name>error38</name>
+        <initializer>&quot;\n*\tERROR[38]: bounds are not defined&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" line="38" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#define<sp/>error1<sp/>&quot;\n*\tERROR[1]:<sp/>Unknown<sp/>option<sp/>in<sp/>XML<sp/>for<sp/>selection<sp/>algorithm.&quot;</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error2<sp/>&quot;\n*\tERROR[2]:<sp/>Unknown<sp/>option<sp/>in<sp/>XML<sp/>for<sp/>replace<sp/>algorithm.&quot;</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error3<sp/>&quot;\n*\tERROR[3]:<sp/>Unknown<sp/>option<sp/>in<sp/>XML<sp/>for<sp/>mutation<sp/>strategy.&quot;</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error4<sp/>&quot;\n*\tERROR[4]:<sp/>Unknown<sp/>option<sp/>in<sp/>XML<sp/>for<sp/>parallel<sp/>topology.&quot;</highlight></codeline>
+<codeline lineno="5"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error5<sp/>&quot;\n*\tERROR[5]:<sp/>Unknown<sp/>option<sp/>in<sp/>XML<sp/>for<sp/>parallel<sp/>parametters<sp/>strategy.&quot;</highlight></codeline>
+<codeline lineno="6"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error6<sp/>&quot;\n*\tERROR[6]:<sp/>Processor<sp/>population<sp/>matrix<sp/>has<sp/>an<sp/>inadequate<sp/>size.<sp/>Remember:<sp/>Proc<sp/>matrix<sp/>population<sp/>=<sp/>(NP<sp/>/<sp/>NPROC).&quot;</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error7<sp/>&quot;\n*\tERROR[7]:<sp/>The<sp/>program<sp/>is<sp/>implemented<sp/>with<sp/>more<sp/>than<sp/>one<sp/>processor,<sp/>but<sp/>the<sp/>program<sp/>is<sp/>configured<sp/>for<sp/>sequential<sp/>execution.&quot;</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error8<sp/>&quot;\n*\tERROR[8]:<sp/>There<sp/>was<sp/>an<sp/>error<sp/>in<sp/>the<sp/>execution<sp/>of<sp/>the<sp/>solver.&quot;</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error9<sp/>&quot;\n*\tERROR[9]:<sp/>Unknown<sp/>option<sp/>in<sp/>XML<sp/>for<sp/>parallelization<sp/>kind.&quot;</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error10<sp/>&quot;\n*\tERROR[10]:<sp/>Unknown<sp/>benchmark<sp/>in<sp/>XML.&quot;</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error11<sp/>&quot;\n*\tERROR[11]:<sp/>N2sol<sp/>benchmark<sp/>is<sp/>specific<sp/>for<sp/>System<sp/>Biology<sp/>problems&quot;</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error12<sp/>&quot;\n*\tERROR[12]:<sp/>Unknown<sp/>global<sp/>solver<sp/>in<sp/>XML&quot;</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error13<sp/>&quot;\n*\tERROR[13]:<sp/>Unknown<sp/>local<sp/>solver<sp/>in<sp/>XML&quot;</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error14<sp/>&quot;\n*\tERROR[14]:<sp/>Incorrect<sp/>ID<sp/>in<sp/>Systems<sp/>Biology<sp/>problem.&quot;</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error15<sp/>&quot;\n*\tERROR[15]:<sp/>Incorrect<sp/>ID<sp/>in<sp/>noiselessBBOB<sp/>benchmark.<sp/>Range<sp/>of<sp/>ID<sp/>1-24&quot;</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error16<sp/>&quot;\n*\tERROR[16]:<sp/>Incorrect<sp/>ID<sp/>in<sp/>noiseBBOB<sp/>benchmark.<sp/>Range<sp/>of<sp/>ID<sp/>101-130&quot;</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error17<sp/>&quot;\n*\tERROR[17]:<sp/>typebench<sp/>field<sp/>must<sp/>appear<sp/>in<sp/>XML<sp/>input<sp/>file&quot;</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error18<sp/>&quot;\n*\tERROR[18]:<sp/>id<sp/>field<sp/>must<sp/>appear<sp/>in<sp/>XML<sp/>input<sp/>file&quot;</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error19<sp/>&quot;\n*\tERROR[19]:<sp/>evaluation<sp/>field<sp/>must<sp/>appear<sp/>in<sp/>XML<sp/>input<sp/>file&quot;</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error20<sp/>&quot;\n*\tERROR[20]:<sp/>log_scale<sp/>field<sp/>must<sp/>appear<sp/>in<sp/>XML<sp/>input<sp/>file&quot;</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error21<sp/>&quot;\n*\tERROR[21]:<sp/>output<sp/>field<sp/>must<sp/>appear<sp/>in<sp/>XML<sp/>input<sp/>file&quot;</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error22<sp/>&quot;\n*\tERROR[22]:<sp/>verbose<sp/>field<sp/>must<sp/>appear<sp/>in<sp/>XML<sp/>input<sp/>file&quot;</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error23<sp/>&quot;\n*\tERROR[23]:<sp/>local_search<sp/>field<sp/>must<sp/>appear<sp/>in<sp/>XML<sp/>input<sp/>file&quot;</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error24<sp/>&quot;\n*\tERROR[24]:<sp/>ineq<sp/>field<sp/>must<sp/>appear<sp/>in<sp/>XML<sp/>input<sp/>file&quot;</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error25<sp/>&quot;\n*\tERROR[25]:<sp/>int_var<sp/>field<sp/>must<sp/>appear<sp/>in<sp/>XML<sp/>input<sp/>file&quot;</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error26<sp/>&quot;\n*\tERROR[26]:<sp/>bin_var<sp/>field<sp/>must<sp/>appear<sp/>in<sp/>XML<sp/>input<sp/>file&quot;</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error27<sp/>&quot;\n*\tERROR[27]:<sp/>parallelization<sp/>field<sp/>must<sp/>appear<sp/>in<sp/>XML<sp/>input<sp/>file&quot;</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error28<sp/>&quot;\n*\tERROR[28]:<sp/>run<sp/>field<sp/>must<sp/>appear<sp/>in<sp/>XML<sp/>input<sp/>file&quot;</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error29<sp/>&quot;\n*\tERROR[29]:<sp/>method<sp/>field<sp/>must<sp/>appear<sp/>in<sp/>XML<sp/>input<sp/>file&quot;</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error30<sp/>&quot;\n*\tERROR[30]:<sp/>VTR<sp/>field<sp/>must<sp/>appear<sp/>in<sp/>XML<sp/>input<sp/>file&quot;</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error31<sp/>&quot;\n*\tERROR[31]:<sp/>Not<sp/>run<sp/>sequential<sp/>eSS<sp/>with<sp/>MPI!&quot;</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error32<sp/>&quot;\n*\tERROR[32]:<sp/>Use<sp/>MPI<sp/>with<sp/>this<sp/>solver!&quot;</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error33<sp/>&quot;\n*\tERROR[33]:<sp/>Use<sp/>-DOPENMP<sp/>flag<sp/>in<sp/>the<sp/>compilation!&quot;</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error34<sp/>&quot;\n*\tERROR[34]:<sp/>problem<sp/>field<sp/>must<sp/>appear<sp/>in<sp/>XML<sp/>input<sp/>file&quot;</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error35<sp/>&quot;\n*\tERROR[35]:<sp/>dim<sp/>field<sp/>must<sp/>appear<sp/>in<sp/>metadata<sp/>problem<sp/>in<sp/>the<sp/>XML<sp/>input<sp/>file&quot;</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error36<sp/>&quot;\n*\tERROR[36]:<sp/>upper<sp/>bounds<sp/>have<sp/>to<sp/>be<sp/>defined<sp/>in<sp/>XML&quot;</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error37<sp/>&quot;\n*\tERROR[37]:<sp/>number<sp/>of<sp/>bounds<sp/>!=<sp/>dimension<sp/>of<sp/>the<sp/>problem&quot;</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>error38<sp/>&quot;\n*\tERROR[38]:<sp/>bounds<sp/>are<sp/>not<sp/>defined&quot;</highlight></codeline>
+    </programlisting>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/error/def_errors.h"/>
+  </compounddef>
+</doxygen>

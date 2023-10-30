@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="structextraparametters" kind="struct" prot="public">
+    <compoundname>extraparametters</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structextraparametters_1a4aa18ac0b4d848d5017a1face14fe2fc" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* extraparametters::texp</definition>
+        <argsstring></argsstring>
+        <name>texp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="110" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structextraparametters_1a7996770d688f3507fcc607ad483d1cb3" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* extraparametters::yexp</definition>
+        <argsstring></argsstring>
+        <name>yexp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="111" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structextraparametters_1a1a1abe5aff46e0adcaa5657389ffdff1" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double extraparametters::k1</definition>
+        <argsstring></argsstring>
+        <name>k1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="112" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structextraparametters_1a137abd65101db57f4d776e343927d7f5" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double extraparametters::k2</definition>
+        <argsstring></argsstring>
+        <name>k2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="113" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structextraparametters_1a88b3c1e1c6172fe1bacf64aa04dcbaa8" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double extraparametters::k3</definition>
+        <argsstring></argsstring>
+        <name>k3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="114" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structextraparametters_1aa7c5c5e741cd3eb8203c568c43277145" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double extraparametters::k4</definition>
+        <argsstring></argsstring>
+        <name>k4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="115" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="109" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="109" bodyend="116"/>
+    <listofallmembers>
+      <member refid="structextraparametters_1a1a1abe5aff46e0adcaa5657389ffdff1" prot="public" virt="non-virtual"><scope>extraparametters</scope><name>k1</name></member>
+      <member refid="structextraparametters_1a137abd65101db57f4d776e343927d7f5" prot="public" virt="non-virtual"><scope>extraparametters</scope><name>k2</name></member>
+      <member refid="structextraparametters_1a88b3c1e1c6172fe1bacf64aa04dcbaa8" prot="public" virt="non-virtual"><scope>extraparametters</scope><name>k3</name></member>
+      <member refid="structextraparametters_1aa7c5c5e741cd3eb8203c568c43277145" prot="public" virt="non-virtual"><scope>extraparametters</scope><name>k4</name></member>
+      <member refid="structextraparametters_1a4aa18ac0b4d848d5017a1face14fe2fc" prot="public" virt="non-virtual"><scope>extraparametters</scope><name>texp</name></member>
+      <member refid="structextraparametters_1a7996770d688f3507fcc607ad483d1cb3" prot="public" virt="non-virtual"><scope>extraparametters</scope><name>yexp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,334 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="benchmark__functions__SystemBiology_8h" kind="file">
+    <compoundname>benchmark_functions_SystemBiology.h</compoundname>
+    <includes refid="structure__paralleltestbed_8h" local="no">structure_paralleltestbed.h</includes>
+    <includes local="no">AMIGO_problem.h</includes>
+    <includedby refid="setup__benchmarks_8c" local="no">src/setup_benchmarks.c</includedby>
+    <includedby refid="localsolvers__eSS_8c" local="no">src/method_module/eSS/localsolvers_eSS.c</includedby>
+    <includedby refid="output_8c" local="no">src/output/output.c</includedby>
+    <incdepgraph>
+      <node id="42">
+        <label>structure_paralleltestbed.h</label>
+        <link refid="structure__paralleltestbed_8h_source"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>include/method_module/benchmark_functions_SystemBiology.h</label>
+        <link refid="benchmark_functions_SystemBiology.h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>time.h</label>
+      </node>
+      <node id="46">
+        <label>gsl/gsl_randist.h</label>
+      </node>
+      <node id="45">
+        <label>gsl/gsl_rng.h</label>
+      </node>
+      <node id="44">
+        <label>AMIGO_problem.h</label>
+      </node>
+      <node id="43">
+        <label>bbobStructures.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="51">
+        <label>src/output/output.c</label>
+        <link refid="output_8c"/>
+      </node>
+      <node id="50">
+        <label>src/method_module/eSS/localsolvers_eSS.c</label>
+        <link refid="localsolvers__eSS_8c"/>
+      </node>
+      <node id="48">
+        <label>include/method_module/benchmark_functions_SystemBiology.h</label>
+        <link refid="benchmark_functions_SystemBiology.h"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>src/setup_benchmarks.c</label>
+        <link refid="setup__benchmarks_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="benchmark__functions__SystemBiology_8h_1ab16025ceeeb438d4a84ec106f9510c76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copylocalexperimentsb_</definition>
+        <argsstring>(experiment_total *, experiment_total *, int)</argsstring>
+        <name>copylocalexperimentsb_</name>
+        <param>
+          <type><ref refid="structexperiment__total" kindref="compound">experiment_total</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="structexperiment__total" kindref="compound">experiment_total</ref> *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/benchmark_functions_SystemBiology.h" line="4"/>
+      </memberdef>
+      <memberdef kind="function" id="benchmark__functions__SystemBiology_8h_1ab328de42fc74c488b66a20ca8f022fde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* functiontest</definition>
+        <argsstring>(double *, void *)</argsstring>
+        <name>functiontest</name>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/benchmark_functions_SystemBiology.h" line="6"/>
+      </memberdef>
+      <memberdef kind="function" id="benchmark__functions__SystemBiology_8h_1a5bb81ec2e902d2ea05e22de96fe1ae7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* functiontest2</definition>
+        <argsstring>(double *, void *)</argsstring>
+        <name>functiontest2</name>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/benchmark_functions_SystemBiology.h" line="8"/>
+      </memberdef>
+      <memberdef kind="function" id="benchmark__functions__SystemBiology_8h_1a8a5846c9dd582c2d7184541501a59291" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* evalSB_</definition>
+        <argsstring>(double *, void *)</argsstring>
+        <name>evalSB_</name>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/benchmark_functions_SystemBiology.h" line="10"/>
+      </memberdef>
+      <memberdef kind="function" id="benchmark__functions__SystemBiology_8h_1ab7a5eb06765d613a138044ca23736082" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double DE_evaluation_NL2SOL</definition>
+        <argsstring>(double *, void *, double *, int *, void *, int *, int *)</argsstring>
+        <name>DE_evaluation_NL2SOL</name>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/benchmark_functions_SystemBiology.h" line="12"/>
+      </memberdef>
+      <memberdef kind="function" id="benchmark__functions__SystemBiology_8h_1a270eb07d7407c3150dea79d8d117b197" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* return_benchmark_SystemBiology</definition>
+        <argsstring>(int)</argsstring>
+        <name>return_benchmark_SystemBiology</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/benchmark_functions_SystemBiology.h" line="14"/>
+      </memberdef>
+      <memberdef kind="function" id="benchmark__functions__SystemBiology_8h_1a78117bc9ea758e306f5a988d51ca4ccd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int load_benchmark_SystemBiology</definition>
+        <argsstring>(experiment_total *)</argsstring>
+        <name>load_benchmark_SystemBiology</name>
+        <param>
+          <type><ref refid="structexperiment__total" kindref="compound">experiment_total</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/benchmark_functions_SystemBiology.h" line="16"/>
+      </memberdef>
+      <memberdef kind="function" id="benchmark__functions__SystemBiology_8h_1aa73152525b98d68176151bac5addee4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int destroySystemBiology</definition>
+        <argsstring>(experiment_total *)</argsstring>
+        <name>destroySystemBiology</name>
+        <param>
+          <type><ref refid="structexperiment__total" kindref="compound">experiment_total</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/benchmark_functions_SystemBiology.h" line="18"/>
+      </memberdef>
+      <memberdef kind="function" id="benchmark__functions__SystemBiology_8h_1a1e7e1c6c802f92f240e84214436a42c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void init_point_SystemBiology_Problems_matrix_</definition>
+        <argsstring>(void *, double *, int, int, int)</argsstring>
+        <name>init_point_SystemBiology_Problems_matrix_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/benchmark_functions_SystemBiology.h" line="20"/>
+      </memberdef>
+      <memberdef kind="function" id="benchmark__functions__SystemBiology_8h_1ae6d0e281fa1b78ba848cb1ec4ccf91c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int load_benchmark_test</definition>
+        <argsstring>(experiment_total *, double *, double *)</argsstring>
+        <name>load_benchmark_test</name>
+        <param>
+          <type><ref refid="structexperiment__total" kindref="compound">experiment_total</ref> *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/benchmark_functions_SystemBiology.h" line="22"/>
+      </memberdef>
+      <memberdef kind="function" id="benchmark__functions__SystemBiology_8h_1ac57165f150caf8a6877d9d1543f94ac3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int initializetest</definition>
+        <argsstring>(experiment_total *)</argsstring>
+        <name>initializetest</name>
+        <param>
+          <type><ref refid="structexperiment__total" kindref="compound">experiment_total</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/benchmark_functions_SystemBiology.h" line="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;structure_paralleltestbed.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;AMIGO_problem.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copylocalexperimentsb_(<ref refid="structexperiment__total" kindref="compound">experiment_total</ref><sp/>*,<sp/><ref refid="structexperiment__total" kindref="compound">experiment_total</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/>functiontest(<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/>functiontest2(<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>evalSB_(<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>DE_evaluation_NL2SOL(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>return_benchmark_SystemBiology(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>load_benchmark_SystemBiology(<ref refid="structexperiment__total" kindref="compound">experiment_total</ref><sp/>*);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>destroySystemBiology(<ref refid="structexperiment__total" kindref="compound">experiment_total</ref><sp/>*);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init_point_SystemBiology_Problems_matrix_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>,<sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>load_benchmark_test(<ref refid="structexperiment__total" kindref="compound">experiment_total</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>initializetest(<ref refid="structexperiment__total" kindref="compound">experiment_total</ref><sp/>*);</highlight></codeline>
+    </programlisting>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/benchmark_functions_SystemBiology.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="setup__benchmarks_8h" kind="file">
+    <compoundname>setup_benchmarks.h</compoundname>
+    <includedby refid="main__file_8c" local="no">src/main_file.c</includedby>
+    <invincdepgraph>
+      <node id="172">
+        <label>src/main_file.c</label>
+        <link refid="main__file_8c"/>
+      </node>
+      <node id="171">
+        <label>include/setup_benchmarks.h</label>
+        <link refid="setup_benchmarks.h"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="setup__benchmarks_8h_1ac30f57cc3546cc0ddc381bcfa3372ddb" prot="public" static="no">
+        <type>void *(*</type>
+        <definition>typedef void*(* function)(double *, void *)</definition>
+        <argsstring>)(double *, void *)</argsstring>
+        <name>function</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/setup_benchmarks.h" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/setup_benchmarks.h" bodystart="1" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="setup__benchmarks_8h_1abd89bb883f7a0f9e6b0b99c3d9d74376" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* examplefunction</definition>
+        <argsstring>(double *, void *)</argsstring>
+        <name>examplefunction</name>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/setup_benchmarks.h" line="3"/>
+      </memberdef>
+      <memberdef kind="function" id="setup__benchmarks_8h_1a96afc302558714332ee42143ca929eb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* fgeneric_noiseless</definition>
+        <argsstring>(double *, void *)</argsstring>
+        <name>fgeneric_noiseless</name>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/setup_benchmarks.h" line="4"/>
+      </memberdef>
+      <memberdef kind="function" id="setup__benchmarks_8h_1a01d72c5a7104c43fb1bc71c53717107b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* fgeneric_noise</definition>
+        <argsstring>(double *, void *)</argsstring>
+        <name>fgeneric_noise</name>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/setup_benchmarks.h" line="5"/>
+      </memberdef>
+      <memberdef kind="function" id="setup__benchmarks_8h_1a8a5846c9dd582c2d7184541501a59291" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* evalSB_</definition>
+        <argsstring>(double *, void *)</argsstring>
+        <name>evalSB_</name>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/setup_benchmarks.h" line="6"/>
+      </memberdef>
+      <memberdef kind="function" id="setup__benchmarks_8h_1a1ba32f4b7d1cb6f5cbfea498d7106c71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>function</type>
+        <definition>function setup_benchmark</definition>
+        <argsstring>(experiment_total *, int, int *)</argsstring>
+        <name>setup_benchmark</name>
+        <param>
+          <type><ref refid="structexperiment__total" kindref="compound">experiment_total</ref> *</type>
+          <defname>exp</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>idp</defname>
+        </param>
+        <param>
+          <type>int *</type>
+          <defname>first</defname>
+        </param>
+        <briefdescription>
+<para>this the setup function where the usar. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>exp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structexperiment__total" kindref="compound">experiment_total</ref> struct, the main struct of program. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parallel identification number. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>first</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>this variable is 1, when it is the first time that the program enters in this function. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void function pointer of evaluation function of the selected. benchmark. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>CUSTOMIZED BENCHMARK</para><para>SYSTEM BIOLOGY PROBLEMS</para><para>select a specific system biology problem: current_bench = 0 <ndash/>&gt; CIRCADIAN PROBLEM current_bench = 1 <ndash/>&gt; step PATHWAY PROBLEM current_bench = 2 <ndash/>&gt; NFKB PROBLEM current_bench = 3 <ndash/>&gt; B1 BIOPREDYN PROBLEM current_bench = 4 <ndash/>&gt; B2 BIOPREDYN PROBLEM current_bench = 5 <ndash/>&gt; B3 BIOPREDYN PROBLEM current_bench = 6 <ndash/>&gt; B4 BIOPREDYN PROBLEM current_bench = 7 <ndash/>&gt; B5 BIOPREDYN PROBLEM current_bench = 8 <ndash/>&gt; B6 BIOPREDYN PROBLEM</para><para>BBOB NOISELESS BENCHMARKS</para><para>BBOB NOISE BENCHMARKS</para><para>to order the printf messages </para>        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/setup_benchmarks.h" line="9" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/setup_benchmarks.c" bodystart="44" bodyend="123"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*(*function)(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*);</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>examplefunction(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*);</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>fgeneric_noiseless(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>fgeneric_noise(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>evalSB_(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="setup__benchmarks_8c_1ae3d5edb925d11913ec01636dd8f6073b" kindref="member" tooltip="this the setup function where the usar.">setup_benchmark</ref>(<ref refid="structexperiment__total" kindref="compound">experiment_total</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+    </programlisting>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/setup_benchmarks.h"/>
+  </compounddef>
+</doxygen>

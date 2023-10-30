@@ -1,0 +1,88 @@
+<xml>
+    <run>
+	<!-- benchmarktype: customized, systemBiology, noiselessBBOB, noiseBBOB -->
+        <typebench> noiselessBBOB </typebench>
+	<id> 3 </id>
+        <log_scale> 1 </log_scale>
+        <output>  1 </output>
+	<verbose> 1 </verbose>
+        <local_search> 1 </local_search>
+        <stopping_criteria>
+                <maxevaluation> 1e10 </maxevaluation>
+                <maxtime> 1e10 </maxtime>
+      		<vtr> -462.0899999900 </vtr>
+        </stopping_criteria>
+    </run>
+
+    <!-- solvers: ScatterSearch, eSSm, CeSS, saCeSS, aCeSS_dist -->
+    <method name="saCeSS">
+        <user_options>
+            <weight> default </weight>
+            <tolc> default </tolc>
+            <prob_bound>  default </prob_bound>
+            <nstuck_solution> default  </nstuck_solution>
+        </user_options>
+        
+        <global_options>
+            <dim_ref> default </dim_ref>
+            <ndiverse> default </ndiverse>
+            <combination> default </combination>
+            <n_stuck> default </n_stuck>
+        </global_options>
+        
+        <local_options>
+            <!--options: nl2sol, dhc, misqp-->
+            <solver> dhc </solver>
+            <tol> 2 </tol>
+	    <evalmax> 10000 </evalmax>
+            <iterprint> 0 </iterprint>
+            <n1> 1 </n1>
+            <n2> 10 </n2>
+            <balance> 0.25 </balance>
+            <!--finish> nl2sol </finish-->
+            <bestx> default </bestx>
+        </local_options>
+    </method>
+
+    <parallelization name="cooperative">
+	<!-- saCeSS options -->
+        <reception_threshold> 1 </reception_threshold>
+        <evals_threshold> 1000 </evals_threshold>
+        <mult_num_sendSol> 10 </mult_num_sendSol>
+	<minimum_num_sendSol> 20 </minimum_num_sendSol>
+	<!-- CeSS option: migration time -->
+        <migration_max_time> 10 </migration_max_time>
+    </parallelization>
+
+   <problem>
+      <dim> 100 </dim>
+      <ineq> 0 </ineq>
+      <neq> 0 </neq>
+      <int_var> 0 </int_var>
+      <bin_var> 0 </bin_var>
+      <lb> 
+          -5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,
+          -5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,
+          -5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,
+          -5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,
+          -5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,
+          -5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,
+          -5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,
+          -5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,
+          -5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,
+          -5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0,-5d0
+      </lb>
+      <ub> 
+          5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0, 
+          5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0,
+          5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0,
+          5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0,
+          5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0,
+          5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0,
+          5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0,
+          5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0,
+          5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0,
+          5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0,5d0
+      </ub>
+   </problem>
+</xml>

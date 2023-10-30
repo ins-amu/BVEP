@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="structexperiment__method__RandomSearch" kind="struct" prot="public">
+    <compoundname>experiment_method_RandomSearch</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structexperiment__method__RandomSearch_1a92132018422230e887eea56c4dcd8c82" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int experiment_method_RandomSearch::_NP</definition>
+        <argsstring></argsstring>
+        <name>_NP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="75" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__method__RandomSearch_1a8b5ed36ba6713d8aa5c9f20131c12c14" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int experiment_method_RandomSearch::cache</definition>
+        <argsstring></argsstring>
+        <name>cache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="76" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__method__RandomSearch_1a213d0f1dc89c34028d90e4ddbfd78900" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int experiment_method_RandomSearch::ls_counter</definition>
+        <argsstring></argsstring>
+        <name>ls_counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="77" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__method__RandomSearch_1a3de683e974465f3e0e221be460a9aa27" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double experiment_method_RandomSearch::ls_threshold</definition>
+        <argsstring></argsstring>
+        <name>ls_threshold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="78" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__method__RandomSearch_1a158044fc6e5302beab1f712459f2db4a" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* experiment_method_RandomSearch::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="79" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__method__RandomSearch_1a29d446a1244b6b40b34ada626246a97f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int experiment_method_RandomSearch::num_proc</definition>
+        <argsstring></argsstring>
+        <name>num_proc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="80" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="74" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="74" bodyend="81"/>
+    <listofallmembers>
+      <member refid="structexperiment__method__RandomSearch_1a92132018422230e887eea56c4dcd8c82" prot="public" virt="non-virtual"><scope>experiment_method_RandomSearch</scope><name>_NP</name></member>
+      <member refid="structexperiment__method__RandomSearch_1a8b5ed36ba6713d8aa5c9f20131c12c14" prot="public" virt="non-virtual"><scope>experiment_method_RandomSearch</scope><name>cache</name></member>
+      <member refid="structexperiment__method__RandomSearch_1a213d0f1dc89c34028d90e4ddbfd78900" prot="public" virt="non-virtual"><scope>experiment_method_RandomSearch</scope><name>ls_counter</name></member>
+      <member refid="structexperiment__method__RandomSearch_1a3de683e974465f3e0e221be460a9aa27" prot="public" virt="non-virtual"><scope>experiment_method_RandomSearch</scope><name>ls_threshold</name></member>
+      <member refid="structexperiment__method__RandomSearch_1a158044fc6e5302beab1f712459f2db4a" prot="public" virt="non-virtual"><scope>experiment_method_RandomSearch</scope><name>name</name></member>
+      <member refid="structexperiment__method__RandomSearch_1a29d446a1244b6b40b34ada626246a97f" prot="public" virt="non-virtual"><scope>experiment_method_RandomSearch</scope><name>num_proc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

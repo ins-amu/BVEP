@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="read__a__file__line__by__line_8h" kind="file">
+    <compoundname>read_a_file_line_by_line.h</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stddef.h</includes>
+    <includedby refid="output_8c" local="no">src/output/output.c</includedby>
+    <includedby refid="read__a__file__line__by__line_8c" local="no">src/output/read_a_file_line_by_line.c</includedby>
+    <incdepgraph>
+      <node id="164">
+        <label>stdlib.h</label>
+      </node>
+      <node id="166">
+        <label>stddef.h</label>
+      </node>
+      <node id="163">
+        <label>include/output/read_a_file_line_by_line.h</label>
+        <link refid="read_a_file_line_by_line.h"/>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+      </node>
+      <node id="165">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="168">
+        <label>src/output/output.c</label>
+        <link refid="output_8c"/>
+      </node>
+      <node id="167">
+        <label>include/output/read_a_file_line_by_line.h</label>
+        <link refid="read_a_file_line_by_line.h"/>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+      </node>
+      <node id="169">
+        <label>src/output/read_a_file_line_by_line.c</label>
+        <link refid="read__a__file__line__by__line_8c_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structline__reader" prot="public">line_reader</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="read__a__file__line__by__line_8h_1a8cd7f29d0e329b70ce15fd631ce6bd05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lr_init</definition>
+        <argsstring>(struct line_reader *, FILE *)</argsstring>
+        <name>lr_init</name>
+        <param>
+          <type>struct <ref refid="structline__reader" kindref="compound">line_reader</ref> *</type>
+        </param>
+        <param>
+          <type>FILE *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/read_a_file_line_by_line.h" line="16" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/read_a_file_line_by_line.c" bodystart="11" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="read__a__file__line__by__line_8h_1abf8f538dae7fa4cdd5c884bffbc0708d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* next_line</definition>
+        <argsstring>(struct line_reader *, int *l)</argsstring>
+        <name>next_line</name>
+        <param>
+          <type>struct <ref refid="structline__reader" kindref="compound">line_reader</ref> *</type>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/read_a_file_line_by_line.h" line="29" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/read_a_file_line_by_line.c" bodystart="29" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="read__a__file__line__by__line_8h_1af83abf10cf5443ad6f9c1d0324bd50d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lr_free</definition>
+        <argsstring>(struct line_reader *)</argsstring>
+        <name>lr_free</name>
+        <param>
+          <type>struct <ref refid="structline__reader" kindref="compound">line_reader</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/read_a_file_line_by_line.h" line="35" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/read_a_file_line_by_line.c" bodystart="82" bodyend="87"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>exit,<sp/>malloc,<sp/>realloc,<sp/>free<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>fopen,<sp/>fgetc,<sp/>fputs,<sp/>fwrite<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="structline__reader" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structline__reader" kindref="compound">line_reader</ref><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>All<sp/>members<sp/>are<sp/>private.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FILE<sp/><sp/><sp/><sp/>*f;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>*buf;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>siz;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>Initializes<sp/>a<sp/>line<sp/>reader<sp/>_lr_<sp/>for<sp/>the<sp/>stream<sp/>_f_.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">lr_init(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structline__reader" kindref="compound">line_reader</ref><sp/>*,<sp/>FILE<sp/>*);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>Reads<sp/>the<sp/>next<sp/>line.<sp/>If<sp/>successful,<sp/>returns<sp/>a<sp/>pointer<sp/>to<sp/>the<sp/>line,</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>and<sp/>sets<sp/>*len<sp/>to<sp/>the<sp/>number<sp/>of<sp/>characters,<sp/>at<sp/>least<sp/>1.<sp/>The<sp/>result<sp/>is</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>_not_<sp/>a<sp/>C<sp/>string;<sp/>it<sp/>has<sp/>no<sp/>terminating<sp/>&apos;\0&apos;.<sp/>The<sp/>returned<sp/>pointer</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>remains<sp/>valid<sp/>until<sp/>the<sp/>next<sp/>call<sp/>to<sp/>next_line()<sp/>or<sp/>lr_free()<sp/>with</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>the<sp/>same<sp/>_lr_.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>next_line()<sp/>returns<sp/>NULL<sp/>at<sp/>end<sp/>of<sp/>file,<sp/>or<sp/>if<sp/>there<sp/>is<sp/>an<sp/>error<sp/>(on</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>the<sp/>stream,<sp/>or<sp/>with<sp/>memory<sp/>allocation).</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">next_line(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structline__reader" kindref="compound">line_reader</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*l);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*<sp/>Frees<sp/>internal<sp/>memory<sp/>used<sp/>by<sp/>_lr_.</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">lr_free(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structline__reader" kindref="compound">line_reader</ref><sp/>*);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/read_a_file_line_by_line.h"/>
+  </compounddef>
+</doxygen>

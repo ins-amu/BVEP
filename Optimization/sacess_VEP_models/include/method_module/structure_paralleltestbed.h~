@@ -1,0 +1,360 @@
+/* 
+ * File:   structure_paralleltestbed.h
+ * Author: david
+ *
+ * Created on 30 de mayo de 2013, 13:13
+ */
+
+#ifndef STRUCTURE_PARALLELTESTBED_H
+#define	STRUCTURE_PARALLELTESTBED_H
+
+#ifdef	__cplusplus
+extern "C" {
+	using namespace std;
+#endif
+    
+#include <bbobStructures.h>  
+#include <AMIGO_problem.h> 
+#include <gsl/gsl_rng.h>
+#include <gsl/gsl_randist.h>
+#include <time.h>
+#include <Benchmarks.h>
+    
+#ifdef	MPI2
+    #include <dynamic_list.h>
+    #include <mpi.h> 
+#endif    
+    
+    typedef struct paramStruct ParamS;
+    
+    typedef struct {
+        int *rigth;
+        int num_r;
+        int *left;
+        int num_left;
+        #ifdef MPI2
+                MPI_Comm comunicator;
+        #endif
+    } topology_data; 
+    
+    typedef struct {
+        int current_bench;
+        double *min_dom;
+        double *max_dom;
+        double *log_min_dom;
+        double *log_max_dom;         
+        double *CL;
+        double *CU;           
+        int dim;
+        const char* type;   
+        double *BestSol;
+        int ineq;
+    } experiment_benchmark;
+    
+    typedef struct {
+        double _F;
+        double _CR;
+        int _NP;
+        int cache;
+	int ls_counter;
+	double ls_threshold;
+        const char *mutation_strategy;
+        const char *name;  
+        int num_proc;
+    } experiment_method_DE;
+    
+    typedef struct {
+        int _NP;
+        int cache;
+	int ls_counter;
+	double ls_threshold;
+        const char *name; 
+        int num_proc;
+    } experiment_method_RandomSearch;    
+    
+   
+    
+    typedef struct {
+        int weight;
+        double tolc;
+        double prob_bound;
+        int nstuck_solution;
+        int strategy;
+        int inter_save;
+    } user_options;
+    
+    typedef struct {
+        int dim_ref;
+        int dim_ref_global;
+        int ndiverse;
+        int initiate;
+        int combination;
+        int regenerate;
+        char* delete;
+        int intens;
+        double tolf;
+        int diverse_criteria;
+        double tolx;
+        int n_stuck;
+    } global_options; 
+    
+    typedef struct {
+        int *texp;
+        double *yexp;
+        double k1;
+        double k2;
+        double k3;
+        double k4;
+    } extraparametters;
+    
+    typedef struct {
+        int tol;
+        int iterprint;
+        int n1;
+        int n2;
+        double balance;
+        char * solver;
+        char * finish;
+        int bestx;
+        int merit_filter;
+        int distance_filter;
+        double thfactor;
+        double maxdistfactor;
+        int wait_maxdist_limit;
+        int wait_th_limit;
+        extraparametters extrap;
+    } local_options;
+
+    typedef struct {
+        int _NP;
+        int cache;
+	int ls_counter;
+	double ls_threshold;
+        const char *name;  
+        int* index_log;
+        int int_var;
+        int bin_var;
+        int ineq;
+        user_options *uoptions;
+        global_options *goptions;
+        local_options *loptions;
+        int num_proc;
+        int asynchronous;
+        int CeSS;
+    } experiment_method_ScatterSearch;  
+    
+    typedef struct {
+        int instances;
+        int init_point;
+        experiment_benchmark bench;
+        double   max_eval;
+        double tolerance;
+        double   repetitions;
+        const char* type;   
+        const char* namexml;   
+        int _log;    
+        char* output_graph;
+        int ouput;
+        double output_temp;
+        int verbose;
+        int init_repetition;
+        int local_search;
+        int local_gradient;
+        double maxtime;
+    } experiment_testbed; 
+    
+    typedef struct {
+        int NPROC;
+        int NPROC_OPENMP;
+        int migration_size;
+        int migration_freq_ite;    
+        double max_time_ite;
+        const char* type;
+        const char* commu;
+        const char* islandstrategy;
+        const char* topology;
+        const char* SelectionPolicy;
+        const char* ReplacePolicy;
+    }parallelization_strategy;
+    
+   
+    typedef struct {
+        int num_send_buffers;
+        int num_send_buffers_other;
+        int num_send_buffers_other_old;
+        int num_recv_buffers;
+        int recv_active;
+#ifdef MPI2
+        MPI_Request request_num_recv_buffers;
+#endif        
+    } state_buffers_procs;
+    
+    
+    typedef struct {
+        double *array;
+        int counter;
+        int size;
+    } tabu_list_send;
+    
+    
+    typedef struct {
+        char *nameMatlab;
+        topology_data topology;
+        int size_send_buffer;
+        int send_id;
+        int *st;
+        int idp;
+        int num_it;
+        double max_time_ite;
+        double max_time_ite_last;
+        int NPROC;
+        int tam;
+        int NP;
+        int NM;
+        int st_sent;
+        int stuckcond_lowVar;
+        int stuckcount;
+        int migra_asin_wait;
+        int migration;
+        int contadorMigra;
+        int enterMigrat;
+        int update;
+        double minvarcondition;
+        double ftarget;
+        long maxfunevals;
+        double initTIME;
+        int rep;
+        int initpath;
+        int iteration;
+#ifdef MPI2
+        list l;
+        tabu_list_send tabusend;
+        state_buffers_procs *state;
+        MPI_Request *request_recept;
+#endif        
+    } execution_vars;
+    
+    typedef struct {
+        experiment_testbed test;
+        experiment_method_DE  *methodDE;
+        experiment_method_RandomSearch  *methodRandomSearch;
+        experiment_method_ScatterSearch *methodScatterSearch;
+        parallelization_strategy *par_st;
+        execution_vars execution;
+        ParamS *param;
+	Benchmarks *fp;
+        AMIGO_problem *amigo;
+        const gsl_rng *random;
+        double seed;
+    }experiment_total;
+    
+    typedef struct {
+        int counter;
+        int state_ls;
+        double total_local;
+        double sucess_local;
+        int num_ls;
+        int sucess_interval;
+        double enter_value;
+    } local_solver;
+    
+    typedef struct {
+        double st1;
+        double st2;
+        double st3;
+        double point1;
+        int point_counter;
+        double oldbest;
+    }output_struct;
+       
+    
+    typedef struct {
+        double eval_avg; 
+        double time_avg;
+        double best_value_all;
+        double restart;
+        double value_avg;
+        double porcenthits;
+        int dim;
+        int id;
+    }result_values;
+    
+    
+    typedef struct {
+        long eval_value; 
+        double time_value;
+        double best_value; 
+        double totaltime;
+        double paralleltime;
+        double localsolvertime;        
+    } result_solver;
+    
+    typedef struct {
+        double value;
+        double *g;
+        double *R;
+    } output_function;
+    
+    
+    
+void destroyexp(experiment_total *) ;
+
+int is_asynchronous(experiment_total);
+
+int is_parallel(experiment_total);    
+
+int is_noise(experiment_total);  
+
+void check_fun(experiment_total, int , int );
+
+int chargedimension_(void *, int *);
+
+int chargedimensionopenmp_(void *, int *);
+
+int getbench_(void *);
+
+double gettotaltime_( result_solver *);
+
+double getparalleltime_( result_solver *);
+
+double getlocalsolvertime_(  result_solver *);
+
+int getidp_(void *);
+
+int ishete_(void *);
+
+int iscoop_(void *);
+
+void setiteration_(void *, int *);
+
+void setnumit_(void *, int *);
+
+int chargeproblemargs_(void *, int *, int *, int *);
+
+int chargeuseroptions_(void *, double *, int *, double *, double *,
+        int *, int *, int *, int *, int *, int *, int *);
+
+int chargeglobaloptions_( void *, int *, int *, int *, int *, int *, 
+        char* , int *, double * , int *, double * , int *);
+
+int chargelocaloptions_( void *, int *, int *, int *, int *, double * , 
+        char * , int *, int *, int *, double *, 
+        double *, int *, int *, char *, double *) ;
+
+int chargeboundsnconst_(void *, double *, double *, int * , double *, double *, int *);
+
+
+int chargebounds_(void *, double *, double *, int *);    
+
+int number_benchmark(experiment_total *);
+
+#ifdef	__cplusplus
+}
+#endif
+
+#endif	/* STRUCTURE_PARALLELTESTBED_H */
+
+
+
+
+

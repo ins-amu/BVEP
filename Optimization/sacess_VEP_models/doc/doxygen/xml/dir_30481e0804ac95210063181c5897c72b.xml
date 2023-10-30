@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="dir_30481e0804ac95210063181c5897c72b" kind="dir">
+    <compoundname>include/method_module/</compoundname>
+    <innerdir refid="dir_9f0b4910f5d7fc0f5382fd87d4bbfc4b">include/method_module/eSS/</innerdir>
+    <innerfile refid="amigoRHS_8h">amigoRHS.h</innerfile>
+    <innerfile refid="benchmark__functions__BBOB_8h">benchmark_functions_BBOB.h</innerfile>
+    <innerfile refid="benchmark__functions__SystemBiology_8h">benchmark_functions_SystemBiology.h</innerfile>
+    <innerfile refid="common__solver__operations_8h">common_solver_operations.h</innerfile>
+    <innerfile refid="cooperative__Solvers_8h">cooperative_Solvers.h</innerfile>
+    <innerfile refid="evaluationinterface_8h">evaluationinterface.h</innerfile>
+    <innerfile refid="execution__methods_8h">execution_methods.h</innerfile>
+    <innerfile refid="local__solvers_8h">local_solvers.h</innerfile>
+    <innerfile refid="parallel__functions_8h">parallel_functions.h</innerfile>
+    <innerfile refid="parallel__functions__cooperative_8h">parallel_functions_cooperative.h</innerfile>
+    <innerfile refid="parallel__islands__Solvers_8h">parallel_islands_Solvers.h</innerfile>
+    <innerfile refid="serSolvers_8h">serSolvers.h</innerfile>
+    <innerfile refid="solversinterface_8h">solversinterface.h</innerfile>
+    <innerfile refid="structure__paralleltestbed_8h">structure_paralleltestbed.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/"/>
+  </compounddef>
+</doxygen>

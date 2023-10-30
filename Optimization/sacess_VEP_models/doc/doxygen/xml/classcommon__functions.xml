@@ -1,0 +1,1176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="classcommon__functions" kind="module" prot="public">
+    <compoundname>common_functions</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcommon__functions_1aea73f4d848af9fb829ab0e90cc78c4ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::inicializa_vector_value</definition>
+        <argsstring>(MM, D, Value)</argsstring>
+        <name>inicializa_vector_value</name>
+        <param>
+          <type>MM</type>
+          <defname>MM</defname>
+        </param>
+        <param>
+          <type>D</type>
+          <defname>D</defname>
+        </param>
+        <param>
+          <type>Value</type>
+          <defname>Value</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1ab0b7fb191180659886b14972ab382fb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::inicializa_vector</definition>
+        <argsstring>(MM, D)</argsstring>
+        <name>inicializa_vector</name>
+        <param>
+          <type>MM</type>
+          <defname>MM</defname>
+        </param>
+        <param>
+          <type>D</type>
+          <defname>D</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1aed46992d001cb8a2b094f86e842de9bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::destroy_vector</definition>
+        <argsstring>(MM)</argsstring>
+        <name>destroy_vector</name>
+        <param>
+          <type>MM</type>
+          <defname>MM</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1ac461bb63cf2826114d723c24259d97b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::slave_information</definition>
+        <argsstring>(idp, dim_refset, ndiverse, MODE)</argsstring>
+        <name>slave_information</name>
+        <param>
+          <type>idp</type>
+          <defname>idp</defname>
+        </param>
+        <param>
+          <type>dim_refset</type>
+          <defname>dim_refset</defname>
+        </param>
+        <param>
+          <type>ndiverse</type>
+          <defname>ndiverse</defname>
+        </param>
+        <param>
+          <type>MODE</type>
+          <defname>MODE</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1aeafc83ed99317cf268fad2e7413bdb8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::optimization_begins</definition>
+        <argsstring>(idp)</argsstring>
+        <name>optimization_begins</name>
+        <param>
+          <type>idp</type>
+          <defname>idp</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a1e45cb5417768d4b3df919fc565c0a62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::ending_solver_message</definition>
+        <argsstring>(idp, fin)</argsstring>
+        <name>ending_solver_message</name>
+        <param>
+          <type>idp</type>
+          <defname>idp</defname>
+        </param>
+        <param>
+          <type>fin</type>
+          <defname>fin</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a4c01bb3ed5888ea3170b22ecf65a9477" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::seed_recount</definition>
+        <argsstring>(exp1, id)</argsstring>
+        <name>seed_recount</name>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>id</type>
+          <defname>id</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a43bf1b6a875008ecfcf3f1755a061646" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::print_vector</definition>
+        <argsstring>(MM)</argsstring>
+        <name>print_vector</name>
+        <param>
+          <type>MM</type>
+          <defname>MM</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a049948008b37dcfce20ed9bc1cf1ab9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::random_vector_5</definition>
+        <argsstring>(exp1, X, D, Xl, Xu, cont)</argsstring>
+        <name>random_vector_5</name>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>X</type>
+          <defname>X</defname>
+        </param>
+        <param>
+          <type>D</type>
+          <defname>D</defname>
+        </param>
+        <param>
+          <type>Xl</type>
+          <defname>Xl</defname>
+        </param>
+        <param>
+          <type>Xu</type>
+          <defname>Xu</defname>
+        </param>
+        <param>
+          <type>cont</type>
+          <defname>cont</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a7eb917248e6c2f45262254b7ac0d2fe1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::all_positive</definition>
+        <argsstring>(X)</argsstring>
+        <name>all_positive</name>
+        <param>
+          <type>X</type>
+          <defname>X</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1aa513271599f88f9462edfdd4c78fabe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::random_vector_seed</definition>
+        <argsstring>(exp1, X, D, Xl, Xu)</argsstring>
+        <name>random_vector_seed</name>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>X</type>
+          <defname>X</defname>
+        </param>
+        <param>
+          <type>D</type>
+          <defname>D</defname>
+        </param>
+        <param>
+          <type>Xl</type>
+          <defname>Xl</defname>
+        </param>
+        <param>
+          <type>Xu</type>
+          <defname>Xu</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a3869edd0f5eae8aa09daecb44c96d5be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::random_vector_seed_10</definition>
+        <argsstring>(exp1, X, D)</argsstring>
+        <name>random_vector_seed_10</name>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>X</type>
+          <defname>X</defname>
+        </param>
+        <param>
+          <type>D</type>
+          <defname>D</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1aba84bfc0616ee5ecdc19f0509816f3c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::random_matrix_seed_10</definition>
+        <argsstring>(exp1, X, sizei, sizej)</argsstring>
+        <name>random_matrix_seed_10</name>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>X</type>
+          <defname>X</defname>
+        </param>
+        <param>
+          <type>sizei</type>
+          <defname>sizei</defname>
+        </param>
+        <param>
+          <type>sizej</type>
+          <defname>sizej</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a869e6ffa34d2994799154cdf277c1432" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>real(kind=selected_real_kind(p=precision_d, r=range_d)) function</type>
+        <definition>real(kind=selected_real_kind(p=precision_d,r=range_d)) function common_functions::return_random_number</definition>
+        <argsstring>(exp1)</argsstring>
+        <name>return_random_number</name>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a410c6af7d81a5d09861c6b72886ceb4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>REAL(KIND=SELECTED_REAL_KIND(P=PRECISION_D, R=RANGE_D)) function</type>
+        <definition>REAL(KIND=SELECTED_REAL_KIND(P=PRECISION_D,R=RANGE_D)) function common_functions::ex1</definition>
+        <argsstring>(X)</argsstring>
+        <name>ex1</name>
+        <param>
+          <type>X</type>
+          <defname>X</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a59b42f78a81adf2073714b47639047bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::insert_dinamic_vector_double_precission</definition>
+        <argsstring>(X, currentsize)</argsstring>
+        <name>insert_dinamic_vector_double_precission</name>
+        <param>
+          <type>X</type>
+          <defname>X</defname>
+        </param>
+        <param>
+          <type>currentsize</type>
+          <defname>currentsize</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1ae2574f7de49204ab51faac4772ddc428" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::fusion_matrix</definition>
+        <argsstring>(matrix1, matrix2)</argsstring>
+        <name>fusion_matrix</name>
+        <param>
+          <type>matrix1</type>
+          <defname>matrix1</defname>
+        </param>
+        <param>
+          <type>matrix2</type>
+          <defname>matrix2</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a4946599ea072af8fa67c91ff007fc1aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::fusion_vector</definition>
+        <argsstring>(vector1, vector2)</argsstring>
+        <name>fusion_vector</name>
+        <param>
+          <type>vector1</type>
+          <defname>vector1</defname>
+        </param>
+        <param>
+          <type>vector2</type>
+          <defname>vector2</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1ab20907d2d7c8e71a2e1a79cca68d385c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::fusion_vector_int</definition>
+        <argsstring>(vector1, vector2)</argsstring>
+        <name>fusion_vector_int</name>
+        <param>
+          <type>vector1</type>
+          <defname>vector1</defname>
+        </param>
+        <param>
+          <type>vector2</type>
+          <defname>vector2</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1afbff1f3464c4f1085b57c90637d9a21b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::print_matrix</definition>
+        <argsstring>(matrix)</argsstring>
+        <name>print_matrix</name>
+        <param>
+          <type>matrix</type>
+          <defname>matrix</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a8eaaddf7f67fcd4a19c871e164092ec0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::print_matrix_integer</definition>
+        <argsstring>(matrix)</argsstring>
+        <name>print_matrix_integer</name>
+        <param>
+          <type>matrix</type>
+          <defname>matrix</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a0171def1de4eacc5b8286d86bacae52c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::square_roots_polinom</definition>
+        <argsstring>(matrix1, result1)</argsstring>
+        <name>square_roots_polinom</name>
+        <param>
+          <type>matrix1</type>
+          <defname>matrix1</defname>
+        </param>
+        <param>
+          <type>result1</type>
+          <defname>result1</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1acf599fb0a18720c7f380dfc805790df8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>integer function</type>
+        <definition>integer function common_functions::choose</definition>
+        <argsstring>(vector)</argsstring>
+        <name>choose</name>
+        <param>
+          <type>vector</type>
+          <defname>vector</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a0bf27440299e4d7e8e377c712962ecb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>integer function</type>
+        <definition>integer function common_functions::findinteger</definition>
+        <argsstring>(vector, value1)</argsstring>
+        <name>findinteger</name>
+        <param>
+          <type>vector</type>
+          <defname>vector</defname>
+        </param>
+        <param>
+          <type>value1</type>
+          <defname>value1</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1ae97553a79fddd4e0de9c6d1ac7e4b21f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::find_in_vector</definition>
+        <argsstring>(vector, value, vectorout, opt)</argsstring>
+        <name>find_in_vector</name>
+        <param>
+          <type>vector</type>
+          <defname>vector</defname>
+        </param>
+        <param>
+          <type>value</type>
+          <defname>value</defname>
+        </param>
+        <param>
+          <type>vectorout</type>
+          <defname>vectorout</defname>
+        </param>
+        <param>
+          <type>opt</type>
+          <defname>opt</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1ae0266be4b849bd7f54d5be856ebb0faa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::find_in_vector_int</definition>
+        <argsstring>(vector, value1, vectorout, opt)</argsstring>
+        <name>find_in_vector_int</name>
+        <param>
+          <type>vector</type>
+          <defname>vector</defname>
+        </param>
+        <param>
+          <type>value1</type>
+          <defname>value1</defname>
+        </param>
+        <param>
+          <type>vectorout</type>
+          <defname>vectorout</defname>
+        </param>
+        <param>
+          <type>opt</type>
+          <defname>opt</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a5308c8e91e5432eb01d3ddc645b3dda1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::replace_matrix</definition>
+        <argsstring>(matrix, value1)</argsstring>
+        <name>replace_matrix</name>
+        <param>
+          <type>matrix</type>
+          <defname>matrix</defname>
+        </param>
+        <param>
+          <type>value1</type>
+          <defname>value1</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a310685dfd3e72477242923d459a3335c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::nchoosek_fpar</definition>
+        <argsstring>(vector, pars, vectorout)</argsstring>
+        <name>nchoosek_fpar</name>
+        <param>
+          <type>vector</type>
+          <defname>vector</defname>
+        </param>
+        <param>
+          <type>pars</type>
+          <defname>pars</defname>
+        </param>
+        <param>
+          <type>vectorout</type>
+          <defname>vectorout</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1aefa037c083f908062d3a59d71d360580" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::delete_values_vector_int</definition>
+        <argsstring>(vector1, num)</argsstring>
+        <name>delete_values_vector_int</name>
+        <param>
+          <type>vector1</type>
+          <defname>vector1</defname>
+        </param>
+        <param>
+          <type>num</type>
+          <defname>num</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1af4ebac2f558e171676a5d194d77330ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::randperm_int</definition>
+        <argsstring>(exp1, vector1)</argsstring>
+        <name>randperm_int</name>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>vector1</type>
+          <defname>vector1</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a17bee7c131a38dcb3376aa73290dfe1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>real(kind=selected_real_kind(p=precision_d, r=range_d)) function</type>
+        <definition>real(kind=selected_real_kind(p=precision_d,r=range_d)) function common_functions::variance_vector</definition>
+        <argsstring>(vector1)</argsstring>
+        <name>variance_vector</name>
+        <param>
+          <type>vector1</type>
+          <defname>vector1</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a71ba5a4f09a7342650c5af54ddb63dc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>real(kind=selected_real_kind(p=precision_d, r=range_d)) function, dimension(:,:), allocatable</type>
+        <definition>real(kind=selected_real_kind(p=precision_d,r=range_d)) function, dimension(:,:), allocatable common_functions::abs_matrix</definition>
+        <argsstring>(vector1)</argsstring>
+        <name>abs_matrix</name>
+        <param>
+          <type>vector1</type>
+          <defname>vector1</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a85fb861d16d842fb51a4b80c38a3f31e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>real(kind=selected_real_kind(p=precision_d, r=range_d)) function, dimension(:,:), allocatable</type>
+        <definition>real(kind=selected_real_kind(p=precision_d,r=range_d)) function, dimension(:,:), allocatable common_functions::max_matrix</definition>
+        <argsstring>(matrix1, matrix2)</argsstring>
+        <name>max_matrix</name>
+        <param>
+          <type>matrix1</type>
+          <defname>matrix1</defname>
+        </param>
+        <param>
+          <type>matrix2</type>
+          <defname>matrix2</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a281058379b43ef0e38b312192961ee88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>integer function, dimension(:), allocatable</type>
+        <definition>integer function, dimension(:), allocatable common_functions::compare_vector</definition>
+        <argsstring>(vector1, value1, opt, sizer)</argsstring>
+        <name>compare_vector</name>
+        <param>
+          <type>vector1</type>
+          <defname>vector1</defname>
+        </param>
+        <param>
+          <type>value1</type>
+          <defname>value1</defname>
+        </param>
+        <param>
+          <type>opt</type>
+          <defname>opt</defname>
+        </param>
+        <param>
+          <type>sizer</type>
+          <defname>sizer</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a84b33031853d7ebb46bf5674b384ac9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>integer function, dimension(:,:), allocatable</type>
+        <definition>integer function, dimension(:,:), allocatable common_functions::compare_matrix</definition>
+        <argsstring>(matrix1, value1, opt)</argsstring>
+        <name>compare_matrix</name>
+        <param>
+          <type>matrix1</type>
+          <defname>matrix1</defname>
+        </param>
+        <param>
+          <type>value1</type>
+          <defname>value1</defname>
+        </param>
+        <param>
+          <type>opt</type>
+          <defname>opt</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a2efb3e809d60b8b7a5411dc12507bcc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>integer function, dimension(:,:), allocatable</type>
+        <definition>integer function, dimension(:,:), allocatable common_functions::compare_multiple_matrix</definition>
+        <argsstring>(matrix1, matrix2, size, opt)</argsstring>
+        <name>compare_multiple_matrix</name>
+        <param>
+          <type>matrix1</type>
+          <defname>matrix1</defname>
+        </param>
+        <param>
+          <type>matrix2</type>
+          <defname>matrix2</defname>
+        </param>
+        <param>
+          <type>size</type>
+          <defname>size</defname>
+        </param>
+        <param>
+          <type>opt</type>
+          <defname>opt</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1ab4ecf3cdd8fce8fc6a51acb0c03eca67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>integer function, dimension(:,:), allocatable</type>
+        <definition>integer function, dimension(:,:), allocatable common_functions::compare_multiple_matrix_int</definition>
+        <argsstring>(matrix1, matrix2, size, opt)</argsstring>
+        <name>compare_multiple_matrix_int</name>
+        <param>
+          <type>matrix1</type>
+          <defname>matrix1</defname>
+        </param>
+        <param>
+          <type>matrix2</type>
+          <defname>matrix2</defname>
+        </param>
+        <param>
+          <type>size</type>
+          <defname>size</defname>
+        </param>
+        <param>
+          <type>opt</type>
+          <defname>opt</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a8743b861d84f317c2099171183255319" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>integer function, dimension(:), allocatable</type>
+        <definition>integer function, dimension(:), allocatable common_functions::compare_multiple_vector</definition>
+        <argsstring>(vector1, vector2, sizer, opt)</argsstring>
+        <name>compare_multiple_vector</name>
+        <param>
+          <type>vector1</type>
+          <defname>vector1</defname>
+        </param>
+        <param>
+          <type>vector2</type>
+          <defname>vector2</defname>
+        </param>
+        <param>
+          <type>sizer</type>
+          <defname>sizer</defname>
+        </param>
+        <param>
+          <type>opt</type>
+          <defname>opt</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1abf7ae31765338c243567c1c9dc06687e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::row_one</definition>
+        <argsstring>(res1, res2, sizer)</argsstring>
+        <name>row_one</name>
+        <param>
+          <type>res1</type>
+          <defname>res1</defname>
+        </param>
+        <param>
+          <type>res2</type>
+          <defname>res2</defname>
+        </param>
+        <param>
+          <type>sizer</type>
+          <defname>sizer</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a460d2e78c55ab9e3de2fe2a385c5d632" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::index_of_ones</definition>
+        <argsstring>(res1, BBB)</argsstring>
+        <name>index_of_ones</name>
+        <param>
+          <type>res1</type>
+          <defname>res1</defname>
+        </param>
+        <param>
+          <type>BBB</type>
+          <defname>BBB</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1acaf6a5e229a1ec8f555cd9282252531f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::reajust_index</definition>
+        <argsstring>(res1)</argsstring>
+        <name>reajust_index</name>
+        <param>
+          <type>res1</type>
+          <defname>res1</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a0888f01433ec20d03988681db7ade6e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::index_of_ones_matrix</definition>
+        <argsstring>(res1, indexvector)</argsstring>
+        <name>index_of_ones_matrix</name>
+        <param>
+          <type>res1</type>
+          <defname>res1</defname>
+        </param>
+        <param>
+          <type>indexvector</type>
+          <defname>indexvector</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a2647a98d5be271aa091f7b8f8434bed6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::return_values_matrix_index</definition>
+        <argsstring>(vx, hyperx, aaa)</argsstring>
+        <name>return_values_matrix_index</name>
+        <param>
+          <type>vx</type>
+          <defname>vx</defname>
+        </param>
+        <param>
+          <type>hyperx</type>
+          <defname>hyperx</defname>
+        </param>
+        <param>
+          <type>aaa</type>
+          <defname>aaa</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1ae03a709f7e434705a3fbed8ef11dcfcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::set_one_matrix</definition>
+        <argsstring>(matrix, vector, onesm)</argsstring>
+        <name>set_one_matrix</name>
+        <param>
+          <type>matrix</type>
+          <defname>matrix</defname>
+        </param>
+        <param>
+          <type>vector</type>
+          <defname>vector</defname>
+        </param>
+        <param>
+          <type>onesm</type>
+          <defname>onesm</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a591fb65f5a407b4ff84c708e386f2674" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::random_det_vector_seed_10</definition>
+        <argsstring>(X, D, contador, M)</argsstring>
+        <name>random_det_vector_seed_10</name>
+        <param>
+          <type>X</type>
+          <defname>X</defname>
+        </param>
+        <param>
+          <type>D</type>
+          <defname>D</defname>
+        </param>
+        <param>
+          <type>contador</type>
+          <defname>contador</defname>
+        </param>
+        <param>
+          <type>M</type>
+          <defname>M</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a20a783e4697ffef0624cd32b9bf64283" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::random_det_vector_seed</definition>
+        <argsstring>(X, D, Xl, Xu, contador, M)</argsstring>
+        <name>random_det_vector_seed</name>
+        <param>
+          <type>X</type>
+          <defname>X</defname>
+        </param>
+        <param>
+          <type>D</type>
+          <defname>D</defname>
+        </param>
+        <param>
+          <type>Xl</type>
+          <defname>Xl</defname>
+        </param>
+        <param>
+          <type>Xu</type>
+          <defname>Xu</defname>
+        </param>
+        <param>
+          <type>contador</type>
+          <defname>contador</defname>
+        </param>
+        <param>
+          <type>M</type>
+          <defname>M</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a0b23a9a9b632364c0619a5ab2b4afca6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::random_det_vector_5</definition>
+        <argsstring>(X, D, Xl, Xu, cont, contador, M)</argsstring>
+        <name>random_det_vector_5</name>
+        <param>
+          <type>X</type>
+          <defname>X</defname>
+        </param>
+        <param>
+          <type>D</type>
+          <defname>D</defname>
+        </param>
+        <param>
+          <type>Xl</type>
+          <defname>Xl</defname>
+        </param>
+        <param>
+          <type>Xu</type>
+          <defname>Xu</defname>
+        </param>
+        <param>
+          <type>cont</type>
+          <defname>cont</defname>
+        </param>
+        <param>
+          <type>contador</type>
+          <defname>contador</defname>
+        </param>
+        <param>
+          <type>M</type>
+          <defname>M</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a06c5a9a2de0bab12a1cc67174a4323c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::random_det_matrix_seed_10</definition>
+        <argsstring>(X, sizei, sizej, contador, M)</argsstring>
+        <name>random_det_matrix_seed_10</name>
+        <param>
+          <type>X</type>
+          <defname>X</defname>
+        </param>
+        <param>
+          <type>sizei</type>
+          <defname>sizei</defname>
+        </param>
+        <param>
+          <type>sizej</type>
+          <defname>sizej</defname>
+        </param>
+        <param>
+          <type>contador</type>
+          <defname>contador</defname>
+        </param>
+        <param>
+          <type>M</type>
+          <defname>M</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classcommon__functions_1a8a8354e7c27fee70c0f416a0cdfdb74b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine common_functions::random_det_number</definition>
+        <argsstring>(num, contador, M)</argsstring>
+        <name>random_det_number</name>
+        <param>
+          <type>num</type>
+          <defname>num</defname>
+        </param>
+        <param>
+          <type>contador</type>
+          <defname>contador</defname>
+        </param>
+        <param>
+          <type>M</type>
+          <defname>M</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/common_functions.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/common_functions.f90" bodystart="1" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classcommon__functions_1a71ba5a4f09a7342650c5af54ddb63dc0" prot="public" virt="non-virtual"><scope>common_functions</scope><name>abs_matrix</name></member>
+      <member refid="classcommon__functions_1a7eb917248e6c2f45262254b7ac0d2fe1" prot="public" virt="non-virtual"><scope>common_functions</scope><name>all_positive</name></member>
+      <member refid="classcommon__functions_1acf599fb0a18720c7f380dfc805790df8" prot="public" virt="non-virtual"><scope>common_functions</scope><name>choose</name></member>
+      <member refid="classcommon__functions_1a84b33031853d7ebb46bf5674b384ac9a" prot="public" virt="non-virtual"><scope>common_functions</scope><name>compare_matrix</name></member>
+      <member refid="classcommon__functions_1a2efb3e809d60b8b7a5411dc12507bcc8" prot="public" virt="non-virtual"><scope>common_functions</scope><name>compare_multiple_matrix</name></member>
+      <member refid="classcommon__functions_1ab4ecf3cdd8fce8fc6a51acb0c03eca67" prot="public" virt="non-virtual"><scope>common_functions</scope><name>compare_multiple_matrix_int</name></member>
+      <member refid="classcommon__functions_1a8743b861d84f317c2099171183255319" prot="public" virt="non-virtual"><scope>common_functions</scope><name>compare_multiple_vector</name></member>
+      <member refid="classcommon__functions_1a281058379b43ef0e38b312192961ee88" prot="public" virt="non-virtual"><scope>common_functions</scope><name>compare_vector</name></member>
+      <member refid="classcommon__functions_1aefa037c083f908062d3a59d71d360580" prot="public" virt="non-virtual"><scope>common_functions</scope><name>delete_values_vector_int</name></member>
+      <member refid="classcommon__functions_1aed46992d001cb8a2b094f86e842de9bc" prot="public" virt="non-virtual"><scope>common_functions</scope><name>destroy_vector</name></member>
+      <member refid="classcommon__functions_1a1e45cb5417768d4b3df919fc565c0a62" prot="public" virt="non-virtual"><scope>common_functions</scope><name>ending_solver_message</name></member>
+      <member refid="classcommon__functions_1a410c6af7d81a5d09861c6b72886ceb4b" prot="public" virt="non-virtual"><scope>common_functions</scope><name>ex1</name></member>
+      <member refid="classcommon__functions_1ae97553a79fddd4e0de9c6d1ac7e4b21f" prot="public" virt="non-virtual"><scope>common_functions</scope><name>find_in_vector</name></member>
+      <member refid="classcommon__functions_1ae0266be4b849bd7f54d5be856ebb0faa" prot="public" virt="non-virtual"><scope>common_functions</scope><name>find_in_vector_int</name></member>
+      <member refid="classcommon__functions_1a0bf27440299e4d7e8e377c712962ecb3" prot="public" virt="non-virtual"><scope>common_functions</scope><name>findinteger</name></member>
+      <member refid="classcommon__functions_1ae2574f7de49204ab51faac4772ddc428" prot="public" virt="non-virtual"><scope>common_functions</scope><name>fusion_matrix</name></member>
+      <member refid="classcommon__functions_1a4946599ea072af8fa67c91ff007fc1aa" prot="public" virt="non-virtual"><scope>common_functions</scope><name>fusion_vector</name></member>
+      <member refid="classcommon__functions_1ab20907d2d7c8e71a2e1a79cca68d385c" prot="public" virt="non-virtual"><scope>common_functions</scope><name>fusion_vector_int</name></member>
+      <member refid="classcommon__functions_1a460d2e78c55ab9e3de2fe2a385c5d632" prot="public" virt="non-virtual"><scope>common_functions</scope><name>index_of_ones</name></member>
+      <member refid="classcommon__functions_1a0888f01433ec20d03988681db7ade6e6" prot="public" virt="non-virtual"><scope>common_functions</scope><name>index_of_ones_matrix</name></member>
+      <member refid="classcommon__functions_1ab0b7fb191180659886b14972ab382fb9" prot="public" virt="non-virtual"><scope>common_functions</scope><name>inicializa_vector</name></member>
+      <member refid="classcommon__functions_1aea73f4d848af9fb829ab0e90cc78c4ef" prot="public" virt="non-virtual"><scope>common_functions</scope><name>inicializa_vector_value</name></member>
+      <member refid="classcommon__functions_1a59b42f78a81adf2073714b47639047bb" prot="public" virt="non-virtual"><scope>common_functions</scope><name>insert_dinamic_vector_double_precission</name></member>
+      <member refid="classcommon__functions_1a85fb861d16d842fb51a4b80c38a3f31e" prot="public" virt="non-virtual"><scope>common_functions</scope><name>max_matrix</name></member>
+      <member refid="classcommon__functions_1a310685dfd3e72477242923d459a3335c" prot="public" virt="non-virtual"><scope>common_functions</scope><name>nchoosek_fpar</name></member>
+      <member refid="classcommon__functions_1aeafc83ed99317cf268fad2e7413bdb8d" prot="public" virt="non-virtual"><scope>common_functions</scope><name>optimization_begins</name></member>
+      <member refid="classcommon__functions_1afbff1f3464c4f1085b57c90637d9a21b" prot="public" virt="non-virtual"><scope>common_functions</scope><name>print_matrix</name></member>
+      <member refid="classcommon__functions_1a8eaaddf7f67fcd4a19c871e164092ec0" prot="public" virt="non-virtual"><scope>common_functions</scope><name>print_matrix_integer</name></member>
+      <member refid="classcommon__functions_1a43bf1b6a875008ecfcf3f1755a061646" prot="public" virt="non-virtual"><scope>common_functions</scope><name>print_vector</name></member>
+      <member refid="classcommon__functions_1a06c5a9a2de0bab12a1cc67174a4323c6" prot="public" virt="non-virtual"><scope>common_functions</scope><name>random_det_matrix_seed_10</name></member>
+      <member refid="classcommon__functions_1a8a8354e7c27fee70c0f416a0cdfdb74b" prot="public" virt="non-virtual"><scope>common_functions</scope><name>random_det_number</name></member>
+      <member refid="classcommon__functions_1a0b23a9a9b632364c0619a5ab2b4afca6" prot="public" virt="non-virtual"><scope>common_functions</scope><name>random_det_vector_5</name></member>
+      <member refid="classcommon__functions_1a20a783e4697ffef0624cd32b9bf64283" prot="public" virt="non-virtual"><scope>common_functions</scope><name>random_det_vector_seed</name></member>
+      <member refid="classcommon__functions_1a591fb65f5a407b4ff84c708e386f2674" prot="public" virt="non-virtual"><scope>common_functions</scope><name>random_det_vector_seed_10</name></member>
+      <member refid="classcommon__functions_1aba84bfc0616ee5ecdc19f0509816f3c6" prot="public" virt="non-virtual"><scope>common_functions</scope><name>random_matrix_seed_10</name></member>
+      <member refid="classcommon__functions_1a049948008b37dcfce20ed9bc1cf1ab9a" prot="public" virt="non-virtual"><scope>common_functions</scope><name>random_vector_5</name></member>
+      <member refid="classcommon__functions_1aa513271599f88f9462edfdd4c78fabe0" prot="public" virt="non-virtual"><scope>common_functions</scope><name>random_vector_seed</name></member>
+      <member refid="classcommon__functions_1a3869edd0f5eae8aa09daecb44c96d5be" prot="public" virt="non-virtual"><scope>common_functions</scope><name>random_vector_seed_10</name></member>
+      <member refid="classcommon__functions_1af4ebac2f558e171676a5d194d77330ca" prot="public" virt="non-virtual"><scope>common_functions</scope><name>randperm_int</name></member>
+      <member refid="classcommon__functions_1acaf6a5e229a1ec8f555cd9282252531f" prot="public" virt="non-virtual"><scope>common_functions</scope><name>reajust_index</name></member>
+      <member refid="classcommon__functions_1a5308c8e91e5432eb01d3ddc645b3dda1" prot="public" virt="non-virtual"><scope>common_functions</scope><name>replace_matrix</name></member>
+      <member refid="classcommon__functions_1a869e6ffa34d2994799154cdf277c1432" prot="public" virt="non-virtual"><scope>common_functions</scope><name>return_random_number</name></member>
+      <member refid="classcommon__functions_1a2647a98d5be271aa091f7b8f8434bed6" prot="public" virt="non-virtual"><scope>common_functions</scope><name>return_values_matrix_index</name></member>
+      <member refid="classcommon__functions_1abf7ae31765338c243567c1c9dc06687e" prot="public" virt="non-virtual"><scope>common_functions</scope><name>row_one</name></member>
+      <member refid="classcommon__functions_1a4c01bb3ed5888ea3170b22ecf65a9477" prot="public" virt="non-virtual"><scope>common_functions</scope><name>seed_recount</name></member>
+      <member refid="classcommon__functions_1ae03a709f7e434705a3fbed8ef11dcfcb" prot="public" virt="non-virtual"><scope>common_functions</scope><name>set_one_matrix</name></member>
+      <member refid="classcommon__functions_1ac461bb63cf2826114d723c24259d97b3" prot="public" virt="non-virtual"><scope>common_functions</scope><name>slave_information</name></member>
+      <member refid="classcommon__functions_1a0171def1de4eacc5b8286d86bacae52c" prot="public" virt="non-virtual"><scope>common_functions</scope><name>square_roots_polinom</name></member>
+      <member refid="classcommon__functions_1a17bee7c131a38dcb3376aa73290dfe1d" prot="public" virt="non-virtual"><scope>common_functions</scope><name>variance_vector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

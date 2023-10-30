@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="structline__reader" kind="struct" prot="public">
+    <compoundname>line_reader</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structline__reader_1a39e7dce5717081ae43caf917d3f2940b" prot="public" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* line_reader::f</definition>
+        <argsstring></argsstring>
+        <name>f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/read_a_file_line_by_line.h" line="7" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/read_a_file_line_by_line.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structline__reader_1af1f108355e7b9f7e0b54874206fa5408" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* line_reader::buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/read_a_file_line_by_line.h" line="8" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/read_a_file_line_by_line.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structline__reader_1a718acbca0fbe3a403b2ca2d4a1f1da12" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int line_reader::siz</definition>
+        <argsstring></argsstring>
+        <name>siz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/read_a_file_line_by_line.h" line="9" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/read_a_file_line_by_line.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/read_a_file_line_by_line.h" line="5" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/read_a_file_line_by_line.h" bodystart="5" bodyend="10"/>
+    <listofallmembers>
+      <member refid="structline__reader_1af1f108355e7b9f7e0b54874206fa5408" prot="public" virt="non-virtual"><scope>line_reader</scope><name>buf</name></member>
+      <member refid="structline__reader_1a39e7dce5717081ae43caf917d3f2940b" prot="public" virt="non-virtual"><scope>line_reader</scope><name>f</name></member>
+      <member refid="structline__reader_1a718acbca0fbe3a403b2ca2d4a1f1da12" prot="public" virt="non-virtual"><scope>line_reader</scope><name>siz</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

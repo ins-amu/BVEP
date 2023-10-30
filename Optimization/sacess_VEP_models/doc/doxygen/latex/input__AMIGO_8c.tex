@@ -1,0 +1,66 @@
+\hypertarget{input__AMIGO_8c}{\section{src/input\-\_\-module/input\-\_\-\-A\-M\-I\-G\-O.c File Reference}
+\label{input__AMIGO_8c}\index{src/input\-\_\-module/input\-\_\-\-A\-M\-I\-G\-O.\-c@{src/input\-\_\-module/input\-\_\-\-A\-M\-I\-G\-O.\-c}}
+}
+
+
+File containing functions to parse the M\-A\-T files, which contain the necesary datas for the evaluation of Systems Biology problems.  
+
+
+{\ttfamily \#include $<$structure\-\_\-paralleltestbed.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$ctype.\-h$>$}\\*
+{\ttfamily \#include $<$A\-M\-I\-G\-O\-\_\-model.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}A\-M\-I\-G\-O\-\_\-problem.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}A\-M\-I\-G\-O\-\_\-pe.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$hdf5.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{input__AMIGO_8c_a95f3e3b055e7c3fd4fdf90dcbdfa3ed2}{void {\bfseries insert\-\_\-group\-\_\-dataset\-\_\-int\-\_\-value} (hid\-\_\-t group\-\_\-id, const char $\ast$dataname, int $\ast$value)}\label{input__AMIGO_8c_a95f3e3b055e7c3fd4fdf90dcbdfa3ed2}
+
+\item 
+\hypertarget{input__AMIGO_8c_a32efbc02becf6ebb4a34a7557d5c312c}{void {\bfseries insert\-\_\-group\-\_\-dataset\-\_\-double\-\_\-value} (hid\-\_\-t group\-\_\-id, const char $\ast$dataname, double $\ast$value, herr\-\_\-t $\ast$status)}\label{input__AMIGO_8c_a32efbc02becf6ebb4a34a7557d5c312c}
+
+\item 
+\hypertarget{input__AMIGO_8c_afcaa999bd0618127b8205f6ab04c3378}{void {\bfseries insert\-\_\-group\-\_\-dataset\-\_\-vector\-\_\-double\-\_\-value} (hid\-\_\-t group\-\_\-id, const char $\ast$dataname, double $\ast$value)}\label{input__AMIGO_8c_afcaa999bd0618127b8205f6ab04c3378}
+
+\item 
+\hypertarget{input__AMIGO_8c_a9db984d002f6dd1b44cef740448e85f3}{void {\bfseries insert\-\_\-group\-\_\-dataset\-\_\-vector\-\_\-double\-\_\-value\-\_\-reference} (hid\-\_\-t group\-\_\-id, const char $\ast$dataname, double $\ast$value, int exp\-\_\-num)}\label{input__AMIGO_8c_a9db984d002f6dd1b44cef740448e85f3}
+
+\item 
+\hypertarget{input__AMIGO_8c_a01a16171d4ea93032dbee1f28eaf8f8a}{void {\bfseries insert\-\_\-group\-\_\-dataset\-\_\-matrix\-\_\-double\-\_\-value\-\_\-reference} (hid\-\_\-t group\-\_\-id, const char $\ast$dataname, double $\ast$$\ast$value, int exp\-\_\-num, int mi, int mj)}\label{input__AMIGO_8c_a01a16171d4ea93032dbee1f28eaf8f8a}
+
+\item 
+\hypertarget{input__AMIGO_8c_aeec295a57915b174437d7f2d46fcac6d}{int {\bfseries return\-\_\-size\-\_\-\-\_\-\-\_\-group\-\_\-dataset\-\_\-matrix\-\_\-double\-\_\-value\-\_\-reference} (hid\-\_\-t group\-\_\-id, const char $\ast$dataname, double $\ast$$\ast$value, int exp\-\_\-num)}\label{input__AMIGO_8c_aeec295a57915b174437d7f2d46fcac6d}
+
+\item 
+\hypertarget{input__AMIGO_8c_a2250ed40922af85561deabee333c7a62}{void {\bfseries insert\-\_\-group\-\_\-dataset\-\_\-vector\-\_\-integer\-\_\-value2} (hid\-\_\-t group\-\_\-id, const char $\ast$dataname, int $\ast$value)}\label{input__AMIGO_8c_a2250ed40922af85561deabee333c7a62}
+
+\item 
+\hypertarget{input__AMIGO_8c_a508b7b01ee8d42a648f47463ec9aa908}{void {\bfseries insert\-\_\-group\-\_\-dataset\-\_\-vector\-\_\-integer\-\_\-value2\-\_\-reference} (hid\-\_\-t group\-\_\-id, const char $\ast$dataname, int $\ast$value, int exp\-\_\-num)}\label{input__AMIGO_8c_a508b7b01ee8d42a648f47463ec9aa908}
+
+\item 
+\hypertarget{input__AMIGO_8c_ad4af07b21ddb66cca9a30a8d892b674d}{void {\bfseries insert\-\_\-group\-\_\-dataset\-\_\-vector\-\_\-double\-\_\-value2} (hid\-\_\-t group\-\_\-id, const char $\ast$dataname, double $\ast$value)}\label{input__AMIGO_8c_ad4af07b21ddb66cca9a30a8d892b674d}
+
+\item 
+\hypertarget{input__AMIGO_8c_ac523234d43a23f415e7f3fe495d26bed}{void {\bfseries insert\-\_\-group\-\_\-dataset\-\_\-int\-\_\-value\-\_\-reference} (hid\-\_\-t group\-\_\-id, const char $\ast$dataname, int $\ast$value, int exp\-\_\-num)}\label{input__AMIGO_8c_ac523234d43a23f415e7f3fe495d26bed}
+
+\item 
+\hypertarget{input__AMIGO_8c_abb11ba3c3f67418ead93bcf8354379e1}{A\-M\-I\-G\-O\-\_\-model $\ast$ {\bfseries hdf5\-Allocate\-A\-M\-I\-G\-Omodel} (hid\-\_\-t privstruct\-\_\-id, hid\-\_\-t inputs\-\_\-id, int exp\-\_\-num)}\label{input__AMIGO_8c_abb11ba3c3f67418ead93bcf8354379e1}
+
+\item 
+\hypertarget{input__AMIGO_8c_ab4097cf170a5a48a2d22245ed12f5b98}{A\-M\-I\-G\-O\-\_\-problem $\ast$ {\bfseries open\-Mat\-File\-A\-M\-I\-G\-O} (const char $\ast$file)}\label{input__AMIGO_8c_ab4097cf170a5a48a2d22245ed12f5b98}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+File containing functions to parse the M\-A\-T files, which contain the necesary datas for the evaluation of Systems Biology problems. \begin{DoxyAuthor}{Author}
+David R. Penas 
+\end{DoxyAuthor}
+
+
+Definition in file \hyperlink{input__AMIGO_8c_source}{input\-\_\-\-A\-M\-I\-G\-O.\-c}.
+

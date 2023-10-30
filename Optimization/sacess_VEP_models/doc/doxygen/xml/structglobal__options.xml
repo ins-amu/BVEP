@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="structglobal__options" kind="struct" prot="public">
+    <compoundname>global_options</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structglobal__options_1a9fcccd0971ff47c833d11876080af36e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int global_options::dim_ref</definition>
+        <argsstring></argsstring>
+        <name>dim_ref</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="95" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structglobal__options_1a870be8f15f968cd045f1927e4caf550b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int global_options::dim_ref_global</definition>
+        <argsstring></argsstring>
+        <name>dim_ref_global</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="96" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structglobal__options_1abef7101993a8bcabd0b12911ac8b5f2d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int global_options::ndiverse</definition>
+        <argsstring></argsstring>
+        <name>ndiverse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="97" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structglobal__options_1a228d973dcab3e27dec688cdabced1433" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int global_options::initiate</definition>
+        <argsstring></argsstring>
+        <name>initiate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="98" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structglobal__options_1a4e9e9e7e797cca20dcc263f17918bf35" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int global_options::combination</definition>
+        <argsstring></argsstring>
+        <name>combination</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="99" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structglobal__options_1ac2d392ffb24ae3e4fb93677ec96be1c1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int global_options::regenerate</definition>
+        <argsstring></argsstring>
+        <name>regenerate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="100" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structglobal__options_1af482f6107d169b2ff219b0929c26e5c7" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* global_options::delete1</definition>
+        <argsstring></argsstring>
+        <name>delete1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="101" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structglobal__options_1a20a592fe2fe64cdd2827dcb33b0fb8a4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int global_options::intens</definition>
+        <argsstring></argsstring>
+        <name>intens</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="102" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structglobal__options_1aceb1b966f184d3039c69e4a0e2b08c06" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double global_options::tolf</definition>
+        <argsstring></argsstring>
+        <name>tolf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="103" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structglobal__options_1a1254ebbca92989c59ac3deb3eaf41e82" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int global_options::diverse_criteria</definition>
+        <argsstring></argsstring>
+        <name>diverse_criteria</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="104" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structglobal__options_1a4d4d1584c47187ddfd7c88bd54289889" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double global_options::tolx</definition>
+        <argsstring></argsstring>
+        <name>tolx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="105" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structglobal__options_1ad005f25b2115f5dc5fea6026dbdafd1b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int global_options::n_stuck</definition>
+        <argsstring></argsstring>
+        <name>n_stuck</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="106" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="94" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="94" bodyend="107"/>
+    <listofallmembers>
+      <member refid="structglobal__options_1a4e9e9e7e797cca20dcc263f17918bf35" prot="public" virt="non-virtual"><scope>global_options</scope><name>combination</name></member>
+      <member refid="structglobal__options_1af482f6107d169b2ff219b0929c26e5c7" prot="public" virt="non-virtual"><scope>global_options</scope><name>delete1</name></member>
+      <member refid="structglobal__options_1a9fcccd0971ff47c833d11876080af36e" prot="public" virt="non-virtual"><scope>global_options</scope><name>dim_ref</name></member>
+      <member refid="structglobal__options_1a870be8f15f968cd045f1927e4caf550b" prot="public" virt="non-virtual"><scope>global_options</scope><name>dim_ref_global</name></member>
+      <member refid="structglobal__options_1a1254ebbca92989c59ac3deb3eaf41e82" prot="public" virt="non-virtual"><scope>global_options</scope><name>diverse_criteria</name></member>
+      <member refid="structglobal__options_1a228d973dcab3e27dec688cdabced1433" prot="public" virt="non-virtual"><scope>global_options</scope><name>initiate</name></member>
+      <member refid="structglobal__options_1a20a592fe2fe64cdd2827dcb33b0fb8a4" prot="public" virt="non-virtual"><scope>global_options</scope><name>intens</name></member>
+      <member refid="structglobal__options_1ad005f25b2115f5dc5fea6026dbdafd1b" prot="public" virt="non-virtual"><scope>global_options</scope><name>n_stuck</name></member>
+      <member refid="structglobal__options_1abef7101993a8bcabd0b12911ac8b5f2d" prot="public" virt="non-virtual"><scope>global_options</scope><name>ndiverse</name></member>
+      <member refid="structglobal__options_1ac2d392ffb24ae3e4fb93677ec96be1c1" prot="public" virt="non-virtual"><scope>global_options</scope><name>regenerate</name></member>
+      <member refid="structglobal__options_1aceb1b966f184d3039c69e4a0e2b08c06" prot="public" virt="non-virtual"><scope>global_options</scope><name>tolf</name></member>
+      <member refid="structglobal__options_1a4d4d1584c47187ddfd7c88bd54289889" prot="public" virt="non-virtual"><scope>global_options</scope><name>tolx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

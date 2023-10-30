@@ -1,0 +1,55 @@
+<xml>
+    <run>
+        <typebench> matlabPE </typebench>
+	<id> 0 </id>
+        <log_scale> 1 </log_scale>
+        <output>  1 </output>
+	<verbose> 1 </verbose>
+        <local_search> 1 </local_search>
+        <stopping_criteria>
+                <maxevaluation> 1e10 </maxevaluation>
+                <maxtime> 300 </maxtime>
+        	<vtr> -1e10 </vtr>
+        </stopping_criteria>
+    </run>
+    <method name="eSSm">
+        <user_options>
+            <weight> default </weight>
+            <tolc> default </tolc>
+            <prob_bound>  default </prob_bound>
+            <nstuck_solution> default  </nstuck_solution>
+        </user_options>
+        <global_options>
+            <dim_ref> default </dim_ref>
+            <ndiverse> default </ndiverse>
+            <combination> default </combination>
+            <n_stuck> default </n_stuck>
+        </global_options>
+        <local_options>
+            <solver> nl2sol.dn2fb </solver>
+            <tol> 2 </tol>
+	    <evalmax> 10 </evalmax>
+            <iterprint> 0 </iterprint>
+            <n1> 1 </n1>
+            <n2> 2 </n2>
+            <balance> 0.1 </balance>
+            <bestx> default </bestx>
+        </local_options>
+    </method>
+    <parallelization name="cooperative">
+        <reception_threshold> 1 </reception_threshold>
+        <evals_threshold> 5000 </evals_threshold>
+        <mult_num_sendSol> 10 </mult_num_sendSol>
+        <minimum_num_sendSol> 20 </minimum_num_sendSol>
+        <migration_max_time> 10 </migration_max_time>
+    </parallelization>
+    <problem>
+        <dim> 5 </dim>
+        <ineq> 0 </ineq>
+	<neq> 0 </neq>
+        <int_var> 0 </int_var>
+        <bin_var> 0 </bin_var>
+        <lb> 0,0,0,0,0 </lb>
+        <ub> 1,1,1,1,1 </ub>
+    </problem>
+</xml>

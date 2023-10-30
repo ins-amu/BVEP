@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="classscattersearchtypes" kind="module" prot="public">
+    <compoundname>scattersearchtypes</compoundname>
+    <innerclass refid="structscattersearchtypes_1_1adapt__vars" prot="public">scattersearchtypes::adapt_vars</innerclass>
+    <innerclass refid="structscattersearchtypes_1_1algorithm__common__vars" prot="public">scattersearchtypes::algorithm_common_vars</innerclass>
+    <innerclass refid="structscattersearchtypes_1_1ess__common__vars" prot="public">scattersearchtypes::ess_common_vars</innerclass>
+    <innerclass refid="structscattersearchtypes_1_1extraparametters" prot="public">scattersearchtypes::extraparametters</innerclass>
+    <innerclass refid="structscattersearchtypes_1_1goptions" prot="public">scattersearchtypes::goptions</innerclass>
+    <innerclass refid="structscattersearchtypes_1_1local__solver__help__vars" prot="public">scattersearchtypes::local_solver_help_vars</innerclass>
+    <innerclass refid="structscattersearchtypes_1_1loptions" prot="public">scattersearchtypes::loptions</innerclass>
+    <innerclass refid="structscattersearchtypes_1_1master__migration" prot="public">scattersearchtypes::master_migration</innerclass>
+    <innerclass refid="structscattersearchtypes_1_1opts" prot="public">scattersearchtypes::opts</innerclass>
+    <innerclass refid="structscattersearchtypes_1_1outfuction" prot="public">scattersearchtypes::outfuction</innerclass>
+    <innerclass refid="structscattersearchtypes_1_1problem" prot="public">scattersearchtypes::problem</innerclass>
+    <innerclass refid="structscattersearchtypes_1_1refsettype" prot="public">scattersearchtypes::refsettype</innerclass>
+    <innerclass refid="structscattersearchtypes_1_1resultsf" prot="public">scattersearchtypes::resultsf</innerclass>
+    <innerclass refid="structscattersearchtypes_1_1time__ess" prot="public">scattersearchtypes::time_ess</innerclass>
+    <innerclass refid="structscattersearchtypes_1_1topology__data__fortran" prot="public">scattersearchtypes::topology_data_fortran</innerclass>
+    <innerclass refid="structscattersearchtypes_1_1uoptions" prot="public">scattersearchtypes::uoptions</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classscattersearchtypes_1a8ada11d61a069aebb7661eef2241519b" prot="public" static="no" mutable="no">
+        <type>integer, parameter</type>
+        <definition>integer, parameter scattersearchtypes::precision_d</definition>
+        <argsstring></argsstring>
+        <name>precision_d</name>
+        <initializer> 15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classscattersearchtypes_1a87270fc877bff741b876df7442277706" prot="public" static="no" mutable="no">
+        <type>integer, parameter</type>
+        <definition>integer, parameter scattersearchtypes::range_d</definition>
+        <argsstring></argsstring>
+        <name>range_d</name>
+        <initializer> 307</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classscattersearchtypes_1a7aa2b5724f67acc9b93a2b5cda7361ac" prot="public" static="no" mutable="no">
+        <type>integer, parameter</type>
+        <definition>integer, parameter scattersearchtypes::precision_f</definition>
+        <argsstring></argsstring>
+        <name>precision_f</name>
+        <initializer> 7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classscattersearchtypes_1a3084b02d68540c9c7fc516eff320055f" prot="public" static="no" mutable="no">
+        <type>integer, parameter</type>
+        <definition>integer, parameter scattersearchtypes::range_f</definition>
+        <argsstring></argsstring>
+        <name>range_f</name>
+        <initializer> 150</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classscattersearchtypes_1a9b7585bbead61a31c1d90727eb36aedd" prot="public" static="no" mutable="no">
+        <type>real(kind=selected_real_kind(p=precision_d, r=range_d)), parameter</type>
+        <definition>real(kind=selected_real_kind(p=precision_d,r=range_d)), parameter scattersearchtypes::tol_prec</definition>
+        <argsstring></argsstring>
+        <name>tol_prec</name>
+        <initializer>             REAL(1d-18, KIND=SELECTED_REAL_KIND(P=PRECISION_D, R=RANGE_D))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classscattersearchtypes_1a5c5ed9d48ae975d815c4a876b08d13a2" prot="public" static="no" mutable="no">
+        <type>real(kind=selected_real_kind(p=precision_d, r=range_d)), parameter</type>
+        <definition>real(kind=selected_real_kind(p=precision_d,r=range_d)), parameter scattersearchtypes::eps_m</definition>
+        <argsstring></argsstring>
+        <name>eps_m</name>
+        <initializer>             REAL(1d-18, KIND=SELECTED_REAL_KIND(P=PRECISION_D, R=RANGE_D))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classscattersearchtypes_1a7b68194480b29084ad2e2884554d8ede" prot="public" static="no" mutable="no">
+        <type>real(kind=selected_real_kind(p=precision_d, r=range_d)), parameter</type>
+        <definition>real(kind=selected_real_kind(p=precision_d,r=range_d)), parameter scattersearchtypes::auxprecisin</definition>
+        <argsstring></argsstring>
+        <name>auxprecisin</name>
+        <initializer>             REAL(10000d0, KIND=SELECTED_REAL_KIND(P=PRECISION_D, R=RANGE_D))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classscattersearchtypes_1adbc1a67cc8ccbaacc2c8ba172a28371d" prot="public" static="no" mutable="no">
+        <type>real(kind=selected_real_kind(p=precision_d, r=range_d)), parameter</type>
+        <definition>real(kind=selected_real_kind(p=precision_d,r=range_d)), parameter scattersearchtypes::infinite</definition>
+        <argsstring></argsstring>
+        <name>infinite</name>
+        <initializer> 1.7976931348623158D308</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="1" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classscattersearchtypes_1a7b68194480b29084ad2e2884554d8ede" prot="public" virt="non-virtual"><scope>scattersearchtypes</scope><name>auxprecisin</name></member>
+      <member refid="classscattersearchtypes_1a5c5ed9d48ae975d815c4a876b08d13a2" prot="public" virt="non-virtual"><scope>scattersearchtypes</scope><name>eps_m</name></member>
+      <member refid="classscattersearchtypes_1adbc1a67cc8ccbaacc2c8ba172a28371d" prot="public" virt="non-virtual"><scope>scattersearchtypes</scope><name>infinite</name></member>
+      <member refid="classscattersearchtypes_1a8ada11d61a069aebb7661eef2241519b" prot="public" virt="non-virtual"><scope>scattersearchtypes</scope><name>precision_d</name></member>
+      <member refid="classscattersearchtypes_1a7aa2b5724f67acc9b93a2b5cda7361ac" prot="public" virt="non-virtual"><scope>scattersearchtypes</scope><name>precision_f</name></member>
+      <member refid="classscattersearchtypes_1a87270fc877bff741b876df7442277706" prot="public" virt="non-virtual"><scope>scattersearchtypes</scope><name>range_d</name></member>
+      <member refid="classscattersearchtypes_1a3084b02d68540c9c7fc516eff320055f" prot="public" virt="non-virtual"><scope>scattersearchtypes</scope><name>range_f</name></member>
+      <member refid="classscattersearchtypes_1a9b7585bbead61a31c1d90727eb36aedd" prot="public" virt="non-virtual"><scope>scattersearchtypes</scope><name>tol_prec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

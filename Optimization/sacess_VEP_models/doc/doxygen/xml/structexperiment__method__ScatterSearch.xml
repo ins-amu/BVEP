@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="structexperiment__method__ScatterSearch" kind="struct" prot="public">
+    <compoundname>experiment_method_ScatterSearch</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structexperiment__method__ScatterSearch_1a6fb7a4ec5883e32312dc8a38a2bf74be" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int experiment_method_ScatterSearch::_NP</definition>
+        <argsstring></argsstring>
+        <name>_NP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="138" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__method__ScatterSearch_1a4adb68b47e5b4c3169985e4e253f6b21" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int experiment_method_ScatterSearch::cache</definition>
+        <argsstring></argsstring>
+        <name>cache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="139" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__method__ScatterSearch_1a2cd7f30a6db6dcf70347fa75007706ab" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int experiment_method_ScatterSearch::ls_counter</definition>
+        <argsstring></argsstring>
+        <name>ls_counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="140" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__method__ScatterSearch_1a7c02e615f286b068f27db5fda089e7ff" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double experiment_method_ScatterSearch::ls_threshold</definition>
+        <argsstring></argsstring>
+        <name>ls_threshold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="141" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__method__ScatterSearch_1a8fec2920802ee4b593ad442c6a99ef83" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* experiment_method_ScatterSearch::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="142" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__method__ScatterSearch_1ad3867da597e308804a939fa0824953ff" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* experiment_method_ScatterSearch::index_log</definition>
+        <argsstring></argsstring>
+        <name>index_log</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="143" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__method__ScatterSearch_1a9a9b323a13487d5f8e154f8f5a8d518c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int experiment_method_ScatterSearch::int_var</definition>
+        <argsstring></argsstring>
+        <name>int_var</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="144" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__method__ScatterSearch_1ab751ca4719b6afd026dd64b76de55341" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int experiment_method_ScatterSearch::bin_var</definition>
+        <argsstring></argsstring>
+        <name>bin_var</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="145" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__method__ScatterSearch_1a9f5f16100c1ad32086f72e0d6875857b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int experiment_method_ScatterSearch::ineq</definition>
+        <argsstring></argsstring>
+        <name>ineq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="146" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__method__ScatterSearch_1a602c548a382ddf0bc42e3756905b0386" prot="public" static="no" mutable="no">
+        <type><ref refid="structuser__options" kindref="compound">user_options</ref> *</type>
+        <definition>user_options* experiment_method_ScatterSearch::uoptions</definition>
+        <argsstring></argsstring>
+        <name>uoptions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="147" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__method__ScatterSearch_1a9e1c5feeac293b70ed623be4212a692d" prot="public" static="no" mutable="no">
+        <type><ref refid="structglobal__options" kindref="compound">global_options</ref> *</type>
+        <definition>global_options* experiment_method_ScatterSearch::goptions</definition>
+        <argsstring></argsstring>
+        <name>goptions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="148" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__method__ScatterSearch_1a5dc3d5137bd2be482fa3f39bedfad2a6" prot="public" static="no" mutable="no">
+        <type><ref refid="structlocal__options" kindref="compound">local_options</ref> *</type>
+        <definition>local_options* experiment_method_ScatterSearch::loptions</definition>
+        <argsstring></argsstring>
+        <name>loptions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="149" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__method__ScatterSearch_1abb011c1f4d5afef6efd0c7824f98cd6b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int experiment_method_ScatterSearch::num_proc</definition>
+        <argsstring></argsstring>
+        <name>num_proc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="150" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__method__ScatterSearch_1ae02b9b69c6c15c1f432f8628085b8a70" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int experiment_method_ScatterSearch::asynchronous</definition>
+        <argsstring></argsstring>
+        <name>asynchronous</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="151" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__method__ScatterSearch_1ac6adaf24fe70930317844eeb21ad399f" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* experiment_method_ScatterSearch::eSSversion</definition>
+        <argsstring></argsstring>
+        <name>eSSversion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="152" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="22">
+        <label>extraparametters</label>
+        <link refid="structextraparametters"/>
+      </node>
+      <node id="24">
+        <label>global_options</label>
+        <link refid="structglobal__options"/>
+      </node>
+      <node id="23">
+        <label>user_options</label>
+        <link refid="structuser__options"/>
+      </node>
+      <node id="21">
+        <label>local_options</label>
+        <link refid="structlocal__options"/>
+        <childnode refid="22" relation="usage">
+          <edgelabel>extrap</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>experiment_method_ScatterSearch</label>
+        <link refid="structexperiment__method__ScatterSearch"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>loptions</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>uoptions</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>goptions</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="137" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="137" bodyend="154"/>
+    <listofallmembers>
+      <member refid="structexperiment__method__ScatterSearch_1a6fb7a4ec5883e32312dc8a38a2bf74be" prot="public" virt="non-virtual"><scope>experiment_method_ScatterSearch</scope><name>_NP</name></member>
+      <member refid="structexperiment__method__ScatterSearch_1ae02b9b69c6c15c1f432f8628085b8a70" prot="public" virt="non-virtual"><scope>experiment_method_ScatterSearch</scope><name>asynchronous</name></member>
+      <member refid="structexperiment__method__ScatterSearch_1ab751ca4719b6afd026dd64b76de55341" prot="public" virt="non-virtual"><scope>experiment_method_ScatterSearch</scope><name>bin_var</name></member>
+      <member refid="structexperiment__method__ScatterSearch_1a4adb68b47e5b4c3169985e4e253f6b21" prot="public" virt="non-virtual"><scope>experiment_method_ScatterSearch</scope><name>cache</name></member>
+      <member refid="structexperiment__method__ScatterSearch_1ac6adaf24fe70930317844eeb21ad399f" prot="public" virt="non-virtual"><scope>experiment_method_ScatterSearch</scope><name>eSSversion</name></member>
+      <member refid="structexperiment__method__ScatterSearch_1a9e1c5feeac293b70ed623be4212a692d" prot="public" virt="non-virtual"><scope>experiment_method_ScatterSearch</scope><name>goptions</name></member>
+      <member refid="structexperiment__method__ScatterSearch_1ad3867da597e308804a939fa0824953ff" prot="public" virt="non-virtual"><scope>experiment_method_ScatterSearch</scope><name>index_log</name></member>
+      <member refid="structexperiment__method__ScatterSearch_1a9f5f16100c1ad32086f72e0d6875857b" prot="public" virt="non-virtual"><scope>experiment_method_ScatterSearch</scope><name>ineq</name></member>
+      <member refid="structexperiment__method__ScatterSearch_1a9a9b323a13487d5f8e154f8f5a8d518c" prot="public" virt="non-virtual"><scope>experiment_method_ScatterSearch</scope><name>int_var</name></member>
+      <member refid="structexperiment__method__ScatterSearch_1a5dc3d5137bd2be482fa3f39bedfad2a6" prot="public" virt="non-virtual"><scope>experiment_method_ScatterSearch</scope><name>loptions</name></member>
+      <member refid="structexperiment__method__ScatterSearch_1a2cd7f30a6db6dcf70347fa75007706ab" prot="public" virt="non-virtual"><scope>experiment_method_ScatterSearch</scope><name>ls_counter</name></member>
+      <member refid="structexperiment__method__ScatterSearch_1a7c02e615f286b068f27db5fda089e7ff" prot="public" virt="non-virtual"><scope>experiment_method_ScatterSearch</scope><name>ls_threshold</name></member>
+      <member refid="structexperiment__method__ScatterSearch_1a8fec2920802ee4b593ad442c6a99ef83" prot="public" virt="non-virtual"><scope>experiment_method_ScatterSearch</scope><name>name</name></member>
+      <member refid="structexperiment__method__ScatterSearch_1abb011c1f4d5afef6efd0c7824f98cd6b" prot="public" virt="non-virtual"><scope>experiment_method_ScatterSearch</scope><name>num_proc</name></member>
+      <member refid="structexperiment__method__ScatterSearch_1a602c548a382ddf0bc42e3756905b0386" prot="public" virt="non-virtual"><scope>experiment_method_ScatterSearch</scope><name>uoptions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="dir_9f0b4910f5d7fc0f5382fd87d4bbfc4b" kind="dir">
+    <compoundname>include/method_module/eSS/</compoundname>
+    <innerfile refid="local__solvers__eSS_8h">local_solvers_eSS.h</innerfile>
+    <innerfile refid="parallel__functions__cooperative__eSS_8h">parallel_functions_cooperative_eSS.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/eSS/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,122 @@
+\hypertarget{setup__benchmarks_8c}{\section{src/setup\-\_\-benchmarks.c File Reference}
+\label{setup__benchmarks_8c}\index{src/setup\-\_\-benchmarks.\-c@{src/setup\-\_\-benchmarks.\-c}}
+}
+
+
+File containing functions about the load for different benchmarks. When users typical want to put their benchmarks, they should modify this file.  
+
+
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$configuration.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$structure\-\_\-paralleltestbed.\-h$>$}\\*
+{\ttfamily \#include $<$input\-\_\-module.\-h$>$}\\*
+{\ttfamily \#include $<$output.\-h$>$}\\*
+{\ttfamily \#include $<$benchmark\-\_\-functions\-\_\-\-System\-Biology.\-h$>$}\\*
+{\ttfamily \#include $<$benchmark\-\_\-functions\-\_\-\-B\-B\-O\-B.\-h$>$}\\*
+{\ttfamily \#include $<$example.\-h$>$}\\*
+{\ttfamily \#include $<$def\-\_\-errors.\-h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{setup__benchmarks_8c_a7121c3e5b1852c5dd85312bb41b4ea17}{\#define {\bfseries M\-I\-N\-N\-U\-M\-S\-B}~0}\label{setup__benchmarks_8c_a7121c3e5b1852c5dd85312bb41b4ea17}
+
+\item 
+\hypertarget{setup__benchmarks_8c_a7e723365b10d52fc77dbbf30afb06b4f}{\#define {\bfseries M\-A\-X\-N\-U\-M\-S\-B}~11}\label{setup__benchmarks_8c_a7e723365b10d52fc77dbbf30afb06b4f}
+
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{setup__benchmarks_8c_ac30f57cc3546cc0ddc381bcfa3372ddb}{typedef void $\ast$($\ast$ {\bfseries function} )(double $\ast$, void $\ast$)}\label{setup__benchmarks_8c_ac30f57cc3546cc0ddc381bcfa3372ddb}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \hyperlink{setup__benchmarks_8c_ae3d5edb925d11913ec01636dd8f6073b}{setup\-\_\-benchmark} (\hyperlink{structexperiment__total}{experiment\-\_\-total} $\ast$exp, int idp, int $\ast$first)
+\begin{DoxyCompactList}\small\item\em this the setup function where the usar. \end{DoxyCompactList}\item 
+void \hyperlink{setup__benchmarks_8c_ae205e453d1b3f9883fb0ad9e566f76d3}{manage\-\_\-options} (int id, int i, const char $\ast$solver)
+\begin{DoxyCompactList}\small\item\em this is a control function\-: check if exist the id range for type of benchmark selected. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+File containing functions about the load for different benchmarks. When users typical want to put their benchmarks, they should modify this file. \begin{DoxyAuthor}{Author}
+David R. Penas 
+\end{DoxyAuthor}
+
+
+Definition in file \hyperlink{setup__benchmarks_8c_source}{setup\-\_\-benchmarks.\-c}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{setup__benchmarks_8c_ae205e453d1b3f9883fb0ad9e566f76d3}{\index{setup\-\_\-benchmarks.\-c@{setup\-\_\-benchmarks.\-c}!manage\-\_\-options@{manage\-\_\-options}}
+\index{manage\-\_\-options@{manage\-\_\-options}!setup_benchmarks.c@{setup\-\_\-benchmarks.\-c}}
+\subsubsection[{manage\-\_\-options}]{\setlength{\rightskip}{0pt plus 5cm}void manage\-\_\-options (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{int}]{i, }
+\item[{const char $\ast$}]{solver}
+\end{DoxyParamCaption}
+)}}\label{setup__benchmarks_8c_ae205e453d1b3f9883fb0ad9e566f76d3}
+
+
+this is a control function\-: check if exist the id range for type of benchmark selected. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & type of the benchmark. \\
+\hline
+{\em i} & id of the benchmark selected. \\
+\hline
+{\em solver} & name of the selected solver. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void function pointer of evaluation function of the selected benchmark. 
+\end{DoxyReturn}
+
+
+Definition at line 136 of file setup\-\_\-benchmarks.\-c.
+
+\hypertarget{setup__benchmarks_8c_ae3d5edb925d11913ec01636dd8f6073b}{\index{setup\-\_\-benchmarks.\-c@{setup\-\_\-benchmarks.\-c}!setup\-\_\-benchmark@{setup\-\_\-benchmark}}
+\index{setup\-\_\-benchmark@{setup\-\_\-benchmark}!setup_benchmarks.c@{setup\-\_\-benchmarks.\-c}}
+\subsubsection[{setup\-\_\-benchmark}]{\setlength{\rightskip}{0pt plus 5cm}function setup\-\_\-benchmark (
+\begin{DoxyParamCaption}
+\item[{{\bf experiment\-\_\-total} $\ast$}]{exp, }
+\item[{int}]{idp, }
+\item[{int $\ast$}]{first}
+\end{DoxyParamCaption}
+)}}\label{setup__benchmarks_8c_ae3d5edb925d11913ec01636dd8f6073b}
+
+
+this the setup function where the usar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em exp} & \hyperlink{structexperiment__total}{experiment\-\_\-total} struct, the main struct of program. \\
+\hline
+{\em idp} & parallel identification number. \\
+\hline
+{\em first} & this variable is 1, when it is the first time that the program enters in this function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void function pointer of evaluation function of the selected. benchmark. 
+\end{DoxyReturn}
+C\-U\-S\-T\-O\-M\-I\-Z\-E\-D B\-E\-N\-C\-H\-M\-A\-R\-K
+
+S\-Y\-S\-T\-E\-M B\-I\-O\-L\-O\-G\-Y P\-R\-O\-B\-L\-E\-M\-S
+
+select a specific system biology problem\-: current\-\_\-bench = 0 --$>$ C\-I\-R\-C\-A\-D\-I\-A\-N P\-R\-O\-B\-L\-E\-M current\-\_\-bench = 1 --$>$ step P\-A\-T\-H\-W\-A\-Y P\-R\-O\-B\-L\-E\-M current\-\_\-bench = 2 --$>$ N\-F\-K\-B P\-R\-O\-B\-L\-E\-M current\-\_\-bench = 3 --$>$ B1 B\-I\-O\-P\-R\-E\-D\-Y\-N P\-R\-O\-B\-L\-E\-M current\-\_\-bench = 4 --$>$ B2 B\-I\-O\-P\-R\-E\-D\-Y\-N P\-R\-O\-B\-L\-E\-M current\-\_\-bench = 5 --$>$ B3 B\-I\-O\-P\-R\-E\-D\-Y\-N P\-R\-O\-B\-L\-E\-M current\-\_\-bench = 6 --$>$ B4 B\-I\-O\-P\-R\-E\-D\-Y\-N P\-R\-O\-B\-L\-E\-M current\-\_\-bench = 7 --$>$ B5 B\-I\-O\-P\-R\-E\-D\-Y\-N P\-R\-O\-B\-L\-E\-M current\-\_\-bench = 8 --$>$ B6 B\-I\-O\-P\-R\-E\-D\-Y\-N P\-R\-O\-B\-L\-E\-M
+
+B\-B\-O\-B N\-O\-I\-S\-E\-L\-E\-S\-S B\-E\-N\-C\-H\-M\-A\-R\-K\-S
+
+B\-B\-O\-B N\-O\-I\-S\-E B\-E\-N\-C\-H\-M\-A\-R\-K\-S
+
+to order the printf messages 
+
+Definition at line 44 of file setup\-\_\-benchmarks.\-c.
+

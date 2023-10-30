@@ -1,0 +1,685 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="amigoRHS_8h" kind="file">
+    <compoundname>amigoRHS.h</compoundname>
+    <includes local="no">math.h</includes>
+    <includes local="no">nvector/nvector_serial.h</includes>
+    <includes local="no">sundials/sundials_direct.h</includes>
+    <incdepgraph>
+      <node id="27">
+        <label>include/method_module/amigoRHS.h</label>
+        <link refid="amigoRHS.h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>math.h</label>
+      </node>
+      <node id="30">
+        <label>sundials/sundials_direct.h</label>
+      </node>
+      <node id="29">
+        <label>nvector/nvector_serial.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="amigoRHS_8h_1a387dbb979cfeca6f2525a6e0b036a35b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int amigoRHS_CIRCADIAN</definition>
+        <argsstring>(realtype, N_Vector, N_Vector, void *)</argsstring>
+        <name>amigoRHS_CIRCADIAN</name>
+        <param>
+          <type>realtype</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/amigoRHS.h" line="7"/>
+      </memberdef>
+      <memberdef kind="function" id="amigoRHS_8h_1ab86c43915593cde0075ac15d80df23c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int amigoJAC_CIRCADIAN</definition>
+        <argsstring>(int, realtype, N_Vector, N_Vector, DlsMat, void *, N_Vector, N_Vector, N_Vector)</argsstring>
+        <name>amigoJAC_CIRCADIAN</name>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>realtype</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <param>
+          <type>DlsMat</type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/amigoRHS.h" line="10"/>
+      </memberdef>
+      <memberdef kind="function" id="amigoRHS_8h_1ab64b64b83605aec669e574a64d903bae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int amigoSensRHS_CIRCADIAN</definition>
+        <argsstring>(int, realtype, N_Vector, N_Vector, int, N_Vector, N_Vector, void *, N_Vector, N_Vector)</argsstring>
+        <name>amigoSensRHS_CIRCADIAN</name>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>realtype</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/amigoRHS.h" line="13"/>
+      </memberdef>
+      <memberdef kind="function" id="amigoRHS_8h_1a54aa17098b48b3418063ba4d34032464" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amigoRHS_get_OBS_CIRCADIAN</definition>
+        <argsstring>(void *)</argsstring>
+        <name>amigoRHS_get_OBS_CIRCADIAN</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/amigoRHS.h" line="15"/>
+      </memberdef>
+      <memberdef kind="function" id="amigoRHS_8h_1a753f959992e858fadf419ac8b924613f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amigoRHS_get_sens_OBS_CIRCADIAN</definition>
+        <argsstring>(void *)</argsstring>
+        <name>amigoRHS_get_sens_OBS_CIRCADIAN</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/amigoRHS.h" line="17"/>
+      </memberdef>
+      <memberdef kind="function" id="amigoRHS_8h_1a192f0cdd82aa62ddddbb7a1048e028c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amigo_Y_at_tcon_CIRCADIAN</definition>
+        <argsstring>(void *, realtype, N_Vector)</argsstring>
+        <name>amigo_Y_at_tcon_CIRCADIAN</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>realtype</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/amigoRHS.h" line="19"/>
+      </memberdef>
+      <memberdef kind="function" id="amigoRHS_8h_1afd39cc62cb9272c590bc1db1604581c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int amigoRHS_MENDES</definition>
+        <argsstring>(realtype, N_Vector, N_Vector, void *)</argsstring>
+        <name>amigoRHS_MENDES</name>
+        <param>
+          <type>realtype</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/amigoRHS.h" line="24"/>
+      </memberdef>
+      <memberdef kind="function" id="amigoRHS_8h_1af3a170f483acbb4cbe7603a6406fd7f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int amigoJAC_MENDES</definition>
+        <argsstring>(int, realtype, N_Vector, N_Vector, DlsMat, void *, N_Vector, N_Vector, N_Vector)</argsstring>
+        <name>amigoJAC_MENDES</name>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>realtype</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <param>
+          <type>DlsMat</type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/amigoRHS.h" line="27"/>
+      </memberdef>
+      <memberdef kind="function" id="amigoRHS_8h_1ae67ecbda455c241e0766f8d86aeb7178" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int amigoSensRHS_MENDES</definition>
+        <argsstring>(int, realtype, N_Vector, N_Vector, int, N_Vector, N_Vector, void *, N_Vector, N_Vector)</argsstring>
+        <name>amigoSensRHS_MENDES</name>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>realtype</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/amigoRHS.h" line="30"/>
+      </memberdef>
+      <memberdef kind="function" id="amigoRHS_8h_1a140f9515fd5120a8e878f522e2838d59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amigoRHS_get_OBS_MENDES</definition>
+        <argsstring>(void *)</argsstring>
+        <name>amigoRHS_get_OBS_MENDES</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/amigoRHS.h" line="32"/>
+      </memberdef>
+      <memberdef kind="function" id="amigoRHS_8h_1a229848269387ad0ed41f5d905f225d81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amigoRHS_get_sens_OBS_MENDES</definition>
+        <argsstring>(void *)</argsstring>
+        <name>amigoRHS_get_sens_OBS_MENDES</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/amigoRHS.h" line="34"/>
+      </memberdef>
+      <memberdef kind="function" id="amigoRHS_8h_1ac3b1909d30e3e4f809003cdb95e27b01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amigo_Y_at_tcon_MENDES</definition>
+        <argsstring>(void *, realtype, N_Vector)</argsstring>
+        <name>amigo_Y_at_tcon_MENDES</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>realtype</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/amigoRHS.h" line="37"/>
+      </memberdef>
+      <memberdef kind="function" id="amigoRHS_8h_1a365a969757931ccaba661ccc4bf64b69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int amigoRHS_NFKB</definition>
+        <argsstring>(realtype, N_Vector, N_Vector, void *)</argsstring>
+        <name>amigoRHS_NFKB</name>
+        <param>
+          <type>realtype</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/amigoRHS.h" line="42"/>
+      </memberdef>
+      <memberdef kind="function" id="amigoRHS_8h_1abd1df5fd08c4a1427e64f6921a207af5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int amigoJAC_NFKB</definition>
+        <argsstring>(int N, realtype t, N_Vector y, N_Vector fy, DlsMat J, void *data, N_Vector tmp1, N_Vector tmp2, N_Vector)</argsstring>
+        <name>amigoJAC_NFKB</name>
+        <param>
+          <type>int</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>realtype</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>N_Vector</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>N_Vector</type>
+          <declname>fy</declname>
+        </param>
+        <param>
+          <type>DlsMat</type>
+          <declname>J</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>N_Vector</type>
+          <declname>tmp1</declname>
+        </param>
+        <param>
+          <type>N_Vector</type>
+          <declname>tmp2</declname>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/amigoRHS.h" line="45"/>
+      </memberdef>
+      <memberdef kind="function" id="amigoRHS_8h_1a8cc026c957ac58e2c038b598662c9ae8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int amigoSensRHS_NFKB</definition>
+        <argsstring>(int, realtype, N_Vector, N_Vector, int, N_Vector, N_Vector, void *, N_Vector, N_Vector)</argsstring>
+        <name>amigoSensRHS_NFKB</name>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>realtype</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/amigoRHS.h" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="amigoRHS_8h_1a0bd37051183c065b68c2acf1842d0f0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amigoRHS_get_OBS_NFKB</definition>
+        <argsstring>(void *)</argsstring>
+        <name>amigoRHS_get_OBS_NFKB</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/amigoRHS.h" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="amigoRHS_8h_1aaf05ba4d0fe04651a5b9ebd101c1c5c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amigoRHS_get_sens_OBS_NFKB</definition>
+        <argsstring>(void *)</argsstring>
+        <name>amigoRHS_get_sens_OBS_NFKB</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/amigoRHS.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="amigoRHS_8h_1a6c234ea001d6864d23fe5a6880b20e64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amigo_Y_at_tcon_NFKB</definition>
+        <argsstring>(void *, realtype, N_Vector)</argsstring>
+        <name>amigo_Y_at_tcon_NFKB</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>realtype</type>
+        </param>
+        <param>
+          <type>N_Vector</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/amigoRHS.h" line="54"/>
+      </memberdef>
+      <memberdef kind="function" id="amigoRHS_8h_1aa54e0c43db3bc56c57e9a503b2eebeea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int amigoRHS_LOGIC</definition>
+        <argsstring>(realtype t, N_Vector y, N_Vector ydot, void *data)</argsstring>
+        <name>amigoRHS_LOGIC</name>
+        <param>
+          <type>realtype</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>N_Vector</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>N_Vector</type>
+          <declname>ydot</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/amigoRHS.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="amigoRHS_8h_1af376f69e94be30a99545bb253b089859" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amigoRHS_get_OBS_LOGIC</definition>
+        <argsstring>(void *data)</argsstring>
+        <name>amigoRHS_get_OBS_LOGIC</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/amigoRHS.h" line="60"/>
+      </memberdef>
+      <memberdef kind="function" id="amigoRHS_8h_1a7fd14ae3e11d99b74db6a980884bbbb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amigoRHS_get_sens_OBS_LOGIC</definition>
+        <argsstring>(void *data)</argsstring>
+        <name>amigoRHS_get_sens_OBS_LOGIC</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/amigoRHS.h" line="62"/>
+      </memberdef>
+      <memberdef kind="function" id="amigoRHS_8h_1a8a382cf9843bf81098beea31c206e97a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void amigo_Y_at_tcon_LOGIC</definition>
+        <argsstring>(void *data, realtype t, N_Vector y)</argsstring>
+        <name>amigo_Y_at_tcon_LOGIC</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>realtype</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>N_Vector</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/amigoRHS.h" line="64"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;nvector/nvector_serial.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sundials/sundials_direct.h&gt;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>***<sp/>Definition<sp/>of<sp/>the<sp/>algebraic<sp/>variables<sp/>***<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Right<sp/>hand<sp/>side<sp/>of<sp/>the<sp/>system<sp/>(f(t,x,p))*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>amigoRHS_CIRCADIAN(realtype<sp/>,<sp/>N_Vector<sp/>,<sp/>N_Vector<sp/>,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Jacobian<sp/>of<sp/>the<sp/>system<sp/>(dfdx)*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>amigoJAC_CIRCADIAN(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>,<sp/>realtype<sp/>,<sp/>N_Vector<sp/>,<sp/>N_Vector<sp/>,<sp/>DlsMat<sp/>,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/>N_Vector<sp/>,<sp/>N_Vector<sp/>,<sp/>N_Vector<sp/>);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>R.H.S<sp/>of<sp/>the<sp/>sensitivity<sp/>dsi/dt<sp/>=<sp/>(df/dx)*si<sp/>+<sp/>df/dp_i<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>amigoSensRHS_CIRCADIAN(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>,<sp/>realtype<sp/>,<sp/>N_Vector<sp/>,<sp/>N_Vector<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>,<sp/>N_Vector<sp/>,<sp/>N_Vector<sp/>,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/>N_Vector<sp/>,<sp/>N_Vector<sp/>);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>amigoRHS_get_OBS_CIRCADIAN(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>amigoRHS_get_sens_OBS_CIRCADIAN(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>amigo_Y_at_tcon_CIRCADIAN(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>,<sp/>realtype<sp/>,<sp/>N_Vector<sp/>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>***<sp/>Definition<sp/>of<sp/>the<sp/>algebraic<sp/>variables<sp/>***<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Right<sp/>hand<sp/>side<sp/>of<sp/>the<sp/>system<sp/>(f(t,x,p))*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>amigoRHS_MENDES(realtype<sp/>,<sp/>N_Vector<sp/>,<sp/>N_Vector<sp/>,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Jacobian<sp/>of<sp/>the<sp/>system<sp/>(dfdx)*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>amigoJAC_MENDES(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>,<sp/>realtype<sp/>,<sp/>N_Vector<sp/>,<sp/>N_Vector<sp/>,<sp/>DlsMat<sp/>,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/>N_Vector<sp/>,<sp/>N_Vector<sp/>,<sp/>N_Vector);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>R.H.S<sp/>of<sp/>the<sp/>sensitivity<sp/>dsi/dt<sp/>=<sp/>(df/dx)*si<sp/>+<sp/>df/dp_i<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>amigoSensRHS_MENDES(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>,<sp/>realtype<sp/>,<sp/>N_Vector<sp/>,<sp/>N_Vector<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>,<sp/>N_Vector<sp/>,<sp/>N_Vector<sp/>,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/>N_Vector<sp/>,<sp/>N_Vector);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>amigoRHS_get_OBS_MENDES(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>amigoRHS_get_sens_OBS_MENDES(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>amigo_Y_at_tcon_MENDES(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>,<sp/>realtype<sp/>,<sp/>N_Vector<sp/>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>***<sp/>Definition<sp/>of<sp/>the<sp/>algebraic<sp/>variables<sp/>***<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Right<sp/>hand<sp/>side<sp/>of<sp/>the<sp/>system<sp/>(f(t,x,p))*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>amigoRHS_NFKB(realtype<sp/>,<sp/>N_Vector<sp/>,<sp/>N_Vector<sp/>,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Jacobian<sp/>of<sp/>the<sp/>system<sp/>(dfdx)*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>amigoJAC_NFKB(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N,<sp/>realtype<sp/>t,<sp/>N_Vector<sp/>y,<sp/>N_Vector<sp/>fy,<sp/>DlsMat<sp/>J,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/>N_Vector<sp/>tmp1,<sp/>N_Vector<sp/>tmp2,<sp/>N_Vector<sp/>);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>R.H.S<sp/>of<sp/>the<sp/>sensitivity<sp/>dsi/dt<sp/>=<sp/>(df/dx)*si<sp/>+<sp/>df/dp_i<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>amigoSensRHS_NFKB(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>,<sp/>realtype<sp/>,<sp/>N_Vector<sp/>,<sp/>N_Vector<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>,<sp/>N_Vector<sp/>,<sp/>N_Vector<sp/>,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/>N_Vector,<sp/>N_Vector);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>amigoRHS_get_OBS_NFKB(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>amigoRHS_get_sens_OBS_NFKB(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>amigo_Y_at_tcon_NFKB(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>,<sp/>realtype<sp/>,<sp/>N_Vector<sp/>);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>amigoRHS_LOGIC(realtype<sp/>t,<sp/>N_Vector<sp/>y,<sp/>N_Vector<sp/>ydot,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>amigoRHS_get_OBS_LOGIC(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>amigoRHS_get_sens_OBS_LOGIC(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>amigo_Y_at_tcon_LOGIC(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data,realtype<sp/>t,<sp/>N_Vector<sp/>y);</highlight></codeline>
+    </programlisting>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/amigoRHS.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="dir_553dd3cf47b80fc83c940ded58d6e7e6" kind="dir">
+    <compoundname>include/input/</compoundname>
+    <innerfile refid="input__AMIGO_8h">input_AMIGO.h</innerfile>
+    <innerfile refid="input__module_8h">input_module.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/input/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,62 @@
+\hypertarget{evaluationinterface_8c}{\section{src/method\-\_\-module/evaluationinterface.c File Reference}
+\label{evaluationinterface_8c}\index{src/method\-\_\-module/evaluationinterface.\-c@{src/method\-\_\-module/evaluationinterface.\-c}}
+}
+
+
+File containing functions about the evaluation of objective function.  
+
+
+{\ttfamily \#include $<$structure\-\_\-paralleltestbed.\-h$>$}\\*
+{\ttfamily \#include $<$configuration.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include $<$float.\-h$>$}\\*
+{\ttfamily \#include $<$def\-\_\-errors.\-h$>$}\\*
+{\ttfamily \#include $<$time.\-h$>$}\\*
+{\ttfamily \#include $<$common\-\_\-solver\-\_\-operations.\-h$>$}\\*
+{\ttfamily \#include $<$solversinterface.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{evaluationinterface_8c_a462d9abc013ac1141636a4ca6fa562ca}{void {\bfseries D\-E\-\_\-correction\-\_\-bounds} (double $\ast$X, int D, double $\ast$Xl, double $\ast$Xu)}\label{evaluationinterface_8c_a462d9abc013ac1141636a4ca6fa562ca}
+
+\item 
+\hypertarget{evaluationinterface_8c_a07ed6b58069566e8d4c139519dcaea7e}{void {\bfseries D\-E\-\_\-correction\-\_\-bounds2} (double $\ast$X, int D, double $\ast$Xl, double $\ast$Xu)}\label{evaluationinterface_8c_a07ed6b58069566e8d4c139519dcaea7e}
+
+\item 
+\hypertarget{evaluationinterface_8c_ac3b305de6f056dfdb31d0fb89a38b740}{double {\bfseries callfitnessfunction\-\_\-} (void $\ast$($\ast$fitnessfunction)(double $\ast$, void $\ast$), void $\ast$exp1\-\_\-, double $\ast$U, int $\ast$D, double $\ast$Xl, double $\ast$Xm)}\label{evaluationinterface_8c_ac3b305de6f056dfdb31d0fb89a38b740}
+
+\item 
+\hypertarget{evaluationinterface_8c_af7e99aeb165986ead5dc5b9d97d8caeb}{void {\bfseries translation} (double $\ast$X, double $\ast$transconst, int size)}\label{evaluationinterface_8c_af7e99aeb165986ead5dc5b9d97d8caeb}
+
+\item 
+\hypertarget{evaluationinterface_8c_acc04f372592a136503f8bd85f37f38ed}{void {\bfseries detranslation} (double $\ast$X, double $\ast$transconst, int size)}\label{evaluationinterface_8c_acc04f372592a136503f8bd85f37f38ed}
+
+\item 
+\hypertarget{evaluationinterface_8c_a148306d0b410d88ac2e256e3a91e5896}{void {\bfseries detranslationinterface\-\_\-} (double $\ast$U, void $\ast$exp1\-\_\-)}\label{evaluationinterface_8c_a148306d0b410d88ac2e256e3a91e5896}
+
+\item 
+\hypertarget{evaluationinterface_8c_a64434b7c3ce9543c738e8a0dd159763e}{double {\bfseries callfitnessfunctionfortran\-\_\-} (void $\ast$($\ast$fitnessfunction)(double $\ast$, void $\ast$), void $\ast$exp1\-\_\-, double $\ast$U, int $\ast$D, double $\ast$Xl, double $\ast$Xm, double $\ast$nlc)}\label{evaluationinterface_8c_a64434b7c3ce9543c738e8a0dd159763e}
+
+\item 
+\hypertarget{evaluationinterface_8c_ad8c8960b45be90f7bf1f7ddc675a52a2}{double {\bfseries callfitnessfunctionfortranopenmp\-\_\-} (void $\ast$($\ast$fitnessfunction)(double $\ast$, void $\ast$), void $\ast$exp1\-\_\-, double $\ast$U, int $\ast$D, double $\ast$Xl, double $\ast$Xm, double $\ast$nlc, int $\ast$idp)}\label{evaluationinterface_8c_ad8c8960b45be90f7bf1f7ddc675a52a2}
+
+\item 
+\hypertarget{evaluationinterface_8c_acb416ab7d7cabc1022ed3b2bdb552186}{double {\bfseries callfitnessfunctionfortranopenmp2\-\_\-} (void $\ast$($\ast$fitnessfunction)(double $\ast$, void $\ast$), void $\ast$exp1\-\_\-, double $\ast$U, double $\ast$nlc, int $\ast$idp)}\label{evaluationinterface_8c_acb416ab7d7cabc1022ed3b2bdb552186}
+
+\item 
+\hypertarget{evaluationinterface_8c_a24b850380d4c9ee0912af4a32e4f44f9}{double {\bfseries callfitnessfunctionopenmp\-\_\-} (void $\ast$($\ast$fitnessfunction)(double $\ast$, void $\ast$), void $\ast$exp1\-\_\-, double $\ast$U, int $\ast$D, double $\ast$Xl, double $\ast$Xm, int $\ast$idp)}\label{evaluationinterface_8c_a24b850380d4c9ee0912af4a32e4f44f9}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+File containing functions about the evaluation of objective function. \begin{DoxyAuthor}{Author}
+David R. Penas 
+\end{DoxyAuthor}
+
+
+Definition in file \hyperlink{evaluationinterface_8c_source}{evaluationinterface.\-c}.
+

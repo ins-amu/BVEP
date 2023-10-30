@@ -1,0 +1,82 @@
+.TH "src/method_module/eSS/localsolvers_eSS.c" 3 "Wed May 11 2016" "Version 0.1" "SACESS TOOLBOX" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/method_module/eSS/localsolvers_eSS.c \- 
+.PP
+File containing function interfaces to use N2SOL local solver with eSS\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <structure_paralleltestbed\&.h>\fP
+.br
+\fC#include <limits\&.h>\fP
+.br
+\fC#include <AMIGO_problem\&.h>\fP
+.br
+\fC#include <common_solver_operations\&.h>\fP
+.br
+\fC#include <output\&.h>\fP
+.br
+\fC#include <benchmark_functions_SystemBiology\&.h>\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBlocalsolverscattersearchinterface_\fP (void *exp1_, void *(*fitnessfunction)(double *, void *), int *NPROC, int *stop, double *xbest, double *fval, long *neval)"
+.br
+.RI "\fIthis the setup function where the usar\&. \fP"
+.ti -1c
+.RI "void \fBinitlocalsolvervarsess_\fP (void *exp1_)"
+.br
+.ti -1c
+.RI "void \fBaddlocalscounteress_\fP (void *exp1_)"
+.br
+.ti -1c
+.RI "void \fBsetentervalueess_\fP (void *exp1_, double *fval)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+File containing function interfaces to use N2SOL local solver with eSS\&. 
+
+\fBAuthor:\fP
+.RS 4
+David R\&. Penas 
+.RE
+.PP
+
+.PP
+Definition in file \fBlocalsolvers_eSS\&.c\fP\&.
+.SH "Function Documentation"
+.PP 
+.SS "void localsolverscattersearchinterface_ (void *exp1_, void *(*)(double *, void *)fitnessfunction, int *NPROC, int *stop, double *xbest, double *fval, long *neval)"
+
+.PP
+this the setup function where the usar\&. \fBParameters:\fP
+.RS 4
+\fIexp\fP \fBexperiment_total\fP struct, the main struct of program\&. 
+.br
+\fIidp\fP parallel identification number\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+void function pointer of evaluation function of the selected benchmark\&. 
+.RE
+.PP
+
+.PP
+Definition at line 28 of file localsolvers_eSS\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for SACESS TOOLBOX from the source code\&.

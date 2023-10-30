@@ -1,0 +1,77 @@
+From dmg Thu Feb  7 23:21 EST 1991
+I appended port3/src/p3examps/p3examps.toc to /netlib/portP/ex/index
+(after someone complained that port/ex had no example for n2f),
+changing p3examp.toc's FFTA, FFTC, and XKTH to FTRA, FTRC, and XKT
+(the names that they for some reason have in portP/ex).  This
+leaves the following, which are not among the examples we include
+in the Port distribution tapes:
+
+dpostx1.f
+dpostx10.f
+dpostx2.f
+dpostx3.f
+dpostx4.f
+dpostx5.f
+dpostx6.f
+dpostx7.f
+dpostx8.f
+dpostx9.f
+dpt1.f
+dpt2.f
+dpt3.f
+dpt4.f
+dpt5.f
+dpt6.f
+dpt7.f
+dpt8.f
+dpt9.f
+dptt.f
+dtg1.f
+dtg2.f
+dtg3.f
+dtg4.f
+dtg5.f
+dtg6.f
+dtgp.f
+dttgrx1.f
+dttgrx1p.f
+dttgrx2.f
+dttgrx3.f
+dttgrx4.f
+dttgrx5.f
+dttgrx6.f
+postx1.f
+postx10.f
+postx2.f
+postx3.f
+postx4.f
+postx5.f
+postx6.f
+postx7.f
+postx8.f
+postx9.f
+pst1.f
+pst2.f
+pst3.f
+pst4.f
+pst5.f
+pst6.f
+pst7.f
+pst8.f
+pst9.f
+pstt.f
+ttg1.f
+ttg2.f
+ttg3.f
+ttg4.f
+ttg5.f
+ttg6.f
+ttgp.f
+ttgrx1.f
+ttgrx1p.f
+ttgrx2.f
+ttgrx3.f
+ttgrx4.f
+ttgrx5.f
+ttgrx6.f
+

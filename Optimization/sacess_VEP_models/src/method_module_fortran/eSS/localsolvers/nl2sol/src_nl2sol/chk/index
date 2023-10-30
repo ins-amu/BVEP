@@ -1,0 +1,154 @@
+#	Index for port/chk
+file	port/chk/thyp.f
+for	test linguistic hypotheses
+
+file	port/chk/mach.f
+for	test the machine constants  (for consistency)
+
+file	port/chk/err1.f
+for	test the error handling package
+
+file	port/chk/err2.f
+for	test the error handling package
+
+file	port/chk/err3.f
+for	test the error handling package
+
+file	port/chk/stk1.f
+for	first storage allocator test
+
+file	port/chk/stk2.f
+for	second allocator test
+
+file	port/chk/errk.f
+for	test stkdmp
+
+file	port/chk/rnrm.f
+for	test rnorm
+
+file	port/chk/plya.f
+for	test the trigonometric polynomial routines
+
+file	port/chk/plyc.f
+for	test the orthogonal polynomial routines
+
+file	port/chk/extr.f
+for	test extrmr
+
+file	port/chk/mntb.f
+for	test the monotonicity routines
+
+file	port/chk/gama.f
+for	test gamma
+
+file	port/chk/gmad.f
+for	test dgamma
+
+file	port/chk/qblg.f
+for	test quad
+
+file	port/chk/qbgd.f
+for	test dquad
+
+file	port/chk/qgsg.f
+for	test programs for gauss quadrature
+
+file	port/chk/qggd.f
+for	test programs for gauss quadrature (double-precision)
+
+file	port/chk/mfte.f
+for	test programs for multiple fft - mftcc, mftrc, mftcr
+
+file	port/chk/mfed.f
+for	test programs for multiple fft (d.p.) - dmftcc,dmftrc,dmftcr
+
+file	port/chk/sdba.f
+for	test dl2sf
+
+file	port/chk/sple.f
+for	test splne
+
+file	port/chk/vdad.f
+for	test dvdss1
+
+file	port/chk/vdbd.f
+for	test dvdss2
+
+file	port/chk/vded.f
+for	test dvdss3
+
+file	port/chk/ltsq.f
+for	test ltsq and lstsq
+
+file	port/chk/ltqd.f
+for	test dltsq and dlstsq
+
+file	port/chk/lgea.f
+for	test gece and friends
+
+file	port/chk/lgad.f
+for	test dgece and friends
+
+file	port/chk/lyma.f
+for	test syce and friends
+
+file	port/chk/lyad.f
+for	test dsyce and friends
+
+file	port/chk/lgac.f
+for	test cgece and friends
+
+file	port/chk/lyrc.f
+for	test chece and friends
+
+file	port/chk/lysc.f
+for	second test of the programs chece and friends
+
+file	port/chk/prsa.f
+for	test the sparse matrix package
+
+file	port/chk/prad.f
+for	test the double precision sparse matrix package
+
+file	port/chk/prac.f
+for	test the complex sparse matrix package
+
+file	port/chk/svda.f
+for	first test of svd
+
+file	port/chk/svdb.f
+for	second test of svd
+
+file	port/chk/svdc.f
+for	test of svdls
+
+file	port/chk/svad.f
+for	first test of dsvd
+
+file	port/chk/svbd.f
+for	second test of dsvd
+
+file	port/chk/svcd.f
+for	third test of dsvdls
+
+file	port/chk/llza.f
+for	test lz
+
+file	port/chk/qpra.f
+for	test iqp
+
+file	port/chk/qpad.f
+for	test diqp
+
+file	port/chk/lrpa.f
+for	test the linear programming - linpr, etc.
+
+file	port/chk/lrad.f
+for	test the linear programming - dlinpr, etc.
+
+file	port/chk/README
+
+file	port/chk/ltsqc.f
+
+file	port/chk/nohup.out
+

@@ -1,0 +1,388 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="classlocalsolver" kind="module" prot="public">
+    <compoundname>localsolver</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlocalsolver_1a4a9999374cb0f75e3117cf3ba77c554e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine localsolver::build_aux_local_search</definition>
+        <argsstring>(problem1, local_solver_vars, opts1, exp1)</argsstring>
+        <name>build_aux_local_search</name>
+        <param>
+          <type>problem1</type>
+          <defname>problem1</defname>
+        </param>
+        <param>
+          <type>local_solver_vars</type>
+          <defname>local_solver_vars</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classlocalsolver_1a1fd93ffd0b708e4e0b863614fd291f14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine localsolver::call_dhc</definition>
+        <argsstring>(problem1, exp1, opts1, fitnessfunction, x0, fval, numeval, local_solver_vars)</argsstring>
+        <name>call_dhc</name>
+        <param>
+          <type>problem1</type>
+          <defname>problem1</defname>
+        </param>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>fitnessfunction</type>
+          <defname>fitnessfunction</defname>
+        </param>
+        <param>
+          <type>x0</type>
+          <defname>x0</defname>
+        </param>
+        <param>
+          <type>fval</type>
+          <defname>fval</defname>
+        </param>
+        <param>
+          <type>numeval</type>
+          <defname>numeval</defname>
+        </param>
+        <param>
+          <type>local_solver_vars</type>
+          <defname>local_solver_vars</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classlocalsolver_1a1f3af14d4238cf17f28c7b76b20f119b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine localsolver::call_misqp</definition>
+        <argsstring>(problem1, exp1, opts1, fitnessfunction, x0, fval, numeval, exitflag, local_solver_vars)</argsstring>
+        <name>call_misqp</name>
+        <param>
+          <type>problem1</type>
+          <defname>problem1</defname>
+        </param>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>fitnessfunction</type>
+          <defname>fitnessfunction</defname>
+        </param>
+        <param>
+          <type>x0</type>
+          <defname>x0</defname>
+        </param>
+        <param>
+          <type>fval</type>
+          <defname>fval</defname>
+        </param>
+        <param>
+          <type>numeval</type>
+          <defname>numeval</defname>
+        </param>
+        <param>
+          <type>exitflag</type>
+          <defname>exitflag</defname>
+        </param>
+        <param>
+          <type>local_solver_vars</type>
+          <defname>local_solver_vars</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classlocalsolver_1a1a45c3f1242dc201f6ea9ae4a6a7d8b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine localsolver::call_local_solver</definition>
+        <argsstring>(problem1, exp1, opts1, fitnessfunction, x0, fval, stopval, NPROC, neval, centercriteria, local_solver_vars)</argsstring>
+        <name>call_local_solver</name>
+        <param>
+          <type>problem1</type>
+          <defname>problem1</defname>
+        </param>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>fitnessfunction</type>
+          <defname>fitnessfunction</defname>
+        </param>
+        <param>
+          <type>x0</type>
+          <defname>x0</defname>
+        </param>
+        <param>
+          <type>fval</type>
+          <defname>fval</defname>
+        </param>
+        <param>
+          <type>stopval</type>
+          <defname>stopval</defname>
+        </param>
+        <param>
+          <type>NPROC</type>
+          <defname>NPROC</defname>
+        </param>
+        <param>
+          <type>neval</type>
+          <defname>neval</defname>
+        </param>
+        <param>
+          <type>centercriteria</type>
+          <defname>centercriteria</defname>
+        </param>
+        <param>
+          <type>local_solver_vars</type>
+          <defname>local_solver_vars</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classlocalsolver_1a53822899bfe532f92590ba6b475da80e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine localsolver::transform_norm</definition>
+        <argsstring>(oldmt, newmt, UB, LB)</argsstring>
+        <name>transform_norm</name>
+        <param>
+          <type>oldmt</type>
+          <defname>oldmt</defname>
+        </param>
+        <param>
+          <type>newmt</type>
+          <defname>newmt</defname>
+        </param>
+        <param>
+          <type>UB</type>
+          <defname>UB</defname>
+        </param>
+        <param>
+          <type>LB</type>
+          <defname>LB</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classlocalsolver_1a4a58997447f0924d01074238319eb3c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine localsolver::matrix_eucl_dist</definition>
+        <argsstring>(a, b, res)</argsstring>
+        <name>matrix_eucl_dist</name>
+        <param>
+          <type>a</type>
+          <defname>a</defname>
+        </param>
+        <param>
+          <type>b</type>
+          <defname>b</defname>
+        </param>
+        <param>
+          <type>res</type>
+          <defname>res</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classlocalsolver_1ada1d2da69e7adc121daaf84bca7a83c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine localsolver::ssm_isdif2</definition>
+        <argsstring>(x, group, tol, flag, f, ind, ind2)</argsstring>
+        <name>ssm_isdif2</name>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>group</type>
+          <defname>group</defname>
+        </param>
+        <param>
+          <type>tol</type>
+          <defname>tol</defname>
+        </param>
+        <param>
+          <type>flag</type>
+          <defname>flag</defname>
+        </param>
+        <param>
+          <type>f</type>
+          <defname>f</defname>
+        </param>
+        <param>
+          <type>ind</type>
+          <defname>ind</defname>
+        </param>
+        <param>
+          <type>ind2</type>
+          <defname>ind2</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classlocalsolver_1a75ec4313263477f33e42fd6293a97a77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine localsolver::ssm_local_filters</definition>
+        <argsstring>(exp1, problem1, fitnessfunction, opts1, local_solver_var, common_vars, results, time, childset, xbest, fbest, stopval, numeval, fbest_lastiter, refset, refset_change, centercriteria)</argsstring>
+        <name>ssm_local_filters</name>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>problem1</type>
+          <defname>problem1</defname>
+        </param>
+        <param>
+          <type>fitnessfunction</type>
+          <defname>fitnessfunction</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>local_solver_var</type>
+          <defname>local_solver_var</defname>
+        </param>
+        <param>
+          <type>common_vars</type>
+          <defname>common_vars</defname>
+        </param>
+        <param>
+          <type>results</type>
+          <defname>results</defname>
+        </param>
+        <param>
+          <type>time</type>
+          <defname>time</defname>
+        </param>
+        <param>
+          <type>childset</type>
+          <defname>childset</defname>
+        </param>
+        <param>
+          <type>xbest</type>
+          <defname>xbest</defname>
+        </param>
+        <param>
+          <type>fbest</type>
+          <defname>fbest</defname>
+        </param>
+        <param>
+          <type>stopval</type>
+          <defname>stopval</defname>
+        </param>
+        <param>
+          <type>numeval</type>
+          <defname>numeval</defname>
+        </param>
+        <param>
+          <type>fbest_lastiter</type>
+          <defname>fbest_lastiter</defname>
+        </param>
+        <param>
+          <type>refset</type>
+          <defname>refset</defname>
+        </param>
+        <param>
+          <type>refset_change</type>
+          <defname>refset_change</defname>
+        </param>
+        <param>
+          <type>centercriteria</type>
+          <defname>centercriteria</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classlocalsolver_1ad7070c879d32059d0f4398beccebfd9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine localsolver::destroy_local_solver_vars</definition>
+        <argsstring>(local_solver_var)</argsstring>
+        <name>destroy_local_solver_vars</name>
+        <param>
+          <type>local_solver_var</type>
+          <defname>local_solver_var</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/localsolvers/localsolver.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/localsolvers/localsolver.f90" bodystart="3" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classlocalsolver_1a4a9999374cb0f75e3117cf3ba77c554e" prot="public" virt="non-virtual"><scope>localsolver</scope><name>build_aux_local_search</name></member>
+      <member refid="classlocalsolver_1a1fd93ffd0b708e4e0b863614fd291f14" prot="public" virt="non-virtual"><scope>localsolver</scope><name>call_dhc</name></member>
+      <member refid="classlocalsolver_1a1a45c3f1242dc201f6ea9ae4a6a7d8b0" prot="public" virt="non-virtual"><scope>localsolver</scope><name>call_local_solver</name></member>
+      <member refid="classlocalsolver_1a1f3af14d4238cf17f28c7b76b20f119b" prot="public" virt="non-virtual"><scope>localsolver</scope><name>call_misqp</name></member>
+      <member refid="classlocalsolver_1ad7070c879d32059d0f4398beccebfd9e" prot="public" virt="non-virtual"><scope>localsolver</scope><name>destroy_local_solver_vars</name></member>
+      <member refid="classlocalsolver_1a4a58997447f0924d01074238319eb3c7" prot="public" virt="non-virtual"><scope>localsolver</scope><name>matrix_eucl_dist</name></member>
+      <member refid="classlocalsolver_1ada1d2da69e7adc121daaf84bca7a83c2" prot="public" virt="non-virtual"><scope>localsolver</scope><name>ssm_isdif2</name></member>
+      <member refid="classlocalsolver_1a75ec4313263477f33e42fd6293a97a77" prot="public" virt="non-virtual"><scope>localsolver</scope><name>ssm_local_filters</name></member>
+      <member refid="classlocalsolver_1a53822899bfe532f92590ba6b475da80e" prot="public" virt="non-virtual"><scope>localsolver</scope><name>transform_norm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

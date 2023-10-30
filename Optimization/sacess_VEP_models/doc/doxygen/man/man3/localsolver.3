@@ -1,0 +1,46 @@
+.TH "localsolver" 3 "Wed May 11 2016" "Version 0.1" "SACESS TOOLBOX" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+localsolver \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "subroutine \fBbuild_aux_local_search\fP (problem1, local_solver_vars, opts1, exp1)"
+.br
+.ti -1c
+.RI "subroutine \fBcall_dhc\fP (problem1, exp1, opts1, fitnessfunction, x0, fval, numeval, local_solver_vars)"
+.br
+.ti -1c
+.RI "subroutine \fBcall_misqp\fP (problem1, exp1, opts1, fitnessfunction, x0, fval, numeval, exitflag, local_solver_vars)"
+.br
+.ti -1c
+.RI "subroutine \fBcall_local_solver\fP (problem1, exp1, opts1, fitnessfunction, x0, fval, stopval, NPROC, neval, centercriteria, local_solver_vars)"
+.br
+.ti -1c
+.RI "subroutine \fBtransform_norm\fP (oldmt, newmt, UB, LB)"
+.br
+.ti -1c
+.RI "subroutine \fBmatrix_eucl_dist\fP (a, b, res)"
+.br
+.ti -1c
+.RI "subroutine \fBssm_isdif2\fP (x, group, tol, flag, f, ind, ind2)"
+.br
+.ti -1c
+.RI "subroutine \fBssm_local_filters\fP (exp1, problem1, fitnessfunction, opts1, local_solver_var, common_vars, results, time, childset, xbest, fbest, stopval, numeval, fbest_lastiter, refset, refset_change, centercriteria)"
+.br
+.ti -1c
+.RI "subroutine \fBdestroy_local_solver_vars\fP (local_solver_var)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 3 of file localsolver\&.f90\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for SACESS TOOLBOX from the source code\&.

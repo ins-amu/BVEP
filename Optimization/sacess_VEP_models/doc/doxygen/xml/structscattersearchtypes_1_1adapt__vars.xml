@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="structscattersearchtypes_1_1adapt__vars" kind="type" prot="public">
+    <compoundname>scattersearchtypes::adapt_vars</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structscattersearchtypes_1_1adapt__vars_1a5fd996faf1a0ad1907ea57ea6ba23b49" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::adapt_vars::size_dim_pen</definition>
+        <argsstring></argsstring>
+        <name>size_dim_pen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1adapt__vars_1a442bb1d6f0cfba52cd6415d20aaabbf0" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::adapt_vars::ncounter_pen</definition>
+        <argsstring></argsstring>
+        <name>ncounter_pen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1adapt__vars_1ab98274f6222ee053b942d2493bd18db8" prot="public" static="no" mutable="no">
+        <type>real(kind=selected_real_kind(p=precision_d, r=range_d))</type>
+        <definition>real(kind=selected_real_kind(p=precision_d,r=range_d)) scattersearchtypes::adapt_vars::balance_pen</definition>
+        <argsstring></argsstring>
+        <name>balance_pen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1adapt__vars_1aa207acbd37b132ad61823a8e1498f9dd" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::adapt_vars::pending</definition>
+        <argsstring></argsstring>
+        <name>pending</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="22" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="structscattersearchtypes_1_1adapt__vars_1ab98274f6222ee053b942d2493bd18db8" prot="public" virt="non-virtual"><scope>scattersearchtypes::adapt_vars</scope><name>balance_pen</name></member>
+      <member refid="structscattersearchtypes_1_1adapt__vars_1a442bb1d6f0cfba52cd6415d20aaabbf0" prot="public" virt="non-virtual"><scope>scattersearchtypes::adapt_vars</scope><name>ncounter_pen</name></member>
+      <member refid="structscattersearchtypes_1_1adapt__vars_1aa207acbd37b132ad61823a8e1498f9dd" prot="public" virt="non-virtual"><scope>scattersearchtypes::adapt_vars</scope><name>pending</name></member>
+      <member refid="structscattersearchtypes_1_1adapt__vars_1a5fd996faf1a0ad1907ea57ea6ba23b49" prot="public" virt="non-virtual"><scope>scattersearchtypes::adapt_vars</scope><name>size_dim_pen</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

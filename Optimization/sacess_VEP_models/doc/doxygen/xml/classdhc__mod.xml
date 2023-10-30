@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="classdhc__mod" kind="module" prot="public">
+    <compoundname>dhc_mod</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdhc__mod_1ac8e40ae00c1b8bf4894373e01965ebd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine dhc_mod::insert_in_bounds</definition>
+        <argsstring>(xv)</argsstring>
+        <name>insert_in_bounds</name>
+        <param>
+          <type>xv</type>
+          <defname>xv</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classdhc__mod_1a0248a25439a69e1070e4f97785d685be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine dhc_mod::check_bounds</definition>
+        <argsstring>(xvreal, XL, XU, pen2)</argsstring>
+        <name>check_bounds</name>
+        <param>
+          <type>xvreal</type>
+          <defname>xvreal</defname>
+        </param>
+        <param>
+          <type>XL</type>
+          <defname>XL</defname>
+        </param>
+        <param>
+          <type>XU</type>
+          <defname>XU</defname>
+        </param>
+        <param>
+          <type>pen2</type>
+          <defname>pen2</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classdhc__mod_1a5ad50de82fe11ab5312e475fee181457" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine dhc_mod::dhc</definition>
+        <argsstring>(problem1, exp1, opts1, fitnessfunction, X0, initsize, thres, budget, numeval, fx)</argsstring>
+        <name>dhc</name>
+        <param>
+          <type>problem1</type>
+          <defname>problem1</defname>
+        </param>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>fitnessfunction</type>
+          <defname>fitnessfunction</defname>
+        </param>
+        <param>
+          <type>X0</type>
+          <defname>X0</defname>
+        </param>
+        <param>
+          <type>initsize</type>
+          <defname>initsize</defname>
+        </param>
+        <param>
+          <type>thres</type>
+          <defname>thres</defname>
+        </param>
+        <param>
+          <type>budget</type>
+          <defname>budget</defname>
+        </param>
+        <param>
+          <type>numeval</type>
+          <defname>numeval</defname>
+        </param>
+        <param>
+          <type>fx</type>
+          <defname>fx</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/localsolvers/dhc/dhc.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/localsolvers/dhc/dhc.f90" bodystart="3" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classdhc__mod_1a0248a25439a69e1070e4f97785d685be" prot="public" virt="non-virtual"><scope>dhc_mod</scope><name>check_bounds</name></member>
+      <member refid="classdhc__mod_1a5ad50de82fe11ab5312e475fee181457" prot="public" virt="non-virtual"><scope>dhc_mod</scope><name>dhc</name></member>
+      <member refid="classdhc__mod_1ac8e40ae00c1b8bf4894373e01965ebd2" prot="public" virt="non-virtual"><scope>dhc_mod</scope><name>insert_in_bounds</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

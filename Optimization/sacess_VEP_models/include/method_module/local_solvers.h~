@@ -1,0 +1,25 @@
+
+#include <structure_paralleltestbed.h>
+#include <bbobStructures.h>
+
+
+int is_asynchronous(experiment_total);
+
+int is_parallel(experiment_total);    
+
+int is_noise(experiment_total);  
+
+void init_printf(int, int,  const char *, experiment_total);
+
+void check_fun(experiment_total, int *, int *, int);
+
+int execute_parallel_solver (experiment_total *, result_solver *, double, int , double);
+
+int execute_serial_solver(experiment_total *, result_solver *, double, double);
+
+int execute_Solver(experiment_total *, int);
+
+int execute_method(experiment_total *, int);
+
+
+

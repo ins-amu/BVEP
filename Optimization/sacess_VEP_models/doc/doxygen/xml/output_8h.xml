@@ -1,0 +1,1892 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="output_8h" kind="file">
+    <compoundname>output.h</compoundname>
+    <includedby refid="main__file_8c" local="no">src/main_file.c</includedby>
+    <includedby refid="setup__benchmarks_8c" local="no">src/setup_benchmarks.c</includedby>
+    <includedby refid="localsolvers__eSS_8c" local="no">src/method_module/eSS/localsolvers_eSS.c</includedby>
+    <invincdepgraph>
+      <node id="160">
+        <label>src/main_file.c</label>
+        <link refid="main__file_8c"/>
+      </node>
+      <node id="162">
+        <label>src/method_module/eSS/localsolvers_eSS.c</label>
+        <link refid="localsolvers__eSS_8c"/>
+      </node>
+      <node id="159">
+        <label>include/output/output.h</label>
+        <link refid="output.h"/>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+      </node>
+      <node id="161">
+        <label>src/setup_benchmarks.c</label>
+        <link refid="setup__benchmarks_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="output_8h_1a34cc3ca3183fb1d15126f6fcd2cc3c14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int savehdf5solutions_</definition>
+        <argsstring>(double *, int *, int *)</argsstring>
+        <name>savehdf5solutions_</name>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="2"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1ad758c4a0a62c7d35eec1804bee16e0a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int savehdf5solutionspar_</definition>
+        <argsstring>(double *, int *, int *, int *, const char *)</argsstring>
+        <name>savehdf5solutionspar_</name>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>const char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="3"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a0133da01b1bc95271529c2512762591d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initprintfile_</definition>
+        <argsstring>(void *, double *, int *, int *, double *, long *, int *)</argsstring>
+        <name>initprintfile_</name>
+        <param>
+          <type>void *</type>
+          <defname>exp1_</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>best</defname>
+        </param>
+        <param>
+          <type>int *</type>
+          <defname>par</defname>
+        </param>
+        <param>
+          <type>int *</type>
+          <defname>idp</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>currenttime</defname>
+        </param>
+        <param>
+          <type>long *</type>
+          <defname>evals</defname>
+        </param>
+        <param>
+          <type>int *</type>
+          <defname>master</defname>
+        </param>
+        <briefdescription>
+<para>this procedure initialize the differents output files of the program. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>exp1_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>void pointer for the main struct <ref refid="structexperiment__total" kindref="compound">experiment_total</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>best</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>fx value of the best solution of the processor up to now. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>par</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>binary parametter: 1 if the program is parallel, 0 in the opposite case. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>identification of the parallel processor. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>currenttime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>time spent from the beginning. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iterations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current iterations of the solver. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>master</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>binary parametter: 1 if the processors is the master, 0 in the opposite case. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="4" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="39" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1abab98b9329b433f3e1ef103a9eaad1c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printiterationcesslog_</definition>
+        <argsstring>(void *, double *, long *, double *, int *)</argsstring>
+        <name>printiterationcesslog_</name>
+        <param>
+          <type>void *</type>
+          <defname>exp1_</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>best</defname>
+        </param>
+        <param>
+          <type>long *</type>
+          <defname>evaluation_local</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>currenttime</defname>
+        </param>
+        <param>
+          <type>int *</type>
+          <defname>ite</defname>
+        </param>
+        <briefdescription>
+<para>print current results in the logfile </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>exp1_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>void pointer for the main struct <ref refid="structexperiment__total" kindref="compound">experiment_total</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>best</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>fx value of the best solution of the processor up to now. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>par</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>binary parametter: 1 if the program is parallel, 0 in the opposite case. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>evaluation_local</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function evaluations spent by the processor up to now. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>currenttime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>time spent from the beginning. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="5" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="152" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a3bf78ca566862aa2c50f75f2d6e74ace" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printdescartsolution_</definition>
+        <argsstring>(void *, double *, int *)</argsstring>
+        <name>printdescartsolution_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="6" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="178" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a8702ae3b98b4dc2fd1e25d48bd09a45e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printinititeration_</definition>
+        <argsstring>(void *, int *, double *)</argsstring>
+        <name>printinititeration_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="7" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="194" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a7344619608d20eec56722c524bb0ac87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printlsinitlog_</definition>
+        <argsstring>(void *, double *)</argsstring>
+        <name>printlsinitlog_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="8" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="212" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1ab796d5923779f311e662238470dd0d8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printlocalsolverinsert_</definition>
+        <argsstring>(void *, double *, double *, int *, int *)</argsstring>
+        <name>printlocalsolverinsert_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="9"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a1a19ce4225e37e7911a455884102c6d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printinitlocalsolverinsert_</definition>
+        <argsstring>(void *, double *, double *, int *)</argsstring>
+        <name>printinitlocalsolverinsert_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="10" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="262" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a1ddf5ecb8d50e625851635f4b8834697" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printlsendlog_</definition>
+        <argsstring>(void *, double *, double *, long *)</argsstring>
+        <name>printlsendlog_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>long *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="11" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="285" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a7cd55e2262ad69a86bc42e05d9ed6756" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printcomparenewsolutionmasterlog_</definition>
+        <argsstring>(void *, double *, double *, double *, double *, double *)</argsstring>
+        <name>printcomparenewsolutionmasterlog_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="15" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="851" bodyend="865"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a5d3457fd9c2a888f4d579a3feb637601" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printputmasterlog_</definition>
+        <argsstring>(void *, double *, double *, int *)</argsstring>
+        <name>printputmasterlog_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="16" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="490" bodyend="503"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a5f74868d1be4ca70ae3c7d6635b5d2d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printputcheckmasterlog_</definition>
+        <argsstring>(void *, double *new, double *)</argsstring>
+        <name>printputcheckmasterlog_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>new</declname>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="17" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="505" bodyend="518"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1ad9f534b23c54c4b2f6dc1034b6e6dbbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printreturnselectsolution_</definition>
+        <argsstring>(void *, double *, double *, double *, int *)</argsstring>
+        <name>printreturnselectsolution_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="18" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="520" bodyend="533"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1abcf61e626930bf8ecb1ec09a14f40ec9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printcheckvtr_</definition>
+        <argsstring>(void *, double *, long *, double *, double *)</argsstring>
+        <name>printcheckvtr_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>long *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="19" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="535" bodyend="556"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a05c9cc38d1684703058c35390b0fdada" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printrecvmasterlog_</definition>
+        <argsstring>(void *, double *, double *, double *, int *)</argsstring>
+        <name>printrecvmasterlog_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="20" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="558" bodyend="571"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a1678375da12d2b534497906dd06bc5ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printputmasterendlog_</definition>
+        <argsstring>(void *, double *, double *, int *)</argsstring>
+        <name>printputmasterendlog_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="21"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1aeebaa8ba30f5de1518abb54545d6a06a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printrefset_</definition>
+        <argsstring>(void *, double *, int *, double *, int *)</argsstring>
+        <name>printrefset_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="22"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1aea79587c3b14aeb44710e90635379889" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printrestart_</definition>
+        <argsstring>(void *, double *)</argsstring>
+        <name>printrestart_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="23" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="699" bodyend="711"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1ae40d6e514f26a27b97afcd0fab840553" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printrestartslave_</definition>
+        <argsstring>(void *, double *)</argsstring>
+        <name>printrestartslave_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="24" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="713" bodyend="725"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a3c1685131491d2eb5645ce7a2d4b84e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printreplaceslavelog_</definition>
+        <argsstring>(void *, double *, double *, int *)</argsstring>
+        <name>printreplaceslavelog_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="25" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="727" bodyend="740"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a07eb9117768221a18670145048f3a25e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printreceivedslave_</definition>
+        <argsstring>(void *, double *, double *)</argsstring>
+        <name>printreceivedslave_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="26" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="742" bodyend="755"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a8532251f403f0051123fbd8e0cc6820d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printdiscardreceivedslave_</definition>
+        <argsstring>(void *, double *, double *, double *)</argsstring>
+        <name>printdiscardreceivedslave_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="27" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="757" bodyend="770"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a0c7e7e7137b4514488330bb68e996d51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printdiscardreceivedslave2_</definition>
+        <argsstring>(void *, double *, double *, double *)</argsstring>
+        <name>printdiscardreceivedslave2_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="28" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="804" bodyend="817"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a62d4b91d4585664a5d2b549ed32e5cd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printcomenewsolutionslavelog_</definition>
+        <argsstring>(void *, double *new, double *, double *, double *)</argsstring>
+        <name>printcomenewsolutionslavelog_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>new</declname>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="29"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a962d015a397041ff4d9ba4bd8ef65af3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printfinalsendslavelog_</definition>
+        <argsstring>(void *, double *new, double *)</argsstring>
+        <name>printfinalsendslavelog_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>new</declname>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="30" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="867" bodyend="881"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1af326bd9d74a8d004ea2dde61ffc67bf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printiteration_</definition>
+        <argsstring>(void *, int *, double *, long *, double *)</argsstring>
+        <name>printiteration_</name>
+        <param>
+          <type>void *</type>
+          <defname>exp1_</defname>
+        </param>
+        <param>
+          <type>int *</type>
+          <defname>k</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>best</defname>
+        </param>
+        <param>
+          <type>long *</type>
+          <defname>evaluation_local</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>currenttime</defname>
+        </param>
+        <briefdescription>
+<para>print iteration in output files. This files are used to generate the final Matlab graphs. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>exp1_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>void pointer for the main struct <ref refid="structexperiment__total" kindref="compound">experiment_total</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iteration spent from the beginning. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>best</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>best solution up to now. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>evaluation_local</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function evaluations spent by the processor up to now. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>currenttime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>time spent from the beginning. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="31" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="895" bodyend="924"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1ae6199717995d06cb782769d2e9afd6d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printgant_</definition>
+        <argsstring>(void *, double *, int *)</argsstring>
+        <name>printgant_</name>
+        <param>
+          <type>void *</type>
+          <defname>exp1_</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>currenttime</defname>
+        </param>
+        <param>
+          <type>int *</type>
+          <defname>code</defname>
+        </param>
+        <briefdescription>
+<para>print results in gant files. This files are used to generate the Gant char. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>exp1_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>void pointer for the main struct <ref refid="structexperiment__total" kindref="compound">experiment_total</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>currenttime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>time spent from the beginning. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>inner code to represent the kind of operation: (1) global search, (2) local search, (3) communication. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="32" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="934" bodyend="956"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a4b562d9fac23c0ea6196e95cfeb97c1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printiterationcess_</definition>
+        <argsstring>(void *, double *, long *, double *, int *, int *)</argsstring>
+        <name>printiterationcess_</name>
+        <param>
+          <type>void *</type>
+          <defname>exp1_</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>best</defname>
+        </param>
+        <param>
+          <type>long *</type>
+          <defname>evaluation_local</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>currenttime</defname>
+        </param>
+        <param>
+          <type>int *</type>
+          <defname>locals</defname>
+        </param>
+        <param>
+          <type>int *</type>
+          <defname>migration</defname>
+        </param>
+        <briefdescription>
+<para>print results in percentage files. This files are used to generate the percentages char. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>exp1_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>void pointer for the main struct <ref refid="structexperiment__total" kindref="compound">experiment_total</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>best</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>best solution up to now. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>evaluation_local</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function evaluations spent by the processor up to now. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>currenttime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>time spent from the beginning. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>locals</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of local solver calls spent from the beginning. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>migration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of migration performed up to now. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="34" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="1002" bodyend="1037"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1ada40e92099e1a3dc0925347c9d42500f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printverboselocaloutput_</definition>
+        <argsstring>(void *, int *, double *, double *, int *)</argsstring>
+        <name>printverboselocaloutput_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="35" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="1039" bodyend="1054"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a11dad481fc8844ab766603e5f5c4ed56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printverboselocaloutput2_</definition>
+        <argsstring>(void *, double *, int *)</argsstring>
+        <name>printverboselocaloutput2_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="36" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="1056" bodyend="1079"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a964041b7a0b6fd07fd3c705217148b9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void improvelocalsolver_</definition>
+        <argsstring>(void *, double *, double *)</argsstring>
+        <name>improvelocalsolver_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="37" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="1081" bodyend="1100"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a6238596eaf4cf5a2b46d5ac245365a19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_verbose_local_success</definition>
+        <argsstring>(experiment_total, int)</argsstring>
+        <name>print_verbose_local_success</name>
+        <param>
+          <type><ref refid="structexperiment__total" kindref="compound">experiment_total</ref></type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="38" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="1102" bodyend="1110"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a6e5e98be15afee6baa3391e7953ba32a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_end_file_</definition>
+        <argsstring>(experiment_total *, double *, double *, result_solver *)</argsstring>
+        <name>print_end_file_</name>
+        <param>
+          <type><ref refid="structexperiment__total" kindref="compound">experiment_total</ref> *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type><ref refid="structresult__solver" kindref="compound">result_solver</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="39" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="1112" bodyend="1139"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a2b374b5f5f0d854a3b6e20fc6837fdb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void verboseiteration_</definition>
+        <argsstring>(void *, int, double, double, double, long, int)</argsstring>
+        <name>verboseiteration_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type>long</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="40" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="1142" bodyend="1162"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1add354bc14ab85155a6e32379ab3c6124" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void verboseiterationfortran_</definition>
+        <argsstring>(void *, int *, double *, double *, double *, long *, int *, int *)</argsstring>
+        <name>verboseiterationfortran_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>long *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="42" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="1164" bodyend="1180"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a8f3cee9b444709445630504112e8332d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* concat_char</definition>
+        <argsstring>(int *, char *, char *)</argsstring>
+        <name>concat_char</name>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>char *</type>
+        </param>
+        <param>
+          <type>char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="43" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="1182" bodyend="1204"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a31d70ad60492b80f415ca896b4473cd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void matlab_plot_file</definition>
+        <argsstring>(experiment_total, char *, char *, const char *, int, const char *marca, int, int, int, int, int, int)</argsstring>
+        <name>matlab_plot_file</name>
+        <param>
+          <type><ref refid="structexperiment__total" kindref="compound">experiment_total</ref></type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>char *</type>
+          <defname>string</defname>
+        </param>
+        <param>
+          <type>char *</type>
+          <defname>string2</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>color</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>ancho_linea</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>marca</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>par</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>idp</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>NPROC</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>func</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>end</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>initp</defname>
+        </param>
+        <briefdescription>
+<para>this function generates a convergence MATLAB graph with the files of all slaves. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>exp1_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>void pointer for the main struct <ref refid="structexperiment__total" kindref="compound">experiment_total</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>path of the convergence output graph of the master. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>string2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>path of the convergence output graph of the spacific slave. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char variable for color lines. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ancho_linea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char variable for line width. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>marca</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char variable for the mark graph. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>par</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>binary parametter: 1 if the program is parallel, 0 in the opposite case. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>identification number of the processors. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NPROC</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>total number of processors. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>binary parametter: 1 if it is the fisrt time to enter in this function, 0 in the opposite case. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>binary parametter: 1 if the specific slave is the last, 0 in the opposite case. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>initp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>binary parametter: 1 indicates the id, where the program are going to begin to print the stairs matlab function; 0 in the opposite case. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="45" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="1227" bodyend="1530"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1affb2e0e40b3c25797a970974773d19ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void matlab_plot_file_gant</definition>
+        <argsstring>(experiment_total, int, int, char *, int)</argsstring>
+        <name>matlab_plot_file_gant</name>
+        <param>
+          <type><ref refid="structexperiment__total" kindref="compound">experiment_total</ref></type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>init1</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>end</defname>
+        </param>
+        <param>
+          <type>char *</type>
+          <defname>stringpath</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>maxsize</defname>
+        </param>
+        <briefdescription>
+<para>this function generates a gantt char with the gantt files of all slaves. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>exp1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>main struct <ref refid="structexperiment__total" kindref="compound">experiment_total</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>init1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>binary parametter: 1 if it is the fisrt time to enter in this function, 0 in the opposite case. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>binary parametter: 1 if the specific slave is the last, 0 in the opposite case. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stringpath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>path to print the matlab code. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of rows of the gantt file. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="46" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="1542" bodyend="1715"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a97291c7a4df695b288a85648400bb7f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int row_count</definition>
+        <argsstring>(char *)</argsstring>
+        <name>row_count</name>
+        <param>
+          <type>char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="47" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="1813" bodyend="1898"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a137039b325a74dabc8c0c307e769034f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double varianze</definition>
+        <argsstring>(double *array, double, int)</argsstring>
+        <name>varianze</name>
+        <param>
+          <type>double *</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="48" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="1900" bodyend="1911"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a5bb8af331bda7c5947c6beffa677d4f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char select_color</definition>
+        <argsstring>(int)</argsstring>
+        <name>select_color</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="49" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="1913" bodyend="1934"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a757e042b31f03ed208e6a259870e7c5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char select_marca</definition>
+        <argsstring>(int)</argsstring>
+        <name>select_marca</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="50" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="1936" bodyend="1960"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1aab8bb4bf2bd8811f468fc7fd76e33595" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void plot_file</definition>
+        <argsstring>(experiment_total, int, int, int)</argsstring>
+        <name>plot_file</name>
+        <param>
+          <type><ref refid="structexperiment__total" kindref="compound">experiment_total</ref></type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>this function generate a convergence MATLAB graph with the files of all slaves. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="51" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="1967" bodyend="2064"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a1a9117aedafc1dfc3020023a950a8b12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void plot_file_cess</definition>
+        <argsstring>(experiment_total, int, int, int)</argsstring>
+        <name>plot_file_cess</name>
+        <param>
+          <type><ref refid="structexperiment__total" kindref="compound">experiment_total</ref></type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>par</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>idp</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>NPROC</defname>
+        </param>
+        <briefdescription>
+<para>this function manages the generation of the differents graphs. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>exp1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>main struct <ref refid="structexperiment__total" kindref="compound">experiment_total</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>par</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>binary parametter: 1 if the program is parallel, 0 in the opposite case. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>identification number of the processors. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NPROC</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>total number of processors. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="52" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="2074" bodyend="2183"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1ad478d632b219b4f986f7c05e1d76cbf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initoutputvars_</definition>
+        <argsstring>(void *)</argsstring>
+        <name>initoutputvars_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="53" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="2186" bodyend="2202"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a1ef656224d0874cea54131ead7876bdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void updateresultsandprint_</definition>
+        <argsstring>(void *, void *, double *, long *, double *, double *)</argsstring>
+        <name>updateresultsandprint_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>long *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="54" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="2206" bodyend="2303"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a52b7bac54704663d885ab760d50304dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void updateresultsandprintess_</definition>
+        <argsstring>(void *, void *, double *, long *, double *, double *, double *, double *)</argsstring>
+        <name>updateresultsandprintess_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>long *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1ab3dfbf9f67fa53ebaa0244716e678bb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int updateresultsrandomsearch_</definition>
+        <argsstring>(void *, void *, double *, double *, double *)</argsstring>
+        <name>updateresultsrandomsearch_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="56" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="2434" bodyend="2444"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a3fdfb5fc61a290b64017634284ca9a94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void init_message</definition>
+        <argsstring>(int, experiment_total *, int)</argsstring>
+        <name>init_message</name>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type><ref refid="structexperiment__total" kindref="compound">experiment_total</ref> *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="57" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="2449" bodyend="2479"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1af4dc1b9e499e457825c465b20345b4ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printresults_</definition>
+        <argsstring>(void *, double *, long *, double *, double *, double *)</argsstring>
+        <name>printresults_</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>long *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="58" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="2526" bodyend="2533"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a49221e88df6489dfdb4831475e04707f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printpercentage_</definition>
+        <argsstring>(void *, double *, double *, double *)</argsstring>
+        <name>printpercentage_</name>
+        <param>
+          <type>void *</type>
+          <defname>exp1_</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>currenttime</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>value</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>percentage</defname>
+        </param>
+        <briefdescription>
+<para>print results in percentage files. This files are used to generate the percentages char. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>exp1_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>void pointer for the main struct <ref refid="structexperiment__total" kindref="compound">experiment_total</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>currenttime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>time spent from the beginning. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of the solution sent. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>percentage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>percentage of improvement. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="59" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="966" bodyend="988"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1a210a93b6c4132b7ac0af792bdd4272c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bechmark_message</definition>
+        <argsstring>(experiment_total *, const char *)</argsstring>
+        <name>bechmark_message</name>
+        <param>
+          <type><ref refid="structexperiment__total" kindref="compound">experiment_total</ref> *</type>
+        </param>
+        <param>
+          <type>const char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="60" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="2483" bodyend="2491"/>
+      </memberdef>
+      <memberdef kind="function" id="output_8h_1abc8229ac654077dfe47863c2db312a36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printresults_end</definition>
+        <argsstring>(experiment_total *, result_solver)</argsstring>
+        <name>printresults_end</name>
+        <param>
+          <type><ref refid="structexperiment__total" kindref="compound">experiment_total</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="structresult__solver" kindref="compound">result_solver</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h" line="61" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/output.c" bodystart="2542" bodyend="2569"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>savehdf5solutions_(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>savehdf5solutionspar_(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="output_8c_1a5b2cd9f9c9f7a2327d104b3b68b3a9ce" kindref="member" tooltip="this procedure initialize the differents output files of the program.">initprintfile_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="output_8c_1ad86a241fae644a8e4a022d61c167b35b" kindref="member" tooltip="print current results in the logfile">printiterationcesslog_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*)<sp/>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printdescartsolution_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>*);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printinititeration_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printlsinitlog_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<sp/>);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printlocalsolverinsert_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<sp/>);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printinitlocalsolverinsert_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<sp/>);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printlsendlog_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MPI2</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printmasterocurrencesend_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<sp/>);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printcomparenewsolutionmasterlog_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<sp/>);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printputmasterlog_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<sp/>);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printputcheckmasterlog_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">new</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<sp/>);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printreturnselectsolution_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<sp/>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printcheckvtr_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>*,<sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<sp/>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printrecvmasterlog_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printputmasterendlog_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printrefset_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printrestart_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printrestartslave_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<sp/>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printreplaceslavelog_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<sp/>);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printreceivedslave_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*)<sp/>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printdiscardreceivedslave_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<sp/>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printdiscardreceivedslave2_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<sp/>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printcomenewsolutionslavelog_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">new</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printfinalsendslavelog_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">new</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="output_8c_1a4708df1c4f5c2a7cdca2a990cd9bd6a7" kindref="member" tooltip="print iteration in output files. This files are used to generate the final Matlab graphs...">printiteration_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="output_8c_1a5329543bd132e25f864a73b8c793e0f6" kindref="member" tooltip="print results in gant files. This files are used to generate the Gant char.">printgant_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="output_8c_1a1800a3c0346c0d41f05cf1742e225636" kindref="member" tooltip="print results in percentage files. This files are used to generate the percentages char...">printiterationcess_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printverboselocaloutput_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*)<sp/>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printverboselocaloutput2_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>improvelocalsolver_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print_verbose_local_success(<ref refid="structexperiment__total" kindref="compound">experiment_total</ref><sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print_end_file_(<ref refid="structexperiment__total" kindref="compound">experiment_total</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/><ref refid="structresult__solver" kindref="compound">result_solver</ref><sp/>*)<sp/>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>verboseiteration_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>,<sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>verboseiterationfortran_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>*,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>concat_char(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="output_8c_1a54380285235446c723a50c9f87e4c182" kindref="member" tooltip="this function generates a convergence MATLAB graph with the files of all slaves.">matlab_plot_file</ref>(<ref refid="structexperiment__total" kindref="compound">experiment_total</ref><sp/>,<sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>,<sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*marca,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="output_8c_1a55724ace6b0223bf52db02d683ea4ee1" kindref="member" tooltip="this function generates a gantt char with the gantt files of all slaves.">matlab_plot_file_gant</ref>(<ref refid="structexperiment__total" kindref="compound">experiment_total</ref><sp/>,<sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row_count(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>varianze(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*array,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>select_color(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>select_marca(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="output_8c_1a844cd7fbeac06e27c8ae51d1efbee265" kindref="member" tooltip="this function generate a convergence MATLAB graph with the files of all slaves.">plot_file</ref>(<ref refid="structexperiment__total" kindref="compound">experiment_total</ref><sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="output_8c_1af4fb1023d4ddf652a5e703f951162ff1" kindref="member" tooltip="this function manages the generation of the differents graphs.">plot_file_cess</ref>(<ref refid="structexperiment__total" kindref="compound">experiment_total</ref><sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initoutputvars_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>updateresultsandprint_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>updateresultsandprintess_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*)<sp/>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>updateresultsrandomsearch_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<sp/>);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init_message(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>,<sp/><sp/><ref refid="structexperiment__total" kindref="compound">experiment_total</ref><sp/>*<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printresults_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="output_8c_1a4f2a780b3897b104079d9cdae9f483a0" kindref="member" tooltip="print results in percentage files. This files are used to generate the percentages char...">printpercentage_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>bechmark_message(<ref refid="structexperiment__total" kindref="compound">experiment_total</ref><sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printresults_end(<ref refid="structexperiment__total" kindref="compound">experiment_total</ref><sp/>*,<sp/><ref refid="structresult__solver" kindref="compound">result_solver</ref><sp/>);</highlight></codeline>
+    </programlisting>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/output.h"/>
+  </compounddef>
+</doxygen>

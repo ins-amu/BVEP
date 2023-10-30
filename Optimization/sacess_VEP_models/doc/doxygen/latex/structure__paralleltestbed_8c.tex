@@ -1,0 +1,191 @@
+\hypertarget{structure__paralleltestbed_8c}{\section{src/method\-\_\-module/structure\-\_\-paralleltestbed.c File Reference}
+\label{structure__paralleltestbed_8c}\index{src/method\-\_\-module/structure\-\_\-paralleltestbed.\-c@{src/method\-\_\-module/structure\-\_\-paralleltestbed.\-c}}
+}
+
+
+File containing setter and getter for all fields of the main struct \hyperlink{structexperiment__total}{experiment\-\_\-total}.  
+
+
+{\ttfamily \#include $<$structure\-\_\-paralleltestbed.\-h$>$}\\*
+{\ttfamily \#include $<$configuration.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include $<$float.\-h$>$}\\*
+{\ttfamily \#include $<$def\-\_\-errors.\-h$>$}\\*
+{\ttfamily \#include $<$gsl/gsl\-\_\-rng.\-h$>$}\\*
+{\ttfamily \#include $<$gsl/gsl\-\_\-randist.\-h$>$}\\*
+{\ttfamily \#include $<$time.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structure__paralleltestbed_8c_addb080b2e9c463efc8279f7c6cb452b8}{void {\bfseries returnboundscfortran\-\_\-} (void $\ast$exp\-\_\-, double $\ast$X\-U, double $\ast$X\-L, int $\ast$nvar)}\label{structure__paralleltestbed_8c_addb080b2e9c463efc8279f7c6cb452b8}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a2ab7f8e45522fc00f2103cc87dae11f1}{void {\bfseries setvectorcfortran\-\_\-} (void $\ast$vector, double $\ast$in, int $\ast$nvar)}\label{structure__paralleltestbed_8c_a2ab7f8e45522fc00f2103cc87dae11f1}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a5cc4ccd88f814980128d42811e7b4b44}{void {\bfseries returnvectorcfortran\-\_\-} (void $\ast$vector, double $\ast$out, int $\ast$nvar)}\label{structure__paralleltestbed_8c_a5cc4ccd88f814980128d42811e7b4b44}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a2f3d1827fc224b5e5cfe5ba42cc5c394}{void {\bfseries sumfailevals\-\_\-} (void $\ast$exp\-\_\-)}\label{structure__paralleltestbed_8c_a2f3d1827fc224b5e5cfe5ba42cc5c394}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_ac3e14357b124c4fa42b81aacddb84a12}{int {\bfseries returnfailevals\-\_\-} (void $\ast$exp\-\_\-)}\label{structure__paralleltestbed_8c_ac3e14357b124c4fa42b81aacddb84a12}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a354d2b5a43e792f19af7c8223aee7c52}{int {\bfseries create\-\_\-expetiment\-\_\-struct} (char $\ast$file, \hyperlink{structexperiment__total}{experiment\-\_\-total} $\ast$exptotal, int N\-P\-R\-O\-C, int id, char $\ast$path, int init)}\label{structure__paralleltestbed_8c_a354d2b5a43e792f19af7c8223aee7c52}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_af8a6b8753779d291b47df01201273014}{void {\bfseries init\-\_\-result\-\_\-data} (\hyperlink{structresult__solver}{result\-\_\-solver} $\ast$result, int size)}\label{structure__paralleltestbed_8c_af8a6b8753779d291b47df01201273014}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_ad20cf88f0d8d5873e986208ba3113c42}{void {\bfseries destroy\-\_\-result\-\_\-data} (\hyperlink{structresult__solver}{result\-\_\-solver} $\ast$result)}\label{structure__paralleltestbed_8c_ad20cf88f0d8d5873e986208ba3113c42}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a3420a4d29443eb93e83bc7121fe29828}{void {\bfseries updatenp\-\_\-} (void $\ast$exp\-\_\-, int $\ast$dim\-\_\-refset)}\label{structure__paralleltestbed_8c_a3420a4d29443eb93e83bc7121fe29828}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a71a292e1f8171411d4ee06d108dcf052}{const char $\ast$ {\bfseries getname} (\hyperlink{structexperiment__total}{experiment\-\_\-total} $\ast$exp)}\label{structure__paralleltestbed_8c_a71a292e1f8171411d4ee06d108dcf052}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_aeb8605bd7e8c0adde0e7050d556a7054}{int {\bfseries getnumversion} (\hyperlink{structexperiment__total}{experiment\-\_\-total} $\ast$exptotal)}\label{structure__paralleltestbed_8c_aeb8605bd7e8c0adde0e7050d556a7054}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a761d692a1806a710e21277f19fe6f7a8}{const char $\ast$ {\bfseries getversioness} (int i)}\label{structure__paralleltestbed_8c_a761d692a1806a710e21277f19fe6f7a8}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a8f83382f57eaab2a0f7585efc4a1dcf7}{const char $\ast$ {\bfseries getlsess} (\hyperlink{structexperiment__total}{experiment\-\_\-total} $\ast$exp)}\label{structure__paralleltestbed_8c_a8f83382f57eaab2a0f7585efc4a1dcf7}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a21c08da3cfaaa0f4cc384ee8dd913828}{const char $\ast$ {\bfseries gettopologyess} (int i)}\label{structure__paralleltestbed_8c_a21c08da3cfaaa0f4cc384ee8dd913828}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_ab57e5d91722bbfccca34531794c90d70}{void {\bfseries destroyexp} (\hyperlink{structexperiment__total}{experiment\-\_\-total} $\ast$exp)}\label{structure__paralleltestbed_8c_ab57e5d91722bbfccca34531794c90d70}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_aed972383c46dca68bdf8073ff1b1e9ac}{int {\bfseries destroybenchmark} (\hyperlink{structexperiment__total}{experiment\-\_\-total} $\ast$exp)}\label{structure__paralleltestbed_8c_aed972383c46dca68bdf8073ff1b1e9ac}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_aa80ecbabb95db4cd7a34a107cf4758b3}{int {\bfseries is\-\_\-asynchronous} (\hyperlink{structexperiment__total}{experiment\-\_\-total} exp)}\label{structure__paralleltestbed_8c_aa80ecbabb95db4cd7a34a107cf4758b3}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_aa3b700db071115b66a0da1bcbc7ebc76}{int {\bfseries is\-\_\-parallel} (\hyperlink{structexperiment__total}{experiment\-\_\-total} exp)}\label{structure__paralleltestbed_8c_aa3b700db071115b66a0da1bcbc7ebc76}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_aae427bf565a8e651800cf6a9ad5bc54d}{int {\bfseries is\-\_\-noise} (\hyperlink{structexperiment__total}{experiment\-\_\-total} exp)}\label{structure__paralleltestbed_8c_aae427bf565a8e651800cf6a9ad5bc54d}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_ae0eb8d59c8c3132a6c595bfaf34d6206}{int {\bfseries number\-\_\-benchmark} (\hyperlink{structexperiment__total}{experiment\-\_\-total} $\ast$exp)}\label{structure__paralleltestbed_8c_ae0eb8d59c8c3132a6c595bfaf34d6206}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_aaf857204f69636e3a4ef199a1410f0b8}{void {\bfseries check\-\_\-fun} (\hyperlink{structexperiment__total}{experiment\-\_\-total} exp, int current\-\_\-bench, int noise\-\_\-funcion)}\label{structure__paralleltestbed_8c_aaf857204f69636e3a4ef199a1410f0b8}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_aa13aab53151ac467695a7c9d7d9073f7}{int {\bfseries chargedimension\-\_\-} (void $\ast$exp1\-\_\-, int $\ast$D)}\label{structure__paralleltestbed_8c_aa13aab53151ac467695a7c9d7d9073f7}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a2a465b7793f6e1ff4e6546299c0f6d97}{int {\bfseries chargedimensionopenmp\-\_\-} (void $\ast$exp1\-\_\-, int $\ast$D)}\label{structure__paralleltestbed_8c_a2a465b7793f6e1ff4e6546299c0f6d97}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_aa114be5bb22a62ea72991b4fcf95a68a}{int {\bfseries returninitsol\-\_\-} (void $\ast$exp\-\_\-)}\label{structure__paralleltestbed_8c_aa114be5bb22a62ea72991b4fcf95a68a}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_aa6b68efb3746e122baacabde14bb944e}{int {\bfseries loadinitpoints\-\_\-} (void $\ast$exp\-\_\-, double $\ast$point, int $\ast$pos, double $\ast$fx)}\label{structure__paralleltestbed_8c_aa6b68efb3746e122baacabde14bb944e}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a4d49003529cc719df04d0b6e031216fb}{int {\bfseries chargeuseroptions\-\_\-} (void $\ast$exp\-\_\-, double $\ast$maxtime, int $\ast$weight, double $\ast$tolc, double $\ast$prob\-\_\-bound, int $\ast$nstuck\-\_\-solution, int $\ast$strategy, int $\ast$inter\-\_\-save, int $\ast$iterprint, int $\ast$\hyperlink{output_8c_a5d8bb67710fcaa8ed1fcbc7acb3fbfa8}{plot}, int $\ast$log\-\_\-var, int $\ast$init\-\_\-point, int $\ast$logvar, double $\ast$X0, double $\ast$F0)}\label{structure__paralleltestbed_8c_a4d49003529cc719df04d0b6e031216fb}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a671bf40993d892f9d2896b5077d0c69a}{int {\bfseries chargeglobaloptions\-\_\-} (void $\ast$exp\-\_\-, int $\ast$dim\-\_\-ref, int $\ast$ndiverse, int $\ast$initiate, int $\ast$combination, int $\ast$regenerate, char $\ast$delete, int $\ast$intens, double $\ast$tolf, int $\ast$diverse\-\_\-criteria, double $\ast$tolx, int $\ast$n\-\_\-stuck)}\label{structure__paralleltestbed_8c_a671bf40993d892f9d2896b5077d0c69a}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a573ae1a9bc6df87f281ced94ef5183c9}{int {\bfseries chargelsevalmax\-\_\-} (void $\ast$exp\-\_\-, long $\ast$lsevals)}\label{structure__paralleltestbed_8c_a573ae1a9bc6df87f281ced94ef5183c9}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a7473ce204e63a9190c3e5d93c2748428}{int {\bfseries chargelocaloptions\-\_\-} (void $\ast$exp\-\_\-, int $\ast$tol, int $\ast$iterprint, int $\ast$n1, int $\ast$n2, double $\ast$balance, char $\ast$finish, int $\ast$bestx, int $\ast$merit\-\_\-filter, int $\ast$distance\-\_\-filter, double $\ast$thfactor, double $\ast$maxdistfactor, int $\ast$wait\-\_\-maxdist\-\_\-limit, int $\ast$wait\-\_\-th\-\_\-limit, char $\ast$solver, double $\ast$threshold\-\_\-local)}\label{structure__paralleltestbed_8c_a7473ce204e63a9190c3e5d93c2748428}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_aa5d167e1286f7b5db659d396963819f3}{int {\bfseries chargeproblemargs\-\_\-} (void $\ast$exp\-\_\-, int $\ast$ineq, int $\ast$int\-\_\-var, int $\ast$bin\-\_\-var)}\label{structure__paralleltestbed_8c_aa5d167e1286f7b5db659d396963819f3}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_add0cf8ba5426afd5a36ddaa8fd1cb912}{int {\bfseries getopenmpoption\-\_\-} (void $\ast$exp\-\_\-)}\label{structure__paralleltestbed_8c_add0cf8ba5426afd5a36ddaa8fd1cb912}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a4721f7ccb5e8a7917c7b29f4719f25fb}{int {\bfseries chargeboundsnconst\-\_\-} (void $\ast$exp\-\_\-, double $\ast$X\-U, double $\ast$X\-L, int $\ast$nvar, double $\ast$C\-U, double $\ast$C\-L, int $\ast$ineq)}\label{structure__paralleltestbed_8c_a4721f7ccb5e8a7917c7b29f4719f25fb}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a83c4504b82acff86f026db70dcf60897}{int {\bfseries chargebounds\-\_\-} (void $\ast$exp\-\_\-, double $\ast$X\-U, double $\ast$X\-L, int $\ast$nvar)}\label{structure__paralleltestbed_8c_a83c4504b82acff86f026db70dcf60897}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a9ce50c01c19a290f49917bad063286a6}{int {\bfseries getbench\-\_\-} (void $\ast$exp\-\_\-)}\label{structure__paralleltestbed_8c_a9ce50c01c19a290f49917bad063286a6}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a2a0f70c7181450464290c79e3f9522c3}{void {\bfseries setdblmax\-\_\-} (double $\ast$valor)}\label{structure__paralleltestbed_8c_a2a0f70c7181450464290c79e3f9522c3}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_ae8169f6a01f097c092efe0fc69798037}{void {\bfseries setinfinity\-\_\-} (double $\ast$valor)}\label{structure__paralleltestbed_8c_ae8169f6a01f097c092efe0fc69798037}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a7481457bd64092a04523952a654ec23a}{void {\bfseries setnan\-\_\-} (double $\ast$valor)}\label{structure__paralleltestbed_8c_a7481457bd64092a04523952a654ec23a}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a971e7858e31b40f72ac2e94a7275cf74}{double {\bfseries gettotaltime\-\_\-} (\hyperlink{structresult__solver}{result\-\_\-solver} $\ast$timestruct)}\label{structure__paralleltestbed_8c_a971e7858e31b40f72ac2e94a7275cf74}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a49966fc80e6888c9b5fe1f1093c5802c}{int {\bfseries ishete\-\_\-} (void $\ast$exp\-\_\-)}\label{structure__paralleltestbed_8c_a49966fc80e6888c9b5fe1f1093c5802c}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a59b68bae12f58fa94740b0fcbff6e90c}{int {\bfseries iscoop\-\_\-} (void $\ast$exp\-\_\-)}\label{structure__paralleltestbed_8c_a59b68bae12f58fa94740b0fcbff6e90c}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a86ab9497163ce60ca292a9f820825272}{double {\bfseries getparalleltime\-\_\-} (\hyperlink{structresult__solver}{result\-\_\-solver} $\ast$timestruct)}\label{structure__paralleltestbed_8c_a86ab9497163ce60ca292a9f820825272}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a79b736ad6b22a52952a2d9827b935cd5}{double {\bfseries getlocalsolvertime\-\_\-} (\hyperlink{structresult__solver}{result\-\_\-solver} $\ast$timestruct)}\label{structure__paralleltestbed_8c_a79b736ad6b22a52952a2d9827b935cd5}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_ac46004edf3f6fe131984d3662542b3ac}{void {\bfseries settotaltime\-\_\-} (\hyperlink{structresult__solver}{result\-\_\-solver} $\ast$timestruct, double $\ast$time)}\label{structure__paralleltestbed_8c_ac46004edf3f6fe131984d3662542b3ac}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a61689ac40d75134823714ef4aa5b99dd}{void {\bfseries setparalleltime\-\_\-} (\hyperlink{structresult__solver}{result\-\_\-solver} $\ast$timestruct, double $\ast$time)}\label{structure__paralleltestbed_8c_a61689ac40d75134823714ef4aa5b99dd}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a120971f089402b9805558f43397f41b7}{void {\bfseries setlocalsolvertime\-\_\-} (\hyperlink{structresult__solver}{result\-\_\-solver} $\ast$timestruct, double $\ast$time)}\label{structure__paralleltestbed_8c_a120971f089402b9805558f43397f41b7}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a1e365efd4618c3159461e664f8351ea3}{void {\bfseries setiteration\-\_\-} (void $\ast$exp\-\_\-, int $\ast$ite)}\label{structure__paralleltestbed_8c_a1e365efd4618c3159461e664f8351ea3}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a8df586eb80ee33056086b029bbba2e2b}{void {\bfseries setnumit\-\_\-} (void $\ast$exp\-\_\-, int $\ast$ite)}\label{structure__paralleltestbed_8c_a8df586eb80ee33056086b029bbba2e2b}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a5f337d58c0ab05b42ebe59583a841b1e}{int {\bfseries getidp\-\_\-} (void $\ast$exp\-\_\-)}\label{structure__paralleltestbed_8c_a5f337d58c0ab05b42ebe59583a841b1e}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_ab769fe4a03e45777897016bc584583fe}{void {\bfseries saveinittime\-\_\-} (void $\ast$exp\-\_\-, double $\ast$starttime)}\label{structure__paralleltestbed_8c_ab769fe4a03e45777897016bc584583fe}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_afcefc7ad188f7bb1cc021409d7c6f022}{double {\bfseries returninittime\-\_\-} (void $\ast$exp\-\_\-)}\label{structure__paralleltestbed_8c_afcefc7ad188f7bb1cc021409d7c6f022}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_aa70d637b6af9f2af9c5437df9928e048}{void {\bfseries setamigolocalevals\-\_\-} (void $\ast$exp\-\_\-, int $\ast$levals)}\label{structure__paralleltestbed_8c_aa70d637b6af9f2af9c5437df9928e048}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_a50fb155a19fc35321735a0dfd111b261}{void {\bfseries setparallelsacessfieldsmaster\-\_\-} (void $\ast$exp\-\_\-, double $\ast$rth)}\label{structure__paralleltestbed_8c_a50fb155a19fc35321735a0dfd111b261}
+
+\item 
+\hypertarget{structure__paralleltestbed_8c_ad10d1aef91c9a86886ac14a8bf2e93d8}{void {\bfseries setparallelsacessfieldsslaves\-\_\-} (void $\ast$exp\-\_\-, double $\ast$eth, int $\ast$numsend, int $\ast$minsend)}\label{structure__paralleltestbed_8c_ad10d1aef91c9a86886ac14a8bf2e93d8}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+File containing setter and getter for all fields of the main struct \hyperlink{structexperiment__total}{experiment\-\_\-total}. \begin{DoxyAuthor}{Author}
+David R. Penas 
+\end{DoxyAuthor}
+
+
+Definition in file \hyperlink{structure__paralleltestbed_8c_source}{structure\-\_\-paralleltestbed.\-c}.
+

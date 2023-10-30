@@ -1,0 +1,36 @@
+#include <stdlib.h>	/* exit, malloc, realloc, free */
+#include <stdio.h>	/* fopen, fgetc, fputs, fwrite */
+#include <stddef.h>
+
+struct line_reader {
+	/* All members are private. */
+	FILE	*f;
+	char	*buf;
+	int	 siz;
+};
+ 
+/*
+ * Initializes a line reader _lr_ for the stream _f_.
+ */
+void
+lr_init(struct line_reader *, FILE *);
+ 
+/*
+ * Reads the next line. If successful, returns a pointer to the line,
+ * and sets *len to the number of characters, at least 1. The result is
+ * _not_ a C string; it has no terminating '\0'. The returned pointer
+ * remains valid until the next call to next_line() or lr_free() with
+ * the same _lr_.
+ *
+ * next_line() returns NULL at end of file, or if there is an error (on
+ * the stream, or with memory allocation).
+ */
+char *
+next_line(struct line_reader *, int *l);
+ 
+/*
+ * Frees internal memory used by _lr_.
+ */
+void
+lr_free(struct line_reader *);
+

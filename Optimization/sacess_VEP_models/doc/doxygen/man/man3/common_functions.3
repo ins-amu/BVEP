@@ -1,0 +1,190 @@
+.TH "common_functions" 3 "Wed May 11 2016" "Version 0.1" "SACESS TOOLBOX" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+common_functions \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "subroutine \fBinicializa_vector_value\fP (MM, D, Value)"
+.br
+.ti -1c
+.RI "subroutine \fBinicializa_vector\fP (MM, D)"
+.br
+.ti -1c
+.RI "subroutine \fBdestroy_vector\fP (MM)"
+.br
+.ti -1c
+.RI "subroutine \fBslave_information\fP (idp, dim_refset, ndiverse, MODE)"
+.br
+.ti -1c
+.RI "subroutine \fBoptimization_begins\fP (idp)"
+.br
+.ti -1c
+.RI "subroutine \fBending_solver_message\fP (idp, fin)"
+.br
+.ti -1c
+.RI "subroutine \fBseed_recount\fP (exp1, id)"
+.br
+.ti -1c
+.RI "subroutine \fBprint_vector\fP (MM)"
+.br
+.ti -1c
+.RI "subroutine \fBrandom_vector_5\fP (exp1, X, D, Xl, Xu, cont)"
+.br
+.ti -1c
+.RI "subroutine \fBall_positive\fP (X)"
+.br
+.ti -1c
+.RI "subroutine \fBrandom_vector_seed\fP (exp1, X, D, Xl, Xu)"
+.br
+.ti -1c
+.RI "subroutine \fBrandom_vector_seed_10\fP (exp1, X, D)"
+.br
+.ti -1c
+.RI "subroutine \fBrandom_matrix_seed_10\fP (exp1, X, sizei, sizej)"
+.br
+.ti -1c
+.RI "real(kind=selected_real_kind(p=precision_d, 
+.br
+r=range_d)) function \fBreturn_random_number\fP (exp1)"
+.br
+.ti -1c
+.RI "REAL(KIND=SELECTED_REAL_KIND(P=PRECISION_D, 
+.br
+R=RANGE_D)) function \fBex1\fP (X)"
+.br
+.ti -1c
+.RI "subroutine \fBinsert_dinamic_vector_double_precission\fP (X, currentsize)"
+.br
+.ti -1c
+.RI "subroutine \fBfusion_matrix\fP (matrix1, matrix2)"
+.br
+.ti -1c
+.RI "subroutine \fBfusion_vector\fP (vector1, vector2)"
+.br
+.ti -1c
+.RI "subroutine \fBfusion_vector_int\fP (vector1, vector2)"
+.br
+.ti -1c
+.RI "subroutine \fBprint_matrix\fP (matrix)"
+.br
+.ti -1c
+.RI "subroutine \fBprint_matrix_integer\fP (matrix)"
+.br
+.ti -1c
+.RI "subroutine \fBsquare_roots_polinom\fP (matrix1, result1)"
+.br
+.ti -1c
+.RI "integer function \fBchoose\fP (vector)"
+.br
+.ti -1c
+.RI "integer function \fBfindinteger\fP (vector, value1)"
+.br
+.ti -1c
+.RI "subroutine \fBfind_in_vector\fP (vector, value, vectorout, opt)"
+.br
+.ti -1c
+.RI "subroutine \fBfind_in_vector_int\fP (vector, value1, vectorout, opt)"
+.br
+.ti -1c
+.RI "subroutine \fBreplace_matrix\fP (matrix, value1)"
+.br
+.ti -1c
+.RI "subroutine \fBnchoosek_fpar\fP (vector, pars, vectorout)"
+.br
+.ti -1c
+.RI "subroutine \fBdelete_values_vector_int\fP (vector1, num)"
+.br
+.ti -1c
+.RI "subroutine \fBrandperm_int\fP (exp1, vector1)"
+.br
+.ti -1c
+.RI "real(kind=selected_real_kind(p=precision_d, 
+.br
+r=range_d)) function \fBvariance_vector\fP (vector1)"
+.br
+.ti -1c
+.RI "real(kind=selected_real_kind(p=precision_d, 
+.br
+r=range_d)) function, 
+.br
+dimension(:,:), allocatable \fBabs_matrix\fP (vector1)"
+.br
+.ti -1c
+.RI "real(kind=selected_real_kind(p=precision_d, 
+.br
+r=range_d)) function, 
+.br
+dimension(:,:), allocatable \fBmax_matrix\fP (matrix1, matrix2)"
+.br
+.ti -1c
+.RI "integer function, dimension(:), 
+.br
+allocatable \fBcompare_vector\fP (vector1, value1, opt, sizer)"
+.br
+.ti -1c
+.RI "integer function, dimension(:,:), 
+.br
+allocatable \fBcompare_matrix\fP (matrix1, value1, opt)"
+.br
+.ti -1c
+.RI "integer function, dimension(:,:), 
+.br
+allocatable \fBcompare_multiple_matrix\fP (matrix1, matrix2, size, opt)"
+.br
+.ti -1c
+.RI "integer function, dimension(:,:), 
+.br
+allocatable \fBcompare_multiple_matrix_int\fP (matrix1, matrix2, size, opt)"
+.br
+.ti -1c
+.RI "integer function, dimension(:), 
+.br
+allocatable \fBcompare_multiple_vector\fP (vector1, vector2, sizer, opt)"
+.br
+.ti -1c
+.RI "subroutine \fBrow_one\fP (res1, res2, sizer)"
+.br
+.ti -1c
+.RI "subroutine \fBindex_of_ones\fP (res1, BBB)"
+.br
+.ti -1c
+.RI "subroutine \fBreajust_index\fP (res1)"
+.br
+.ti -1c
+.RI "subroutine \fBindex_of_ones_matrix\fP (res1, indexvector)"
+.br
+.ti -1c
+.RI "subroutine \fBreturn_values_matrix_index\fP (vx, hyperx, aaa)"
+.br
+.ti -1c
+.RI "subroutine \fBset_one_matrix\fP (matrix, vector, onesm)"
+.br
+.ti -1c
+.RI "subroutine \fBrandom_det_vector_seed_10\fP (X, D, contador, M)"
+.br
+.ti -1c
+.RI "subroutine \fBrandom_det_vector_seed\fP (X, D, Xl, Xu, contador, M)"
+.br
+.ti -1c
+.RI "subroutine \fBrandom_det_vector_5\fP (X, D, Xl, Xu, cont, contador, M)"
+.br
+.ti -1c
+.RI "subroutine \fBrandom_det_matrix_seed_10\fP (X, sizei, sizej, contador, M)"
+.br
+.ti -1c
+.RI "subroutine \fBrandom_det_number\fP (num, contador, M)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 1 of file common_functions\&.f90\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for SACESS TOOLBOX from the source code\&.

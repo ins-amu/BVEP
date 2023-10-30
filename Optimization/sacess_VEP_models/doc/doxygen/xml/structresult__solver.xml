@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="structresult__solver" kind="struct" prot="public">
+    <compoundname>result_solver</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structresult__solver_1afb3e321d12f0b6ecefdeab9ec7844930" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long result_solver::eval_value</definition>
+        <argsstring></argsstring>
+        <name>eval_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="313" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structresult__solver_1aa2231ca2b716ff715f545acd3f2bca93" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double result_solver::time_value</definition>
+        <argsstring></argsstring>
+        <name>time_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="314" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structresult__solver_1a657bf73170472bbbf4395653e534e230" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double result_solver::time_vtr_value</definition>
+        <argsstring></argsstring>
+        <name>time_vtr_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="315" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structresult__solver_1ae0fabec7785c592f71d7e783f93f4015" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double result_solver::iterations_value</definition>
+        <argsstring></argsstring>
+        <name>iterations_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="316" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structresult__solver_1ad9e51132be299a3d93e3bdf57087d02b" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double result_solver::best_value</definition>
+        <argsstring></argsstring>
+        <name>best_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="317" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structresult__solver_1aa33e6f9b81abf63dbe9d0981a5e313da" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* result_solver::bestx_value</definition>
+        <argsstring></argsstring>
+        <name>bestx_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="318" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structresult__solver_1aaceb49f43c847eb58a59032ca117b254" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double result_solver::totaltime</definition>
+        <argsstring></argsstring>
+        <name>totaltime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="319" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structresult__solver_1ae181bb4eaf14c102928651f625dc3325" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double result_solver::paralleltime</definition>
+        <argsstring></argsstring>
+        <name>paralleltime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="320" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structresult__solver_1a53ebaae38b00103d598c684a8b42d0b1" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double result_solver::localsolvertime</definition>
+        <argsstring></argsstring>
+        <name>localsolvertime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="321" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="312" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="312" bodyend="322"/>
+    <listofallmembers>
+      <member refid="structresult__solver_1ad9e51132be299a3d93e3bdf57087d02b" prot="public" virt="non-virtual"><scope>result_solver</scope><name>best_value</name></member>
+      <member refid="structresult__solver_1aa33e6f9b81abf63dbe9d0981a5e313da" prot="public" virt="non-virtual"><scope>result_solver</scope><name>bestx_value</name></member>
+      <member refid="structresult__solver_1afb3e321d12f0b6ecefdeab9ec7844930" prot="public" virt="non-virtual"><scope>result_solver</scope><name>eval_value</name></member>
+      <member refid="structresult__solver_1ae0fabec7785c592f71d7e783f93f4015" prot="public" virt="non-virtual"><scope>result_solver</scope><name>iterations_value</name></member>
+      <member refid="structresult__solver_1a53ebaae38b00103d598c684a8b42d0b1" prot="public" virt="non-virtual"><scope>result_solver</scope><name>localsolvertime</name></member>
+      <member refid="structresult__solver_1ae181bb4eaf14c102928651f625dc3325" prot="public" virt="non-virtual"><scope>result_solver</scope><name>paralleltime</name></member>
+      <member refid="structresult__solver_1aa2231ca2b716ff715f545acd3f2bca93" prot="public" virt="non-virtual"><scope>result_solver</scope><name>time_value</name></member>
+      <member refid="structresult__solver_1a657bf73170472bbbf4395653e534e230" prot="public" virt="non-virtual"><scope>result_solver</scope><name>time_vtr_value</name></member>
+      <member refid="structresult__solver_1aaceb49f43c847eb58a59032ca117b254" prot="public" virt="non-virtual"><scope>result_solver</scope><name>totaltime</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

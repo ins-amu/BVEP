@@ -1,0 +1,67 @@
+\hypertarget{input__module_8c}{\section{src/input\-\_\-module/input\-\_\-module.c File Reference}
+\label{input__module_8c}\index{src/input\-\_\-module/input\-\_\-module.\-c@{src/input\-\_\-module/input\-\_\-module.\-c}}
+}
+
+
+File containing functions to parse the input X\-M\-L, completing the main struct of \hyperlink{structexperiment__total}{experiment\-\_\-total} data.  
+
+
+{\ttfamily \#include $<$structure\-\_\-paralleltestbed.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$ctype.\-h$>$}\\*
+{\ttfamily \#include $<$libxml/parser.\-h$>$}\\*
+{\ttfamily \#include $<$libxml/tree.\-h$>$}\\*
+{\ttfamily \#include $<$def\-\_\-errors.\-h$>$}\\*
+{\ttfamily \#include $<$hdf5.\-h$>$}\\*
+{\ttfamily \#include $<$sys/stat.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{input__module_8c_ae5f74b253f4bf510314f9f42b0b947b2}{char $\ast$ {\bfseries remove\-Space} (char $\ast$str)}\label{input__module_8c_ae5f74b253f4bf510314f9f42b0b947b2}
+
+\item 
+\hypertarget{input__module_8c_a8a95a20ba976516f0cec1d9f17b73475}{void {\bfseries remove\-Point} (char $\ast$str)}\label{input__module_8c_a8a95a20ba976516f0cec1d9f17b73475}
+
+\item 
+\hypertarget{input__module_8c_abbc7b5154af1bbe92535005dc34dbf3f}{xml\-Node\-Ptr {\bfseries extract\-\_\-init\-\_\-node} (xml\-Node\-Ptr cur, const char $\ast$name)}\label{input__module_8c_abbc7b5154af1bbe92535005dc34dbf3f}
+
+\item 
+\hypertarget{input__module_8c_a1f1083a64b288bd8cc750e3037051392}{char $\ast$ {\bfseries extract\-\_\-element\-\_\-uniq} (xml\-Doc\-Ptr doc, xml\-Node\-Ptr cur, const char $\ast$name)}\label{input__module_8c_a1f1083a64b288bd8cc750e3037051392}
+
+\item 
+\hypertarget{input__module_8c_a3591e2242b7e0a394fb3e7f54db2df05}{int {\bfseries count\-\_\-element\-\_\-multi} (xml\-Doc\-Ptr doc, xml\-Node\-Ptr cur, const char $\ast$name)}\label{input__module_8c_a3591e2242b7e0a394fb3e7f54db2df05}
+
+\item 
+\hypertarget{input__module_8c_a0303cf14ab0edfe065e4a655b4e660db}{void {\bfseries extract\-\_\-element\-\_\-multi} (xml\-Doc\-Ptr doc, xml\-Node\-Ptr cur, const char $\ast$name, char $\ast$$\ast$vector\-G)}\label{input__module_8c_a0303cf14ab0edfe065e4a655b4e660db}
+
+\item 
+\hypertarget{input__module_8c_a3439ba31b57aeff31e8e6756ecdc5c9b}{void {\bfseries extract\-\_\-atribute\-\_\-multi} (xml\-Doc\-Ptr doc, xml\-Node\-Ptr cur, const char $\ast$name, double $\ast$F\-X, const char $\ast$atrib)}\label{input__module_8c_a3439ba31b57aeff31e8e6756ecdc5c9b}
+
+\item 
+\hypertarget{input__module_8c_a7f1c851671a51397929ea72edaaf04cf}{int {\bfseries extract\-\_\-element\-\_\-test} (xml\-Doc\-Ptr doc, xml\-Node\-Ptr $\ast$root, \hyperlink{structexperiment__testbed}{experiment\-\_\-testbed} $\ast$test)}\label{input__module_8c_a7f1c851671a51397929ea72edaaf04cf}
+
+\item 
+\hypertarget{input__module_8c_a8aac72422888a26ab4f3d876ca739d91}{int {\bfseries extract\-\_\-element\-\_\-method\-\_\-\-Scatter\-Search} (xml\-Doc\-Ptr doc, xml\-Node\-Ptr $\ast$root, \hyperlink{structexperiment__method__ScatterSearch}{experiment\-\_\-method\-\_\-\-Scatter\-Search} $\ast$method)}\label{input__module_8c_a8aac72422888a26ab4f3d876ca739d91}
+
+\item 
+\hypertarget{input__module_8c_a0bb5dc82ead2bd6bd9441c8a4c2f043d}{int {\bfseries extract\-\_\-element\-\_\-parallelization} (xml\-Doc\-Ptr doc, xml\-Node\-Ptr $\ast$root, \hyperlink{structparallelization__strategy}{parallelization\-\_\-strategy} $\ast$parallel)}\label{input__module_8c_a0bb5dc82ead2bd6bd9441c8a4c2f043d}
+
+\item 
+\hypertarget{input__module_8c_a3a8a66c380badfc4280a97572c594a65}{int {\bfseries load\-\_\-configuration\-\_\-\-X\-M\-L} (char $\ast$docname, \hyperlink{structexperiment__total}{experiment\-\_\-total} $\ast$exptotal)}\label{input__module_8c_a3a8a66c380badfc4280a97572c594a65}
+
+\item 
+\hypertarget{input__module_8c_a369e35c8871990cefce1d1e610435292}{int {\bfseries extract\-\_\-element\-\_\-problem} (xml\-Doc\-Ptr doc, xml\-Node\-Ptr $\ast$root, \hyperlink{structexperiment__testbed}{experiment\-\_\-testbed} $\ast$test)}\label{input__module_8c_a369e35c8871990cefce1d1e610435292}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+File containing functions to parse the input X\-M\-L, completing the main struct of \hyperlink{structexperiment__total}{experiment\-\_\-total} data. \begin{DoxyAuthor}{Author}
+David R. Penas 
+\end{DoxyAuthor}
+
+
+Definition in file \hyperlink{input__module_8c_source}{input\-\_\-module.\-c}.
+

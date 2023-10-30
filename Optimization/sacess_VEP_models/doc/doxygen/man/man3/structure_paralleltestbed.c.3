@@ -1,0 +1,212 @@
+.TH "src/method_module/structure_paralleltestbed.c" 3 "Wed May 11 2016" "Version 0.1" "SACESS TOOLBOX" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/method_module/structure_paralleltestbed.c \- 
+.PP
+File containing setter and getter for all fields of the main struct \fBexperiment_total\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <structure_paralleltestbed\&.h>\fP
+.br
+\fC#include <configuration\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <math\&.h>\fP
+.br
+\fC#include <float\&.h>\fP
+.br
+\fC#include <def_errors\&.h>\fP
+.br
+\fC#include <gsl/gsl_rng\&.h>\fP
+.br
+\fC#include <gsl/gsl_randist\&.h>\fP
+.br
+\fC#include <time\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBreturnboundscfortran_\fP (void *exp_, double *XU, double *XL, int *nvar)"
+.br
+.ti -1c
+.RI "void \fBsetvectorcfortran_\fP (void *vector, double *in, int *nvar)"
+.br
+.ti -1c
+.RI "void \fBreturnvectorcfortran_\fP (void *vector, double *out, int *nvar)"
+.br
+.ti -1c
+.RI "void \fBsumfailevals_\fP (void *exp_)"
+.br
+.ti -1c
+.RI "int \fBreturnfailevals_\fP (void *exp_)"
+.br
+.ti -1c
+.RI "int \fBcreate_expetiment_struct\fP (char *file, \fBexperiment_total\fP *exptotal, int NPROC, int id, char *path, int init)"
+.br
+.ti -1c
+.RI "void \fBinit_result_data\fP (\fBresult_solver\fP *result, int size)"
+.br
+.ti -1c
+.RI "void \fBdestroy_result_data\fP (\fBresult_solver\fP *result)"
+.br
+.ti -1c
+.RI "void \fBupdatenp_\fP (void *exp_, int *dim_refset)"
+.br
+.ti -1c
+.RI "const char * \fBgetname\fP (\fBexperiment_total\fP *exp)"
+.br
+.ti -1c
+.RI "int \fBgetnumversion\fP (\fBexperiment_total\fP *exptotal)"
+.br
+.ti -1c
+.RI "const char * \fBgetversioness\fP (int i)"
+.br
+.ti -1c
+.RI "const char * \fBgetlsess\fP (\fBexperiment_total\fP *exp)"
+.br
+.ti -1c
+.RI "const char * \fBgettopologyess\fP (int i)"
+.br
+.ti -1c
+.RI "void \fBdestroyexp\fP (\fBexperiment_total\fP *exp)"
+.br
+.ti -1c
+.RI "int \fBdestroybenchmark\fP (\fBexperiment_total\fP *exp)"
+.br
+.ti -1c
+.RI "int \fBis_asynchronous\fP (\fBexperiment_total\fP exp)"
+.br
+.ti -1c
+.RI "int \fBis_parallel\fP (\fBexperiment_total\fP exp)"
+.br
+.ti -1c
+.RI "int \fBis_noise\fP (\fBexperiment_total\fP exp)"
+.br
+.ti -1c
+.RI "int \fBnumber_benchmark\fP (\fBexperiment_total\fP *exp)"
+.br
+.ti -1c
+.RI "void \fBcheck_fun\fP (\fBexperiment_total\fP exp, int current_bench, int noise_funcion)"
+.br
+.ti -1c
+.RI "int \fBchargedimension_\fP (void *exp1_, int *D)"
+.br
+.ti -1c
+.RI "int \fBchargedimensionopenmp_\fP (void *exp1_, int *D)"
+.br
+.ti -1c
+.RI "int \fBreturninitsol_\fP (void *exp_)"
+.br
+.ti -1c
+.RI "int \fBloadinitpoints_\fP (void *exp_, double *point, int *pos, double *fx)"
+.br
+.ti -1c
+.RI "int \fBchargeuseroptions_\fP (void *exp_, double *maxtime, int *weight, double *tolc, double *prob_bound, int *nstuck_solution, int *strategy, int *inter_save, int *iterprint, int *\fBplot\fP, int *log_var, int *init_point, int *logvar, double *X0, double *F0)"
+.br
+.ti -1c
+.RI "int \fBchargeglobaloptions_\fP (void *exp_, int *dim_ref, int *ndiverse, int *initiate, int *combination, int *regenerate, char *delete, int *intens, double *tolf, int *diverse_criteria, double *tolx, int *n_stuck)"
+.br
+.ti -1c
+.RI "int \fBchargelsevalmax_\fP (void *exp_, long *lsevals)"
+.br
+.ti -1c
+.RI "int \fBchargelocaloptions_\fP (void *exp_, int *tol, int *iterprint, int *n1, int *n2, double *balance, char *finish, int *bestx, int *merit_filter, int *distance_filter, double *thfactor, double *maxdistfactor, int *wait_maxdist_limit, int *wait_th_limit, char *solver, double *threshold_local)"
+.br
+.ti -1c
+.RI "int \fBchargeproblemargs_\fP (void *exp_, int *ineq, int *int_var, int *bin_var)"
+.br
+.ti -1c
+.RI "int \fBgetopenmpoption_\fP (void *exp_)"
+.br
+.ti -1c
+.RI "int \fBchargeboundsnconst_\fP (void *exp_, double *XU, double *XL, int *nvar, double *CU, double *CL, int *ineq)"
+.br
+.ti -1c
+.RI "int \fBchargebounds_\fP (void *exp_, double *XU, double *XL, int *nvar)"
+.br
+.ti -1c
+.RI "int \fBgetbench_\fP (void *exp_)"
+.br
+.ti -1c
+.RI "void \fBsetdblmax_\fP (double *valor)"
+.br
+.ti -1c
+.RI "void \fBsetinfinity_\fP (double *valor)"
+.br
+.ti -1c
+.RI "void \fBsetnan_\fP (double *valor)"
+.br
+.ti -1c
+.RI "double \fBgettotaltime_\fP (\fBresult_solver\fP *timestruct)"
+.br
+.ti -1c
+.RI "int \fBishete_\fP (void *exp_)"
+.br
+.ti -1c
+.RI "int \fBiscoop_\fP (void *exp_)"
+.br
+.ti -1c
+.RI "double \fBgetparalleltime_\fP (\fBresult_solver\fP *timestruct)"
+.br
+.ti -1c
+.RI "double \fBgetlocalsolvertime_\fP (\fBresult_solver\fP *timestruct)"
+.br
+.ti -1c
+.RI "void \fBsettotaltime_\fP (\fBresult_solver\fP *timestruct, double *time)"
+.br
+.ti -1c
+.RI "void \fBsetparalleltime_\fP (\fBresult_solver\fP *timestruct, double *time)"
+.br
+.ti -1c
+.RI "void \fBsetlocalsolvertime_\fP (\fBresult_solver\fP *timestruct, double *time)"
+.br
+.ti -1c
+.RI "void \fBsetiteration_\fP (void *exp_, int *ite)"
+.br
+.ti -1c
+.RI "void \fBsetnumit_\fP (void *exp_, int *ite)"
+.br
+.ti -1c
+.RI "int \fBgetidp_\fP (void *exp_)"
+.br
+.ti -1c
+.RI "void \fBsaveinittime_\fP (void *exp_, double *starttime)"
+.br
+.ti -1c
+.RI "double \fBreturninittime_\fP (void *exp_)"
+.br
+.ti -1c
+.RI "void \fBsetamigolocalevals_\fP (void *exp_, int *levals)"
+.br
+.ti -1c
+.RI "void \fBsetparallelsacessfieldsmaster_\fP (void *exp_, double *rth)"
+.br
+.ti -1c
+.RI "void \fBsetparallelsacessfieldsslaves_\fP (void *exp_, double *eth, int *numsend, int *minsend)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+File containing setter and getter for all fields of the main struct \fBexperiment_total\fP\&. 
+
+\fBAuthor:\fP
+.RS 4
+David R\&. Penas 
+.RE
+.PP
+
+.PP
+Definition in file \fBstructure_paralleltestbed\&.c\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for SACESS TOOLBOX from the source code\&.

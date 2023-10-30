@@ -1,0 +1,157 @@
+.TH "src/method_module/common_solver_operations.c" 3 "Wed May 11 2016" "Version 0.1" "SACESS TOOLBOX" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/method_module/common_solver_operations.c \- 
+.PP
+File containing a set of functions with different purposes: arithmetic operations, management of random numbers, geometrical operations, search algorithms\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <structure_paralleltestbed\&.h>\fP
+.br
+\fC#include <configuration\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <math\&.h>\fP
+.br
+\fC#include <float\&.h>\fP
+.br
+\fC#include <def_errors\&.h>\fP
+.br
+\fC#include <gsl/gsl_rng\&.h>\fP
+.br
+\fC#include <gsl/gsl_randist\&.h>\fP
+.br
+\fC#include <time\&.h>\fP
+.br
+\fC#include <limits\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBlogandtranslation_\fP (void *exp1)"
+.br
+.ti -1c
+.RI "double \fBcalcSD\fP (double mean, double *population, int sizePOPUL)"
+.br
+.ti -1c
+.RI "double \fBcalctime\fP (void *exp, double starttime)"
+.br
+.ti -1c
+.RI "int \fBreturnseedcounter_\fP (void *exp1_)"
+.br
+.ti -1c
+.RI "void \fBreturnseed_\fP (void *exp1_, double *seed)"
+.br
+.ti -1c
+.RI "void \fBinitrngrandomserial_\fP (void *exp1_)"
+.br
+.ti -1c
+.RI "void \fBinitrngrandomparallel_\fP (void *exp1_, int *idp)"
+.br
+.ti -1c
+.RI "void \fBreinitrngrandomparallel_\fP (void *exp1_, int *idp)"
+.br
+.ti -1c
+.RI "double \fBgetrngrandomserial_\fP (void *exp1_)"
+.br
+.ti -1c
+.RI "int \fBallocatematrixdouble_\fP (double *vector, int *fil, int *col)"
+.br
+.ti -1c
+.RI "void \fBconverttonormal_\fP (double *vector, int *D)"
+.br
+.ti -1c
+.RI "void \fBconverttonormal2_\fP (double *vector, int *D, int *index)"
+.br
+.ti -1c
+.RI "void \fBconverttolog_\fP (double *vector, int *D)"
+.br
+.ti -1c
+.RI "void \fBconverttolog2_\fP (double *vector, int *D, int *index)"
+.br
+.ti -1c
+.RI "void \fBcoord_transformation\fP (double *OLD, double *New, int D, double *UB, double *LB)"
+.br
+.ti -1c
+.RI "int \fBextract_worst_index\fP (double *populLocal, int tam, int D)"
+.br
+.ti -1c
+.RI "void \fBinsert_matrix_tabu_list\fP (double *U, double *matrix, int D, int NP, int contador)"
+.br
+.ti -1c
+.RI "double \fBcalc_euclidean_distance\fP (double *U1, double *U2, int D, double *UB, double *LB)"
+.br
+.ti -1c
+.RI "int \fBinitializebenchmarks_\fP (void *exp1_, double *Xl, double *Xm, int *D)"
+.br
+.ti -1c
+.RI "int \fBinitializebenchmarksopenmp_\fP (void *exp1_, double *Xl, double *Xm, int *D, int *idp)"
+.br
+.ti -1c
+.RI "double \fBsumvar\fP (double *Matriz, int sizeMatriz, int sizeVector)"
+.br
+.ti -1c
+.RI "int \fBallocate_QuickShort\fP (double *v, int b, int NP, int D)"
+.br
+.ti -1c
+.RI "double * \fBreorderVector_QuickShort\fP (double *v, int b, int NP, int D)"
+.br
+.ti -1c
+.RI "void \fBreplaceWorst\fP (double *v, int NP, int D, double *best, int sizeBest)"
+.br
+.ti -1c
+.RI "void \fBreplaceWorstRecp\fP (double *v, int NP, int D, double *best, int sizeBest, double *LB, double *UB, int rest)"
+.br
+.ti -1c
+.RI "void \fBreplaceRandom\fP (double *v, int NP, int D, double *best, int sizeBest)"
+.br
+.ti -1c
+.RI "void \fBreturnBest\fP (double *v, int N, int D, double *best, int sizeBest)"
+.br
+.ti -1c
+.RI "void \fBreturnRandom\fP (double *v, int NP, int D, double *best, int sizeBest)"
+.br
+.ti -1c
+.RI "void \fBreturnIndv\fP (\fBexperiment_total\fP exp1, double *v, int N, int D, double *best, int sizeBest, double *UB, double *LB, int rest)"
+.br
+.ti -1c
+.RI "void \fBreplaceIndv\fP (\fBexperiment_total\fP exp1, double *v, int N, int D, double *worst, int sizeBest, double *Xl, double *Xm, int rest)"
+.br
+.ti -1c
+.RI "int \fBextract_best_index\fP (double *populLocal, int tam, int D)"
+.br
+.ti -1c
+.RI "void \fBreorder_best\fP (double *v, int N, int D)"
+.br
+.ti -1c
+.RI "long \fBgetmaxlong_\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetpoint_\fP (double *x)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+File containing a set of functions with different purposes: arithmetic operations, management of random numbers, geometrical operations, search algorithms\&. 
+
+\fBAuthor:\fP
+.RS 4
+David R\&. Penas 
+.RE
+.PP
+
+.PP
+Definition in file \fBcommon_solver_operations\&.c\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for SACESS TOOLBOX from the source code\&.

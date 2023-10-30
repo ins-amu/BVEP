@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="structscattersearchtypes_1_1topology__data__fortran" kind="type" prot="public">
+    <compoundname>scattersearchtypes::topology_data_fortran</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structscattersearchtypes_1_1topology__data__fortran_1abe6a4ee07155b9d1bcf3ff38d962e418" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::topology_data_fortran::num_r</definition>
+        <argsstring></argsstring>
+        <name>num_r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1topology__data__fortran_1a16c03ff07dfd7ce7971fc65ec7e518f7" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::topology_data_fortran::num_left</definition>
+        <argsstring></argsstring>
+        <name>num_left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1topology__data__fortran_1a4c1fcc49c3d3fdda543caa608d82d543" prot="public" static="no" mutable="no">
+        <type>integer, dimension(:), allocatable</type>
+        <definition>integer, dimension(:), allocatable scattersearchtypes::topology_data_fortran::rigth</definition>
+        <argsstring></argsstring>
+        <name>rigth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1topology__data__fortran_1aa9594571ff2793df9c291359230aa44b" prot="public" static="no" mutable="no">
+        <type>integer, dimension(:), allocatable</type>
+        <definition>integer, dimension(:), allocatable scattersearchtypes::topology_data_fortran::left</definition>
+        <argsstring></argsstring>
+        <name>left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="208" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="structscattersearchtypes_1_1topology__data__fortran_1aa9594571ff2793df9c291359230aa44b" prot="public" virt="non-virtual"><scope>scattersearchtypes::topology_data_fortran</scope><name>left</name></member>
+      <member refid="structscattersearchtypes_1_1topology__data__fortran_1a16c03ff07dfd7ce7971fc65ec7e518f7" prot="public" virt="non-virtual"><scope>scattersearchtypes::topology_data_fortran</scope><name>num_left</name></member>
+      <member refid="structscattersearchtypes_1_1topology__data__fortran_1abe6a4ee07155b9d1bcf3ff38d962e418" prot="public" virt="non-virtual"><scope>scattersearchtypes::topology_data_fortran</scope><name>num_r</name></member>
+      <member refid="structscattersearchtypes_1_1topology__data__fortran_1a4c1fcc49c3d3fdda543caa608d82d543" prot="public" virt="non-virtual"><scope>scattersearchtypes::topology_data_fortran</scope><name>rigth</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

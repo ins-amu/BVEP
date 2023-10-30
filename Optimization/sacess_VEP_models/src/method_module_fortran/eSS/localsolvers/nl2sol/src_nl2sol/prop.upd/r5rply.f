@@ -1,0 +1,46 @@
+      SUBROUTINE R5RPLY(TYPE, P, QP, K, QK)
+C COMPUTES THE NEXT K POLYNOMIALS USING SCALARS
+C COMPUTED IN R2RPLY
+C
+      COMMON /P66PLY/ SR, SI, U,
+     1 V, A, B, C, D, A1, A2, A3, A6, A7, E, F, G,
+     2 H, SZR, SZI, LZR, LZI, ETA, ARE, MRE, N, NN
+C
+      INTEGER N, NN
+      INTEGER TYPE
+C
+      REAL ETA, ARE, MRE
+      REAL P(1), QP(2), K(2),
+     1 QK(1), SR, SI, U, V, A, B, C, D,
+     2 A1, A2, A3, A6, A7, E, F, G, H, SZR, SZI,
+     3 LZR, LZI
+      REAL TEMP, ABS
+      IF (TYPE.EQ.3) GO TO 40
+      TEMP = A
+      IF (TYPE.EQ.1) TEMP = B
+      IF (ABS(A1).GT.ABS(TEMP)*ETA*10.) GO TO 20
+C IF A1 IS NEARLY ZERO THEN USE A SPECIAL FORM OF THE
+C RECURRENCE
+      K(1) = 0.E0
+      K(2) = -A7*QP(1)
+      DO 10 I=3,N
+        K(I) = A3*QK(I-2) - A7*QP(I-1)
+   10 CONTINUE
+      RETURN
+C USE SCALED FORM OF THE RECURRENCE
+   20 A7 = A7/A1
+      A3 = A3/A1
+      K(1) = QP(1)
+      K(2) = QP(2) - A7*QP(1)
+      DO 30 I=3,N
+        K(I) = A3*QK(I-2) - A7*QP(I-1) + QP(I)
+   30 CONTINUE
+      RETURN
+C USE UNSCALED FORM OF THE RECURRENCE IF TYPE IS 3
+   40 K(1) = 0.E0
+      K(2) = 0.E0
+      DO 50 I=3,N
+        K(I) = QK(I-2)
+   50 CONTINUE
+      RETURN
+      END

@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="structscattersearchtypes_1_1opts" kind="type" prot="public">
+    <compoundname>scattersearchtypes::opts</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structscattersearchtypes_1_1opts_1a3ed15c8e04afcd8b182304c84bb8c76f" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::opts::empty</definition>
+        <argsstring></argsstring>
+        <name>empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1opts_1abcbb32dc2dd7c2e4870a0a0a0fd645e1" prot="public" static="no" mutable="no">
+        <type>type(<ref refid="structscattersearchtypes_1_1uoptions" kindref="compound">uoptions</ref>)</type>
+        <definition>type(uoptions) scattersearchtypes::opts::useroptions</definition>
+        <argsstring></argsstring>
+        <name>useroptions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1opts_1a5aa9b4066a6de3027c9d44fa4408ad4a" prot="public" static="no" mutable="no">
+        <type>type(<ref refid="structscattersearchtypes_1_1goptions" kindref="compound">goptions</ref>)</type>
+        <definition>type(goptions) scattersearchtypes::opts::globaloptions</definition>
+        <argsstring></argsstring>
+        <name>globaloptions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1opts_1a4c7b2eaa8e9be8d87858b87c7ce8fca8" prot="public" static="no" mutable="no">
+        <type>type(<ref refid="structscattersearchtypes_1_1loptions" kindref="compound">loptions</ref>)</type>
+        <definition>type(loptions) scattersearchtypes::opts::localoptions</definition>
+        <argsstring></argsstring>
+        <name>localoptions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="83">
+        <label>scattersearchtypes::opts</label>
+        <link refid="structscattersearchtypes_1_1opts"/>
+        <childnode refid="84" relation="usage">
+          <edgelabel>localoptions</edgelabel>
+        </childnode>
+        <childnode refid="86" relation="usage">
+          <edgelabel>useroptions</edgelabel>
+        </childnode>
+        <childnode refid="87" relation="usage">
+          <edgelabel>globaloptions</edgelabel>
+        </childnode>
+      </node>
+      <node id="84">
+        <label>scattersearchtypes::loptions</label>
+        <link refid="structscattersearchtypes_1_1loptions"/>
+        <childnode refid="85" relation="usage">
+          <edgelabel>extrap</edgelabel>
+        </childnode>
+      </node>
+      <node id="86">
+        <label>scattersearchtypes::uoptions</label>
+        <link refid="structscattersearchtypes_1_1uoptions"/>
+      </node>
+      <node id="87">
+        <label>scattersearchtypes::goptions</label>
+        <link refid="structscattersearchtypes_1_1goptions"/>
+      </node>
+      <node id="85">
+        <label>scattersearchtypes::extraparametters</label>
+        <link refid="structscattersearchtypes_1_1extraparametters"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="157" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="structscattersearchtypes_1_1opts_1a3ed15c8e04afcd8b182304c84bb8c76f" prot="public" virt="non-virtual"><scope>scattersearchtypes::opts</scope><name>empty</name></member>
+      <member refid="structscattersearchtypes_1_1opts_1a5aa9b4066a6de3027c9d44fa4408ad4a" prot="public" virt="non-virtual"><scope>scattersearchtypes::opts</scope><name>globaloptions</name></member>
+      <member refid="structscattersearchtypes_1_1opts_1a4c7b2eaa8e9be8d87858b87c7ce8fca8" prot="public" virt="non-virtual"><scope>scattersearchtypes::opts</scope><name>localoptions</name></member>
+      <member refid="structscattersearchtypes_1_1opts_1abcbb32dc2dd7c2e4870a0a0a0fd645e1" prot="public" virt="non-virtual"><scope>scattersearchtypes::opts</scope><name>useroptions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

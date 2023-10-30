@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="input__AMIGO_8h" kind="file">
+    <compoundname>input_AMIGO.h</compoundname>
+    <includes local="yes">AMIGO_problem.h</includes>
+    <includes local="yes">AMIGO_pe.h</includes>
+    <incdepgraph>
+      <node id="19">
+        <label>include/input/input_AMIGO.h</label>
+        <link refid="input_AMIGO.h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>AMIGO_pe.h</label>
+      </node>
+      <node id="20">
+        <label>AMIGO_problem.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="input__AMIGO_8h_1a68e26983026b04748b21868db30082fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>AMIGO_problem *</type>
+        <definition>AMIGO_problem* openMatFileAMIGO</definition>
+        <argsstring>(const char *)</argsstring>
+        <name>openMatFileAMIGO</name>
+        <param>
+          <type>const char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/input/input_AMIGO.h" line="4" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/input_module/input_AMIGO.c" bodystart="496" bodyend="572"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;AMIGO_problem.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;AMIGO_pe.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">AMIGO_problem*<sp/>openMatFileAMIGO(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/input/input_AMIGO.h"/>
+  </compounddef>
+</doxygen>

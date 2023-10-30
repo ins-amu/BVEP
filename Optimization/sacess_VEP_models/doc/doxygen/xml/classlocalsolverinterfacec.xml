@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="classlocalsolverinterfacec" kind="module" prot="public">
+    <compoundname>localsolverinterfacec</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlocalsolverinterfacec_1a3a9a4c04087c9cafc4e94eca821c3fa0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine localsolverinterfacec::calldhcinterface</definition>
+        <argsstring>(exp1, D, tolerance, fitnessfunction, point, fval, numeval)</argsstring>
+        <name>calldhcinterface</name>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>D</type>
+          <defname>D</defname>
+        </param>
+        <param>
+          <type>tolerance</type>
+          <defname>tolerance</defname>
+        </param>
+        <param>
+          <type>fitnessfunction</type>
+          <defname>fitnessfunction</defname>
+        </param>
+        <param>
+          <type>point</type>
+          <defname>point</defname>
+        </param>
+        <param>
+          <type>fval</type>
+          <defname>fval</defname>
+        </param>
+        <param>
+          <type>numeval</type>
+          <defname>numeval</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/localsolvers/localsolverinterfacec.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/localsolvers/localsolverinterfacec.f90" bodystart="1" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classlocalsolverinterfacec_1a3a9a4c04087c9cafc4e94eca821c3fa0" prot="public" virt="non-virtual"><scope>localsolverinterfacec</scope><name>calldhcinterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

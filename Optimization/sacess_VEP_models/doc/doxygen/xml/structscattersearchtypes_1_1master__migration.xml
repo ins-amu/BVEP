@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="structscattersearchtypes_1_1master__migration" kind="type" prot="public">
+    <compoundname>scattersearchtypes::master_migration</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structscattersearchtypes_1_1master__migration_1acddca771e6e31e1dfda1f2173880fa62" prot="public" static="no" mutable="no">
+        <type>integer(c_int), dimension(:), allocatable</type>
+        <definition>integer(c_int), dimension(:), allocatable scattersearchtypes::master_migration::vector_proc</definition>
+        <argsstring></argsstring>
+        <name>vector_proc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1master__migration_1a22165a4497a71804d551bf11c19ff3a2" prot="public" static="no" mutable="no">
+        <type>integer, dimension(:), allocatable</type>
+        <definition>integer, dimension(:), allocatable scattersearchtypes::master_migration::ocurrences_send</definition>
+        <argsstring></argsstring>
+        <name>ocurrences_send</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="75" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="structscattersearchtypes_1_1master__migration_1a22165a4497a71804d551bf11c19ff3a2" prot="public" virt="non-virtual"><scope>scattersearchtypes::master_migration</scope><name>ocurrences_send</name></member>
+      <member refid="structscattersearchtypes_1_1master__migration_1acddca771e6e31e1dfda1f2173880fa62" prot="public" virt="non-virtual"><scope>scattersearchtypes::master_migration</scope><name>vector_proc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

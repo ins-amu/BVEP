@@ -1,0 +1,476 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="structexecution__vars" kind="struct" prot="public">
+    <compoundname>execution_vars</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structexecution__vars_1a203af792baab9c5cd8b7c12d620a2444" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* execution_vars::nameMatlab</definition>
+        <argsstring></argsstring>
+        <name>nameMatlab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="205" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1a9ff3063e55ca3ca1969fcdaba32f9b2c" prot="public" static="no" mutable="no">
+        <type><ref refid="structtopology__data" kindref="compound">topology_data</ref></type>
+        <definition>topology_data execution_vars::topology</definition>
+        <argsstring></argsstring>
+        <name>topology</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="206" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1a6cc90a3a4c3cd2e836658f380ee169cf" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int execution_vars::size_send_buffer</definition>
+        <argsstring></argsstring>
+        <name>size_send_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="207" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1a35addc4237253d9a26a8fe7799b420e0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int execution_vars::send_id</definition>
+        <argsstring></argsstring>
+        <name>send_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="208" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1a82ea7e1a19312aaf518ce5e82698e74d" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* execution_vars::st</definition>
+        <argsstring></argsstring>
+        <name>st</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="209" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1a694094b5e9d0031f6373d03d1adfcc5e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int execution_vars::idp</definition>
+        <argsstring></argsstring>
+        <name>idp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="210" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1a62273d2b43856c0f5da574d3b769c3c4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int execution_vars::num_it</definition>
+        <argsstring></argsstring>
+        <name>num_it</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="211" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1af88bb0ffb4376645ca0c5af8dfecae4c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double execution_vars::max_time_ite</definition>
+        <argsstring></argsstring>
+        <name>max_time_ite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="212" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1aa04463c5936bc3213d4f88c356457f77" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double execution_vars::max_time_ite_last</definition>
+        <argsstring></argsstring>
+        <name>max_time_ite_last</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="213" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1a66a9804ea2a4d4222e716c50a167b10a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int execution_vars::NPROC</definition>
+        <argsstring></argsstring>
+        <name>NPROC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="214" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1ab81f6634691c4d373d9a12d8e91ad091" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int execution_vars::tam</definition>
+        <argsstring></argsstring>
+        <name>tam</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="215" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1a79600634b197148190d89eee074198e7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int execution_vars::NP</definition>
+        <argsstring></argsstring>
+        <name>NP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="216" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1a9f5c6d035425a7f7bdbae511d7716517" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int execution_vars::NM</definition>
+        <argsstring></argsstring>
+        <name>NM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="217" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1a78cf182cfa95c60ec2768866c76e6f7e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int execution_vars::st_sent</definition>
+        <argsstring></argsstring>
+        <name>st_sent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="218" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1a43f3bb68d811810e0dd31896962b586b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int execution_vars::stuckcond_lowVar</definition>
+        <argsstring></argsstring>
+        <name>stuckcond_lowVar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="219" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1abc3aa7c33d2f8c58f658132f2ed104c6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int execution_vars::stuckcount</definition>
+        <argsstring></argsstring>
+        <name>stuckcount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="220" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1a738cc6a1af8d608bba4b9188f185d631" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int execution_vars::migra_asin_wait</definition>
+        <argsstring></argsstring>
+        <name>migra_asin_wait</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="221" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1a537bda5cb59414a1428793d304f4d76f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int execution_vars::migration</definition>
+        <argsstring></argsstring>
+        <name>migration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="222" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1a135dc4087f0dd577df52ab5f5ea18b65" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int execution_vars::contadorMigra</definition>
+        <argsstring></argsstring>
+        <name>contadorMigra</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="223" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1a8c9550bfc1cabc977162a126d970ede5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int execution_vars::enterMigrat</definition>
+        <argsstring></argsstring>
+        <name>enterMigrat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="224" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1aee62d3167cf7d2091da31085d493c7c7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int execution_vars::update</definition>
+        <argsstring></argsstring>
+        <name>update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="225" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1a3ece0ca58c3d178dacbf6c705c5b79c1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int execution_vars::max_eval_ite_last</definition>
+        <argsstring></argsstring>
+        <name>max_eval_ite_last</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="226" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1a9ebab8c352a9de350ab6d9ba223e5d03" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double execution_vars::minvarcondition</definition>
+        <argsstring></argsstring>
+        <name>minvarcondition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="227" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1aab0dde2ad14da58c79b2d315ad8aae0f" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double execution_vars::ftarget</definition>
+        <argsstring></argsstring>
+        <name>ftarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="228" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1a8c336d11ff2ad2a164a10b10071707f7" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long execution_vars::maxfunevals</definition>
+        <argsstring></argsstring>
+        <name>maxfunevals</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="229" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1a5de441ccf3124c51a7b1781a054030ec" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double execution_vars::initTIME</definition>
+        <argsstring></argsstring>
+        <name>initTIME</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="230" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1aea26ba949f1cc73d8700fea3dc79f20a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int execution_vars::rep</definition>
+        <argsstring></argsstring>
+        <name>rep</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="231" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1a2e0ac612f0f9dabf144b9645b74767cc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int execution_vars::initpath</definition>
+        <argsstring></argsstring>
+        <name>initpath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="232" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1acbc8e4a35c130fa2b60cce3205e363e2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int execution_vars::iteration</definition>
+        <argsstring></argsstring>
+        <name>iteration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="233" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1a23756ce3d731981b9aa90c85ce3aa0ac" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* execution_vars::transconst</definition>
+        <argsstring></argsstring>
+        <name>transconst</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="234" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1a5f93f53a90673d8b25e1dde6f4a3e536" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* execution_vars::file</definition>
+        <argsstring></argsstring>
+        <name>file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="259" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexecution__vars_1a16c66b1430d3379ee272d7779d34eaf4" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long execution_vars::failevals</definition>
+        <argsstring></argsstring>
+        <name>failevals</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="260" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="12">
+        <label>topology_data</label>
+        <link refid="structtopology__data"/>
+      </node>
+      <node id="11">
+        <label>execution_vars</label>
+        <link refid="structexecution__vars"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>topology</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="204" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="204" bodyend="261"/>
+    <listofallmembers>
+      <member refid="structexecution__vars_1a135dc4087f0dd577df52ab5f5ea18b65" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>contadorMigra</name></member>
+      <member refid="structexecution__vars_1a8c9550bfc1cabc977162a126d970ede5" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>enterMigrat</name></member>
+      <member refid="structexecution__vars_1a16c66b1430d3379ee272d7779d34eaf4" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>failevals</name></member>
+      <member refid="structexecution__vars_1a5f93f53a90673d8b25e1dde6f4a3e536" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>file</name></member>
+      <member refid="structexecution__vars_1aab0dde2ad14da58c79b2d315ad8aae0f" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>ftarget</name></member>
+      <member refid="structexecution__vars_1a694094b5e9d0031f6373d03d1adfcc5e" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>idp</name></member>
+      <member refid="structexecution__vars_1a2e0ac612f0f9dabf144b9645b74767cc" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>initpath</name></member>
+      <member refid="structexecution__vars_1a5de441ccf3124c51a7b1781a054030ec" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>initTIME</name></member>
+      <member refid="structexecution__vars_1acbc8e4a35c130fa2b60cce3205e363e2" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>iteration</name></member>
+      <member refid="structexecution__vars_1a3ece0ca58c3d178dacbf6c705c5b79c1" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>max_eval_ite_last</name></member>
+      <member refid="structexecution__vars_1af88bb0ffb4376645ca0c5af8dfecae4c" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>max_time_ite</name></member>
+      <member refid="structexecution__vars_1aa04463c5936bc3213d4f88c356457f77" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>max_time_ite_last</name></member>
+      <member refid="structexecution__vars_1a8c336d11ff2ad2a164a10b10071707f7" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>maxfunevals</name></member>
+      <member refid="structexecution__vars_1a738cc6a1af8d608bba4b9188f185d631" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>migra_asin_wait</name></member>
+      <member refid="structexecution__vars_1a537bda5cb59414a1428793d304f4d76f" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>migration</name></member>
+      <member refid="structexecution__vars_1a9ebab8c352a9de350ab6d9ba223e5d03" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>minvarcondition</name></member>
+      <member refid="structexecution__vars_1a203af792baab9c5cd8b7c12d620a2444" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>nameMatlab</name></member>
+      <member refid="structexecution__vars_1a9f5c6d035425a7f7bdbae511d7716517" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>NM</name></member>
+      <member refid="structexecution__vars_1a79600634b197148190d89eee074198e7" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>NP</name></member>
+      <member refid="structexecution__vars_1a66a9804ea2a4d4222e716c50a167b10a" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>NPROC</name></member>
+      <member refid="structexecution__vars_1a62273d2b43856c0f5da574d3b769c3c4" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>num_it</name></member>
+      <member refid="structexecution__vars_1aea26ba949f1cc73d8700fea3dc79f20a" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>rep</name></member>
+      <member refid="structexecution__vars_1a35addc4237253d9a26a8fe7799b420e0" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>send_id</name></member>
+      <member refid="structexecution__vars_1a6cc90a3a4c3cd2e836658f380ee169cf" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>size_send_buffer</name></member>
+      <member refid="structexecution__vars_1a82ea7e1a19312aaf518ce5e82698e74d" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>st</name></member>
+      <member refid="structexecution__vars_1a78cf182cfa95c60ec2768866c76e6f7e" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>st_sent</name></member>
+      <member refid="structexecution__vars_1a43f3bb68d811810e0dd31896962b586b" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>stuckcond_lowVar</name></member>
+      <member refid="structexecution__vars_1abc3aa7c33d2f8c58f658132f2ed104c6" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>stuckcount</name></member>
+      <member refid="structexecution__vars_1ab81f6634691c4d373d9a12d8e91ad091" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>tam</name></member>
+      <member refid="structexecution__vars_1a9ff3063e55ca3ca1969fcdaba32f9b2c" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>topology</name></member>
+      <member refid="structexecution__vars_1a23756ce3d731981b9aa90c85ce3aa0ac" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>transconst</name></member>
+      <member refid="structexecution__vars_1aee62d3167cf7d2091da31085d493c7c7" prot="public" virt="non-virtual"><scope>execution_vars</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

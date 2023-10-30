@@ -1,0 +1,135 @@
+\hypertarget{common__solver__operations_8c}{\section{src/method\-\_\-module/common\-\_\-solver\-\_\-operations.c File Reference}
+\label{common__solver__operations_8c}\index{src/method\-\_\-module/common\-\_\-solver\-\_\-operations.\-c@{src/method\-\_\-module/common\-\_\-solver\-\_\-operations.\-c}}
+}
+
+
+File containing a set of functions with different purposes\-: arithmetic operations, management of random numbers, geometrical operations, search algorithms.  
+
+
+{\ttfamily \#include $<$structure\-\_\-paralleltestbed.\-h$>$}\\*
+{\ttfamily \#include $<$configuration.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include $<$float.\-h$>$}\\*
+{\ttfamily \#include $<$def\-\_\-errors.\-h$>$}\\*
+{\ttfamily \#include $<$gsl/gsl\-\_\-rng.\-h$>$}\\*
+{\ttfamily \#include $<$gsl/gsl\-\_\-randist.\-h$>$}\\*
+{\ttfamily \#include $<$time.\-h$>$}\\*
+{\ttfamily \#include $<$limits.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{common__solver__operations_8c_a8a11421bed6fc6c204dee4566890bf83}{void {\bfseries logandtranslation\-\_\-} (void $\ast$exp1)}\label{common__solver__operations_8c_a8a11421bed6fc6c204dee4566890bf83}
+
+\item 
+\hypertarget{common__solver__operations_8c_af0e88389bd16a054d45f540ca65818ff}{double {\bfseries calc\-S\-D} (double mean, double $\ast$population, int size\-P\-O\-P\-U\-L)}\label{common__solver__operations_8c_af0e88389bd16a054d45f540ca65818ff}
+
+\item 
+\hypertarget{common__solver__operations_8c_a13bd4848275b8e5a3e5383e21b7d5c19}{double {\bfseries calctime} (void $\ast$exp, double starttime)}\label{common__solver__operations_8c_a13bd4848275b8e5a3e5383e21b7d5c19}
+
+\item 
+\hypertarget{common__solver__operations_8c_a2977767da7b78e0913ad45e3cfb29318}{int {\bfseries returnseedcounter\-\_\-} (void $\ast$exp1\-\_\-)}\label{common__solver__operations_8c_a2977767da7b78e0913ad45e3cfb29318}
+
+\item 
+\hypertarget{common__solver__operations_8c_abcda6250576818763e80983345667678}{void {\bfseries returnseed\-\_\-} (void $\ast$exp1\-\_\-, double $\ast$seed)}\label{common__solver__operations_8c_abcda6250576818763e80983345667678}
+
+\item 
+\hypertarget{common__solver__operations_8c_a52b4b642f0910b6161f22c79ff2e98b7}{void {\bfseries initrngrandomserial\-\_\-} (void $\ast$exp1\-\_\-)}\label{common__solver__operations_8c_a52b4b642f0910b6161f22c79ff2e98b7}
+
+\item 
+\hypertarget{common__solver__operations_8c_a457ffac8bc0066fb97578550c63c5045}{void {\bfseries initrngrandomparallel\-\_\-} (void $\ast$exp1\-\_\-, int $\ast$idp)}\label{common__solver__operations_8c_a457ffac8bc0066fb97578550c63c5045}
+
+\item 
+\hypertarget{common__solver__operations_8c_a9a9db64a35db7a583c764b21bb513689}{void {\bfseries reinitrngrandomparallel\-\_\-} (void $\ast$exp1\-\_\-, int $\ast$idp)}\label{common__solver__operations_8c_a9a9db64a35db7a583c764b21bb513689}
+
+\item 
+\hypertarget{common__solver__operations_8c_a6d724878f6ddab44577635e0cceede33}{double {\bfseries getrngrandomserial\-\_\-} (void $\ast$exp1\-\_\-)}\label{common__solver__operations_8c_a6d724878f6ddab44577635e0cceede33}
+
+\item 
+\hypertarget{common__solver__operations_8c_a9da9b59a3143e0d51c8ef704dbfbdd2e}{int {\bfseries allocatematrixdouble\-\_\-} (double $\ast$vector, int $\ast$fil, int $\ast$col)}\label{common__solver__operations_8c_a9da9b59a3143e0d51c8ef704dbfbdd2e}
+
+\item 
+\hypertarget{common__solver__operations_8c_ac7e850d63a125bd84fb1369abc2bb4d5}{void {\bfseries converttonormal\-\_\-} (double $\ast$vector, int $\ast$D)}\label{common__solver__operations_8c_ac7e850d63a125bd84fb1369abc2bb4d5}
+
+\item 
+\hypertarget{common__solver__operations_8c_a08a79ff9cc743a0b24c5d99a4ba089fa}{void {\bfseries converttonormal2\-\_\-} (double $\ast$vector, int $\ast$D, int $\ast$index)}\label{common__solver__operations_8c_a08a79ff9cc743a0b24c5d99a4ba089fa}
+
+\item 
+\hypertarget{common__solver__operations_8c_a71b83e2d4c370e445bb5386ea846c516}{void {\bfseries converttolog\-\_\-} (double $\ast$vector, int $\ast$D)}\label{common__solver__operations_8c_a71b83e2d4c370e445bb5386ea846c516}
+
+\item 
+\hypertarget{common__solver__operations_8c_a6083c50f0f2eba92b1a4b319c184286a}{void {\bfseries converttolog2\-\_\-} (double $\ast$vector, int $\ast$D, int $\ast$index)}\label{common__solver__operations_8c_a6083c50f0f2eba92b1a4b319c184286a}
+
+\item 
+\hypertarget{common__solver__operations_8c_af4a3590e597d7d723c6fc895663a02e7}{void {\bfseries coord\-\_\-transformation} (double $\ast$O\-L\-D, double $\ast$New, int D, double $\ast$U\-B, double $\ast$L\-B)}\label{common__solver__operations_8c_af4a3590e597d7d723c6fc895663a02e7}
+
+\item 
+\hypertarget{common__solver__operations_8c_a036040c1ce269fcbdb4efc6e7d837a05}{int {\bfseries extract\-\_\-worst\-\_\-index} (double $\ast$popul\-Local, int tam, int D)}\label{common__solver__operations_8c_a036040c1ce269fcbdb4efc6e7d837a05}
+
+\item 
+\hypertarget{common__solver__operations_8c_a911c7812c30b6a9e42ec379e1c91f471}{void {\bfseries insert\-\_\-matrix\-\_\-tabu\-\_\-list} (double $\ast$U, double $\ast$matrix, int D, int N\-P, int contador)}\label{common__solver__operations_8c_a911c7812c30b6a9e42ec379e1c91f471}
+
+\item 
+\hypertarget{common__solver__operations_8c_aed5046fdfd5859e35034595a6a1ef290}{double {\bfseries calc\-\_\-euclidean\-\_\-distance} (double $\ast$U1, double $\ast$U2, int D, double $\ast$U\-B, double $\ast$L\-B)}\label{common__solver__operations_8c_aed5046fdfd5859e35034595a6a1ef290}
+
+\item 
+\hypertarget{common__solver__operations_8c_aabfa6de2a76a3bd4c3cc77a5ca1d7611}{int {\bfseries initializebenchmarks\-\_\-} (void $\ast$exp1\-\_\-, double $\ast$Xl, double $\ast$Xm, int $\ast$D)}\label{common__solver__operations_8c_aabfa6de2a76a3bd4c3cc77a5ca1d7611}
+
+\item 
+\hypertarget{common__solver__operations_8c_ac8486e5f91cbf5fdfc808f5f7cb1a16e}{int {\bfseries initializebenchmarksopenmp\-\_\-} (void $\ast$exp1\-\_\-, double $\ast$Xl, double $\ast$Xm, int $\ast$D, int $\ast$idp)}\label{common__solver__operations_8c_ac8486e5f91cbf5fdfc808f5f7cb1a16e}
+
+\item 
+\hypertarget{common__solver__operations_8c_a82ed035d4cb94ef002870fec870c51e0}{double {\bfseries sumvar} (double $\ast$Matriz, int size\-Matriz, int size\-Vector)}\label{common__solver__operations_8c_a82ed035d4cb94ef002870fec870c51e0}
+
+\item 
+\hypertarget{common__solver__operations_8c_a2ca46addb6cf0207b748b222a2df3446}{int {\bfseries allocate\-\_\-\-Quick\-Short} (double $\ast$v, int b, int N\-P, int D)}\label{common__solver__operations_8c_a2ca46addb6cf0207b748b222a2df3446}
+
+\item 
+\hypertarget{common__solver__operations_8c_a58c3c956f84750081d76a769bd81c8e4}{double $\ast$ {\bfseries reorder\-Vector\-\_\-\-Quick\-Short} (double $\ast$v, int b, int N\-P, int D)}\label{common__solver__operations_8c_a58c3c956f84750081d76a769bd81c8e4}
+
+\item 
+\hypertarget{common__solver__operations_8c_a60769c326a39799564d46fe98172a69e}{void {\bfseries replace\-Worst} (double $\ast$v, int N\-P, int D, double $\ast$best, int size\-Best)}\label{common__solver__operations_8c_a60769c326a39799564d46fe98172a69e}
+
+\item 
+\hypertarget{common__solver__operations_8c_ab6084a3608f23b926423cb64e18fba66}{void {\bfseries replace\-Worst\-Recp} (double $\ast$v, int N\-P, int D, double $\ast$best, int size\-Best, double $\ast$L\-B, double $\ast$U\-B, int rest)}\label{common__solver__operations_8c_ab6084a3608f23b926423cb64e18fba66}
+
+\item 
+\hypertarget{common__solver__operations_8c_a131fef659ec0ff1cf85914c56f4dd32c}{void {\bfseries replace\-Random} (double $\ast$v, int N\-P, int D, double $\ast$best, int size\-Best)}\label{common__solver__operations_8c_a131fef659ec0ff1cf85914c56f4dd32c}
+
+\item 
+\hypertarget{common__solver__operations_8c_a4b3f626aa0305ddb2a1236706e403cea}{void {\bfseries return\-Best} (double $\ast$v, int N, int D, double $\ast$best, int size\-Best)}\label{common__solver__operations_8c_a4b3f626aa0305ddb2a1236706e403cea}
+
+\item 
+\hypertarget{common__solver__operations_8c_a74a1f31cabf9845bddfc5a5f119ef97e}{void {\bfseries return\-Random} (double $\ast$v, int N\-P, int D, double $\ast$best, int size\-Best)}\label{common__solver__operations_8c_a74a1f31cabf9845bddfc5a5f119ef97e}
+
+\item 
+\hypertarget{common__solver__operations_8c_a4e7be1d7aa5adbbff622ad7c35ac615b}{void {\bfseries return\-Indv} (\hyperlink{structexperiment__total}{experiment\-\_\-total} exp1, double $\ast$v, int N, int D, double $\ast$best, int size\-Best, double $\ast$U\-B, double $\ast$L\-B, int rest)}\label{common__solver__operations_8c_a4e7be1d7aa5adbbff622ad7c35ac615b}
+
+\item 
+\hypertarget{common__solver__operations_8c_ada32fd569d23bd309cf41fa72029faba}{void {\bfseries replace\-Indv} (\hyperlink{structexperiment__total}{experiment\-\_\-total} exp1, double $\ast$v, int N, int D, double $\ast$worst, int size\-Best, double $\ast$Xl, double $\ast$Xm, int rest)}\label{common__solver__operations_8c_ada32fd569d23bd309cf41fa72029faba}
+
+\item 
+\hypertarget{common__solver__operations_8c_ab2a4f828f5ae124ffa00977c10c1290b}{int {\bfseries extract\-\_\-best\-\_\-index} (double $\ast$popul\-Local, int tam, int D)}\label{common__solver__operations_8c_ab2a4f828f5ae124ffa00977c10c1290b}
+
+\item 
+\hypertarget{common__solver__operations_8c_a284479c46bec8d7e0071d619cb8170fb}{void {\bfseries reorder\-\_\-best} (double $\ast$v, int N, int D)}\label{common__solver__operations_8c_a284479c46bec8d7e0071d619cb8170fb}
+
+\item 
+\hypertarget{common__solver__operations_8c_a612bfd01aebaa060e9066ed8873e3984}{long {\bfseries getmaxlong\-\_\-} ()}\label{common__solver__operations_8c_a612bfd01aebaa060e9066ed8873e3984}
+
+\item 
+\hypertarget{common__solver__operations_8c_a782a952ce893c4e8cd9bf59f7be588b8}{void {\bfseries setpoint\-\_\-} (double $\ast$x)}\label{common__solver__operations_8c_a782a952ce893c4e8cd9bf59f7be588b8}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+File containing a set of functions with different purposes\-: arithmetic operations, management of random numbers, geometrical operations, search algorithms. \begin{DoxyAuthor}{Author}
+David R. Penas 
+\end{DoxyAuthor}
+
+
+Definition in file \hyperlink{common__solver__operations_8c_source}{common\-\_\-solver\-\_\-operations.\-c}.
+

@@ -1,0 +1,83 @@
+.TH "src/method_module/evaluationinterface.c" 3 "Wed May 11 2016" "Version 0.1" "SACESS TOOLBOX" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/method_module/evaluationinterface.c \- 
+.PP
+File containing functions about the evaluation of objective function\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <structure_paralleltestbed\&.h>\fP
+.br
+\fC#include <configuration\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <math\&.h>\fP
+.br
+\fC#include <float\&.h>\fP
+.br
+\fC#include <def_errors\&.h>\fP
+.br
+\fC#include <time\&.h>\fP
+.br
+\fC#include <common_solver_operations\&.h>\fP
+.br
+\fC#include <solversinterface\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBDE_correction_bounds\fP (double *X, int D, double *Xl, double *Xu)"
+.br
+.ti -1c
+.RI "void \fBDE_correction_bounds2\fP (double *X, int D, double *Xl, double *Xu)"
+.br
+.ti -1c
+.RI "double \fBcallfitnessfunction_\fP (void *(*fitnessfunction)(double *, void *), void *exp1_, double *U, int *D, double *Xl, double *Xm)"
+.br
+.ti -1c
+.RI "void \fBtranslation\fP (double *X, double *transconst, int size)"
+.br
+.ti -1c
+.RI "void \fBdetranslation\fP (double *X, double *transconst, int size)"
+.br
+.ti -1c
+.RI "void \fBdetranslationinterface_\fP (double *U, void *exp1_)"
+.br
+.ti -1c
+.RI "double \fBcallfitnessfunctionfortran_\fP (void *(*fitnessfunction)(double *, void *), void *exp1_, double *U, int *D, double *Xl, double *Xm, double *nlc)"
+.br
+.ti -1c
+.RI "double \fBcallfitnessfunctionfortranopenmp_\fP (void *(*fitnessfunction)(double *, void *), void *exp1_, double *U, int *D, double *Xl, double *Xm, double *nlc, int *idp)"
+.br
+.ti -1c
+.RI "double \fBcallfitnessfunctionfortranopenmp2_\fP (void *(*fitnessfunction)(double *, void *), void *exp1_, double *U, double *nlc, int *idp)"
+.br
+.ti -1c
+.RI "double \fBcallfitnessfunctionopenmp_\fP (void *(*fitnessfunction)(double *, void *), void *exp1_, double *U, int *D, double *Xl, double *Xm, int *idp)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+File containing functions about the evaluation of objective function\&. 
+
+\fBAuthor:\fP
+.RS 4
+David R\&. Penas 
+.RE
+.PP
+
+.PP
+Definition in file \fBevaluationinterface\&.c\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for SACESS TOOLBOX from the source code\&.

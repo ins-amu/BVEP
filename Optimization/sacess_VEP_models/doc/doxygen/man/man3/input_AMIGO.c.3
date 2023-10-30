@@ -1,0 +1,85 @@
+.TH "src/input_module/input_AMIGO.c" 3 "Thu Mar 3 2016" "Version 0.1" "SACESS TOOLBOX" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/input_module/input_AMIGO.c \- 
+.PP
+File containing functions to parse the MAT files, which contain the necesary datas for the evaluation of Systems Biology problems\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <structure_paralleltestbed\&.h>\fP
+.br
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+\fC#include <ctype\&.h>\fP
+.br
+\fC#include <AMIGO_model\&.h>\fP
+.br
+\fC#include 'AMIGO_problem\&.h'\fP
+.br
+\fC#include 'AMIGO_pe\&.h'\fP
+.br
+\fC#include <hdf5\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinsert_group_dataset_int_value\fP (hid_t group_id, const char *dataname, int *value)"
+.br
+.ti -1c
+.RI "void \fBinsert_group_dataset_double_value\fP (hid_t group_id, const char *dataname, double *value, herr_t *status)"
+.br
+.ti -1c
+.RI "void \fBinsert_group_dataset_vector_double_value\fP (hid_t group_id, const char *dataname, double *value)"
+.br
+.ti -1c
+.RI "void \fBinsert_group_dataset_vector_double_value_reference\fP (hid_t group_id, const char *dataname, double *value, int exp_num)"
+.br
+.ti -1c
+.RI "void \fBinsert_group_dataset_matrix_double_value_reference\fP (hid_t group_id, const char *dataname, double **value, int exp_num, int mi, int mj)"
+.br
+.ti -1c
+.RI "int \fBreturn_size___group_dataset_matrix_double_value_reference\fP (hid_t group_id, const char *dataname, double **value, int exp_num)"
+.br
+.ti -1c
+.RI "void \fBinsert_group_dataset_vector_integer_value2\fP (hid_t group_id, const char *dataname, int *value)"
+.br
+.ti -1c
+.RI "void \fBinsert_group_dataset_vector_integer_value2_reference\fP (hid_t group_id, const char *dataname, int *value, int exp_num)"
+.br
+.ti -1c
+.RI "void \fBinsert_group_dataset_vector_double_value2\fP (hid_t group_id, const char *dataname, double *value)"
+.br
+.ti -1c
+.RI "void \fBinsert_group_dataset_int_value_reference\fP (hid_t group_id, const char *dataname, int *value, int exp_num)"
+.br
+.ti -1c
+.RI "AMIGO_model * \fBhdf5AllocateAMIGOmodel\fP (hid_t privstruct_id, hid_t inputs_id, int exp_num)"
+.br
+.ti -1c
+.RI "AMIGO_problem * \fBopenMatFileAMIGO\fP (const char *file)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+File containing functions to parse the MAT files, which contain the necesary datas for the evaluation of Systems Biology problems\&. 
+
+\fBAuthor:\fP
+.RS 4
+David R\&. Penas 
+.RE
+.PP
+
+.PP
+Definition in file \fBinput_AMIGO\&.c\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for SACESS TOOLBOX from the source code\&.

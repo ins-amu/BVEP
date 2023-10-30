@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="structscattersearchtypes_1_1extraparametters" kind="type" prot="public">
+    <compoundname>scattersearchtypes::extraparametters</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structscattersearchtypes_1_1extraparametters_1aa2ebd68e8477d32ad04b7087b20660ee" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::extraparametters::empty</definition>
+        <argsstring></argsstring>
+        <name>empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1extraparametters_1abcc8c66fa1e09c8eefe79c9354cc440c" prot="public" static="no" mutable="no">
+        <type>integer(kind=8), dimension(:), allocatable</type>
+        <definition>integer(kind=8), dimension(:), allocatable scattersearchtypes::extraparametters::texp</definition>
+        <argsstring></argsstring>
+        <name>texp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1extraparametters_1a1d3daf619957c0b9acb6b922eb217230" prot="public" static="no" mutable="no">
+        <type>real(kind=selected_real_kind(p=precision_d, r=range_d)), dimension(:,:), allocatable</type>
+        <definition>real(kind=selected_real_kind(p=precision_d,r=range_d)), dimension(:,:), allocatable scattersearchtypes::extraparametters::yexp</definition>
+        <argsstring></argsstring>
+        <name>yexp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1extraparametters_1a041c7e2ec354650126e91af175cdbf7b" prot="public" static="no" mutable="no">
+        <type>real(c_float)</type>
+        <definition>real(c_float) scattersearchtypes::extraparametters::k1</definition>
+        <argsstring></argsstring>
+        <name>k1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1extraparametters_1af4deec1bba70e452a0aef2f6468ab567" prot="public" static="no" mutable="no">
+        <type>real(c_float)</type>
+        <definition>real(c_float) scattersearchtypes::extraparametters::k2</definition>
+        <argsstring></argsstring>
+        <name>k2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1extraparametters_1a8cece603eeddfdb208091c1f9418b3a3" prot="public" static="no" mutable="no">
+        <type>real(c_float)</type>
+        <definition>real(c_float) scattersearchtypes::extraparametters::k3</definition>
+        <argsstring></argsstring>
+        <name>k3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1extraparametters_1ad6d1836696c8ced0ca1f286d136aef4a" prot="public" static="no" mutable="no">
+        <type>real(c_float)</type>
+        <definition>real(c_float) scattersearchtypes::extraparametters::k4</definition>
+        <argsstring></argsstring>
+        <name>k4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="127" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="structscattersearchtypes_1_1extraparametters_1aa2ebd68e8477d32ad04b7087b20660ee" prot="public" virt="non-virtual"><scope>scattersearchtypes::extraparametters</scope><name>empty</name></member>
+      <member refid="structscattersearchtypes_1_1extraparametters_1a041c7e2ec354650126e91af175cdbf7b" prot="public" virt="non-virtual"><scope>scattersearchtypes::extraparametters</scope><name>k1</name></member>
+      <member refid="structscattersearchtypes_1_1extraparametters_1af4deec1bba70e452a0aef2f6468ab567" prot="public" virt="non-virtual"><scope>scattersearchtypes::extraparametters</scope><name>k2</name></member>
+      <member refid="structscattersearchtypes_1_1extraparametters_1a8cece603eeddfdb208091c1f9418b3a3" prot="public" virt="non-virtual"><scope>scattersearchtypes::extraparametters</scope><name>k3</name></member>
+      <member refid="structscattersearchtypes_1_1extraparametters_1ad6d1836696c8ced0ca1f286d136aef4a" prot="public" virt="non-virtual"><scope>scattersearchtypes::extraparametters</scope><name>k4</name></member>
+      <member refid="structscattersearchtypes_1_1extraparametters_1abcc8c66fa1e09c8eefe79c9354cc440c" prot="public" virt="non-virtual"><scope>scattersearchtypes::extraparametters</scope><name>texp</name></member>
+      <member refid="structscattersearchtypes_1_1extraparametters_1a1d3daf619957c0b9acb6b922eb217230" prot="public" virt="non-virtual"><scope>scattersearchtypes::extraparametters</scope><name>yexp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

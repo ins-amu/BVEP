@@ -1,0 +1,166 @@
+<head>
+<title>port/chk</title>
+<meta name="waisindex" value="nse">
+</head>
+<h1>port/chk</h1>
+<p>
+Click <A HREF="http://www.netlib.org/master_counts2.html#port/chk">here</A> to see the number of accesses to this library.
+<p><hr>
+<pre>
+#	Index for port/chk
+file	<a href="thyp.f">thyp.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/thyp.f">thyp.f plus dependencies</a>
+for	test linguistic hypotheses
+
+file	<a href="mach.f">mach.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/mach.f">mach.f plus dependencies</a>
+for	test the machine constants  (for consistency)
+
+file	<a href="err1.f">err1.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/err1.f">err1.f plus dependencies</a>
+for	test the error handling package
+
+file	<a href="err2.f">err2.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/err2.f">err2.f plus dependencies</a>
+for	test the error handling package
+
+file	<a href="err3.f">err3.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/err3.f">err3.f plus dependencies</a>
+for	test the error handling package
+
+file	<a href="stk1.f">stk1.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/stk1.f">stk1.f plus dependencies</a>
+for	first storage allocator test
+
+file	<a href="stk2.f">stk2.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/stk2.f">stk2.f plus dependencies</a>
+for	second allocator test
+
+file	<a href="errk.f">errk.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/errk.f">errk.f plus dependencies</a>
+for	test stkdmp
+
+file	<a href="rnrm.f">rnrm.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/rnrm.f">rnrm.f plus dependencies</a>
+for	test rnorm
+
+file	<a href="plya.f">plya.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/plya.f">plya.f plus dependencies</a>
+for	test the trigonometric polynomial routines
+
+file	<a href="plyc.f">plyc.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/plyc.f">plyc.f plus dependencies</a>
+for	test the orthogonal polynomial routines
+
+file	<a href="extr.f">extr.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/extr.f">extr.f plus dependencies</a>
+for	test extrmr
+
+file	<a href="mntb.f">mntb.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/mntb.f">mntb.f plus dependencies</a>
+for	test the monotonicity routines
+
+file	<a href="gama.f">gama.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/gama.f">gama.f plus dependencies</a>
+for	test gamma
+
+file	<a href="gmad.f">gmad.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/gmad.f">gmad.f plus dependencies</a>
+for	test dgamma
+
+file	<a href="qblg.f">qblg.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/qblg.f">qblg.f plus dependencies</a>
+for	test quad
+
+file	<a href="qbgd.f">qbgd.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/qbgd.f">qbgd.f plus dependencies</a>
+for	test dquad
+
+file	<a href="qgsg.f">qgsg.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/qgsg.f">qgsg.f plus dependencies</a>
+for	test programs for gauss quadrature
+
+file	<a href="qggd.f">qggd.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/qggd.f">qggd.f plus dependencies</a>
+for	test programs for gauss quadrature (double-precision)
+
+file	<a href="mfte.f">mfte.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/mfte.f">mfte.f plus dependencies</a>
+for	test programs for multiple fft - mftcc, mftrc, mftcr
+
+file	<a href="mfed.f">mfed.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/mfed.f">mfed.f plus dependencies</a>
+for	test programs for multiple fft (d.p.) - dmftcc,dmftrc,dmftcr
+
+file	<a href="sdba.f">sdba.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/sdba.f">sdba.f plus dependencies</a>
+for	test dl2sf
+
+file	<a href="sple.f">sple.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/sple.f">sple.f plus dependencies</a>
+for	test splne
+
+file	<a href="vdad.f">vdad.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/vdad.f">vdad.f plus dependencies</a>
+for	test dvdss1
+
+file	<a href="vdbd.f">vdbd.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/vdbd.f">vdbd.f plus dependencies</a>
+for	test dvdss2
+
+file	<a href="vded.f">vded.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/vded.f">vded.f plus dependencies</a>
+for	test dvdss3
+
+file	<a href="ltsq.f">ltsq.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/ltsq.f">ltsq.f plus dependencies</a>
+for	test ltsq and lstsq
+
+file	<a href="ltqd.f">ltqd.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/ltqd.f">ltqd.f plus dependencies</a>
+for	test dltsq and dlstsq
+
+file	<a href="lgea.f">lgea.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/lgea.f">lgea.f plus dependencies</a>
+for	test gece and friends
+
+file	<a href="lgad.f">lgad.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/lgad.f">lgad.f plus dependencies</a>
+for	test dgece and friends
+
+file	<a href="lyma.f">lyma.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/lyma.f">lyma.f plus dependencies</a>
+for	test syce and friends
+
+file	<a href="lyad.f">lyad.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/lyad.f">lyad.f plus dependencies</a>
+for	test dsyce and friends
+
+file	<a href="lgac.f">lgac.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/lgac.f">lgac.f plus dependencies</a>
+for	test cgece and friends
+
+file	<a href="lyrc.f">lyrc.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/lyrc.f">lyrc.f plus dependencies</a>
+for	test chece and friends
+
+file	<a href="lysc.f">lysc.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/lysc.f">lysc.f plus dependencies</a>
+for	second test of the programs chece and friends
+
+file	<a href="prsa.f">prsa.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/prsa.f">prsa.f plus dependencies</a>
+for	test the sparse matrix package
+
+file	<a href="prad.f">prad.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/prad.f">prad.f plus dependencies</a>
+for	test the double precision sparse matrix package
+
+file	<a href="prac.f">prac.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/prac.f">prac.f plus dependencies</a>
+for	test the complex sparse matrix package
+
+file	<a href="svda.f">svda.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/svda.f">svda.f plus dependencies</a>
+for	first test of svd
+
+file	<a href="svdb.f">svdb.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/svdb.f">svdb.f plus dependencies</a>
+for	second test of svd
+
+file	<a href="svdc.f">svdc.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/svdc.f">svdc.f plus dependencies</a>
+for	test of svdls
+
+file	<a href="svad.f">svad.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/svad.f">svad.f plus dependencies</a>
+for	first test of dsvd
+
+file	<a href="svbd.f">svbd.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/svbd.f">svbd.f plus dependencies</a>
+for	second test of dsvd
+
+file	<a href="svcd.f">svcd.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/svcd.f">svcd.f plus dependencies</a>
+for	third test of dsvdls
+
+file	<a href="llza.f">llza.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/llza.f">llza.f plus dependencies</a>
+for	test lz
+
+file	<a href="qpra.f">qpra.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/qpra.f">qpra.f plus dependencies</a>
+for	test iqp
+
+file	<a href="qpad.f">qpad.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/qpad.f">qpad.f plus dependencies</a>
+for	test diqp
+
+file	<a href="lrpa.f">lrpa.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/lrpa.f">lrpa.f plus dependencies</a>
+for	test the linear programming - linpr, etc.
+
+file	<a href="lrad.f">lrad.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/lrad.f">lrad.f plus dependencies</a>
+for	test the linear programming - dlinpr, etc.
+
+file	<a href="README">README</a>
+
+file	<a href="ltsqc.f">ltsqc.f</a>  <a href="/cgi-bin/netlibfiles.pl?filename=/port/chk/ltsqc.f">ltsqc.f plus dependencies</a>
+
+file	<a href="nohup.out">nohup.out</a>
+
+</pre>
+</body>
+</html>

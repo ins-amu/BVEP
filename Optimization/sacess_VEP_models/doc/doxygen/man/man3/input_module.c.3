@@ -1,0 +1,87 @@
+.TH "src/input_module/input_module.c" 3 "Wed May 11 2016" "Version 0.1" "SACESS TOOLBOX" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/input_module/input_module.c \- 
+.PP
+File containing functions to parse the input XML, completing the main struct of \fBexperiment_total\fP data\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <structure_paralleltestbed\&.h>\fP
+.br
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+\fC#include <ctype\&.h>\fP
+.br
+\fC#include <libxml/parser\&.h>\fP
+.br
+\fC#include <libxml/tree\&.h>\fP
+.br
+\fC#include <def_errors\&.h>\fP
+.br
+\fC#include <hdf5\&.h>\fP
+.br
+\fC#include <sys/stat\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "char * \fBremoveSpace\fP (char *str)"
+.br
+.ti -1c
+.RI "void \fBremovePoint\fP (char *str)"
+.br
+.ti -1c
+.RI "xmlNodePtr \fBextract_init_node\fP (xmlNodePtr cur, const char *name)"
+.br
+.ti -1c
+.RI "char * \fBextract_element_uniq\fP (xmlDocPtr doc, xmlNodePtr cur, const char *name)"
+.br
+.ti -1c
+.RI "int \fBcount_element_multi\fP (xmlDocPtr doc, xmlNodePtr cur, const char *name)"
+.br
+.ti -1c
+.RI "void \fBextract_element_multi\fP (xmlDocPtr doc, xmlNodePtr cur, const char *name, char **vectorG)"
+.br
+.ti -1c
+.RI "void \fBextract_atribute_multi\fP (xmlDocPtr doc, xmlNodePtr cur, const char *name, double *FX, const char *atrib)"
+.br
+.ti -1c
+.RI "int \fBextract_element_test\fP (xmlDocPtr doc, xmlNodePtr *root, \fBexperiment_testbed\fP *test)"
+.br
+.ti -1c
+.RI "int \fBextract_element_method_ScatterSearch\fP (xmlDocPtr doc, xmlNodePtr *root, \fBexperiment_method_ScatterSearch\fP *method)"
+.br
+.ti -1c
+.RI "int \fBextract_element_parallelization\fP (xmlDocPtr doc, xmlNodePtr *root, \fBparallelization_strategy\fP *parallel)"
+.br
+.ti -1c
+.RI "int \fBload_configuration_XML\fP (char *docname, \fBexperiment_total\fP *exptotal)"
+.br
+.ti -1c
+.RI "int \fBextract_element_problem\fP (xmlDocPtr doc, xmlNodePtr *root, \fBexperiment_testbed\fP *test)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+File containing functions to parse the input XML, completing the main struct of \fBexperiment_total\fP data\&. 
+
+\fBAuthor:\fP
+.RS 4
+David R\&. Penas 
+.RE
+.PP
+
+.PP
+Definition in file \fBinput_module\&.c\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for SACESS TOOLBOX from the source code\&.

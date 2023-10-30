@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="parallel__islands__Solvers_8h" kind="file">
+    <compoundname>parallel_islands_Solvers.h</compoundname>
+    <includes refid="structure__paralleltestbed_8h" local="no">structure_paralleltestbed.h</includes>
+    <includes local="no">bbobStructures.h</includes>
+    <incdepgraph>
+      <node id="111">
+        <label>structure_paralleltestbed.h</label>
+        <link refid="structure__paralleltestbed_8h_source"/>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>time.h</label>
+      </node>
+      <node id="115">
+        <label>gsl/gsl_randist.h</label>
+      </node>
+      <node id="114">
+        <label>gsl/gsl_rng.h</label>
+      </node>
+      <node id="113">
+        <label>AMIGO_problem.h</label>
+      </node>
+      <node id="112">
+        <label>bbobStructures.h</label>
+      </node>
+      <node id="110">
+        <label>include/method_module/parallel_islands_Solvers.h</label>
+        <link refid="parallel_islands_Solvers.h"/>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="parallel__islands__Solvers_8h_1aaa71090ca2a6d6cb0bf69776695a34f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int parallel_asynchronous_DE</definition>
+        <argsstring>(void *, void *, void *, void *(*fitnessfunction)(double *, void *), void *, long, double, int)</argsstring>
+        <name>parallel_asynchronous_DE</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>void *(*)(double *, void *)</type>
+          <declname>fitnessfunction</declname>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>long</type>
+        </param>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/parallel_islands_Solvers.h" line="4"/>
+      </memberdef>
+      <memberdef kind="function" id="parallel__islands__Solvers_8h_1ada8cb2a7e6534a18bc88d8b8c4233f66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int parallel_synchronous_DE</definition>
+        <argsstring>(void *, void *, void *, void *(*fitnessfunction)(double *, void *), void *, long, double, int)</argsstring>
+        <name>parallel_synchronous_DE</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>void *(*)(double *, void *)</type>
+          <declname>fitnessfunction</declname>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type>long</type>
+        </param>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/parallel_islands_Solvers.h" line="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;structure_paralleltestbed.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;bbobStructures.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>parallel_asynchronous_DE(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/>*,<sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*(*fitnessfunction)(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*),<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>parallel_synchronous_DE(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/>*,<sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*(*fitnessfunction)(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*),<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+    </programlisting>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/parallel_islands_Solvers.h"/>
+  </compounddef>
+</doxygen>

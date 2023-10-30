@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="structscattersearchtypes_1_1goptions" kind="type" prot="public">
+    <compoundname>scattersearchtypes::goptions</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structscattersearchtypes_1_1goptions_1aac1be9f86cb06d490930d2e1cae6b037" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::goptions::empty</definition>
+        <argsstring></argsstring>
+        <name>empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1goptions_1ac15e2916b1e615b73d7348813e10a1eb" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::goptions::dim_refset</definition>
+        <argsstring></argsstring>
+        <name>dim_refset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1goptions_1ae918a4eec2028ea16c910d1ef82a5d27" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::goptions::ndiverse</definition>
+        <argsstring></argsstring>
+        <name>ndiverse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1goptions_1acc1675f147e9666951e9f47fb125b42f" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::goptions::initiate</definition>
+        <argsstring></argsstring>
+        <name>initiate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1goptions_1a061034d3d2bb7a1eca47bbea4fc50af5" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::goptions::combination</definition>
+        <argsstring></argsstring>
+        <name>combination</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1goptions_1ad2b3b65505b9f56f4bfec487c05e110e" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::goptions::regenerate</definition>
+        <argsstring></argsstring>
+        <name>regenerate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1goptions_1aa35cde6df49cf52a5d3b7ca7f6c858bc" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::goptions::intens</definition>
+        <argsstring></argsstring>
+        <name>intens</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1goptions_1a4905626a8491234c09d2c6976a19a071" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::goptions::diverse_criteria</definition>
+        <argsstring></argsstring>
+        <name>diverse_criteria</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1goptions_1a60596f71c0ea968641ba3b1c64e0348f" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::goptions::n_stuck</definition>
+        <argsstring></argsstring>
+        <name>n_stuck</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1goptions_1a044944f7a94c0a9dbd066389c11fa52e" prot="public" static="no" mutable="no">
+        <type>real(kind=selected_real_kind(p=precision_d, r=range_d))</type>
+        <definition>real(kind=selected_real_kind(p=precision_d,r=range_d)) scattersearchtypes::goptions::tolf</definition>
+        <argsstring></argsstring>
+        <name>tolf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1goptions_1ad75ea7050859564a8773fd2dd0590eff" prot="public" static="no" mutable="no">
+        <type>real(kind=selected_real_kind(p=precision_d, r=range_d))</type>
+        <definition>real(kind=selected_real_kind(p=precision_d,r=range_d)) scattersearchtypes::goptions::tolx</definition>
+        <argsstring></argsstring>
+        <name>tolx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1goptions_1acf32af9bdacc2f8359c11d905947325b" prot="public" static="no" mutable="no">
+        <type>character(len=20, kind=c_char)</type>
+        <definition>character(len = 20,kind=c_char) scattersearchtypes::goptions::delete</definition>
+        <argsstring></argsstring>
+        <name>delete</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="112" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="structscattersearchtypes_1_1goptions_1a061034d3d2bb7a1eca47bbea4fc50af5" prot="public" virt="non-virtual"><scope>scattersearchtypes::goptions</scope><name>combination</name></member>
+      <member refid="structscattersearchtypes_1_1goptions_1acf32af9bdacc2f8359c11d905947325b" prot="public" virt="non-virtual"><scope>scattersearchtypes::goptions</scope><name>delete</name></member>
+      <member refid="structscattersearchtypes_1_1goptions_1ac15e2916b1e615b73d7348813e10a1eb" prot="public" virt="non-virtual"><scope>scattersearchtypes::goptions</scope><name>dim_refset</name></member>
+      <member refid="structscattersearchtypes_1_1goptions_1a4905626a8491234c09d2c6976a19a071" prot="public" virt="non-virtual"><scope>scattersearchtypes::goptions</scope><name>diverse_criteria</name></member>
+      <member refid="structscattersearchtypes_1_1goptions_1aac1be9f86cb06d490930d2e1cae6b037" prot="public" virt="non-virtual"><scope>scattersearchtypes::goptions</scope><name>empty</name></member>
+      <member refid="structscattersearchtypes_1_1goptions_1acc1675f147e9666951e9f47fb125b42f" prot="public" virt="non-virtual"><scope>scattersearchtypes::goptions</scope><name>initiate</name></member>
+      <member refid="structscattersearchtypes_1_1goptions_1aa35cde6df49cf52a5d3b7ca7f6c858bc" prot="public" virt="non-virtual"><scope>scattersearchtypes::goptions</scope><name>intens</name></member>
+      <member refid="structscattersearchtypes_1_1goptions_1a60596f71c0ea968641ba3b1c64e0348f" prot="public" virt="non-virtual"><scope>scattersearchtypes::goptions</scope><name>n_stuck</name></member>
+      <member refid="structscattersearchtypes_1_1goptions_1ae918a4eec2028ea16c910d1ef82a5d27" prot="public" virt="non-virtual"><scope>scattersearchtypes::goptions</scope><name>ndiverse</name></member>
+      <member refid="structscattersearchtypes_1_1goptions_1ad2b3b65505b9f56f4bfec487c05e110e" prot="public" virt="non-virtual"><scope>scattersearchtypes::goptions</scope><name>regenerate</name></member>
+      <member refid="structscattersearchtypes_1_1goptions_1a044944f7a94c0a9dbd066389c11fa52e" prot="public" virt="non-virtual"><scope>scattersearchtypes::goptions</scope><name>tolf</name></member>
+      <member refid="structscattersearchtypes_1_1goptions_1ad75ea7050859564a8773fd2dd0590eff" prot="public" virt="non-virtual"><scope>scattersearchtypes::goptions</scope><name>tolx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

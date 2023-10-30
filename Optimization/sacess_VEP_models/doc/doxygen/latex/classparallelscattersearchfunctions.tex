@@ -1,0 +1,81 @@
+\hypertarget{classparallelscattersearchfunctions}{\section{parallelscattersearchfunctions Module Reference}
+\label{classparallelscattersearchfunctions}\index{parallelscattersearchfunctions@{parallelscattersearchfunctions}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classparallelscattersearchfunctions_ac623fb935e52f3b5387460e8b2e6e3be}{subroutine {\bfseries asynchronous\-\_\-master\-\_\-acess} (exp1, opts1, problem1, refset, fin, nfuneval, fbest, stop\-Optimization, sizeser, nconst, nvar, starttime, vector\-\_\-proc, ocurrences\-\_\-send, common\-\_\-vars)}\label{classparallelscattersearchfunctions_ac623fb935e52f3b5387460e8b2e6e3be}
+
+\item 
+\hypertarget{classparallelscattersearchfunctions_af0201bc9685c5d308330e77e3264b1bb}{subroutine {\bfseries adapt\-\_\-slave} (exp1, opts1, problem1, fitnessfunction, common\-\_\-vars, nfuneval, xl\-\_\-log, xu\-\_\-log, hyper\-\_\-x\-\_\-\-L, hyper\-\_\-x\-\_\-\-U, Max\-Sub\-Set, Max\-Sub\-Set2, ppp, index1, index2, index, nconst, refset, fbest, xbest, refset\-\_\-change, local\-\_\-solver\-\_\-var, time, ncounter\-\_\-slave\-\_\-recv\-\_\-sol, ncounter\-\_\-slave\-\_\-send\-\_\-sol, pending\-\_\-adaptation, last\-\_\-evals)}\label{classparallelscattersearchfunctions_af0201bc9685c5d308330e77e3264b1bb}
+
+\item 
+\hypertarget{classparallelscattersearchfunctions_a2cea1ab07f15a4a20fd27c40588beb34}{subroutine {\bfseries asynchronous\-\_\-slave\-\_\-acess} (exp1, opts1, problem1, refset, common\-\_\-vars, nconst, B\-K\-S\-\_\-\-M\-\_\-x, B\-K\-S\-\_\-\-M\-\_\-f, time, refset\-\_\-change, fitnessfunction, xl\-\_\-log, xu\-\_\-log, nfuneval, fbest, xbest, ncounter\-\_\-slave\-\_\-recv\-\_\-sol, ncounter\-\_\-slave\-\_\-send\-\_\-sol, last\-\_\-evals)}\label{classparallelscattersearchfunctions_a2cea1ab07f15a4a20fd27c40588beb34}
+
+\item 
+\hypertarget{classparallelscattersearchfunctions_a8d2879872760ed0fbefce438dbf2f38a}{subroutine {\bfseries calc\-\_\-percentage} (fbest, candidate, percentage)}\label{classparallelscattersearchfunctions_a8d2879872760ed0fbefce438dbf2f38a}
+
+\item 
+\hypertarget{classparallelscattersearchfunctions_a0c34640f60f87541bdb1dd43487eb66a}{subroutine {\bfseries update\-\_\-index\-\_\-cooperative} (aux\-\_\-val\-\_\-cooperative, refset, index\-\_\-cooperative)}\label{classparallelscattersearchfunctions_a0c34640f60f87541bdb1dd43487eb66a}
+
+\item 
+\hypertarget{classparallelscattersearchfunctions_a5f192fa11f95f5836ec77218ecd1be71}{subroutine {\bfseries adaptation\-\_\-configuration} (exp1, opts1, problem1, refset, common\-\_\-vars, fbest, xbest, refset\-\_\-change, local\-\_\-solver\-\_\-var, new\-\_\-dim\-\_\-refset, new\-\_\-balance, new\-\_\-counter\-\_\-local, index1, index2, index, Max\-Sub\-Set, Max\-Sub\-Set2, hyper\-\_\-x\-\_\-\-L, hyper\-\_\-x\-\_\-\-U, ppp, nconst, xl\-\_\-log, xu\-\_\-log, fitnessfunction, nfuneval)}\label{classparallelscattersearchfunctions_a5f192fa11f95f5836ec77218ecd1be71}
+
+\item 
+\hypertarget{classparallelscattersearchfunctions_a72fc82afc81b559566ca1b3cad5d8bd0}{subroutine {\bfseries adaptation\-\_\-threshold2} (threshold, nrejects, nslaves)}\label{classparallelscattersearchfunctions_a72fc82afc81b559566ca1b3cad5d8bd0}
+
+\item 
+\hypertarget{classparallelscattersearchfunctions_a1e1d5c5ad73598334354ae0b7fa60eae}{subroutine {\bfseries hete\-\_\-param\-\_\-ess} (exp1, problem1, opts1, N\-P\-R\-O\-C, dim\-\_\-refset, idp, nvar)}\label{classparallelscattersearchfunctions_a1e1d5c5ad73598334354ae0b7fa60eae}
+
+\item 
+\hypertarget{classparallelscattersearchfunctions_aa6fe85dad4caa90b905378b424fd7319}{subroutine {\bfseries hete\-\_\-param\-\_\-ess2} (exp1, problem1, opts1, N\-P\-R\-O\-C, dim\-\_\-refset, idp2, nvar)}\label{classparallelscattersearchfunctions_aa6fe85dad4caa90b905378b424fd7319}
+
+\item 
+\hypertarget{classparallelscattersearchfunctions_a7dcdb488ef4a584a708f8154944c1abe}{subroutine {\bfseries evaluate\-\_\-solutions\-\_\-set\-\_\-parallel} (exp1, fitnessfunction, solutionset, problem1, opts1, solutions, nvar, nfuneval, nconst, xl\-\_\-log, xu\-\_\-log)}\label{classparallelscattersearchfunctions_a7dcdb488ef4a584a708f8154944c1abe}
+
+\item 
+\hypertarget{classparallelscattersearchfunctions_a0ca733cc11595a0896825637c3e65b02}{subroutine {\bfseries apply\-\_\-beyond\-\_\-to\-\_\-members\-\_\-to\-\_\-update\-\_\-parallel} (exp1, opts1, fitnessfunction, problem1, members\-\_\-to\-\_\-update, nfuneval, refset, candidateset, nconst, nrand, nvar, timeparallel)}\label{classparallelscattersearchfunctions_a0ca733cc11595a0896825637c3e65b02}
+
+\item 
+\hypertarget{classparallelscattersearchfunctions_a505e721374a120cd61c36065c6ddc002}{subroutine {\bfseries update\-\_\-candidateset\-\_\-with\-\_\-new\-\_\-comb\-\_\-parallel} (exp1, opts1, fitnessfunction, problem1, new\-\_\-comb, candidateset, childset, candidate\-\_\-update, members\-\_\-update, Max\-Sub\-Set2, nvar, nconst, nfuneval, counter, index3)}\label{classparallelscattersearchfunctions_a505e721374a120cd61c36065c6ddc002}
+
+\item 
+\hypertarget{classparallelscattersearchfunctions_ad3089e0b6c31957a4242d007bb471414}{subroutine {\bfseries create\-\_\-refset\-\_\-local} (exp1, problem1, opts1, refsetglobal, refset, nvar, nconst, tam)}\label{classparallelscattersearchfunctions_ad3089e0b6c31957a4242d007bb471414}
+
+\item 
+\hypertarget{classparallelscattersearchfunctions_af8095b113bba40cbaad81d2d21f4e9a3}{subroutine {\bfseries add\-\_\-vect\-\_\-proc} (vector\-\_\-proc, id)}\label{classparallelscattersearchfunctions_af8095b113bba40cbaad81d2d21f4e9a3}
+
+\item 
+\hypertarget{classparallelscattersearchfunctions_a949ce2691ce90ef49a19f1415d27ee02}{subroutine {\bfseries restart\-\_\-acess} (exp1, problem1, opts1, fitnessfunction, refset, nvar, xl\-\_\-log, xu\-\_\-log, xbest, fbest, nconst, timeparallel, nfuneval, refset\-\_\-change, stage\-\_\-1, stage\-\_\-2, use\-\_\-bestx)}\label{classparallelscattersearchfunctions_a949ce2691ce90ef49a19f1415d27ee02}
+
+\item 
+\hypertarget{classparallelscattersearchfunctions_a0bb31634d817c638b9bf9c18c64d5c16}{subroutine {\bfseries unique\-\_\-solution} (problem1, X\-V\-A\-R, F\-V\-A\-R, nvar)}\label{classparallelscattersearchfunctions_a0bb31634d817c638b9bf9c18c64d5c16}
+
+\item 
+\hypertarget{classparallelscattersearchfunctions_a92fbe3ef006e1f8d10d28a01144630ad}{subroutine {\bfseries initoldbestvars} (oldbestx, oldfbest, nvar)}\label{classparallelscattersearchfunctions_a92fbe3ef006e1f8d10d28a01144630ad}
+
+\item 
+\hypertarget{classparallelscattersearchfunctions_a82a42c628c10da723e9da3f95509ce22}{subroutine {\bfseries create\-\_\-migration\-\_\-master} (migration\-\_\-master, N\-P\-R\-O\-C)}\label{classparallelscattersearchfunctions_a82a42c628c10da723e9da3f95509ce22}
+
+\item 
+\hypertarget{classparallelscattersearchfunctions_ae7e6dfd64d8e271a0892afc51ef01b13}{subroutine {\bfseries destroy\-\_\-migration\-\_\-master} (migration\-\_\-master)}\label{classparallelscattersearchfunctions_ae7e6dfd64d8e271a0892afc51ef01b13}
+
+\item 
+\hypertarget{classparallelscattersearchfunctions_afdfc0d7e724bbbb3cc88a366465726fc}{subroutine {\bfseries asynchronous\-\_\-acess\-\_\-dist} (exp1, opts1, problem1, refset, sizeser, nvar, nconst, oldbestx, oldfbest, fbest, xbest, init, idp, starttime, refset\-\_\-change)}\label{classparallelscattersearchfunctions_afdfc0d7e724bbbb3cc88a366465726fc}
+
+\item 
+\hypertarget{classparallelscattersearchfunctions_ab152ced959323148911bbd10e250ab98}{subroutine {\bfseries init\-\_\-adapt\-\_\-vars} (exp1, adapt\-\_\-master, N\-P\-R\-O\-C, nvar)}\label{classparallelscattersearchfunctions_ab152ced959323148911bbd10e250ab98}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1 of file parallelscattersearchfunctions.\-f90.
+
+
+
+The documentation for this module was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/method\-\_\-module\-\_\-fortran/e\-S\-S/parallelscattersearchfunctions.\-f90\end{DoxyCompactItemize}

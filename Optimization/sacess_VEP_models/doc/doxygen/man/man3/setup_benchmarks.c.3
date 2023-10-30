@@ -1,0 +1,130 @@
+.TH "src/setup_benchmarks.c" 3 "Wed May 11 2016" "Version 0.1" "SACESS TOOLBOX" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/setup_benchmarks.c \- 
+.PP
+File containing functions about the load for different benchmarks\&. When users typical want to put their benchmarks, they should modify this file\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <configuration\&.h>\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <structure_paralleltestbed\&.h>\fP
+.br
+\fC#include <input_module\&.h>\fP
+.br
+\fC#include <output\&.h>\fP
+.br
+\fC#include <benchmark_functions_SystemBiology\&.h>\fP
+.br
+\fC#include <benchmark_functions_BBOB\&.h>\fP
+.br
+\fC#include <example\&.h>\fP
+.br
+\fC#include <def_errors\&.h>\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMINNUMSB\fP   0"
+.br
+.ti -1c
+.RI "#define \fBMAXNUMSB\fP   11"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef void *(* \fBfunction\fP )(double *, void *)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "function \fBsetup_benchmark\fP (\fBexperiment_total\fP *exp, int idp, int *first)"
+.br
+.RI "\fIthis the setup function where the usar\&. \fP"
+.ti -1c
+.RI "void \fBmanage_options\fP (int id, int i, const char *solver)"
+.br
+.RI "\fIthis is a control function: check if exist the id range for type of benchmark selected\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+File containing functions about the load for different benchmarks\&. When users typical want to put their benchmarks, they should modify this file\&. 
+
+\fBAuthor:\fP
+.RS 4
+David R\&. Penas 
+.RE
+.PP
+
+.PP
+Definition in file \fBsetup_benchmarks\&.c\fP\&.
+.SH "Function Documentation"
+.PP 
+.SS "void manage_options (intid, inti, const char *solver)"
+
+.PP
+this is a control function: check if exist the id range for type of benchmark selected\&. \fBParameters:\fP
+.RS 4
+\fIid\fP type of the benchmark\&. 
+.br
+\fIi\fP id of the benchmark selected\&. 
+.br
+\fIsolver\fP name of the selected solver\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+void function pointer of evaluation function of the selected benchmark\&. 
+.RE
+.PP
+
+.PP
+Definition at line 136 of file setup_benchmarks\&.c\&.
+.SS "function setup_benchmark (\fBexperiment_total\fP *exp, intidp, int *first)"
+
+.PP
+this the setup function where the usar\&. \fBParameters:\fP
+.RS 4
+\fIexp\fP \fBexperiment_total\fP struct, the main struct of program\&. 
+.br
+\fIidp\fP parallel identification number\&. 
+.br
+\fIfirst\fP this variable is 1, when it is the first time that the program enters in this function\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+void function pointer of evaluation function of the selected\&. benchmark\&. 
+.RE
+.PP
+CUSTOMIZED BENCHMARK
+.PP
+SYSTEM BIOLOGY PROBLEMS
+.PP
+select a specific system biology problem: current_bench = 0 --> CIRCADIAN PROBLEM current_bench = 1 --> step PATHWAY PROBLEM current_bench = 2 --> NFKB PROBLEM current_bench = 3 --> B1 BIOPREDYN PROBLEM current_bench = 4 --> B2 BIOPREDYN PROBLEM current_bench = 5 --> B3 BIOPREDYN PROBLEM current_bench = 6 --> B4 BIOPREDYN PROBLEM current_bench = 7 --> B5 BIOPREDYN PROBLEM current_bench = 8 --> B6 BIOPREDYN PROBLEM
+.PP
+BBOB NOISELESS BENCHMARKS
+.PP
+BBOB NOISE BENCHMARKS
+.PP
+to order the printf messages 
+.PP
+Definition at line 44 of file setup_benchmarks\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for SACESS TOOLBOX from the source code\&.

@@ -1,0 +1,75 @@
+\hypertarget{localsolvers__eSS_8c}{\section{src/method\-\_\-module/e\-S\-S/localsolvers\-\_\-e\-S\-S.c File Reference}
+\label{localsolvers__eSS_8c}\index{src/method\-\_\-module/e\-S\-S/localsolvers\-\_\-e\-S\-S.\-c@{src/method\-\_\-module/e\-S\-S/localsolvers\-\_\-e\-S\-S.\-c}}
+}
+
+
+File containing function interfaces to use N2\-S\-O\-L local solver with e\-S\-S.  
+
+
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$structure\-\_\-paralleltestbed.\-h$>$}\\*
+{\ttfamily \#include $<$limits.\-h$>$}\\*
+{\ttfamily \#include $<$A\-M\-I\-G\-O\-\_\-problem.\-h$>$}\\*
+{\ttfamily \#include $<$common\-\_\-solver\-\_\-operations.\-h$>$}\\*
+{\ttfamily \#include $<$output.\-h$>$}\\*
+{\ttfamily \#include $<$benchmark\-\_\-functions\-\_\-\-System\-Biology.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{localsolvers__eSS_8c_a88d81132a356041eeb536ba45b85a054}{localsolverscattersearchinterface\-\_\-} (void $\ast$exp1\-\_\-, void $\ast$($\ast$fitnessfunction)(double $\ast$, void $\ast$), int $\ast$N\-P\-R\-O\-C, int $\ast$stop, double $\ast$xbest, double $\ast$fval, long $\ast$neval)
+\begin{DoxyCompactList}\small\item\em this the setup function where the usar. \end{DoxyCompactList}\item 
+\hypertarget{localsolvers__eSS_8c_a7c19eed3355d4386296d255f819b4f9f}{void {\bfseries initlocalsolvervarsess\-\_\-} (void $\ast$exp1\-\_\-)}\label{localsolvers__eSS_8c_a7c19eed3355d4386296d255f819b4f9f}
+
+\item 
+\hypertarget{localsolvers__eSS_8c_ab6f7ed9f0b02010512efaea8a4d1a651}{void {\bfseries addlocalscounteress\-\_\-} (void $\ast$exp1\-\_\-)}\label{localsolvers__eSS_8c_ab6f7ed9f0b02010512efaea8a4d1a651}
+
+\item 
+\hypertarget{localsolvers__eSS_8c_a06adc6ebd83fae2109b26d9146b3af01}{void {\bfseries setentervalueess\-\_\-} (void $\ast$exp1\-\_\-, double $\ast$fval)}\label{localsolvers__eSS_8c_a06adc6ebd83fae2109b26d9146b3af01}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+File containing function interfaces to use N2\-S\-O\-L local solver with e\-S\-S. \begin{DoxyAuthor}{Author}
+David R. Penas 
+\end{DoxyAuthor}
+
+
+Definition in file \hyperlink{localsolvers__eSS_8c_source}{localsolvers\-\_\-e\-S\-S.\-c}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{localsolvers__eSS_8c_a88d81132a356041eeb536ba45b85a054}{\index{localsolvers\-\_\-e\-S\-S.\-c@{localsolvers\-\_\-e\-S\-S.\-c}!localsolverscattersearchinterface\-\_\-@{localsolverscattersearchinterface\-\_\-}}
+\index{localsolverscattersearchinterface\-\_\-@{localsolverscattersearchinterface\-\_\-}!localsolvers_eSS.c@{localsolvers\-\_\-e\-S\-S.\-c}}
+\subsubsection[{localsolverscattersearchinterface\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}void localsolverscattersearchinterface\-\_\- (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{exp1\-\_\-, }
+\item[{void $\ast$($\ast$)(double $\ast$, void $\ast$)}]{fitnessfunction, }
+\item[{int $\ast$}]{N\-P\-R\-O\-C, }
+\item[{int $\ast$}]{stop, }
+\item[{double $\ast$}]{xbest, }
+\item[{double $\ast$}]{fval, }
+\item[{long $\ast$}]{neval}
+\end{DoxyParamCaption}
+)}}\label{localsolvers__eSS_8c_a88d81132a356041eeb536ba45b85a054}
+
+
+this the setup function where the usar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em exp} & \hyperlink{structexperiment__total}{experiment\-\_\-total} struct, the main struct of program. \\
+\hline
+{\em idp} & parallel identification number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void function pointer of evaluation function of the selected benchmark. 
+\end{DoxyReturn}
+
+
+Definition at line 28 of file localsolvers\-\_\-e\-S\-S.\-c.
+

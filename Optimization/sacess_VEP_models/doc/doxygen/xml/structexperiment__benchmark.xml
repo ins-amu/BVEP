@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="structexperiment__benchmark" kind="struct" prot="public">
+    <compoundname>experiment_benchmark</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structexperiment__benchmark_1a547380817705dad39ba833820ca68fb2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int experiment_benchmark::current_bench</definition>
+        <argsstring></argsstring>
+        <name>current_bench</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="39" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__benchmark_1a7c77b9ca32677166dc1df7bc8718b32e" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* experiment_benchmark::min_dom</definition>
+        <argsstring></argsstring>
+        <name>min_dom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="40" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__benchmark_1a5a7165e6af60e0ccaee39ace34ada8a0" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* experiment_benchmark::max_dom</definition>
+        <argsstring></argsstring>
+        <name>max_dom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="41" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__benchmark_1a3274fa4060b566c2365cb2e6df4e929d" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* experiment_benchmark::log_min_dom</definition>
+        <argsstring></argsstring>
+        <name>log_min_dom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="42" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__benchmark_1a2bb46e13359bd136ad816f5174617f17" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* experiment_benchmark::log_max_dom</definition>
+        <argsstring></argsstring>
+        <name>log_max_dom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="43" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__benchmark_1a56f1f7adb21ece1bb5c23724ca1da88e" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* experiment_benchmark::logindex</definition>
+        <argsstring></argsstring>
+        <name>logindex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="44" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__benchmark_1a62f2308c9bce2fafd36775f72d9b6144" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int experiment_benchmark::idtype</definition>
+        <argsstring></argsstring>
+        <name>idtype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="45" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__benchmark_1aca1d5bdf12cfc521cb688ff7ce869ce5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int experiment_benchmark::noamigo</definition>
+        <argsstring></argsstring>
+        <name>noamigo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="46" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__benchmark_1ae969c668ce0da0347158374977e36637" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int experiment_benchmark::estime_init_cond</definition>
+        <argsstring></argsstring>
+        <name>estime_init_cond</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="47" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__benchmark_1adcfa5f5faa497cbb615cbadcf9fb1fbf" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* experiment_benchmark::CL</definition>
+        <argsstring></argsstring>
+        <name>CL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="48" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__benchmark_1a17881a36528dcdf9752db5038db2b595" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* experiment_benchmark::CU</definition>
+        <argsstring></argsstring>
+        <name>CU</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="49" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__benchmark_1afde32fba146c30ae63608280747d41d3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int experiment_benchmark::dim</definition>
+        <argsstring></argsstring>
+        <name>dim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="50" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__benchmark_1ab4b3b68467a511f86acde32f82b2e529" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* experiment_benchmark::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="51" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__benchmark_1aab08f38403e73540717915b52998e979" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* experiment_benchmark::BestSol</definition>
+        <argsstring></argsstring>
+        <name>BestSol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="52" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__benchmark_1a4201ff1a2154ef7aaefbc087c966f8b3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int experiment_benchmark::ineq</definition>
+        <argsstring></argsstring>
+        <name>ineq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="53" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__benchmark_1a4838fc7b9684627bad9dcfa0e1101a75" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int experiment_benchmark::translation</definition>
+        <argsstring></argsstring>
+        <name>translation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="54" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__benchmark_1a39a1090c24181230b64a709e88f7f118" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int experiment_benchmark::openmp</definition>
+        <argsstring></argsstring>
+        <name>openmp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="55" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__benchmark_1a8bdcffcfe603ac385d6b2c6cc2093d0a" prot="public" static="no" mutable="no">
+        <type>double **</type>
+        <definition>double** experiment_benchmark::X0</definition>
+        <argsstring></argsstring>
+        <name>X0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="56" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__benchmark_1ad3cee1c5e03302091d16c29adfbccbfa" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* experiment_benchmark::F0</definition>
+        <argsstring></argsstring>
+        <name>F0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="57" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexperiment__benchmark_1a9c175d0f6182040e501b24a039bf5147" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int experiment_benchmark::number_init_sol</definition>
+        <argsstring></argsstring>
+        <name>number_init_sol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="58" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="38" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="38" bodyend="59"/>
+    <listofallmembers>
+      <member refid="structexperiment__benchmark_1aab08f38403e73540717915b52998e979" prot="public" virt="non-virtual"><scope>experiment_benchmark</scope><name>BestSol</name></member>
+      <member refid="structexperiment__benchmark_1adcfa5f5faa497cbb615cbadcf9fb1fbf" prot="public" virt="non-virtual"><scope>experiment_benchmark</scope><name>CL</name></member>
+      <member refid="structexperiment__benchmark_1a17881a36528dcdf9752db5038db2b595" prot="public" virt="non-virtual"><scope>experiment_benchmark</scope><name>CU</name></member>
+      <member refid="structexperiment__benchmark_1a547380817705dad39ba833820ca68fb2" prot="public" virt="non-virtual"><scope>experiment_benchmark</scope><name>current_bench</name></member>
+      <member refid="structexperiment__benchmark_1afde32fba146c30ae63608280747d41d3" prot="public" virt="non-virtual"><scope>experiment_benchmark</scope><name>dim</name></member>
+      <member refid="structexperiment__benchmark_1ae969c668ce0da0347158374977e36637" prot="public" virt="non-virtual"><scope>experiment_benchmark</scope><name>estime_init_cond</name></member>
+      <member refid="structexperiment__benchmark_1ad3cee1c5e03302091d16c29adfbccbfa" prot="public" virt="non-virtual"><scope>experiment_benchmark</scope><name>F0</name></member>
+      <member refid="structexperiment__benchmark_1a62f2308c9bce2fafd36775f72d9b6144" prot="public" virt="non-virtual"><scope>experiment_benchmark</scope><name>idtype</name></member>
+      <member refid="structexperiment__benchmark_1a4201ff1a2154ef7aaefbc087c966f8b3" prot="public" virt="non-virtual"><scope>experiment_benchmark</scope><name>ineq</name></member>
+      <member refid="structexperiment__benchmark_1a2bb46e13359bd136ad816f5174617f17" prot="public" virt="non-virtual"><scope>experiment_benchmark</scope><name>log_max_dom</name></member>
+      <member refid="structexperiment__benchmark_1a3274fa4060b566c2365cb2e6df4e929d" prot="public" virt="non-virtual"><scope>experiment_benchmark</scope><name>log_min_dom</name></member>
+      <member refid="structexperiment__benchmark_1a56f1f7adb21ece1bb5c23724ca1da88e" prot="public" virt="non-virtual"><scope>experiment_benchmark</scope><name>logindex</name></member>
+      <member refid="structexperiment__benchmark_1a5a7165e6af60e0ccaee39ace34ada8a0" prot="public" virt="non-virtual"><scope>experiment_benchmark</scope><name>max_dom</name></member>
+      <member refid="structexperiment__benchmark_1a7c77b9ca32677166dc1df7bc8718b32e" prot="public" virt="non-virtual"><scope>experiment_benchmark</scope><name>min_dom</name></member>
+      <member refid="structexperiment__benchmark_1aca1d5bdf12cfc521cb688ff7ce869ce5" prot="public" virt="non-virtual"><scope>experiment_benchmark</scope><name>noamigo</name></member>
+      <member refid="structexperiment__benchmark_1a9c175d0f6182040e501b24a039bf5147" prot="public" virt="non-virtual"><scope>experiment_benchmark</scope><name>number_init_sol</name></member>
+      <member refid="structexperiment__benchmark_1a39a1090c24181230b64a709e88f7f118" prot="public" virt="non-virtual"><scope>experiment_benchmark</scope><name>openmp</name></member>
+      <member refid="structexperiment__benchmark_1a4838fc7b9684627bad9dcfa0e1101a75" prot="public" virt="non-virtual"><scope>experiment_benchmark</scope><name>translation</name></member>
+      <member refid="structexperiment__benchmark_1ab4b3b68467a511f86acde32f82b2e529" prot="public" virt="non-virtual"><scope>experiment_benchmark</scope><name>type</name></member>
+      <member refid="structexperiment__benchmark_1a8bdcffcfe603ac385d6b2c6cc2093d0a" prot="public" virt="non-virtual"><scope>experiment_benchmark</scope><name>X0</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

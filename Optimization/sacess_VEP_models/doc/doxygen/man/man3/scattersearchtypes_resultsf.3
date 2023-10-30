@@ -1,0 +1,95 @@
+.TH "scattersearchtypes::resultsf" 3 "Wed May 11 2016" "Version 0.1" "SACESS TOOLBOX" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+scattersearchtypes::resultsf \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "type(\fBrefsettype\fP) \fBrefsett\fP"
+.br
+.ti -1c
+.RI "real(kind=selected_real_kind(p=precision_d, 
+.br
+r=range_d)), dimension(:), 
+.br
+allocatable \fBfbest\fP"
+.br
+.ti -1c
+.RI "real(kind=selected_real_kind(p=precision_d, 
+.br
+r=range_d)), dimension(:), 
+.br
+allocatable \fBxbest\fP"
+.br
+.ti -1c
+.RI "real(c_double) \fBcputime\fP"
+.br
+.ti -1c
+.RI "real(kind=selected_real_kind(p=precision_d, 
+.br
+r=range_d)), dimension(:), 
+.br
+allocatable \fBf\fP"
+.br
+.ti -1c
+.RI "real(kind=selected_real_kind(p=precision_d, 
+.br
+r=range_d)), dimension(:,:), 
+.br
+allocatable \fBx\fP"
+.br
+.ti -1c
+.RI "real(c_double), dimension(:), 
+.br
+allocatable \fBtime\fP"
+.br
+.ti -1c
+.RI "integer(c_long), dimension(:), 
+.br
+allocatable \fBneval\fP"
+.br
+.ti -1c
+.RI "integer(c_long) \fBnumeval\fP"
+.br
+.ti -1c
+.RI "integer(c_long_long) \fBlocal_solutions\fP"
+.br
+.ti -1c
+.RI "integer(c_long_long), 
+.br
+dimension(:), allocatable \fBlocal_solutions_values\fP"
+.br
+.ti -1c
+.RI "integer(c_long_long) \fBend_crit\fP"
+.br
+.ti -1c
+.RI "real(kind=selected_real_kind(p=precision_d, 
+.br
+r=range_d)) \fBtotaliter\fP"
+.br
+.ti -1c
+.RI "real(kind=selected_real_kind(p=precision_d, 
+.br
+r=range_d)) \fBtimevtr\fP"
+.br
+.ti -1c
+.RI "real(kind=selected_real_kind(p=precision_d, 
+.br
+r=range_d)) \fBtotalvtr\fP"
+.br
+.ti -1c
+.RI "real(c_double) \fBtimetotal\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 174 of file scattersearchtypes\&.f90\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for SACESS TOOLBOX from the source code\&.

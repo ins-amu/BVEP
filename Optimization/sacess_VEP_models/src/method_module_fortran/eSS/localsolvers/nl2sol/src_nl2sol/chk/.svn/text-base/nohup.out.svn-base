@@ -1,0 +1,277 @@
+f77 -O -c lysc.f
+lysc.f:
+   lysc:
+   spots:
+Warning on line 388 of lysc.f: local variable cond never used
+Warning on line 388 of lysc.f: local variable ipvt never used
+Warning on line 388 of lysc.f: local variable z never used
+Warning on line 388 of lysc.f: local variable rcond never used
+Warning on line 388 of lysc.f: local variable jb never used
+Warning on line 388 of lysc.f: local variable kb never used
+Warning on line 388 of lysc.f: local variable xp never used
+Warning on line 388 of lysc.f: local variable kpf never used
+   cpoxx:
+Warning on line 535 of lysc.f: local variable cmach never used
+f77 -O -c mach.f
+mach.f:
+   mach:
+f77 -O -c mfed.f
+mfed.f:
+   mfed:
+   tester:
+f77 -O -c mfte.f
+mfte.f:
+   mfte:
+   tester:
+f77 -O -c mntb.f
+mntb.f:
+   mntb:
+f77 -O -c plya.f
+plya.f:
+   plya:
+   trig01:
+Warning on line 90 of plya.f: local variable mu never used
+f77 -O -c plyc.f
+plyc.f:
+   plyc:
+f77 -O -c prac.f
+prac.f:
+   prac:
+   sgets:
+Warning on line 400 of prac.f: local variable ldab never used
+Warning on line 400 of prac.f: local variable cond never used
+Warning on line 400 of prac.f: local variable k never used
+Warning on line 400 of prac.f: local variable l never used
+Warning on line 400 of prac.f: local variable m never used
+Warning on line 400 of prac.f: local variable smach never used
+Warning on line 400 of prac.f: local variable enorm never used
+Warning on line 400 of prac.f: local variable fnorm never used
+Warning on line 400 of prac.f: local variable ipvtb never used
+Warning on line 400 of prac.f: local variable onepx never used
+Warning on line 400 of prac.f: local variable i1 never used
+Warning on line 400 of prac.f: local variable i2 never used
+Warning on line 400 of prac.f: local variable rnorm never used
+Warning on line 400 of prac.f: local variable xnorm never used
+Warning on line 400 of prac.f: local variable kb never used
+Warning on line 400 of prac.f: local variable ml never used
+Warning on line 400 of prac.f: local variable mu never used
+Warning on line 400 of prac.f: local variable rcondb never used
+Warning on line 400 of prac.f: local variable etnorm never used
+Warning on line 400 of prac.f: local variable kp1 never used
+Warning on line 400 of prac.f: local variable nm1 never used
+Warning on line 400 of prac.f: local variable rtnorm never used
+Warning on line 400 of prac.f: local variable kbf never used
+Warning on line 400 of prac.f: local variable ain never used
+Warning on line 400 of prac.f: local variable fni never used
+   cgexx:
+Warning on line 610 of prac.f: local variable cmach never used
+   arow:
+   iirow:
+   anrm:
+   cgetsp:
+f77 -O -c prad.f
+prad.f:
+   prad:
+   sgets:
+Warning on line 406 of prad.f: local variable ldab never used
+Warning on line 406 of prad.f: local variable cond never used
+Warning on line 406 of prad.f: local variable k never used
+Warning on line 406 of prad.f: local variable l never used
+Warning on line 406 of prad.f: local variable m never used
+Warning on line 406 of prad.f: local variable smach never used
+Warning on line 406 of prad.f: local variable enorm never used
+Warning on line 406 of prad.f: local variable fnorm never used
+Warning on line 406 of prad.f: local variable ipvtb never used
+Warning on line 406 of prad.f: local variable onepx never used
+Warning on line 406 of prad.f: local variable i1 never used
+Warning on line 406 of prad.f: local variable i2 never used
+Warning on line 406 of prad.f: local variable rnorm never used
+Warning on line 406 of prad.f: local variable xnorm never used
+Warning on line 406 of prad.f: local variable kb never used
+Warning on line 406 of prad.f: local variable ml never used
+Warning on line 406 of prad.f: local variable mu never used
+Warning on line 406 of prad.f: local variable rcondb never used
+Warning on line 406 of prad.f: local variable etnorm never used
+Warning on line 406 of prad.f: local variable kp1 never used
+Warning on line 406 of prad.f: local variable nm1 never used
+Warning on line 406 of prad.f: local variable rtnorm never used
+Warning on line 406 of prad.f: local variable kbf never used
+Warning on line 406 of prad.f: local variable fni never used
+   sgexx:
+Warning on line 644 of prad.f: local variable smach never used
+   arow:
+   iirow:
+   anrm:
+   dgetsp:
+f77 -O -c prsa.f
+prsa.f:
+   prsa:
+   sgets:
+   sgexx:
+   arow:
+   iirow:
+   anrm:
+   getsp:
+f77 -O -c qbgd.f
+qbgd.f:
+   qbgd:
+   test1:
+   f:
+   test2:
+Warning on line 221 of qbgd.f: local variable falf never used
+Warning on line 221 of qbgd.f: local variable errest never used
+Warning on line 221 of qbgd.f: local variable jprint never used
+Warning on line 221 of qbgd.f: local variable ans never used
+   alpha:
+   test:
+Warning on line 266 of qbgd.f: local variable f never used
+   falf:
+Warning on line 315 of qbgd.f: local variable alpha never used
+   test3:
+   frand:
+f77 -O -c qblg.f
+qblg.f:
+   qblg:
+   test1:
+   f:
+   test2:
+Warning on line 223 of qblg.f: local variable falf never used
+Warning on line 223 of qblg.f: local variable errest never used
+Warning on line 223 of qblg.f: local variable jprint never used
+Warning on line 223 of qblg.f: local variable ans never used
+   alpha:
+   test:
+Warning on line 271 of qblg.f: local variable f never used
+   falf:
+Warning on line 319 of qblg.f: local variable alpha never used
+   test3:
+   frand:
+f77 -O -c qggd.f
+qggd.f:
+   qggd:
+   tdgex2:
+   fex2:
+   tdgexa:
+   fexa:
+   tdglog:
+   flog:
+   tdgxa:
+   fxa:
+   tdgxab:
+   fxab:
+   dgamma:
+   tdgex:
+   fex:
+   tdg1:
+   f1:
+f77 -O -c qgsg.f
+qgsg.f:
+   qgsg:
+   tgex2:
+   fex2:
+   tgexa:
+   fexa:
+   tglog:
+   flog:
+   tgxa:
+   fxa:
+   tgxab:
+   fxab:
+   gamma:
+   tgex:
+   fex:
+   tg1:
+   f1:
+f77 -O -c qpad.f
+qpad.f:
+   qpad:
+   change:
+   funct:
+   mult:
+   chbnd:
+   setup1:
+   setup2:
+f77 -O -c qpra.f
+qpra.f:
+   qpra:
+   setup1:
+   setup2:
+   change:
+   funct:
+   mult:
+   chbnd:
+f77 -O -c rnrm.f
+rnrm.f:
+   rnrm:
+f77 -O -c sdba.f
+sdba.f:
+   sdba:
+   check:
+Warning on line 130 of sdba.f: local variable i1mach never used
+   f:
+   fw:
+   fd:
+   fwd:
+   wrapup:
+f77 -O -c sple.f
+sple.f:
+   sple:
+   usplck:
+   u8plck:
+   osplck:
+   msplck:
+Warning on line 471 of sple.f: local variable i1mach never used
+   amaxdf:
+   wrapup:
+f77 -O -c stk1.f
+stk1.f:
+   stk1:
+   setc:
+   setd:
+   seti:
+   setl:
+   setr:
+f77 -O -c stk2.f
+stk2.f:
+   stk2:
+   setc:
+   setd:
+   seti:
+   setl:
+   setr:
+f77 -O -c svad.f
+svad.f:
+   svad:
+f77 -O -c svbd.f
+svbd.f:
+   svbd:
+f77 -O -c svcd.f
+svcd.f:
+   svcd:
+f77 -O -c svda.f
+svda.f:
+   svda:
+f77 -O -c svdb.f
+svdb.f:
+   svdb:
+f77 -O -c svdc.f
+svdc.f:
+   svdc:
+f77 -O -c thyp.f
+thyp.f:
+   thyp:
+   check:
+f77 -O -c vdad.f
+vdad.f:
+   vdad:
+f77 -O -c vdbd.f
+vdbd.f:
+   vdbd:
+f77 -O -c vded.f
+vded.f:
+   vded:
+ar ru lib.a err1.o err2.o err3.o errk.o extr.o gama.o gmad.o lgac.o lgad.o lgea.o llza.o lrad.o lrpa.o ltqd.o ltsqc.o lyad.o lyma.o lyrc.o lysc.o mach.o mfed.o mfte.o mntb.o plya.o plyc.o prac.o prad.o prsa.o qbgd.o qblg.o qggd.o qgsg.o qpad.o qpra.o rnrm.o sdba.o sple.o stk1.o stk2.o svad.o svbd.o svcd.o svda.o svdb.o svdc.o thyp.o vdad.o vdbd.o vded.o
+ar: creating lib.a
+ranlib lib.a
+mv lib.a /usr/local/lib/libportP/chk.a
+rm *.o

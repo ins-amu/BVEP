@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="benchmark__functions__BBOB_8h" kind="file">
+    <compoundname>benchmark_functions_BBOB.h</compoundname>
+    <includes refid="structure__paralleltestbed_8h" local="no">structure_paralleltestbed.h</includes>
+    <includes local="no">bbobStructures.h</includes>
+    <includedby refid="setup__benchmarks_8c" local="no">src/setup_benchmarks.c</includedby>
+    <incdepgraph>
+      <node id="33">
+        <label>structure_paralleltestbed.h</label>
+        <link refid="structure__paralleltestbed_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>include/method_module/benchmark_functions_BBOB.h</label>
+        <link refid="benchmark_functions_BBOB.h"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>time.h</label>
+      </node>
+      <node id="37">
+        <label>gsl/gsl_randist.h</label>
+      </node>
+      <node id="36">
+        <label>gsl/gsl_rng.h</label>
+      </node>
+      <node id="35">
+        <label>AMIGO_problem.h</label>
+      </node>
+      <node id="34">
+        <label>bbobStructures.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="39">
+        <label>include/method_module/benchmark_functions_BBOB.h</label>
+        <link refid="benchmark_functions_BBOB.h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>src/setup_benchmarks.c</label>
+        <link refid="setup__benchmarks_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="benchmark__functions__BBOB_8h_1ae7fe44282718eae0dcb79064903d8aac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int initializeBBOB</definition>
+        <argsstring>(experiment_total *, const char *, int)</argsstring>
+        <name>initializeBBOB</name>
+        <param>
+          <type><ref refid="structexperiment__total" kindref="compound">experiment_total</ref> *</type>
+        </param>
+        <param>
+          <type>const char *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/benchmark_functions_BBOB.h" line="4"/>
+      </memberdef>
+      <memberdef kind="function" id="benchmark__functions__BBOB_8h_1a4849d12be10114b05863426791d0db39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int updateFunctionsBBOB</definition>
+        <argsstring>(experiment_total *, int, int)</argsstring>
+        <name>updateFunctionsBBOB</name>
+        <param>
+          <type><ref refid="structexperiment__total" kindref="compound">experiment_total</ref> *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/benchmark_functions_BBOB.h" line="6"/>
+      </memberdef>
+      <memberdef kind="function" id="benchmark__functions__BBOB_8h_1acef6c2c892c67ea23eb44bf10802f375" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int destroyBBOB</definition>
+        <argsstring>(experiment_total *)</argsstring>
+        <name>destroyBBOB</name>
+        <param>
+          <type><ref refid="structexperiment__total" kindref="compound">experiment_total</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/benchmark_functions_BBOB.h" line="8"/>
+      </memberdef>
+      <memberdef kind="function" id="benchmark__functions__BBOB_8h_1ad718f7ef34a9c3b0b70db62670dc6a45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* fgeneric_noise</definition>
+        <argsstring>(double *X, void *data)</argsstring>
+        <name>fgeneric_noise</name>
+        <param>
+          <type>double *</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/benchmark_functions_BBOB.h" line="10"/>
+      </memberdef>
+      <memberdef kind="function" id="benchmark__functions__BBOB_8h_1a9c1489f0166d9bda64671b90993e7dc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* fgeneric_noiseless</definition>
+        <argsstring>(double *X, void *data)</argsstring>
+        <name>fgeneric_noiseless</name>
+        <param>
+          <type>double *</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/benchmark_functions_BBOB.h" line="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;structure_paralleltestbed.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;bbobStructures.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>initializeBBOB(<ref refid="structexperiment__total" kindref="compound">experiment_total</ref><sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>updateFunctionsBBOB(<ref refid="structexperiment__total" kindref="compound">experiment_total</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>destroyBBOB(<ref refid="structexperiment__total" kindref="compound">experiment_total</ref><sp/>*);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>fgeneric_noise(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<sp/>X,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>fgeneric_noiseless(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<sp/>X,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data);</highlight></codeline>
+    </programlisting>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/benchmark_functions_BBOB.h"/>
+  </compounddef>
+</doxygen>

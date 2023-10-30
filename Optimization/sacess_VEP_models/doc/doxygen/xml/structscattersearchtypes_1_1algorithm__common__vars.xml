@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="structscattersearchtypes_1_1algorithm__common__vars" kind="type" prot="public">
+    <compoundname>scattersearchtypes::algorithm_common_vars</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structscattersearchtypes_1_1algorithm__common__vars_1afa12578385343b4f618d97490ec3fce3" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::algorithm_common_vars::nproc</definition>
+        <argsstring></argsstring>
+        <name>nproc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1algorithm__common__vars_1a1a87618b163a43ccb389122183125358" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::algorithm_common_vars::idp</definition>
+        <argsstring></argsstring>
+        <name>idp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1algorithm__common__vars_1af4a663945d54f51faba45a52bc354689" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::algorithm_common_vars::parallel</definition>
+        <argsstring></argsstring>
+        <name>parallel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1algorithm__common__vars_1a528d0c607c069811cb1341485e5d3b51" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::algorithm_common_vars::cooperative</definition>
+        <argsstring></argsstring>
+        <name>cooperative</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1algorithm__common__vars_1a637b68bf16e6852e62ac176fae76ab03" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::algorithm_common_vars::inititer</definition>
+        <argsstring></argsstring>
+        <name>inititer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1algorithm__common__vars_1a309b379c7ac6ba1540b142f9d6b622bb" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::algorithm_common_vars::init_comm</definition>
+        <argsstring></argsstring>
+        <name>init_comm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1algorithm__common__vars_1ac0650defc6ddae85f1d6a850f8238645" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::algorithm_common_vars::sizeser</definition>
+        <argsstring></argsstring>
+        <name>sizeser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1algorithm__common__vars_1a42c4c81461535ac3c0fe6878c0be02d6" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::algorithm_common_vars::iter</definition>
+        <argsstring></argsstring>
+        <name>iter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1algorithm__common__vars_1afe08325752f64901c60cc3307c5b9e78" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::algorithm_common_vars::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1algorithm__common__vars_1a9936e20d90400bda8cc24336e3609bc8" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::algorithm_common_vars::nvar</definition>
+        <argsstring></argsstring>
+        <name>nvar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="53" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="structscattersearchtypes_1_1algorithm__common__vars_1a528d0c607c069811cb1341485e5d3b51" prot="public" virt="non-virtual"><scope>scattersearchtypes::algorithm_common_vars</scope><name>cooperative</name></member>
+      <member refid="structscattersearchtypes_1_1algorithm__common__vars_1a1a87618b163a43ccb389122183125358" prot="public" virt="non-virtual"><scope>scattersearchtypes::algorithm_common_vars</scope><name>idp</name></member>
+      <member refid="structscattersearchtypes_1_1algorithm__common__vars_1a309b379c7ac6ba1540b142f9d6b622bb" prot="public" virt="non-virtual"><scope>scattersearchtypes::algorithm_common_vars</scope><name>init_comm</name></member>
+      <member refid="structscattersearchtypes_1_1algorithm__common__vars_1a637b68bf16e6852e62ac176fae76ab03" prot="public" virt="non-virtual"><scope>scattersearchtypes::algorithm_common_vars</scope><name>inititer</name></member>
+      <member refid="structscattersearchtypes_1_1algorithm__common__vars_1a42c4c81461535ac3c0fe6878c0be02d6" prot="public" virt="non-virtual"><scope>scattersearchtypes::algorithm_common_vars</scope><name>iter</name></member>
+      <member refid="structscattersearchtypes_1_1algorithm__common__vars_1afa12578385343b4f618d97490ec3fce3" prot="public" virt="non-virtual"><scope>scattersearchtypes::algorithm_common_vars</scope><name>nproc</name></member>
+      <member refid="structscattersearchtypes_1_1algorithm__common__vars_1a9936e20d90400bda8cc24336e3609bc8" prot="public" virt="non-virtual"><scope>scattersearchtypes::algorithm_common_vars</scope><name>nvar</name></member>
+      <member refid="structscattersearchtypes_1_1algorithm__common__vars_1af4a663945d54f51faba45a52bc354689" prot="public" virt="non-virtual"><scope>scattersearchtypes::algorithm_common_vars</scope><name>parallel</name></member>
+      <member refid="structscattersearchtypes_1_1algorithm__common__vars_1ac0650defc6ddae85f1d6a850f8238645" prot="public" virt="non-virtual"><scope>scattersearchtypes::algorithm_common_vars</scope><name>sizeser</name></member>
+      <member refid="structscattersearchtypes_1_1algorithm__common__vars_1afe08325752f64901c60cc3307c5b9e78" prot="public" virt="non-virtual"><scope>scattersearchtypes::algorithm_common_vars</scope><name>status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

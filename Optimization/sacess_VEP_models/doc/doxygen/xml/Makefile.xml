@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="Makefile" kind="file">
+    <compoundname>Makefile</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">BUILDDIR=.</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">LIBRARY=$(BUILDDIR)/lib</highlight></codeline>
+<codeline lineno="3"><highlight class="normal">AMIGO_PATH=$(LIBRARY)/libAMIGO</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#############################################################################</highlight></codeline>
+<codeline lineno="6"><highlight class="preprocessor"></highlight><highlight class="preprocessor">##<sp/>PARALLEL<sp/>GCC/GFORTRAN<sp/>-<sp/>OPENMP</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#############################################################################</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"></highlight><highlight class="normal">CC:=mpicc<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">FC:=mpif90<sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">CLIBS+=<sp/><sp/>-lstdc++<sp/>-lpthread<sp/>-lrt<sp/>-lgfortran<sp/><sp/>-cpp<sp/>-MMD<sp/>-lm<sp/>-ldl<sp/>-lz</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">CFLAGS+=<sp/>-O3<sp/>-cpp<sp/>-DGNU<sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">CPARALLEL+=<sp/><sp/>-DOPENMP<sp/>-DMPI2<sp/>-fopenmp<sp/>-lmpi</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">FLIBS+=</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">FFLAGS+=<sp/>-O3<sp/>-cpp<sp/>-DGNU<sp/><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">FPARALLEL+=-DOPENMP<sp/>-O3<sp/>-cpp<sp/><sp/>-DMPI2<sp/>-DGNU<sp/>-fopenmp</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">LIBS+=<sp/>-L$(LIBRARY)/BLAS<sp/>-lblas</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">#############################################################################</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">#############################################################################</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">##<sp/>PARALLEL<sp/>ICC/IFORT<sp/>-<sp/>INTELMPI</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">#############################################################################</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">#CC:=<sp/><sp/><sp/>mpiicc<sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">#FC:=<sp/><sp/><sp/>mpiifort<sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">#AR:=<sp/><sp/><sp/>xiar#</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">#LD:=<sp/><sp/><sp/>xild#</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">#CLIBS+=<sp/><sp/>-cxxlib<sp/>-lrt<sp/>-lhdf5<sp/><sp/>-limf<sp/>-lifcore<sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">#CLIBS+=<sp/><sp/>-lm<sp/>-MMD<sp/>-lz<sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">#CFLAGS+=<sp/>-O3<sp/>-ipo<sp/>-xHost<sp/>-DINTEL</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">#CPARALLEL+=<sp/>-openmp<sp/>-pthread<sp/>-mt_mpi<sp/><sp/>-DOPENMP<sp/>-DMPI2<sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">#FLIBS+=<sp/><sp/>-cxxlib<sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">#FFLAGS+=<sp/>-O3<sp/>-ipo<sp/>-xHost<sp/>-fpp<sp/>-DEXPORT<sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">#FPARALLEL+=<sp/>-openmp<sp/>-DOPENMP<sp/>-DMPI2<sp/>-DINTEL<sp/>-mt_mpi</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">#BLAS+=<sp/>$(LIBRARY)/BLAS/libblas.a<sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#############################################################################</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#############################################################################</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="preprocessor">##<sp/>PARALLEL<sp/>ICC/IFORT<sp/>-<sp/>OPENMPI</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#############################################################################</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#OPENMPI:=/opt/MPI/openmpi-1.10.2/linux/intel_16.0.2.181</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#CC:=<sp/><sp/><sp/>mpicc</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#FC:=<sp/><sp/><sp/>mpif90</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#AR:=<sp/><sp/><sp/>xiar#</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#LD:=<sp/><sp/><sp/>xild#</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#CLIBS+=<sp/><sp/>-cxxlib<sp/>-lrt<sp/>-lhdf5<sp/><sp/>-lxml2<sp/>-limf<sp/>-lifcore</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#CLIBS+=<sp/><sp/>-lm<sp/>-MMD<sp/>-lz</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#CFLAGS+=<sp/>-O3<sp/>-ipo<sp/>-xHost<sp/>-DINTEL</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#CPARALLEL+=<sp/>-qopenmp<sp/>-pthread<sp/>-lmpi<sp/>-DOPENMP<sp/>-DMPI2<sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#FLIBS+=<sp/><sp/>-cxxlib</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#FFLAGS+=<sp/>-O3<sp/>-ipo<sp/>-xHost<sp/>-fpp<sp/>-DEXPORT<sp/>-DINTEL<sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#FPARALLEL+=<sp/>-qopenmp<sp/>-DOPENMP<sp/>-DMPI2<sp/>-lmpi<sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#BLAS+=<sp/>$(LIBRARY)/BLAS/libblas.a</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#############################################################################</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#############################################################################</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="preprocessor">##<sp/>SEQUENTIAL<sp/>GCC/GFORTRAN</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#############################################################################</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#CC:=<sp/>gcc<sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#FC:=<sp/>gfortran</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#CLIBS+=<sp/>-lstdc++<sp/>-lpthread<sp/>-lrt<sp/>-lgfortran<sp/><sp/>-cpp<sp/>-MMD<sp/>-lm<sp/>-ldl<sp/>-lz</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#CFLAGS+=<sp/>-O3<sp/>-cpp<sp/>-DGNU<sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#FLIBS+=</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#FFLAGS+=<sp/>-O3<sp/>-cpp<sp/>-DGNU<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#LIBS+=<sp/>-L$(LIBRARY)/BLAS<sp/>-lblas</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#############################################################################</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#############################################################################</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="preprocessor">##<sp/>SEQUENTIAL<sp/>ICC/IFORT<sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#############################################################################</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#CC:=<sp/><sp/><sp/>icc</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#FC:=<sp/><sp/><sp/>ifort</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#AR:=<sp/><sp/><sp/>xiar#</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#LD:=<sp/><sp/><sp/>xild#</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#CLIBS+=<sp/><sp/>-cxxlib<sp/>-lrt<sp/>-lhdf5<sp/><sp/>-lxml2<sp/>-limf<sp/>-lifcore<sp/><sp/>-lm<sp/>-MMD<sp/>-lz<sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#CFLAGS+=<sp/>-O3<sp/>-ipo<sp/>-xHost<sp/>-DINTEL</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#FLIBS+=<sp/><sp/>-cxxlib<sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#FFLAGS+=<sp/>-O3<sp/>-ipo<sp/>-xHost<sp/>-fpp<sp/>-DEXPORT<sp/>-DINTEL<sp/></highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#BLAS+=<sp/>$(LIBRARY)/BLAS/libblas.a<sp/><sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#############################################################################</highlight></codeline>
+<codeline lineno="81"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#############################################################################</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"></highlight><highlight class="preprocessor">##<sp/>XML</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#############################################################################</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"></highlight><highlight class="normal">INC+=<sp/>-I$(LIBRARY)/libxml2/include</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">LIBS+=<sp/>-L$(LIBRARY)/libxml2/lib<sp/>-lxml2<sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#############################################################################</highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#############################################################################</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"></highlight><highlight class="preprocessor">##<sp/>HDF5</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#############################################################################</highlight></codeline>
+<codeline lineno="92"><highlight class="preprocessor"></highlight><highlight class="normal">INC+=-I$(LIBRARY)/hdf5-1.8.12/include</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">LIBS+=-L$(LIBRARY)/hdf5-1.8.12/lib<sp/><sp/>-lhdf5<sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#############################################################################</highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal">export<sp/>AR</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">export<sp/>CC</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">export<sp/>FC</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">export<sp/>CLIBS</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">export<sp/>CFLAGS</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">export<sp/>FLIBS</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">export<sp/>FFLAGS</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">SRC+=$(wildcard<sp/>$(BUILDDIR)/benchmarks/bbob</highlight><highlight class="comment">/*.c)</highlight></codeline>
+<codeline lineno="104"><highlight class="comment">SRC+=$(wildcard<sp/>$(BUILDDIR)/benchmarks/customized/*.c)</highlight></codeline>
+<codeline lineno="105"><highlight class="comment">SRC+=$(wildcard<sp/>$(BUILDDIR)/benchmarks/systemsBiology/*.c)</highlight></codeline>
+<codeline lineno="106"><highlight class="comment">SRC+=$(wildcard<sp/>$(BUILDDIR)/benchmarks/systemsBiology/BioPredyn/B1/*.c)</highlight></codeline>
+<codeline lineno="107"><highlight class="comment">SRC+=$(wildcard<sp/>$(BUILDDIR)/benchmarks/systemsBiology/BioPredyn/B2/*.c)</highlight></codeline>
+<codeline lineno="108"><highlight class="comment">SRC+=$(wildcard<sp/>$(BUILDDIR)/benchmarks/systemsBiology/BioPredyn/B3/*.c)</highlight></codeline>
+<codeline lineno="109"><highlight class="comment">SRC+=$(wildcard<sp/>$(BUILDDIR)/benchmarks/systemsBiology/BioPredyn/B4/*.c)</highlight></codeline>
+<codeline lineno="110"><highlight class="comment">SRC+=$(wildcard<sp/>$(BUILDDIR)/benchmarks/systemsBiology/BioPredyn/B5/*.c)</highlight></codeline>
+<codeline lineno="111"><highlight class="comment">SRC+=$(wildcard<sp/>$(BUILDDIR)/benchmarks/systemsBiology/others/*.c)</highlight></codeline>
+<codeline lineno="112"><highlight class="comment">SRC+=$(wildcard<sp/>$(BUILDDIR)/benchmarks/systemsBiology/others/3-step_pathway/*.c)</highlight></codeline>
+<codeline lineno="113"><highlight class="comment">SRC+=$(wildcard<sp/>$(BUILDDIR)/benchmarks/systemsBiology/others/circadian/*.c)</highlight></codeline>
+<codeline lineno="114"><highlight class="comment">SRC+=$(wildcard<sp/>$(BUILDDIR)/benchmarks/systemsBiology/others/Nfkb/*.c)</highlight></codeline>
+<codeline lineno="115"><highlight class="comment">SRC+=$(wildcard<sp/>$(BUILDDIR)/benchmarks/systemsBiology/MINLP/B5_int/*.c)</highlight></codeline>
+<codeline lineno="116"><highlight class="comment">SRC+=$(wildcard<sp/>$(BUILDDIR)/benchmarks/systemsBiology/MINLP/HEPG2a/*.c)</highlight></codeline>
+<codeline lineno="117"><highlight class="comment">SRC+=$(wildcard<sp/>$(BUILDDIR)/src/input_module/*.c)</highlight></codeline>
+<codeline lineno="118"><highlight class="comment">SRC+=$(wildcard<sp/>$(BUILDDIR)/src/output/*.c)</highlight></codeline>
+<codeline lineno="119"><highlight class="comment">SRC+=$(wildcard<sp/>$(BUILDDIR)/src/structure_data/*.c)</highlight></codeline>
+<codeline lineno="120"><highlight class="comment">SRC+=$(wildcard<sp/>$(BUILDDIR)/src/method_module/*.c)</highlight></codeline>
+<codeline lineno="121"><highlight class="comment">SRC+=$(wildcard<sp/>$(BUILDDIR)/src/method_module/DE/*.c)</highlight></codeline>
+<codeline lineno="122"><highlight class="comment">SRC+=$(wildcard<sp/>$(BUILDDIR)/src/method_module/eSS/*.c)</highlight></codeline>
+<codeline lineno="123"><highlight class="comment">SRC+=$(wildcard<sp/>$(BUILDDIR)/src/*.c)</highlight></codeline>
+<codeline lineno="124"><highlight class="comment">SRCFORTRAN+=$(wildcard<sp/>$(BUILDDIR)/src/method_module_fortran/eSS/scattersearchtypes.f90)</highlight></codeline>
+<codeline lineno="125"><highlight class="comment">SRCFORTRAN+=$(wildcard<sp/>$(BUILDDIR)/src/method_module_fortran/eSS/common_functions.f90)</highlight></codeline>
+<codeline lineno="126"><highlight class="comment">SRCFORTRAN+=$(wildcard<sp/>$(BUILDDIR)/src/method_module_fortran/eSS/funcevalinterface.f90)</highlight></codeline>
+<codeline lineno="127"><highlight class="comment">SRCFORTRAN+=$(wildcard<sp/>$(BUILDDIR)/src/method_module_fortran/eSS/qsort_mod.f90)</highlight></codeline>
+<codeline lineno="128"><highlight class="comment">SRCFORTRAN+=$(wildcard<sp/>$(BUILDDIR)/src/method_module_fortran/eSS/outputhdf5.f90)</highlight></codeline>
+<codeline lineno="129"><highlight class="comment">SRCFORTRAN+=$(wildcard<sp/>$(BUILDDIR)/src/method_module_fortran/eSS/localsolvers/dhc/dhc.f90)</highlight></codeline>
+<codeline lineno="130"><highlight class="comment">SRCFORTRAN+=$(wildcard<sp/>$(BUILDDIR)/src/method_module_fortran/eSS/localsolvers/misqp/misqp_interface.f90)</highlight></codeline>
+<codeline lineno="131"><highlight class="comment">SRCFORTRAN+=$(wildcard<sp/>$(BUILDDIR)/src/method_module_fortran/eSS/localsolvers/localsolver.f90)</highlight></codeline>
+<codeline lineno="132"><highlight class="comment">SRCFORTRAN+=$(wildcard<sp/>$(BUILDDIR)/src/method_module_fortran/eSS/scattersearchfunctions.f90)</highlight></codeline>
+<codeline lineno="133"><highlight class="comment">SRCFORTRAN+=$(wildcard<sp/>$(BUILDDIR)/src/method_module_fortran/eSS/localsolvers/localsolverinterfacec.f90)</highlight></codeline>
+<codeline lineno="134"><highlight class="comment">SRCFORTRAN+=$(wildcard<sp/>$(BUILDDIR)/src/method_module_fortran/eSS/parallelscattersearchfunctions.f90)</highlight></codeline>
+<codeline lineno="135"><highlight class="comment">SRCFORTRAN+=$(wildcard<sp/>$(BUILDDIR)/src/method_module_fortran/eSS/scattersearch.f90)</highlight></codeline>
+<codeline lineno="136"><highlight class="comment">SRCFORTRAN+=$(wildcard<sp/>$(BUILDDIR)/src/method_module_fortran/eSS/cess.f90)</highlight></codeline>
+<codeline lineno="137"><highlight class="comment">SRCFORTRAN+=$(wildcard<sp/>$(BUILDDIR)/src/method_module_fortran/eSS/sacess.f90)</highlight></codeline>
+<codeline lineno="138"><highlight class="comment">SRCFORTRAN+=$(wildcard<sp/>$(BUILDDIR)/src/method_module_fortran/eSS/acessdist.f90)</highlight></codeline>
+<codeline lineno="139"><highlight class="comment">SRCFORTRAN+=$(wildcard<sp/>$(BUILDDIR)/src/method_module_fortran/eSS/essm.f90)</highlight></codeline>
+<codeline lineno="140"><highlight class="comment">SRCAMIGO+=$(wildcard<sp/>$(AMIGO_PATH)/src/src_cvodes/*.c)</highlight></codeline>
+<codeline lineno="141"><highlight class="comment">SRCAMIGO+=$(wildcard<sp/>$(AMIGO_PATH)/src/src_amigo/*.c)</highlight></codeline>
+<codeline lineno="142"><highlight class="comment">SRCAMIGO+=$(wildcard<sp/>$(AMIGO_PATH)/src/src_de/*.c)</highlight></codeline>
+<codeline lineno="143"><highlight class="comment">SRCAMIGO+=$(wildcard<sp/>$(AMIGO_PATH)/src/src_fullC/*.c)</highlight></codeline>
+<codeline lineno="144"><highlight class="comment">SRCAMIGO+=$(wildcard<sp/>$(AMIGO_PATH)/src/src_julia/*.c)</highlight></codeline>
+<codeline lineno="145"><highlight class="comment">SRCAMIGO+=$(wildcard<sp/>$(AMIGO_PATH)/src/src_SRES/*.c)</highlight></codeline>
+<codeline lineno="146"><highlight class="comment"></highlight></codeline>
+<codeline lineno="147"><highlight class="comment">INC+=-I$(BUILDDIR)/benchmarks/systemsBiology/BioPredyn/B6/fly/</highlight></codeline>
+<codeline lineno="148"><highlight class="comment">INC+=-I$(BUILDDIR)/benchmarks/systemsBiology/BioPredyn/B6/util/</highlight></codeline>
+<codeline lineno="149"><highlight class="comment">INC+=-I$(BUILDDIR)/benchmarks/systemsBiology/BioPredyn/B6/</highlight></codeline>
+<codeline lineno="150"><highlight class="comment">INC+=-I$(BUILDDIR)/benchmarks/systemsBiology/BioPredyn/B5/</highlight></codeline>
+<codeline lineno="151"><highlight class="comment">INC+=-I$(BUILDDIR)/benchmarks/systemsBiology/BioPredyn/B4/</highlight></codeline>
+<codeline lineno="152"><highlight class="comment">INC+=-I$(BUILDDIR)/benchmarks/systemsBiology/BioPredyn/B3/</highlight></codeline>
+<codeline lineno="153"><highlight class="comment">INC+=-I$(BUILDDIR)/benchmarks/systemsBiology/BioPredyn/B2/</highlight></codeline>
+<codeline lineno="154"><highlight class="comment">INC+=-I$(BUILDDIR)/benchmarks/systemsBiology/BioPredyn/B1/</highlight></codeline>
+<codeline lineno="155"><highlight class="comment">INC+=-I$(BUILDDIR)/benchmarks/systemsBiology/others/circadian/</highlight></codeline>
+<codeline lineno="156"><highlight class="comment">INC+=-I$(BUILDDIR)/benchmarks/systemsBiology/others/Nfkb/</highlight></codeline>
+<codeline lineno="157"><highlight class="comment">INC+=-I$(BUILDDIR)/benchmarks/systemsBiology/others/3-step_pathway/</highlight></codeline>
+<codeline lineno="158"><highlight class="comment">INC+=-I$(BUILDDIR)/benchmarks/systemsBiology/MINLP/HEPG2a/</highlight></codeline>
+<codeline lineno="159"><highlight class="comment">INC+=-I$(BUILDDIR)/benchmarks/systemsBiology/MINLP/B5_int/</highlight></codeline>
+<codeline lineno="160"><highlight class="comment">INC+=-I$(BUILDDIR)/benchmarks/systemsBiology/</highlight></codeline>
+<codeline lineno="161"><highlight class="comment">INC+=-I$(BUILDDIR)/benchmarks/customized/</highlight></codeline>
+<codeline lineno="162"><highlight class="comment">INC+=-I$(BUILDDIR)/benchmarks/bbob/</highlight></codeline>
+<codeline lineno="163"><highlight class="comment">INC+=-I$(AMIGO_PATH)/include/include_cvodes/</highlight></codeline>
+<codeline lineno="164"><highlight class="comment">INC+=-I$(AMIGO_PATH)/include/include_amigo/</highlight></codeline>
+<codeline lineno="165"><highlight class="comment">INC+=-I$(AMIGO_PATH)/include/include_de/</highlight></codeline>
+<codeline lineno="166"><highlight class="comment">INC+=-I$(AMIGO_PATH)/include/include_SRES/</highlight></codeline>
+<codeline lineno="167"><highlight class="comment">INC+=-I$(BUILDDIR)/include/</highlight></codeline>
+<codeline lineno="168"><highlight class="comment">INC+=-I$(BUILDDIR)/include/input/</highlight></codeline>
+<codeline lineno="169"><highlight class="comment">INC+=-I$(BUILDDIR)/include/method_module/</highlight></codeline>
+<codeline lineno="170"><highlight class="comment">INC+=-I$(BUILDDIR)/include/method_module/eSS/</highlight></codeline>
+<codeline lineno="171"><highlight class="comment">INC+=-I$(BUILDDIR)/include/method_module/DE/</highlight></codeline>
+<codeline lineno="172"><highlight class="comment">INC+=-I$(BUILDDIR)/include/bbob/</highlight></codeline>
+<codeline lineno="173"><highlight class="comment">INC+=-I$(BUILDDIR)/include/structure_data/</highlight></codeline>
+<codeline lineno="174"><highlight class="comment">INC+=-I$(BUILDDIR)/include/output/</highlight></codeline>
+<codeline lineno="175"><highlight class="comment">INC+=-I$(BUILDDIR)/include/error/</highlight></codeline>
+<codeline lineno="176"><highlight class="comment">INC+=-I$(BUILDDIR)/include/method_module_fortran/</highlight></codeline>
+<codeline lineno="177"><highlight class="comment">INC+=-I$(BUILDDIR)/src/method_module_fortran/eSS/</highlight></codeline>
+<codeline lineno="178"><highlight class="comment">INC+=-I$(BUILDDIR)/src/method_module_fortran/eSS/localsolvers</highlight></codeline>
+<codeline lineno="179"><highlight class="comment">INC+=-I$(BUILDDIR)/src/method_module_fortran/eSS/localsolvers/dhc</highlight></codeline>
+<codeline lineno="180"><highlight class="comment">INC+=-I$(BUILDDIR)/src/method_module_fortran/eSS/localsolvers/misqp</highlight></codeline>
+<codeline lineno="181"><highlight class="comment"></highlight></codeline>
+<codeline lineno="182"><highlight class="comment">INC+=<sp/><sp/>-I$(LIBRARY)/gsl-1.14<sp/>-I$(LIBRARY)/gsl-1.14/include<sp/><sp/>-I$(LIBRARY)/gsl-1.14/include/gsl</highlight></codeline>
+<codeline lineno="183"><highlight class="comment">LIBS+=<sp/>-L$(LIBRARY)/gsl-1.14/lib<sp/>-lgsl</highlight></codeline>
+<codeline lineno="184"><highlight class="comment">LIBS+=<sp/>-lAMIGO<sp/>-fPIC<sp/>-DEXPORT</highlight></codeline>
+<codeline lineno="185"><highlight class="comment">LIBS+=<sp/>-L$(AMIGO_PATH)/lib</highlight></codeline>
+<codeline lineno="186"><highlight class="comment"></highlight></codeline>
+<codeline lineno="187"><highlight class="comment">PROG<sp/>:=<sp/>bin/paralleltestbed</highlight></codeline>
+<codeline lineno="188"><highlight class="comment"></highlight></codeline>
+<codeline lineno="189"><highlight class="comment">OBJFILES<sp/>:=<sp/>$(SRC:.c=.o)</highlight></codeline>
+<codeline lineno="190"><highlight class="comment">DEPFILES<sp/>:=<sp/>$(SRC:.c=.d)</highlight></codeline>
+<codeline lineno="191"><highlight class="comment"></highlight></codeline>
+<codeline lineno="192"><highlight class="comment">OBJN2SOL=$(AMIGO_PATH)/src/src_nl2sol/*.o</highlight></codeline>
+<codeline lineno="193"><highlight class="comment">OBJMISQPFILES=$(BUILDDIR)/src/method_module_fortran/eSS/localsolvers/misqp/misqp_src/*.o</highlight></codeline>
+<codeline lineno="194"><highlight class="comment">OBJB6FILES+=$(BUILDDIR)/benchmarks/systemsBiology/BioPredyn/B6/util/*.o</highlight></codeline>
+<codeline lineno="195"><highlight class="comment">OBJB6FILES+=$(BUILDDIR)/benchmarks/systemsBiology/BioPredyn/B6/fly/*.o</highlight></codeline>
+<codeline lineno="196"><highlight class="comment">OBJB6FILES+=$(BUILDDIR)/benchmarks/systemsBiology/BioPredyn/B6/*.o</highlight></codeline>
+<codeline lineno="197"><highlight class="comment">DEPB6FILES+=$(BUILDDIR)/benchmarks/systemsBiology/BioPredyn/B6/util/*.d</highlight></codeline>
+<codeline lineno="198"><highlight class="comment">DEPB6FILES+=$(BUILDDIR)/benchmarks/systemsBiology/BioPredyn/B6/fly/*.d</highlight></codeline>
+<codeline lineno="199"><highlight class="comment">DEPB6FILES+=$(BUILDDIR)/benchmarks/systemsBiology/BioPredyn/B6/*.d</highlight></codeline>
+<codeline lineno="200"><highlight class="comment"></highlight></codeline>
+<codeline lineno="201"><highlight class="comment">OBJFORTRANFILES<sp/>:=<sp/>$(SRCFORTRAN:.f90=.o)</highlight></codeline>
+<codeline lineno="202"><highlight class="comment">DEPFORTRANFILES<sp/>:=<sp/>$(SRCFORTRAN:.f90=.d)</highlight></codeline>
+<codeline lineno="203"><highlight class="comment">MODFORTRANFILES<sp/>:=<sp/>$(SRCFORTRAN:.f90=.mod)</highlight></codeline>
+<codeline lineno="204"><highlight class="comment"></highlight></codeline>
+<codeline lineno="205"><highlight class="comment">OBJAMIGO<sp/>:=<sp/>$(SRCAMIGO:.c=.o)</highlight></codeline>
+<codeline lineno="206"><highlight class="comment">DEPAMIGO<sp/>:=<sp/>$(SRCAMIGO:.c=.d)<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="207"><highlight class="comment"></highlight></codeline>
+<codeline lineno="208"><highlight class="comment"></highlight></codeline>
+<codeline lineno="209"><highlight class="comment">all:<sp/>BLAS<sp/>B6<sp/>MISQP<sp/>N2SOL<sp/>libAMIGO.a<sp/><sp/>$(OBJFORTRANFILES)<sp/><sp/>$(OBJCPPFILES)<sp/>$(PROG)</highlight></codeline>
+<codeline lineno="210"><highlight class="comment"></highlight></codeline>
+<codeline lineno="211"><highlight class="comment">BLAS:</highlight></codeline>
+<codeline lineno="212"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cd<sp/>$(BUILDDIR)/lib/BLAS<sp/>&amp;&amp;<sp/>$(MAKE)<sp/></highlight></codeline>
+<codeline lineno="213"><highlight class="comment"></highlight></codeline>
+<codeline lineno="214"><highlight class="comment">B6:</highlight></codeline>
+<codeline lineno="215"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cd<sp/>$(BUILDDIR)/benchmarks/systemsBiology/BioPredyn/B6<sp/>&amp;&amp;<sp/>$(MAKE)<sp/>deps</highlight></codeline>
+<codeline lineno="216"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cd<sp/>$(BUILDDIR)/benchmarks/systemsBiology/BioPredyn/B6<sp/>&amp;&amp;<sp/>$(MAKE)</highlight></codeline>
+<codeline lineno="217"><highlight class="comment"></highlight></codeline>
+<codeline lineno="218"><highlight class="comment">MISQP:</highlight></codeline>
+<codeline lineno="219"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cd<sp/>$(BUILDDIR)/src/method_module_fortran/eSS/localsolvers/misqp/misqp_src<sp/>&amp;&amp;<sp/>$(MAKE)<sp/></highlight></codeline>
+<codeline lineno="220"><highlight class="comment"></highlight></codeline>
+<codeline lineno="221"><highlight class="comment">N2SOL:</highlight></codeline>
+<codeline lineno="222"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cd<sp/>$(AMIGO_PATH)/src/src_nl2sol<sp/>&amp;&amp;<sp/>$(MAKE)<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="223"><highlight class="comment"></highlight></codeline>
+<codeline lineno="224"><highlight class="comment">libAMIGO.a<sp/>:<sp/><sp/>$(OBJAMIGO)<sp/><sp/></highlight></codeline>
+<codeline lineno="225"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$(AR)<sp/>r<sp/>$(AMIGO_PATH)/lib/libAMIGO.a<sp/>$^<sp/>$(OBJN2SOLFILES)</highlight></codeline>
+<codeline lineno="226"><highlight class="comment"></highlight></codeline>
+<codeline lineno="227"><highlight class="comment">%.o:<sp/>%.c</highlight></codeline>
+<codeline lineno="228"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$(CC)<sp/><sp/>-c<sp/>$&lt;<sp/>-o<sp/>$@<sp/><sp/>$(LIBS)<sp/>$(INC)<sp/>$(CLIBS)<sp/>$(CFLAGS)<sp/>$(CPARALLEL)</highlight></codeline>
+<codeline lineno="229"><highlight class="comment"></highlight></codeline>
+<codeline lineno="230"><highlight class="comment">%.o:<sp/>%.f90</highlight></codeline>
+<codeline lineno="231"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$(FC)<sp/>-c<sp/>$&lt;<sp/>-o<sp/>$@<sp/>$(LIBS)<sp/>$(INC)<sp/>$(FLIBS)<sp/>$(FFLAGS)<sp/>$(FPARALLEL)</highlight></codeline>
+<codeline lineno="232"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>@mv<sp/>$(BUILDDIR)/*.mod<sp/>$(BUILDDIR)/include/method_module_fortran/</highlight></codeline>
+<codeline lineno="233"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="234"><highlight class="comment">$(PROG)<sp/>:<sp/>$(OBJFILES)</highlight></codeline>
+<codeline lineno="235"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$(LINK.o)<sp/>-o<sp/>$(PROG)<sp/>$(INC)<sp/>$(BLAS)<sp/>$(OBJN2SOL)<sp/>$(OBJB6FILES)<sp/>$(OBJMISQPFILES)<sp/>$(OBJFILES)<sp/>$(OBJFORTRANFILES)<sp/>$(FFLAGS)<sp/>$(CFLAGS)<sp/>$(LIBS)<sp/>$(CLIBS)<sp/>$(FLIBS)<sp/>$(CPARALLEL)<sp/></highlight></codeline>
+<codeline lineno="236"><highlight class="comment"></highlight></codeline>
+<codeline lineno="237"><highlight class="comment">clean<sp/>:</highlight></codeline>
+<codeline lineno="238"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rm<sp/>-f<sp/>$(PROG)<sp/>$(OBJFILES)<sp/>$(DEPFILES)</highlight></codeline>
+<codeline lineno="239"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rm<sp/>-f<sp/>$(OBJFORTRANFILES)<sp/>$(DEPFORTRANFILES)<sp/>$(MODFORTRANFILES)</highlight></codeline>
+<codeline lineno="240"><highlight class="comment"></highlight></codeline>
+<codeline lineno="241"><highlight class="comment">veryclean<sp/>:</highlight></codeline>
+<codeline lineno="242"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rm<sp/>-f<sp/>$(PROG)<sp/>$(OBJFILES)<sp/>$(DEPFILES)</highlight></codeline>
+<codeline lineno="243"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rm<sp/>-f<sp/>$(OBJFORTRANFILES)<sp/>$(DEPFORTRANFILES)<sp/>$(MODFORTRANFILES)</highlight></codeline>
+<codeline lineno="244"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rm<sp/>-f<sp/>$(AMIGO_PATH)/lib/libAMIGO.a<sp/>$(OBJAMIGO)<sp/>$(DEPAMIGO)</highlight></codeline>
+<codeline lineno="245"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rm<sp/>-f<sp/>$(BUILDDIR)/include/method_module_fortran/*.mod</highlight></codeline>
+<codeline lineno="246"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cd<sp/>$(BUILDDIR)/benchmarks/systemsBiology/BioPredyn/B6<sp/>&amp;&amp;<sp/>$(MAKE)<sp/>clean</highlight></codeline>
+<codeline lineno="247"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cd<sp/>$(BUILDDIR)/benchmarks/systemsBiology/BioPredyn/B6<sp/>&amp;&amp;<sp/>$(MAKE)<sp/>veryclean</highlight></codeline>
+<codeline lineno="248"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cd<sp/>$(BUILDDIR)/src/method_module_fortran/eSS/localsolvers/misqp/misqp_src<sp/>&amp;&amp;<sp/>$(MAKE)<sp/>clean</highlight></codeline>
+<codeline lineno="249"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cd<sp/>$(AMIGO_PATH)/src/src_nl2sol<sp/>&amp;&amp;<sp/>$(MAKE)<sp/>clean</highlight></codeline>
+<codeline lineno="250"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cd<sp/>$(BUILDDIR)/lib/BLAS<sp/>&amp;&amp;<sp/>make<sp/>clean</highlight></codeline>
+    </programlisting>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/Makefile"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="structlocal__solver" kind="struct" prot="public">
+    <compoundname>local_solver</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlocal__solver_1a617ee88ad5fb73eda9dd034e2bb4a741" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int local_solver::counter</definition>
+        <argsstring></argsstring>
+        <name>counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="265" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlocal__solver_1acc0d0ceac72f461f40f3b977a038cefe" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int local_solver::state_ls</definition>
+        <argsstring></argsstring>
+        <name>state_ls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="266" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlocal__solver_1a01a3d1f2811fae189976ba9b983622ef" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double local_solver::total_local</definition>
+        <argsstring></argsstring>
+        <name>total_local</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="267" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlocal__solver_1a574a8d6de534f4724f09aabbc06f16ca" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double local_solver::sucess_local</definition>
+        <argsstring></argsstring>
+        <name>sucess_local</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="268" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlocal__solver_1ae50275189c2fb138294c606c208a2bca" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int local_solver::num_ls</definition>
+        <argsstring></argsstring>
+        <name>num_ls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="269" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlocal__solver_1a338cd69e13fbe81fad8d4215bc755a86" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int local_solver::sucess_interval</definition>
+        <argsstring></argsstring>
+        <name>sucess_interval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="270" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlocal__solver_1a3f16a4ec14e4a06d3ff839883157f875" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double local_solver::enter_value</definition>
+        <argsstring></argsstring>
+        <name>enter_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="271" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="264" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="264" bodyend="272"/>
+    <listofallmembers>
+      <member refid="structlocal__solver_1a617ee88ad5fb73eda9dd034e2bb4a741" prot="public" virt="non-virtual"><scope>local_solver</scope><name>counter</name></member>
+      <member refid="structlocal__solver_1a3f16a4ec14e4a06d3ff839883157f875" prot="public" virt="non-virtual"><scope>local_solver</scope><name>enter_value</name></member>
+      <member refid="structlocal__solver_1ae50275189c2fb138294c606c208a2bca" prot="public" virt="non-virtual"><scope>local_solver</scope><name>num_ls</name></member>
+      <member refid="structlocal__solver_1acc0d0ceac72f461f40f3b977a038cefe" prot="public" virt="non-virtual"><scope>local_solver</scope><name>state_ls</name></member>
+      <member refid="structlocal__solver_1a338cd69e13fbe81fad8d4215bc755a86" prot="public" virt="non-virtual"><scope>local_solver</scope><name>sucess_interval</name></member>
+      <member refid="structlocal__solver_1a574a8d6de534f4724f09aabbc06f16ca" prot="public" virt="non-virtual"><scope>local_solver</scope><name>sucess_local</name></member>
+      <member refid="structlocal__solver_1a01a3d1f2811fae189976ba9b983622ef" prot="public" virt="non-virtual"><scope>local_solver</scope><name>total_local</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

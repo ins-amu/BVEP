@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="dir_8ddda66f30760f67781e9641b72d8258" kind="dir">
+    <compoundname>src/output/</compoundname>
+    <innerfile refid="output_8c">output.c</innerfile>
+    <innerfile refid="output_8d">output.d</innerfile>
+    <innerfile refid="read__a__file__line__by__line_8c">read_a_file_line_by_line.c</innerfile>
+    <innerfile refid="read__a__file__line__by__line_8d">read_a_file_line_by_line.d</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/output/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="structoutput__struct" kind="struct" prot="public">
+    <compoundname>output_struct</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structoutput__struct_1a5a3edf6265cbd1cfdb97bf8a149a65c9" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double output_struct::st1</definition>
+        <argsstring></argsstring>
+        <name>st1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="275" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structoutput__struct_1ac971b780b38d20f8909f834904125a21" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double output_struct::st2</definition>
+        <argsstring></argsstring>
+        <name>st2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="276" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structoutput__struct_1ab1bade203b8af9df77f18b0b7eeac0b1" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double output_struct::st3</definition>
+        <argsstring></argsstring>
+        <name>st3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="277" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structoutput__struct_1acbab3ce1773c48def597c347a0c06a20" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double output_struct::point1</definition>
+        <argsstring></argsstring>
+        <name>point1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="278" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structoutput__struct_1a66f2e1194215bcac831e6765999d3afd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int output_struct::point_counter</definition>
+        <argsstring></argsstring>
+        <name>point_counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="279" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structoutput__struct_1ab84009db6a57b5c8141e6c98320b25e7" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double output_struct::oldbest</definition>
+        <argsstring></argsstring>
+        <name>oldbest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="280" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="274" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="274" bodyend="281"/>
+    <listofallmembers>
+      <member refid="structoutput__struct_1ab84009db6a57b5c8141e6c98320b25e7" prot="public" virt="non-virtual"><scope>output_struct</scope><name>oldbest</name></member>
+      <member refid="structoutput__struct_1acbab3ce1773c48def597c347a0c06a20" prot="public" virt="non-virtual"><scope>output_struct</scope><name>point1</name></member>
+      <member refid="structoutput__struct_1a66f2e1194215bcac831e6765999d3afd" prot="public" virt="non-virtual"><scope>output_struct</scope><name>point_counter</name></member>
+      <member refid="structoutput__struct_1a5a3edf6265cbd1cfdb97bf8a149a65c9" prot="public" virt="non-virtual"><scope>output_struct</scope><name>st1</name></member>
+      <member refid="structoutput__struct_1ac971b780b38d20f8909f834904125a21" prot="public" virt="non-virtual"><scope>output_struct</scope><name>st2</name></member>
+      <member refid="structoutput__struct_1ab1bade203b8af9df77f18b0b7eeac0b1" prot="public" virt="non-virtual"><scope>output_struct</scope><name>st3</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="structscattersearchtypes_1_1problem" kind="type" prot="public">
+    <compoundname>scattersearchtypes::problem</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structscattersearchtypes_1_1problem_1a6711f3f9cac902d3dd025cf6fe8b6fab" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::problem::empty</definition>
+        <argsstring></argsstring>
+        <name>empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1problem_1a9a4e04a60558d17745e8ab9f4f5975d1" prot="public" static="no" mutable="no">
+        <type>character(len=20)</type>
+        <definition>character(len = 20) scattersearchtypes::problem::f</definition>
+        <argsstring></argsstring>
+        <name>f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1problem_1af57a814dac41c32705f01c6b7964c968" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::problem::neq</definition>
+        <argsstring></argsstring>
+        <name>neq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1problem_1ad48f8023c2f8ee7aa5c0ba86d278ee9d" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::problem::int_var</definition>
+        <argsstring></argsstring>
+        <name>int_var</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1problem_1a81e4d49f131881cfb868491092cf37bc" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::problem::bin_var</definition>
+        <argsstring></argsstring>
+        <name>bin_var</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1problem_1ac2365a8a49179bb729b4b7facba083b6" prot="public" static="no" mutable="no">
+        <type>real(kind=selected_real_kind(p=precision_d, r=range_d)), dimension(:), allocatable</type>
+        <definition>real(kind=selected_real_kind(p=precision_d,r=range_d)), dimension(:), allocatable scattersearchtypes::problem::vtr</definition>
+        <argsstring></argsstring>
+        <name>vtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1problem_1a8b7b3f847b247edd916533cbe518d3d2" prot="public" static="no" mutable="no">
+        <type>real(kind=selected_real_kind(p=precision_d, r=range_d)), dimension(:), allocatable</type>
+        <definition>real(kind=selected_real_kind(p=precision_d,r=range_d)), dimension(:), allocatable scattersearchtypes::problem::xl</definition>
+        <argsstring></argsstring>
+        <name>xl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1problem_1a14f821be90f8c960e790019d4f88df03" prot="public" static="no" mutable="no">
+        <type>real(kind=selected_real_kind(p=precision_d, r=range_d)), dimension(:), allocatable</type>
+        <definition>real(kind=selected_real_kind(p=precision_d,r=range_d)), dimension(:), allocatable scattersearchtypes::problem::xu</definition>
+        <argsstring></argsstring>
+        <name>xu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1problem_1a37e15ece533ca91fbff58d04e252358d" prot="public" static="no" mutable="no">
+        <type>real(kind=selected_real_kind(p=precision_d, r=range_d)), dimension(:), allocatable</type>
+        <definition>real(kind=selected_real_kind(p=precision_d,r=range_d)), dimension(:), allocatable scattersearchtypes::problem::cl</definition>
+        <argsstring></argsstring>
+        <name>cl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1problem_1aea85723ce0416ed5482f40efe9a437f7" prot="public" static="no" mutable="no">
+        <type>real(kind=selected_real_kind(p=precision_d, r=range_d)), dimension(:), allocatable</type>
+        <definition>real(kind=selected_real_kind(p=precision_d,r=range_d)), dimension(:), allocatable scattersearchtypes::problem::cu</definition>
+        <argsstring></argsstring>
+        <name>cu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1problem_1a592d1f6d78fa00f755c6f8adc42924ee" prot="public" static="no" mutable="no">
+        <type>integer</type>
+        <definition>integer scattersearchtypes::problem::ineq</definition>
+        <argsstring></argsstring>
+        <name>ineq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1problem_1a1ac4d8e62aadc4822dbcba280c3075cb" prot="public" static="no" mutable="no">
+        <type>real(kind=selected_real_kind(p=precision_d, r=range_d)), dimension(:,:), allocatable</type>
+        <definition>real(kind=selected_real_kind(p=precision_d,r=range_d)), dimension(:,:), allocatable scattersearchtypes::problem::x0</definition>
+        <argsstring></argsstring>
+        <name>x0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1problem_1a886e361c0668b36a805fd8051212d0e9" prot="public" static="no" mutable="no">
+        <type>real(kind=selected_real_kind(p=precision_d, r=range_d)), dimension(:), allocatable</type>
+        <definition>real(kind=selected_real_kind(p=precision_d,r=range_d)), dimension(:), allocatable scattersearchtypes::problem::f0</definition>
+        <argsstring></argsstring>
+        <name>f0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="80" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="structscattersearchtypes_1_1problem_1a81e4d49f131881cfb868491092cf37bc" prot="public" virt="non-virtual"><scope>scattersearchtypes::problem</scope><name>bin_var</name></member>
+      <member refid="structscattersearchtypes_1_1problem_1a37e15ece533ca91fbff58d04e252358d" prot="public" virt="non-virtual"><scope>scattersearchtypes::problem</scope><name>cl</name></member>
+      <member refid="structscattersearchtypes_1_1problem_1aea85723ce0416ed5482f40efe9a437f7" prot="public" virt="non-virtual"><scope>scattersearchtypes::problem</scope><name>cu</name></member>
+      <member refid="structscattersearchtypes_1_1problem_1a6711f3f9cac902d3dd025cf6fe8b6fab" prot="public" virt="non-virtual"><scope>scattersearchtypes::problem</scope><name>empty</name></member>
+      <member refid="structscattersearchtypes_1_1problem_1a9a4e04a60558d17745e8ab9f4f5975d1" prot="public" virt="non-virtual"><scope>scattersearchtypes::problem</scope><name>f</name></member>
+      <member refid="structscattersearchtypes_1_1problem_1a886e361c0668b36a805fd8051212d0e9" prot="public" virt="non-virtual"><scope>scattersearchtypes::problem</scope><name>f0</name></member>
+      <member refid="structscattersearchtypes_1_1problem_1a592d1f6d78fa00f755c6f8adc42924ee" prot="public" virt="non-virtual"><scope>scattersearchtypes::problem</scope><name>ineq</name></member>
+      <member refid="structscattersearchtypes_1_1problem_1ad48f8023c2f8ee7aa5c0ba86d278ee9d" prot="public" virt="non-virtual"><scope>scattersearchtypes::problem</scope><name>int_var</name></member>
+      <member refid="structscattersearchtypes_1_1problem_1af57a814dac41c32705f01c6b7964c968" prot="public" virt="non-virtual"><scope>scattersearchtypes::problem</scope><name>neq</name></member>
+      <member refid="structscattersearchtypes_1_1problem_1ac2365a8a49179bb729b4b7facba083b6" prot="public" virt="non-virtual"><scope>scattersearchtypes::problem</scope><name>vtr</name></member>
+      <member refid="structscattersearchtypes_1_1problem_1a1ac4d8e62aadc4822dbcba280c3075cb" prot="public" virt="non-virtual"><scope>scattersearchtypes::problem</scope><name>x0</name></member>
+      <member refid="structscattersearchtypes_1_1problem_1a8b7b3f847b247edd916533cbe518d3d2" prot="public" virt="non-virtual"><scope>scattersearchtypes::problem</scope><name>xl</name></member>
+      <member refid="structscattersearchtypes_1_1problem_1a14f821be90f8c960e790019d4f88df03" prot="public" virt="non-virtual"><scope>scattersearchtypes::problem</scope><name>xu</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

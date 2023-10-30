@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="structscattersearchtypes_1_1ess__common__vars" kind="type" prot="public">
+    <compoundname>scattersearchtypes::ess_common_vars</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structscattersearchtypes_1_1ess__common__vars_1aad44f99bd1d61ce98e74df2ba705fbe3" prot="public" static="no" mutable="no">
+        <type>real(kind=selected_real_kind(p=precision_d, r=range_d)), dimension(:), allocatable</type>
+        <definition>real(kind=selected_real_kind(p=precision_d,r=range_d)), dimension(:), allocatable scattersearchtypes::ess_common_vars::xl_log</definition>
+        <argsstring></argsstring>
+        <name>xl_log</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscattersearchtypes_1_1ess__common__vars_1a8b1bfca0554c386aa31b846574f6978a" prot="public" static="no" mutable="no">
+        <type>real(kind=selected_real_kind(p=precision_d, r=range_d)), dimension(:), allocatable</type>
+        <definition>real(kind=selected_real_kind(p=precision_d,r=range_d)), dimension(:), allocatable scattersearchtypes::ess_common_vars::xu_log</definition>
+        <argsstring></argsstring>
+        <name>xu_log</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchtypes.f90" bodystart="47" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="structscattersearchtypes_1_1ess__common__vars_1aad44f99bd1d61ce98e74df2ba705fbe3" prot="public" virt="non-virtual"><scope>scattersearchtypes::ess_common_vars</scope><name>xl_log</name></member>
+      <member refid="structscattersearchtypes_1_1ess__common__vars_1a8b1bfca0554c386aa31b846574f6978a" prot="public" virt="non-virtual"><scope>scattersearchtypes::ess_common_vars</scope><name>xu_log</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

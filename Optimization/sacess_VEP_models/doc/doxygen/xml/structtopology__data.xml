@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="structtopology__data" kind="struct" prot="public">
+    <compoundname>topology_data</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtopology__data_1a9e3de77d56d334112b028da33fceadf8" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* topology_data::rigth</definition>
+        <argsstring></argsstring>
+        <name>rigth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="29" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtopology__data_1ae104ea80f9041ccdfe2f484e173668f9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int topology_data::num_r</definition>
+        <argsstring></argsstring>
+        <name>num_r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="30" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtopology__data_1ac8333579033934687c27b8d86c6495d2" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* topology_data::left</definition>
+        <argsstring></argsstring>
+        <name>left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="31" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtopology__data_1a80e4da66c02bdde726ed543491f5a204" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int topology_data::num_left</definition>
+        <argsstring></argsstring>
+        <name>num_left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="32" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="28" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="28" bodyend="36"/>
+    <listofallmembers>
+      <member refid="structtopology__data_1ac8333579033934687c27b8d86c6495d2" prot="public" virt="non-virtual"><scope>topology_data</scope><name>left</name></member>
+      <member refid="structtopology__data_1a80e4da66c02bdde726ed543491f5a204" prot="public" virt="non-virtual"><scope>topology_data</scope><name>num_left</name></member>
+      <member refid="structtopology__data_1ae104ea80f9041ccdfe2f484e173668f9" prot="public" virt="non-virtual"><scope>topology_data</scope><name>num_r</name></member>
+      <member refid="structtopology__data_1a9e3de77d56d334112b028da33fceadf8" prot="public" virt="non-virtual"><scope>topology_data</scope><name>rigth</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="dir_e9f4199aa1cfbf67a2714e580c5652b4" kind="dir">
+    <compoundname>include/output/</compoundname>
+    <innerfile refid="output_8h">output.h</innerfile>
+    <innerfile refid="read__a__file__line__by__line_8h">read_a_file_line_by_line.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/output/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,44 @@
+      SUBROUTINE R6RPLY(A, B1, C, SR, SI, LR, LI)
+C CALCULATE THE ZEROS OF THE QUADRATIC A*Z**2+B1*Z+C.
+C THE QUADRATIC FORMULA, MODIFIED TO AVOID
+C OVERFLOW, IS USED TO FIND THE LARGER ZERO IF THE
+C ZEROS ARE REAL AND BOTH ZEROS ARE COMPLEX.
+C THE SMALLER REAL ZERO IS FOUND DIRECTLY FROM THE
+C PRODUCT OF THE ZEROS C/A.
+      REAL A, B1, C, SR, SI, LR, LI, B,
+     1 D, E, ABS, SQRT
+      IF (A.NE.0.E0) GO TO 20
+      SR = 0.E0
+      IF (B1.NE.0.E0) SR = -C/B1
+      LR = 0.E0
+   10 SI = 0.E0
+      LI = 0.E0
+      RETURN
+   20 IF (C.NE.0.E0) GO TO 30
+      SR = 0.E0
+      LR = -B1/A
+      GO TO 10
+C COMPUTE DISCRIMINANT AVOIDING OVERFLOW
+   30 B = B1/2.E0
+      IF (ABS(B).LT.ABS(C)) GO TO 40
+      E = 1.E0 - (A/B)*(C/B)
+      D = SQRT(ABS(E))*ABS(B)
+      GO TO 50
+   40 E = A
+      IF (C.LT.0.E0) E = -A
+      E = B*(B/ABS(C)) - E
+      D = SQRT(ABS(E))*SQRT(ABS(C))
+   50 IF (E.LT.0.E0) GO TO 60
+C REAL ZEROS
+      IF (B.GE.0.E0) D = -D
+      LR = (-B+D)/A
+      SR = 0.E0
+      IF (LR.NE.0.E0) SR = (C/LR)/A
+      GO TO 10
+C COMPLEX CONJUGATE ZEROS
+   60 SR = -B/A
+      LR = SR
+      SI = ABS(D/A)
+      LI = -SI
+      RETURN
+      END

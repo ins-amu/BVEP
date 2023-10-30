@@ -1,0 +1,11 @@
+prefix=/home/david.penas/paralleltestbed_CURRENT/lib/gsl
+exec_prefix=/home/david.penas/paralleltestbed_CURRENT/lib/gsl
+libdir=/home/david.penas/paralleltestbed_CURRENT/lib/gsl/lib
+includedir=/home/david.penas/paralleltestbed_CURRENT/lib/gsl/include
+GSL_CBLAS_LIB=-lgslcblas
+
+Name: GSL
+Description: GNU Scientific Library
+Version: 1.16
+Libs: -L/home/david.penas/paralleltestbed_CURRENT/lib/gsl/lib -lgsl ${GSL_CBLAS_LIB} -lm -lm 
+Cflags: -I/home/david.penas/paralleltestbed_CURRENT/lib/gsl/include

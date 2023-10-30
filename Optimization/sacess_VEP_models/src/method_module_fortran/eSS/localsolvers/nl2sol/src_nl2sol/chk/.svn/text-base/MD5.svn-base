@@ -1,0 +1,68 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+
+# netlib-bl master Mon Feb 10 10:46:52 EST 2003
+# http://cm.bell-labs.com/netlib/crc/netlib-bl.html
+J/jAtZBCM0iWpZOQ2SJdSw	Makefile
+MlgeryFcp69b0Qa4C4JaWw	README
+j1Lmo/9ditbMhVYT1za/Qg	err1.f
+O4SGexGMABzQEsja4ECKag	err2.f
+1kxBHkmosKAyPwKXeLWQVA	err3.f
+T/yp5m4c8/PkozhCC8j4SQ	errk.f
+EKxsSGee1QfuSaBErfRddQ	extr.f
+YK+ha+hfq5nuq4a4PKpe3Q	gama.f
+Q11N/Y/xnHPHdecgSgkIrg	gmad.f
+pDvKUp4TDKhSD8vchib+xQ	index
+XvR3C3CrHky9NF0oUPfrZA	lgac.f
+Nsm4mbCGASJFExSOhDnfhw	lgad.f
+EMMPgm244MlQgNQ1DU7YXQ	lgea.f
+ZEH4KojATJp4h31lvRbYDg	llza.f
+aBw2Ji0CB2FuWmrsSRABhg	lrad.f
+cNEPqJTGwcTwc+DuYpf/Bw	lrpa.f
+5tLz+WtoCOwzAEArlLJN7g	ltqd.f
+B+/TjAWPBbUnylg8GQisug	ltsq.f
+B+/TjAWPBbUnylg8GQisug	ltsqc.f
+cfWk5JJQwj4Q8wb3UX3STA	lyad.f
+C55iNsrmF/HjHmSNEu4oGg	lyma.f
+o0+GbGd5Dyqv2x+jZsvEkA	lyrc.f
+dMDVJunnrruLMFKX6jgFdQ	lysc.f
+DX5qiLj+5ygaxxdaBbomJw	mach.f
+36xPskeKLqPiq3X83KCfjA	mfed.f
+WZZt5lQU0fx+6X8ThG82AA	mfte.f
+c6Uxa5jqt8J9JyMKBIj6jQ	mntb.f
+dpPg5TGvdLf5u8zuVYGydQ	nohup.out
+zhCy+6D1obffVDXhCMdRfg	plya.f
+XaTNwmltpffH0JTn0dbn5A	plyc.f
+SpabMgmOxppA2nsYXTpwMA	prac.f
+n/ndTzJCDjXXtxG8Jg/oHA	prad.f
+hTHlNr35H1NGkzbs53phKw	prsa.f
+5gIqXh828uCxZud6d9doog	qbgd.f
+ZiKl45ovkBuAta063i+T3w	qblg.f
+bzfOygwvswSIEXRV51YQMg	qggd.f
+MWbQ0vxw1lvDqmAFk3Nr9Q	qgsg.f
+pWDwUSOcN9bhKP65bivNlA	qpad.f
+aDvQZ2pQhOinX9Nm3tUh1g	qpra.f
+/nZVissqdAwHjlMyBzGzUQ	rnrm.f
+XK6VxlSUB4E7xTLRrfez2Q	sdba.f
+ZGagyzFY2rdGva9+LMNtIg	sple.f
+YmK55qpzxDMph72FVpQ80A	stk1.f
+eu8O7Iddk/L25mRmycALAQ	stk2.f
+JBD7Ex4vo+jWv0tP5I5/ig	svad.f
+EHBYZye/VQKsWThe2xTEvQ	svbd.f
+BKwV+3j8f/ueS/uYCBDNZg	svcd.f
+fSwK6/WffOFPdE3LMiWHyw	svda.f
+13uxSnG6Dq6S3zbqdGx4IQ	svdb.f
+r4/VYBI4tSUPfSx3DSxIpw	svdc.f
+0IXRhXCT44QUxsXCobJ/3w	thyp.f
+v5YCsUhZnNg8kEXmlJ59BA	vdad.f
+dCD0oeHMqqlMpjh5VS8QUg	vdbd.f
+AbWpJuaosMeY8iUN/nxxJQ	vded.f
+
+-----BEGIN PGP SIGNATURE-----
+Version: 2.6.2
+
+iQCVAwUBPkfJbb5pvxO9gjtZAQErxwP+Kp7HHkJyMzHNEg/R4g9ouXwobAtP7veo
+QbRSShcA5P8VMmrcxv35odkehNMyeFLGilz9VB18iCnr4VpoAsO3WKVfecbXCwp3
+MbiEYnRYH0tQRRix7k3cxRFmM0GqZAZMGb+ZjZPXmnl+KhNnrI9uHWDiwSQKKhXN
+jX8KLfKfcrE=
+=3llQ
+-----END PGP SIGNATURE-----

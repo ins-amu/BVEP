@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="dir_7da8c66c7115e864d97e6e9aea62d193" kind="dir">
+    <compoundname>src/method_module/</compoundname>
+    <innerdir refid="dir_83f4c80c3cda7198c96f8fa94549bdf1">src/method_module/eSS/</innerdir>
+    <innerfile refid="common__solver__operations_8c">common_solver_operations.c</innerfile>
+    <innerfile refid="common__solver__operations_8d">common_solver_operations.d</innerfile>
+    <innerfile refid="evaluationinterface_8c">evaluationinterface.c</innerfile>
+    <innerfile refid="evaluationinterface_8d">evaluationinterface.d</innerfile>
+    <innerfile refid="execution__methods_8d">execution_methods.d</innerfile>
+    <innerfile refid="parallel__functions_8c">parallel_functions.c</innerfile>
+    <innerfile refid="parallel__functions_8d">parallel_functions.d</innerfile>
+    <innerfile refid="solversinterface_8c">solversinterface.c</innerfile>
+    <innerfile refid="solversinterface_8d">solversinterface.d</innerfile>
+    <innerfile refid="structure__paralleltestbed_8c">structure_paralleltestbed.c</innerfile>
+    <innerfile refid="structure__paralleltestbed_8d">structure_paralleltestbed.d</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module/"/>
+  </compounddef>
+</doxygen>

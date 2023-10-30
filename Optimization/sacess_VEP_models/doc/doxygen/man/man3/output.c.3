@@ -1,0 +1,498 @@
+.TH "src/output/output.c" 3 "Wed May 11 2016" "Version 0.1" "SACESS TOOLBOX" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/output/output.c \- 
+.PP
+File containing all functions about the different outputs of the program: print screens, files logs, matlab files generation etc\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <time\&.h>\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+\fC#include <structure_paralleltestbed\&.h>\fP
+.br
+\fC#include <configuration\&.h>\fP
+.br
+\fC#include <read_a_file_line_by_line\&.h>\fP
+.br
+\fC#include <common_solver_operations\&.h>\fP
+.br
+\fC#include <hdf5\&.h>\fP
+.br
+\fC#include <benchmark_functions_SystemBiology\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBprinttranslationmassage\fP ()"
+.br
+.ti -1c
+.RI "void \fBinitprintfile_\fP (void *exp1_, double *best, int *par, int *idp, double *currenttime, long *evals, int *master)"
+.br
+.RI "\fIthis procedure initialize the differents output files of the program\&. \fP"
+.ti -1c
+.RI "void \fBprintiterationcesslog_\fP (void *exp1_, double *best, long *evaluation_local, double *currenttime, int *ite)"
+.br
+.RI "\fIprint current results in the logfile \fP"
+.ti -1c
+.RI "void \fBprintdescartsolution_\fP (void *exp1_, double *fpen, int *idp)"
+.br
+.ti -1c
+.RI "void \fBprintinititeration_\fP (void *exp1_, int *iter, double *cputime3)"
+.br
+.ti -1c
+.RI "void \fBprintlsinitlog_\fP (void *exp1_, double *best)"
+.br
+.ti -1c
+.RI "void \fBprintlocalsolverinsert_\fP (void *exp1_, double *valor, double *localmatrix, int *sizelocal, int *exito, double *comp1, double *comp2)"
+.br
+.ti -1c
+.RI "void \fBprintinitlocalsolverinsert_\fP (void *exp1_, double *valor, double *localmatrix, int *sizelocal)"
+.br
+.ti -1c
+.RI "void \fBprintlsendlog_\fP (void *exp1_, double *best, double *currenttime, long *evals)"
+.br
+.ti -1c
+.RI "void \fBprintadaptation_\fP (void *exp1_, double *balance, int *dim, int *counter, double *time)"
+.br
+.ti -1c
+.RI "void \fBprintadaptationslave_\fP (void *exp1_, int *recp, int *send, long *diff_evals, double *time)"
+.br
+.ti -1c
+.RI "void \fBprintadaptationmaster_\fP (void *exp1_, int *origin, int *dest, double *balance, int *dim, int *counter, int *accept, int *adap, double *time)"
+.br
+.ti -1c
+.RI "void \fBprintadaptationscores_\fP (void *exp1_, double *scores, int *NPROC)"
+.br
+.ti -1c
+.RI "void \fBprintdesadaptationmaster_\fP (void *exp1_, int *origin, int *dest, double *balance, int *dim, int *counter, double *time)"
+.br
+.ti -1c
+.RI "void \fBprintputmasterlog_\fP (void *exp1_, double *fpen, double *time, int *id)"
+.br
+.ti -1c
+.RI "void \fBprintputcheckmasterlog_\fP (void *exp1_, double *new, double *old)"
+.br
+.ti -1c
+.RI "void \fBprintreturnselectsolution_\fP (void *exp1_, double *fpen, double *oldvalue, double *currenttime, int *idp)"
+.br
+.ti -1c
+.RI "void \fBprintcheckvtr_\fP (void *exp1_, double *best, long *evals, double *currenttime, double *vtr)"
+.br
+.ti -1c
+.RI "void \fBprintrecvmasterlog_\fP (void *exp1_, double *fpen, double *oldvalue, double *currenttime, int *idp)"
+.br
+.ti -1c
+.RI "void \fBprintputmasterendlog_\fP (void *exp1_, double *time, double *currenttime, double *valuecandidate, int *idp)"
+.br
+.ti -1c
+.RI "void \fBprintcooperative_\fP (void *exp1_, int *cooperative, int *size, double *time, int *iter)"
+.br
+.ti -1c
+.RI "void \fBprintrefset_\fP (void *exp1_, double *refset, int *size, double *time, int *iter, int *index)"
+.br
+.ti -1c
+.RI "void \fBprintrefsetinner_\fP (void *exp1_, double *refset, int *size, double *balance)"
+.br
+.ti -1c
+.RI "void \fBprintchilds_\fP (void *exp1_, double *refset, double *childset, int *sizechild, int *childsetindex, int *childsetindex2)"
+.br
+.ti -1c
+.RI "void \fBprintenditeration_\fP (void *exp1_)"
+.br
+.ti -1c
+.RI "void \fBprintrestart_\fP (void *exp1_, double *time)"
+.br
+.ti -1c
+.RI "void \fBprintrestartslave_\fP (void *exp1_, double *time)"
+.br
+.ti -1c
+.RI "void \fBprintreplaceslavelog_\fP (void *exp1_, double *fpen, double *time, int *position)"
+.br
+.ti -1c
+.RI "void \fBprintreceivedslave_\fP (void *exp1_, double *fpen, double *time)"
+.br
+.ti -1c
+.RI "void \fBprintdiscardreceivedslave_\fP (void *exp1_, double *fpen, double *time, double *fbest)"
+.br
+.ti -1c
+.RI "void \fBprintdiscardreceivedslave3_\fP (void *exp1_, double *fpen, double *time, double *fbest)"
+.br
+.ti -1c
+.RI "void \fBprintstuck_\fP (void *exp1_, double *solution, int *ocurrence)"
+.br
+.ti -1c
+.RI "void \fBprintdiscardreceivedslave2_\fP (void *exp1_, double *fpen, double *time, double *porc)"
+.br
+.ti -1c
+.RI "void \fBprintcomparenewsolutionslavelog_\fP (void *exp1_, double *new, double *old, double *dist, double *time, double *th)"
+.br
+.ti -1c
+.RI "void \fBprintreceptioncompare_\fP (void *exp1_, double *new, double *old, double *dist, double *time, double *maxthreshold)"
+.br
+.ti -1c
+.RI "void \fBprintcomparenewsolutionmasterlog_\fP (void *exp1_, double *new, double *old, double *dist, double *time, double *maxthreshold)"
+.br
+.ti -1c
+.RI "void \fBprintfinalsendslavelog_\fP (void *exp1_, double *new, double *time)"
+.br
+.ti -1c
+.RI "void \fBprintiteration_\fP (void *exp1_, int *k, double *best, long *evaluation_local, double *currenttime)"
+.br
+.RI "\fIprint iteration in output files\&. This files are used to generate the final Matlab graphs\&. \fP"
+.ti -1c
+.RI "void \fBprintgant_\fP (void *exp1_, double *currenttime, int *code)"
+.br
+.RI "\fIprint results in gant files\&. This files are used to generate the Gant char\&. \fP"
+.ti -1c
+.RI "void \fBprintpercentage_\fP (void *exp1_, double *currenttime, double *value, double *percentage)"
+.br
+.RI "\fIprint results in percentage files\&. This files are used to generate the percentages char\&. \fP"
+.ti -1c
+.RI "void \fBprintiterationcess_\fP (void *exp1_, double *best, long *evaluation_local, double *currenttime, int *locals, int *migration)"
+.br
+.RI "\fIprint results in percentage files\&. This files are used to generate the percentages char\&. \fP"
+.ti -1c
+.RI "void \fBprintverboselocaloutput_\fP (void *exp1_, int *D, double *U, double *fval, int *idp)"
+.br
+.ti -1c
+.RI "void \fBprintverboselocaloutput2_\fP (void *exp1_, double *fval, int *idp)"
+.br
+.ti -1c
+.RI "void \fBimprovelocalsolver_\fP (void *exp1_, double *fval, double *fvalold)"
+.br
+.ti -1c
+.RI "void \fBprint_verbose_local_success\fP (\fBexperiment_total\fP exp1, int success)"
+.br
+.ti -1c
+.RI "void \fBprint_end_file_\fP (\fBexperiment_total\fP *exp1, double *U, double *best, \fBresult_solver\fP *result)"
+.br
+.ti -1c
+.RI "void \fBverboseiteration_\fP (void *exp1_, int k, double starttime, double ftarget, double best, long evaluation_local, int idp)"
+.br
+.ti -1c
+.RI "void \fBverboseiterationfortran_\fP (void *exp1_, int *k, double *time, double *ftarget, double *best, long *evaluation_local, int *par, int *idp)"
+.br
+.ti -1c
+.RI "char * \fBconcat_char\fP (int *BUFFER, char *string_eval_total, char *string_eval)"
+.br
+.ti -1c
+.RI "void \fBmatlab_plot_file\fP (\fBexperiment_total\fP exp1, char *string, char *string2, const char *color, int ancho_linea, const char *marca, int par, int idp, int NPROC, int func, int end, int initp)"
+.br
+.RI "\fIthis function generates a convergence MATLAB graph with the files of all slaves\&. \fP"
+.ti -1c
+.RI "void \fBmatlab_plot_file_gant\fP (\fBexperiment_total\fP exp1, int init1, int end, char *stringpath, int maxsize)"
+.br
+.RI "\fIthis function generates a gantt char with the gantt files of all slaves\&. \fP"
+.ti -1c
+.RI "void \fBmatlab_plot_file_porcentage\fP (\fBexperiment_total\fP exp1, int end, char *stringpath, int idppar)"
+.br
+.RI "\fIthis function generates a percentage char with the percentege output files of all slaves\&. \fP"
+.ti -1c
+.RI "int \fBrow_count\fP (char *stringpath)"
+.br
+.ti -1c
+.RI "double \fBvarianze\fP (double *array, double avg, int size)"
+.br
+.ti -1c
+.RI "char \fBselect_color\fP (int i)"
+.br
+.ti -1c
+.RI "char \fBselect_marca\fP (int i)"
+.br
+.ti -1c
+.RI "void \fBplot_file\fP (\fBexperiment_total\fP exp1, int par, int idp, int NPROC)"
+.br
+.RI "\fIthis function generate a convergence MATLAB graph with the files of all slaves\&. \fP"
+.ti -1c
+.RI "void \fBplot_file_cess\fP (\fBexperiment_total\fP exp1, int par, int idp, int NPROC)"
+.br
+.RI "\fIthis function manages the generation of the differents graphs\&. \fP"
+.ti -1c
+.RI "void \fBinitoutputvars_\fP (void *exp1_)"
+.br
+.ti -1c
+.RI "void \fBupdateresultsandprint_\fP (void *exp1_, void *result_, double *totaltime, long *evaluation, double *fx, double *xbest)"
+.br
+.ti -1c
+.RI "void \fBupdateresultsess_\fP (void *exp1_, void *result_, double *totaltime, long *evaluation, double *fx, double *xbest, double *totaliter, double *timevtr)"
+.br
+.RI "\fIthis function gathers the different results of all processors in the master, and then the master diffuses this information to the slaves\&. \fP"
+.ti -1c
+.RI "int \fBupdateresultsrandomsearch_\fP (void *exp1_, void *result_, double *totaltime, double *evaluation, double *best)"
+.br
+.ti -1c
+.RI "void \fBinit_message\fP (int NPROC, \fBexperiment_total\fP *exp, int NTHREAD)"
+.br
+.ti -1c
+.RI "void \fBbechmark_message\fP (\fBexperiment_total\fP *exp, const char *name)"
+.br
+.ti -1c
+.RI "void \fBgraphs_message\fP (\fBexperiment_total\fP *exp)"
+.br
+.ti -1c
+.RI "void \fBprintresults_\fP (void *exp1_, double *fx, long *evals, double *totaltime, double *timeVTR, double *iter)"
+.br
+.ti -1c
+.RI "void \fBprintstatemaster_\fP (double *BKS, double *time)"
+.br
+.ti -1c
+.RI "void \fBprintresults_end\fP (\fBexperiment_total\fP *exptotal, \fBresult_solver\fP result)"
+.br
+.ti -1c
+.RI "void \fBplot\fP (\fBexperiment_total\fP *exptotal)"
+.br
+.RI "\fIthis function generate a convergence MATLAB graph with the files of all slaves\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+File containing all functions about the different outputs of the program: print screens, files logs, matlab files generation etc\&. 
+
+\fBAuthor:\fP
+.RS 4
+David R\&. Penas 
+.RE
+.PP
+
+.PP
+Definition in file \fBoutput\&.c\fP\&.
+.SH "Function Documentation"
+.PP 
+.SS "void initprintfile_ (void *exp1_, double *best, int *par, int *idp, double *currenttime, long *evals, int *master)"
+
+.PP
+this procedure initialize the differents output files of the program\&. \fBParameters:\fP
+.RS 4
+\fIexp1_\fP void pointer for the main struct \fBexperiment_total\fP\&. 
+.br
+\fIbest\fP fx value of the best solution of the processor up to now\&. 
+.br
+\fIpar\fP binary parametter: 1 if the program is parallel, 0 in the opposite case\&. 
+.br
+\fIidp\fP identification of the parallel processor\&. 
+.br
+\fIcurrenttime\fP time spent from the beginning\&. 
+.br
+\fIiterations\fP current iterations of the solver\&. 
+.br
+\fImaster\fP binary parametter: 1 if the processors is the master, 0 in the opposite case\&. 
+.RE
+.PP
+
+.PP
+Definition at line 39 of file output\&.c\&.
+.SS "void matlab_plot_file (\fBexperiment_total\fPexp1, char *string, char *string2, const char *color, intancho_linea, const char *marca, intpar, intidp, intNPROC, intfunc, intend, intinitp)"
+
+.PP
+this function generates a convergence MATLAB graph with the files of all slaves\&. \fBParameters:\fP
+.RS 4
+\fIexp1_\fP void pointer for the main struct \fBexperiment_total\fP\&. 
+.br
+\fIstring\fP path of the convergence output graph of the master\&. 
+.br
+\fIstring2\fP path of the convergence output graph of the spacific slave\&. 
+.br
+\fIcolor\fP char variable for color lines\&. 
+.br
+\fIancho_linea\fP char variable for line width\&. 
+.br
+\fImarca\fP char variable for the mark graph\&. 
+.br
+\fIpar\fP binary parametter: 1 if the program is parallel, 0 in the opposite case\&. 
+.br
+\fIidp\fP identification number of the processors\&. 
+.br
+\fINPROC\fP total number of processors\&. 
+.br
+\fIfunc\fP binary parametter: 1 if it is the fisrt time to enter in this function, 0 in the opposite case\&. 
+.br
+\fIend\fP binary parametter: 1 if the specific slave is the last, 0 in the opposite case\&. 
+.br
+\fIinitp\fP binary parametter: 1 indicates the id, where the program are going to begin to print the stairs matlab function; 0 in the opposite case\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1227 of file output\&.c\&.
+.SS "void matlab_plot_file_gant (\fBexperiment_total\fPexp1, intinit1, intend, char *stringpath, intmaxsize)"
+
+.PP
+this function generates a gantt char with the gantt files of all slaves\&. \fBParameters:\fP
+.RS 4
+\fIexp1\fP main struct \fBexperiment_total\fP\&. 
+.br
+\fIinit1\fP binary parametter: 1 if it is the fisrt time to enter in this function, 0 in the opposite case\&. 
+.br
+\fIend\fP binary parametter: 1 if the specific slave is the last, 0 in the opposite case\&. 
+.br
+\fIstringpath\fP path to print the matlab code\&. 
+.br
+\fImaxsize\fP number of rows of the gantt file\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1542 of file output\&.c\&.
+.SS "void matlab_plot_file_porcentage (\fBexperiment_total\fPexp1, intend, char *stringpath, intidppar)"
+
+.PP
+this function generates a percentage char with the percentege output files of all slaves\&. \fBParameters:\fP
+.RS 4
+\fIexp1\fP main struct \fBexperiment_total\fP\&. 
+.br
+\fIend\fP binary parametter: 1 if the specific slave is the last, 0 in the opposite case\&. 
+.br
+\fIstringpath\fP path to print the matlab code\&. 
+.br
+\fIidppar\fP identification number of the processor\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1726 of file output\&.c\&.
+.SS "void plot_file_cess (\fBexperiment_total\fPexp1, intpar, intidp, intNPROC)"
+
+.PP
+this function manages the generation of the differents graphs\&. \fBParameters:\fP
+.RS 4
+\fIexp1\fP main struct \fBexperiment_total\fP\&. 
+.br
+\fIpar\fP binary parametter: 1 if the program is parallel, 0 in the opposite case\&. 
+.br
+\fIidp\fP identification number of the processors\&. 
+.br
+\fINPROC\fP total number of processors\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2074 of file output\&.c\&.
+.SS "void printgant_ (void *exp1_, double *currenttime, int *code)"
+
+.PP
+print results in gant files\&. This files are used to generate the Gant char\&. \fBParameters:\fP
+.RS 4
+\fIexp1_\fP void pointer for the main struct \fBexperiment_total\fP\&. 
+.br
+\fIcurrenttime\fP time spent from the beginning\&. 
+.br
+\fIcode\fP inner code to represent the kind of operation: (1) global search, (2) local search, (3) communication\&. 
+.RE
+.PP
+
+.PP
+Definition at line 934 of file output\&.c\&.
+.SS "void printiteration_ (void *exp1_, int *k, double *best, long *evaluation_local, double *currenttime)"
+
+.PP
+print iteration in output files\&. This files are used to generate the final Matlab graphs\&. \fBParameters:\fP
+.RS 4
+\fIexp1_\fP void pointer for the main struct \fBexperiment_total\fP\&. 
+.br
+\fIk\fP iteration spent from the beginning\&. 
+.br
+\fIbest\fP best solution up to now\&. 
+.br
+\fIevaluation_local\fP function evaluations spent by the processor up to now\&. 
+.br
+\fIcurrenttime\fP time spent from the beginning\&. 
+.RE
+.PP
+
+.PP
+Definition at line 895 of file output\&.c\&.
+.SS "void printiterationcess_ (void *exp1_, double *best, long *evaluation_local, double *currenttime, int *locals, int *migration)"
+
+.PP
+print results in percentage files\&. This files are used to generate the percentages char\&. \fBParameters:\fP
+.RS 4
+\fIexp1_\fP void pointer for the main struct \fBexperiment_total\fP\&. 
+.br
+\fIbest\fP best solution up to now\&. 
+.br
+\fIevaluation_local\fP function evaluations spent by the processor up to now\&. 
+.br
+\fIcurrenttime\fP time spent from the beginning\&. 
+.br
+\fIlocals\fP number of local solver calls spent from the beginning\&. 
+.br
+\fImigration\fP number of migration performed up to now\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1002 of file output\&.c\&.
+.SS "void printiterationcesslog_ (void *exp1_, double *best, long *evaluation_local, double *currenttime, int *ite)"
+
+.PP
+print current results in the logfile \fBParameters:\fP
+.RS 4
+\fIexp1_\fP void pointer for the main struct \fBexperiment_total\fP\&. 
+.br
+\fIbest\fP fx value of the best solution of the processor up to now\&. 
+.br
+\fIpar\fP binary parametter: 1 if the program is parallel, 0 in the opposite case\&. 
+.br
+\fIevaluation_local\fP function evaluations spent by the processor up to now\&. 
+.br
+\fIcurrenttime\fP time spent from the beginning\&. 
+.RE
+.PP
+
+.PP
+Definition at line 152 of file output\&.c\&.
+.SS "void printpercentage_ (void *exp1_, double *currenttime, double *value, double *percentage)"
+
+.PP
+print results in percentage files\&. This files are used to generate the percentages char\&. \fBParameters:\fP
+.RS 4
+\fIexp1_\fP void pointer for the main struct \fBexperiment_total\fP\&. 
+.br
+\fIcurrenttime\fP time spent from the beginning\&. 
+.br
+\fIvalue\fP value of the solution sent\&. 
+.br
+\fIpercentage\fP percentage of improvement\&. 
+.RE
+.PP
+
+.PP
+Definition at line 966 of file output\&.c\&.
+.SS "void updateresultsess_ (void *exp1_, void *result_, double *totaltime, long *evaluation, double *fx, double *xbest, double *totaliter, double *timevtr)"
+
+.PP
+this function gathers the different results of all processors in the master, and then the master diffuses this information to the slaves\&. \fBParameters:\fP
+.RS 4
+\fIexp1_\fP main struct \fBexperiment_total\fP\&. 
+.br
+\fIresult_\fP result struct\&. 
+.br
+\fItotaltime\fP total time spents by the program\&. 
+.br
+\fIevaluation\fP total number of evaluations spents by the program\&. 
+.br
+\fIfx\fP value of the objective function of the best solution for each slave\&. 
+.br
+\fIxbest\fP vector of the best solution for each slave\&. 
+.br
+\fItotaliter\fP otal iteration spents by the solver\&. 
+.br
+\fItimevtr\fP time to reach to VTR\&. 
+.RE
+.PP
+
+.PP
+Definition at line 2320 of file output\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for SACESS TOOLBOX from the source code\&.

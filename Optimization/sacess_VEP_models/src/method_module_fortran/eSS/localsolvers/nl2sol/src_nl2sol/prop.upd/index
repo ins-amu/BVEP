@@ -1,0 +1,97 @@
+file	port/prop.upd/readme
+,	pointing out that this directory contains updated versions
+,	of some routines in the proprietary portion of the PORT3
+,	subroutine library -- for the convenience of people who
+,	got the whole PORT3 library before these routines were updated.
+
+file	port/prop.upd/b1slc.f
+
+file	port/prop.upd/b1slr.f
+
+file	port/prop.upd/besci.f
+
+file	port/prop.upd/bescj.f
+
+file	port/prop.upd/besri.f
+
+file	port/prop.upd/besrj.f
+
+file	port/prop.upd/d1rply.f
+
+file	port/prop.upd/d2rply.f
+
+file	port/prop.upd/d3rply.f
+
+file	port/prop.upd/d4rply.f
+
+file	port/prop.upd/d5rply.f
+
+file	port/prop.upd/d6rply.f
+
+file	port/prop.upd/d7rply.f
+
+file	port/prop.upd/d8rply.f
+
+file	port/prop.upd/d9rply.f
+
+file	port/prop.upd/db1slc.f
+
+file	port/prop.upd/db1slr.f
+
+file	port/prop.upd/dbesci.f
+
+file	port/prop.upd/dbescj.f
+
+file	port/prop.upd/dbesri.f
+
+file	port/prop.upd/dbesrj.f
+
+file	port/prop.upd/df1ft.f
+
+file	port/prop.upd/dfft.f
+
+file	port/prop.upd/dfmin.f
+
+file	port/prop.upd/drltr.f
+
+file	port/prop.upd/drot.f
+
+file	port/prop.upd/drotg.f
+
+file	port/prop.upd/drpoly.f
+
+file	port/prop.upd/ds4rot.f
+
+file	port/prop.upd/f1ft.f
+
+file	port/prop.upd/fft.f
+
+file	port/prop.upd/fmin.f
+
+file	port/prop.upd/r1rply.f
+
+file	port/prop.upd/r2rply.f
+
+file	port/prop.upd/r3rply.f
+
+file	port/prop.upd/r4rply.f
+
+file	port/prop.upd/r5rply.f
+
+file	port/prop.upd/r6rply.f
+
+file	port/prop.upd/r7rply.f
+
+file	port/prop.upd/r8rply.f
+
+file	port/prop.upd/r9rply.f
+
+file	port/prop.upd/rltr.f
+
+file	port/prop.upd/rpoly.f
+
+file	port/prop.upd/srot.f
+
+file	port/prop.upd/srot2.f
+
+file	port/prop.upd/srotg.f

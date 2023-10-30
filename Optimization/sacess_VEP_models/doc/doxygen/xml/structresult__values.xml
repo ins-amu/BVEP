@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="structresult__values" kind="struct" prot="public">
+    <compoundname>result_values</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structresult__values_1af6b8cf110c42cb0b80b965eb6478dc42" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double result_values::eval_avg</definition>
+        <argsstring></argsstring>
+        <name>eval_avg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="301" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structresult__values_1ace6d4751eb7436522a73c8119cff8369" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double result_values::time_avg</definition>
+        <argsstring></argsstring>
+        <name>time_avg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="302" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structresult__values_1a584c160bf7b8a8cc8dcb26e559a76854" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double result_values::best_value_all</definition>
+        <argsstring></argsstring>
+        <name>best_value_all</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="303" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structresult__values_1a5d6f840224705ba8c7abe9bb6085df2c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double result_values::restart</definition>
+        <argsstring></argsstring>
+        <name>restart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="304" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structresult__values_1adccf94cdfaf7802c3c4cf87132bbcbdd" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double result_values::value_avg</definition>
+        <argsstring></argsstring>
+        <name>value_avg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="305" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structresult__values_1a88860c373be367b8a584d84489297adb" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double result_values::porcenthits</definition>
+        <argsstring></argsstring>
+        <name>porcenthits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="306" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structresult__values_1a17e65df8571830f9844376a7bf54bb94" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int result_values::dim</definition>
+        <argsstring></argsstring>
+        <name>dim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="307" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structresult__values_1a486ddde91c22f920a760556803b339be" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int result_values::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="308" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="300" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="300" bodyend="309"/>
+    <listofallmembers>
+      <member refid="structresult__values_1a584c160bf7b8a8cc8dcb26e559a76854" prot="public" virt="non-virtual"><scope>result_values</scope><name>best_value_all</name></member>
+      <member refid="structresult__values_1a17e65df8571830f9844376a7bf54bb94" prot="public" virt="non-virtual"><scope>result_values</scope><name>dim</name></member>
+      <member refid="structresult__values_1af6b8cf110c42cb0b80b965eb6478dc42" prot="public" virt="non-virtual"><scope>result_values</scope><name>eval_avg</name></member>
+      <member refid="structresult__values_1a486ddde91c22f920a760556803b339be" prot="public" virt="non-virtual"><scope>result_values</scope><name>id</name></member>
+      <member refid="structresult__values_1a88860c373be367b8a584d84489297adb" prot="public" virt="non-virtual"><scope>result_values</scope><name>porcenthits</name></member>
+      <member refid="structresult__values_1a5d6f840224705ba8c7abe9bb6085df2c" prot="public" virt="non-virtual"><scope>result_values</scope><name>restart</name></member>
+      <member refid="structresult__values_1ace6d4751eb7436522a73c8119cff8369" prot="public" virt="non-virtual"><scope>result_values</scope><name>time_avg</name></member>
+      <member refid="structresult__values_1adccf94cdfaf7802c3c4cf87132bbcbdd" prot="public" virt="non-virtual"><scope>result_values</scope><name>value_avg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

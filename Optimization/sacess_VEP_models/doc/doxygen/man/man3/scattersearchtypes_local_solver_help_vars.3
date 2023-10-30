@@ -1,0 +1,77 @@
+.TH "scattersearchtypes::local_solver_help_vars" 3 "Wed May 11 2016" "Version 0.1" "SACESS TOOLBOX" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+scattersearchtypes::local_solver_help_vars \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "real(kind=selected_real_kind(p=precision_d, 
+.br
+r=range_d)), dimension(:,:), 
+.br
+allocatable \fBlocal_solutions\fP"
+.br
+.ti -1c
+.RI "real(kind=selected_real_kind(p=precision_d, 
+.br
+r=range_d)), dimension(:,:), 
+.br
+allocatable \fBinitial_points\fP"
+.br
+.ti -1c
+.RI "real(kind=selected_real_kind(p=precision_d, 
+.br
+r=range_d)), dimension(:), 
+.br
+allocatable \fBlocal_solutions_values\fP"
+.br
+.ti -1c
+.RI "real(kind=selected_real_kind(p=precision_d, 
+.br
+r=range_d)), dimension(:), 
+.br
+allocatable \fBinitial_points_values\fP"
+.br
+.ti -1c
+.RI "integer \fBevals_per_iter\fP"
+.br
+.ti -1c
+.RI "integer \fBn_minimo\fP"
+.br
+.ti -1c
+.RI "integer \fBn_critico\fP"
+.br
+.ti -1c
+.RI "integer \fBstage_1\fP"
+.br
+.ti -1c
+.RI "integer \fBstage_2\fP"
+.br
+.ti -1c
+.RI "integer \fBuse_bestx\fP"
+.br
+.ti -1c
+.RI "integer, dimension(:), allocatable \fBn_upper\fP"
+.br
+.ti -1c
+.RI "integer, dimension(:), allocatable \fBn_lower\fP"
+.br
+.ti -1c
+.RI "type(c_funptr) \fBfobj_mysqp\fP"
+.br
+.ti -1c
+.RI "integer \fBpass_misqp\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 29 of file scattersearchtypes\&.f90\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for SACESS TOOLBOX from the source code\&.

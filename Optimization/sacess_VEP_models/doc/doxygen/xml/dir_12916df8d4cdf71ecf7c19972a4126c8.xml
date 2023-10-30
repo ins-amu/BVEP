@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="dir_12916df8d4cdf71ecf7c19972a4126c8" kind="dir">
+    <compoundname>src/</compoundname>
+    <innerdir refid="dir_e5fac193f3e869a50480eeada7618882">src/input_module/</innerdir>
+    <innerdir refid="dir_7da8c66c7115e864d97e6e9aea62d193">src/method_module/</innerdir>
+    <innerdir refid="dir_cb76e08b716cf2c7635fed3ec7f616a8">src/method_module_fortran/</innerdir>
+    <innerdir refid="dir_8ddda66f30760f67781e9641b72d8258">src/output/</innerdir>
+    <innerfile refid="main__file_8c">main_file.c</innerfile>
+    <innerfile refid="main__file_8d">main_file.d</innerfile>
+    <innerfile refid="setup__benchmarks_8c">setup_benchmarks.c</innerfile>
+    <innerfile refid="setup__benchmarks_8d">setup_benchmarks.d</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/"/>
+  </compounddef>
+</doxygen>

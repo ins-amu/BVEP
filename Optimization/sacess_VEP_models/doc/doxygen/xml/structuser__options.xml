@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="structuser__options" kind="struct" prot="public">
+    <compoundname>user_options</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structuser__options_1a15d45597f273f686348b72fd1f53350d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int user_options::weight</definition>
+        <argsstring></argsstring>
+        <name>weight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="86" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structuser__options_1ac77487164984d72a1c8e145e886210eb" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double user_options::tolc</definition>
+        <argsstring></argsstring>
+        <name>tolc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="87" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structuser__options_1a24bd7e8ba1f5f49338ae17f33f2b56e8" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double user_options::prob_bound</definition>
+        <argsstring></argsstring>
+        <name>prob_bound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="88" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structuser__options_1a9221649496b6206e57e743dd37288b5f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int user_options::nstuck_solution</definition>
+        <argsstring></argsstring>
+        <name>nstuck_solution</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="89" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structuser__options_1a3713423db4962a298c869623b22c1794" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int user_options::strategy</definition>
+        <argsstring></argsstring>
+        <name>strategy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="90" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structuser__options_1abc96f84f16a47f756b4dad86ea7ccf5e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int user_options::inter_save</definition>
+        <argsstring></argsstring>
+        <name>inter_save</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="91" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" line="85" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/include/method_module/structure_paralleltestbed.h" bodystart="85" bodyend="92"/>
+    <listofallmembers>
+      <member refid="structuser__options_1abc96f84f16a47f756b4dad86ea7ccf5e" prot="public" virt="non-virtual"><scope>user_options</scope><name>inter_save</name></member>
+      <member refid="structuser__options_1a9221649496b6206e57e743dd37288b5f" prot="public" virt="non-virtual"><scope>user_options</scope><name>nstuck_solution</name></member>
+      <member refid="structuser__options_1a24bd7e8ba1f5f49338ae17f33f2b56e8" prot="public" virt="non-virtual"><scope>user_options</scope><name>prob_bound</name></member>
+      <member refid="structuser__options_1a3713423db4962a298c869623b22c1794" prot="public" virt="non-virtual"><scope>user_options</scope><name>strategy</name></member>
+      <member refid="structuser__options_1ac77487164984d72a1c8e145e886210eb" prot="public" virt="non-virtual"><scope>user_options</scope><name>tolc</name></member>
+      <member refid="structuser__options_1a15d45597f273f686348b72fd1f53350d" prot="public" virt="non-virtual"><scope>user_options</scope><name>weight</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

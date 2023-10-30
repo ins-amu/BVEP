@@ -1,0 +1,2092 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.1.2">
+  <compounddef id="classscattersearchfunctions" kind="module" prot="public">
+    <compoundname>scattersearchfunctions</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classscattersearchfunctions_1a435159c89689e3dc7792a40c377fb437" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::problem_specifications</definition>
+        <argsstring>(exp1, problem1, opts1, nvar, ftarget, maxfunevals)</argsstring>
+        <name>problem_specifications</name>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>problem1</type>
+          <defname>problem1</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>nvar</type>
+          <defname>nvar</defname>
+        </param>
+        <param>
+          <type>ftarget</type>
+          <defname>ftarget</defname>
+        </param>
+        <param>
+          <type>maxfunevals</type>
+          <defname>maxfunevals</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a077e78542f1721d2303020ab66c5aef8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::destroy_problem</definition>
+        <argsstring>(problem1)</argsstring>
+        <name>destroy_problem</name>
+        <param>
+          <type>problem1</type>
+          <defname>problem1</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1acb54b750819a4bf535dbfa3613fcd79b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::destroy_opts</definition>
+        <argsstring>(opts1)</argsstring>
+        <name>destroy_opts</name>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1aefb857d242fbcaef49e3c3ac317753bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TYPE(opts) function</type>
+        <definition>TYPE(opts) function scattersearchfunctions::ssm_default</definition>
+        <argsstring>()</argsstring>
+        <name>ssm_default</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1ac6ad21bb22e669ef3d116739525d9b28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::create_new_opts</definition>
+        <argsstring>(opts1)</argsstring>
+        <name>create_new_opts</name>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a7ade840c63f4a07f6308e4c63ea22efc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::create_new_problem</definition>
+        <argsstring>(problem1)</argsstring>
+        <name>create_new_problem</name>
+        <param>
+          <type>problem1</type>
+          <defname>problem1</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a7f28c5f60448d43fccd58bde5cbf8277" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TYPE(opts) function</type>
+        <definition>TYPE(opts) function scattersearchfunctions::ssm_optset</definition>
+        <argsstring>(default1, opts1)</argsstring>
+        <name>ssm_optset</name>
+        <param>
+          <type>default1</type>
+          <defname>default1</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a9b773a5853b018bd28a45fa641c8d6f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::print_opts</definition>
+        <argsstring>(opts1)</argsstring>
+        <name>print_opts</name>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1acc2293da2b8fd2df57c526be9b6437cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::print_problems</definition>
+        <argsstring>(problem1)</argsstring>
+        <name>print_problems</name>
+        <param>
+          <type>problem1</type>
+          <defname>problem1</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a6dc839ba9b0401a21b4fbbfe27938b95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::log_vector</definition>
+        <argsstring>(vector)</argsstring>
+        <name>log_vector</name>
+        <param>
+          <type>vector</type>
+          <defname>vector</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1aded0a4c1802c5063d93a7f5faa8025e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::ssm_beyond</definition>
+        <argsstring>(exp1, z1, z2, z2_val, nfuneval, fitnessfunction, nrand, nconst, outfunction, opts1, problem1, idopenmp)</argsstring>
+        <name>ssm_beyond</name>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>z1</type>
+          <defname>z1</defname>
+        </param>
+        <param>
+          <type>z2</type>
+          <defname>z2</defname>
+        </param>
+        <param>
+          <type>z2_val</type>
+          <defname>z2_val</defname>
+        </param>
+        <param>
+          <type>nfuneval</type>
+          <defname>nfuneval</defname>
+        </param>
+        <param>
+          <type>fitnessfunction</type>
+          <defname>fitnessfunction</defname>
+        </param>
+        <param>
+          <type>nrand</type>
+          <defname>nrand</defname>
+        </param>
+        <param>
+          <type>nconst</type>
+          <defname>nconst</defname>
+        </param>
+        <param>
+          <type>outfunction</type>
+          <defname>outfunction</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>problem1</type>
+          <defname>problem1</defname>
+        </param>
+        <param>
+          <type>idopenmp</type>
+          <defname>idopenmp</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1aee5f52d21f7487f3d951c9d8b44ee393" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::ssm_beyond_det</definition>
+        <argsstring>(exp1, z1, z2, z2_val, nfuneval, fitnessfunction, nrand, nconst, outfunction, opts1, problem1, idopenmp, contador, matrixR)</argsstring>
+        <name>ssm_beyond_det</name>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>z1</type>
+          <defname>z1</defname>
+        </param>
+        <param>
+          <type>z2</type>
+          <defname>z2</defname>
+        </param>
+        <param>
+          <type>z2_val</type>
+          <defname>z2_val</defname>
+        </param>
+        <param>
+          <type>nfuneval</type>
+          <defname>nfuneval</defname>
+        </param>
+        <param>
+          <type>fitnessfunction</type>
+          <defname>fitnessfunction</defname>
+        </param>
+        <param>
+          <type>nrand</type>
+          <defname>nrand</defname>
+        </param>
+        <param>
+          <type>nconst</type>
+          <defname>nconst</defname>
+        </param>
+        <param>
+          <type>outfunction</type>
+          <defname>outfunction</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>problem1</type>
+          <defname>problem1</defname>
+        </param>
+        <param>
+          <type>idopenmp</type>
+          <defname>idopenmp</defname>
+        </param>
+        <param>
+          <type>contador</type>
+          <defname>contador</defname>
+        </param>
+        <param>
+          <type>matrixR</type>
+          <defname>matrixR</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a5b9acae6a027f6d538ede1941b1aabde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::create_init_solutions</definition>
+        <argsstring>(exp1, opts1, solutions, nvar, xl_log, xu_log)</argsstring>
+        <name>create_init_solutions</name>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>solutions</type>
+          <defname>solutions</defname>
+        </param>
+        <param>
+          <type>nvar</type>
+          <defname>nvar</defname>
+        </param>
+        <param>
+          <type>xl_log</type>
+          <defname>xl_log</defname>
+        </param>
+        <param>
+          <type>xu_log</type>
+          <defname>xu_log</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a8b32427896096ecea0dd15c81bff8b01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::create_init_solutions_det</definition>
+        <argsstring>(exp1, opts1, solutions, nvar, xl_log, xu_log, contador, matrixR)</argsstring>
+        <name>create_init_solutions_det</name>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>solutions</type>
+          <defname>solutions</defname>
+        </param>
+        <param>
+          <type>nvar</type>
+          <defname>nvar</defname>
+        </param>
+        <param>
+          <type>xl_log</type>
+          <defname>xl_log</defname>
+        </param>
+        <param>
+          <type>xu_log</type>
+          <defname>xu_log</defname>
+        </param>
+        <param>
+          <type>contador</type>
+          <defname>contador</defname>
+        </param>
+        <param>
+          <type>matrixR</type>
+          <defname>matrixR</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1abf70a2b066521bd370029f0971377858" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::init_inequality_constraints</definition>
+        <argsstring>(neq, c_L, c_U)</argsstring>
+        <name>init_inequality_constraints</name>
+        <param>
+          <type>neq</type>
+          <defname>neq</defname>
+        </param>
+        <param>
+          <type>c_L</type>
+          <defname>c_L</defname>
+        </param>
+        <param>
+          <type>c_U</type>
+          <defname>c_U</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1acb16092f20ccb4d7c8a44dd0eff63f3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::calc_dim_refset</definition>
+        <argsstring>(dim_refset, nvar, iterprint, idp, NPROC)</argsstring>
+        <name>calc_dim_refset</name>
+        <param>
+          <type>dim_refset</type>
+          <defname>dim_refset</defname>
+        </param>
+        <param>
+          <type>nvar</type>
+          <defname>nvar</defname>
+        </param>
+        <param>
+          <type>iterprint</type>
+          <defname>iterprint</defname>
+        </param>
+        <param>
+          <type>idp</type>
+          <defname>idp</defname>
+        </param>
+        <param>
+          <type>NPROC</type>
+          <defname>NPROC</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a9fcad831ec55e4c9d45a9a5421f5af4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::calc_ndiverse</definition>
+        <argsstring>(ndiverse, nvar, iterprint, idp)</argsstring>
+        <name>calc_ndiverse</name>
+        <param>
+          <type>ndiverse</type>
+          <defname>ndiverse</defname>
+        </param>
+        <param>
+          <type>nvar</type>
+          <defname>nvar</defname>
+        </param>
+        <param>
+          <type>iterprint</type>
+          <defname>iterprint</defname>
+        </param>
+        <param>
+          <type>idp</type>
+          <defname>idp</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a9268b3057be8cac8265edb5ac2df2d01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::destroy_refsettype</definition>
+        <argsstring>(refset)</argsstring>
+        <name>destroy_refsettype</name>
+        <param>
+          <type>refset</type>
+          <defname>refset</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1ae9d49ca40348d2b7a40f9ccaa0df362b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::destroy_resultsf</definition>
+        <argsstring>(results)</argsstring>
+        <name>destroy_resultsf</name>
+        <param>
+          <type>results</type>
+          <defname>results</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a8e59605301c5a93c24b9239451aae7e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::evaluate_solutions_set</definition>
+        <argsstring>(exp1, fitnessfunction, solutionset, problem1, opts1, solutions, nvar, nfuneval, nconst, xl_log, xu_log)</argsstring>
+        <name>evaluate_solutions_set</name>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>fitnessfunction</type>
+          <defname>fitnessfunction</defname>
+        </param>
+        <param>
+          <type>solutionset</type>
+          <defname>solutionset</defname>
+        </param>
+        <param>
+          <type>problem1</type>
+          <defname>problem1</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>solutions</type>
+          <defname>solutions</defname>
+        </param>
+        <param>
+          <type>nvar</type>
+          <defname>nvar</defname>
+        </param>
+        <param>
+          <type>nfuneval</type>
+          <defname>nfuneval</defname>
+        </param>
+        <param>
+          <type>nconst</type>
+          <defname>nconst</defname>
+        </param>
+        <param>
+          <type>xl_log</type>
+          <defname>xl_log</defname>
+        </param>
+        <param>
+          <type>xu_log</type>
+          <defname>xu_log</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a293007e9db84899d65f9d814a4253610" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::create_refset</definition>
+        <argsstring>(exp1, solutionset, refset, nvar, opts1, nconst, dim_refset)</argsstring>
+        <name>create_refset</name>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>solutionset</type>
+          <defname>solutionset</defname>
+        </param>
+        <param>
+          <type>refset</type>
+          <defname>refset</defname>
+        </param>
+        <param>
+          <type>nvar</type>
+          <defname>nvar</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>nconst</type>
+          <defname>nconst</defname>
+        </param>
+        <param>
+          <type>dim_refset</type>
+          <defname>dim_refset</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a667f397fd1bc01739f6dba3fb3cd2c87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::create_refset_empty</definition>
+        <argsstring>(refset, nvar, opts1, nconst, size)</argsstring>
+        <name>create_refset_empty</name>
+        <param>
+          <type>refset</type>
+          <defname>refset</defname>
+        </param>
+        <param>
+          <type>nvar</type>
+          <defname>nvar</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>nconst</type>
+          <defname>nconst</defname>
+        </param>
+        <param>
+          <type>size</type>
+          <defname>size</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a7a1b919ff5cf82582d5ceab2ec7a3120" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::create_refset_det</definition>
+        <argsstring>(solutionset, refset, nvar, opts1, nconst, dim_refset)</argsstring>
+        <name>create_refset_det</name>
+        <param>
+          <type>solutionset</type>
+          <defname>solutionset</defname>
+        </param>
+        <param>
+          <type>refset</type>
+          <defname>refset</defname>
+        </param>
+        <param>
+          <type>nvar</type>
+          <defname>nvar</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>nconst</type>
+          <defname>nconst</defname>
+        </param>
+        <param>
+          <type>dim_refset</type>
+          <defname>dim_refset</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a9b4ba7d5d9ef23dec76a1ca7bf2dda0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::create_childset</definition>
+        <argsstring>(childset, nvar, MaxSubSet2, nconst)</argsstring>
+        <name>create_childset</name>
+        <param>
+          <type>childset</type>
+          <defname>childset</defname>
+        </param>
+        <param>
+          <type>nvar</type>
+          <defname>nvar</defname>
+        </param>
+        <param>
+          <type>MaxSubSet2</type>
+          <defname>MaxSubSet2</defname>
+        </param>
+        <param>
+          <type>nconst</type>
+          <defname>nconst</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a07567b2af6ded79fb1f567e081d51193" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::check_best_value</definition>
+        <argsstring>(refset, opts1, xbest, fbest)</argsstring>
+        <name>check_best_value</name>
+        <param>
+          <type>refset</type>
+          <defname>refset</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>xbest</type>
+          <defname>xbest</defname>
+        </param>
+        <param>
+          <type>fbest</type>
+          <defname>fbest</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1adcc6b415ffb629e2632042a271470389" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::create_results</definition>
+        <argsstring>(results, opts1, xbest, fbest, nfuneval, cputime1, nvar)</argsstring>
+        <name>create_results</name>
+        <param>
+          <type>results</type>
+          <defname>results</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>xbest</type>
+          <defname>xbest</defname>
+        </param>
+        <param>
+          <type>fbest</type>
+          <defname>fbest</defname>
+        </param>
+        <param>
+          <type>nfuneval</type>
+          <defname>nfuneval</defname>
+        </param>
+        <param>
+          <type>cputime1</type>
+          <defname>cputime1</defname>
+        </param>
+        <param>
+          <type>nvar</type>
+          <defname>nvar</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1ada4b556b8ef1c78b9cbf6498cfbf446e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::sort_refset</definition>
+        <argsstring>(refset, opts1, indvect)</argsstring>
+        <name>sort_refset</name>
+        <param>
+          <type>refset</type>
+          <defname>refset</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>indvect</type>
+          <defname>indvect</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1add07a7ab22c636d720f6ba1e71bf0e4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::create_candidate</definition>
+        <argsstring>(candidateset, refset)</argsstring>
+        <name>create_candidate</name>
+        <param>
+          <type>candidateset</type>
+          <defname>candidateset</defname>
+        </param>
+        <param>
+          <type>refset</type>
+          <defname>refset</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a370ce8279ff86a0f7d7be2879cbafd89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::check_duplicated_replace</definition>
+        <argsstring>(exp1, fitnessfunction, problem1, refset, opts1, parents_index1, parents_index2, xl_log, xu_log, refset_change, members_update, index1, index2, nfuneval, nvar, nconst)</argsstring>
+        <name>check_duplicated_replace</name>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>fitnessfunction</type>
+          <defname>fitnessfunction</defname>
+        </param>
+        <param>
+          <type>problem1</type>
+          <defname>problem1</defname>
+        </param>
+        <param>
+          <type>refset</type>
+          <defname>refset</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>parents_index1</type>
+          <defname>parents_index1</defname>
+        </param>
+        <param>
+          <type>parents_index2</type>
+          <defname>parents_index2</defname>
+        </param>
+        <param>
+          <type>xl_log</type>
+          <defname>xl_log</defname>
+        </param>
+        <param>
+          <type>xu_log</type>
+          <defname>xu_log</defname>
+        </param>
+        <param>
+          <type>refset_change</type>
+          <defname>refset_change</defname>
+        </param>
+        <param>
+          <type>members_update</type>
+          <defname>members_update</defname>
+        </param>
+        <param>
+          <type>index1</type>
+          <defname>index1</defname>
+        </param>
+        <param>
+          <type>index2</type>
+          <defname>index2</defname>
+        </param>
+        <param>
+          <type>nfuneval</type>
+          <defname>nfuneval</defname>
+        </param>
+        <param>
+          <type>nvar</type>
+          <defname>nvar</defname>
+        </param>
+        <param>
+          <type>nconst</type>
+          <defname>nconst</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1aa4dc250dba4df06e310a3e95e7244c39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::check_duplicated_replace_det</definition>
+        <argsstring>(exp1, fitnessfunction, problem1, refset, opts1, parents_index1, parents_index2, xl_log, xu_log, refset_change, members_update, index1, index2, nfuneval, nvar, nconst, contador, matrixR)</argsstring>
+        <name>check_duplicated_replace_det</name>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>fitnessfunction</type>
+          <defname>fitnessfunction</defname>
+        </param>
+        <param>
+          <type>problem1</type>
+          <defname>problem1</defname>
+        </param>
+        <param>
+          <type>refset</type>
+          <defname>refset</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>parents_index1</type>
+          <defname>parents_index1</defname>
+        </param>
+        <param>
+          <type>parents_index2</type>
+          <defname>parents_index2</defname>
+        </param>
+        <param>
+          <type>xl_log</type>
+          <defname>xl_log</defname>
+        </param>
+        <param>
+          <type>xu_log</type>
+          <defname>xu_log</defname>
+        </param>
+        <param>
+          <type>refset_change</type>
+          <defname>refset_change</defname>
+        </param>
+        <param>
+          <type>members_update</type>
+          <defname>members_update</defname>
+        </param>
+        <param>
+          <type>index1</type>
+          <defname>index1</defname>
+        </param>
+        <param>
+          <type>index2</type>
+          <defname>index2</defname>
+        </param>
+        <param>
+          <type>nfuneval</type>
+          <defname>nfuneval</defname>
+        </param>
+        <param>
+          <type>nvar</type>
+          <defname>nvar</defname>
+        </param>
+        <param>
+          <type>nconst</type>
+          <defname>nconst</defname>
+        </param>
+        <param>
+          <type>contador</type>
+          <defname>contador</defname>
+        </param>
+        <param>
+          <type>matrixR</type>
+          <defname>matrixR</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1aeebf0937ca54c4d9c79e5bafef8c6ff0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::check_vector_in_hyper_bounds</definition>
+        <argsstring>(exp1, opts1, v, hyper_x_L, hyper_x_U)</argsstring>
+        <name>check_vector_in_hyper_bounds</name>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>v</type>
+          <defname>v</defname>
+        </param>
+        <param>
+          <type>hyper_x_L</type>
+          <defname>hyper_x_L</defname>
+        </param>
+        <param>
+          <type>hyper_x_U</type>
+          <defname>hyper_x_U</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a9b483c90cd9a0fd021f104cc76f1b854" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::check_vector_in_hyper_bounds_det</definition>
+        <argsstring>(exp1, opts1, v, hyper_x_L, hyper_x_U, contador, matrixR)</argsstring>
+        <name>check_vector_in_hyper_bounds_det</name>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>v</type>
+          <defname>v</defname>
+        </param>
+        <param>
+          <type>hyper_x_L</type>
+          <defname>hyper_x_L</defname>
+        </param>
+        <param>
+          <type>hyper_x_U</type>
+          <defname>hyper_x_U</defname>
+        </param>
+        <param>
+          <type>contador</type>
+          <defname>contador</defname>
+        </param>
+        <param>
+          <type>matrixR</type>
+          <defname>matrixR</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a8c2706119d75ce70eecbc424c9930962" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::generate_new_comb_matrix</definition>
+        <argsstring>(exp1, new_comb, ppp, MaxSubSet, nrand, v1, v2, v3)</argsstring>
+        <name>generate_new_comb_matrix</name>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>new_comb</type>
+          <defname>new_comb</defname>
+        </param>
+        <param>
+          <type>ppp</type>
+          <defname>ppp</defname>
+        </param>
+        <param>
+          <type>MaxSubSet</type>
+          <defname>MaxSubSet</defname>
+        </param>
+        <param>
+          <type>nrand</type>
+          <defname>nrand</defname>
+        </param>
+        <param>
+          <type>v1</type>
+          <defname>v1</defname>
+        </param>
+        <param>
+          <type>v2</type>
+          <defname>v2</defname>
+        </param>
+        <param>
+          <type>v3</type>
+          <defname>v3</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1ab6df72edaba95f281e94c58fe0c750a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::generate_new_comb_matrix_det</definition>
+        <argsstring>(exp1, new_comb, ppp, MaxSubSet, nrand, v1, v2, v3, contador, matrixR)</argsstring>
+        <name>generate_new_comb_matrix_det</name>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>new_comb</type>
+          <defname>new_comb</defname>
+        </param>
+        <param>
+          <type>ppp</type>
+          <defname>ppp</defname>
+        </param>
+        <param>
+          <type>MaxSubSet</type>
+          <defname>MaxSubSet</defname>
+        </param>
+        <param>
+          <type>nrand</type>
+          <defname>nrand</defname>
+        </param>
+        <param>
+          <type>v1</type>
+          <defname>v1</defname>
+        </param>
+        <param>
+          <type>v2</type>
+          <defname>v2</defname>
+        </param>
+        <param>
+          <type>v3</type>
+          <defname>v3</defname>
+        </param>
+        <param>
+          <type>contador</type>
+          <defname>contador</defname>
+        </param>
+        <param>
+          <type>matrixR</type>
+          <defname>matrixR</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a736cc70ca6cc817f57eec2cbfa2d2e3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::update_candidateset_with_new_comb</definition>
+        <argsstring>(exp1, opts1, fitnessfunction, problem1, new_comb, candidateset, childset, candidate_update, members_update, MaxSubSet2, nrand, nconst, nfuneval, counter, index)</argsstring>
+        <name>update_candidateset_with_new_comb</name>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>fitnessfunction</type>
+          <defname>fitnessfunction</defname>
+        </param>
+        <param>
+          <type>problem1</type>
+          <defname>problem1</defname>
+        </param>
+        <param>
+          <type>new_comb</type>
+          <defname>new_comb</defname>
+        </param>
+        <param>
+          <type>candidateset</type>
+          <defname>candidateset</defname>
+        </param>
+        <param>
+          <type>childset</type>
+          <defname>childset</defname>
+        </param>
+        <param>
+          <type>candidate_update</type>
+          <defname>candidate_update</defname>
+        </param>
+        <param>
+          <type>members_update</type>
+          <defname>members_update</defname>
+        </param>
+        <param>
+          <type>MaxSubSet2</type>
+          <defname>MaxSubSet2</defname>
+        </param>
+        <param>
+          <type>nrand</type>
+          <defname>nrand</defname>
+        </param>
+        <param>
+          <type>nconst</type>
+          <defname>nconst</defname>
+        </param>
+        <param>
+          <type>nfuneval</type>
+          <defname>nfuneval</defname>
+        </param>
+        <param>
+          <type>counter</type>
+          <defname>counter</defname>
+        </param>
+        <param>
+          <type>index</type>
+          <defname>index</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1ad78a752b087ef9a7420fc67878111dd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>integer function</type>
+        <definition>integer function scattersearchfunctions::check_stopping_criteria</definition>
+        <argsstring>(problem1, opts1, cputime, stopOptimization, fbest, nfuneval)</argsstring>
+        <name>check_stopping_criteria</name>
+        <param>
+          <type>problem1</type>
+          <defname>problem1</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>cputime</type>
+          <defname>cputime</defname>
+        </param>
+        <param>
+          <type>stopOptimization</type>
+          <defname>stopOptimization</defname>
+        </param>
+        <param>
+          <type>fbest</type>
+          <defname>fbest</defname>
+        </param>
+        <param>
+          <type>nfuneval</type>
+          <defname>nfuneval</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a3ee9b202b280a1cec6e8db852f3e01a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::select_better_solution</definition>
+        <argsstring>(results, opts1, refset, xbest, fbest, use_bestx, nfuneval, time, fin)</argsstring>
+        <name>select_better_solution</name>
+        <param>
+          <type>results</type>
+          <defname>results</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>refset</type>
+          <defname>refset</defname>
+        </param>
+        <param>
+          <type>xbest</type>
+          <defname>xbest</defname>
+        </param>
+        <param>
+          <type>fbest</type>
+          <defname>fbest</defname>
+        </param>
+        <param>
+          <type>use_bestx</type>
+          <defname>use_bestx</defname>
+        </param>
+        <param>
+          <type>nfuneval</type>
+          <defname>nfuneval</defname>
+        </param>
+        <param>
+          <type>time</type>
+          <defname>time</defname>
+        </param>
+        <param>
+          <type>fin</type>
+          <defname>fin</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a1286b5e666c9d584bef1bd21d4eb9d80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::update_refset_change</definition>
+        <argsstring>(members_update, refset_change)</argsstring>
+        <name>update_refset_change</name>
+        <param>
+          <type>members_update</type>
+          <defname>members_update</defname>
+        </param>
+        <param>
+          <type>refset_change</type>
+          <defname>refset_change</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1ad27df2c635f286af97d1122ef29ba61c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::remove_possible_stuck_members_in_refset</definition>
+        <argsstring>(problem1, opts1, exp1, fitnessfunction, nconst, refset, refset_change, nfuneval, nvar, xl_log, xu_log)</argsstring>
+        <name>remove_possible_stuck_members_in_refset</name>
+        <param>
+          <type>problem1</type>
+          <defname>problem1</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>fitnessfunction</type>
+          <defname>fitnessfunction</defname>
+        </param>
+        <param>
+          <type>nconst</type>
+          <defname>nconst</defname>
+        </param>
+        <param>
+          <type>refset</type>
+          <defname>refset</defname>
+        </param>
+        <param>
+          <type>refset_change</type>
+          <defname>refset_change</defname>
+        </param>
+        <param>
+          <type>nfuneval</type>
+          <defname>nfuneval</defname>
+        </param>
+        <param>
+          <type>nvar</type>
+          <defname>nvar</defname>
+        </param>
+        <param>
+          <type>xl_log</type>
+          <defname>xl_log</defname>
+        </param>
+        <param>
+          <type>xu_log</type>
+          <defname>xu_log</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a9df010f2ee84a1bae194c1898895faee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::remove_possible_stuck_members_in_refset_det</definition>
+        <argsstring>(problem1, opts1, exp1, fitnessfunction, nconst, refset, refset_change, nfuneval, nvar, xl_log, xu_log, contador, matrixR)</argsstring>
+        <name>remove_possible_stuck_members_in_refset_det</name>
+        <param>
+          <type>problem1</type>
+          <defname>problem1</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>fitnessfunction</type>
+          <defname>fitnessfunction</defname>
+        </param>
+        <param>
+          <type>nconst</type>
+          <defname>nconst</defname>
+        </param>
+        <param>
+          <type>refset</type>
+          <defname>refset</defname>
+        </param>
+        <param>
+          <type>refset_change</type>
+          <defname>refset_change</defname>
+        </param>
+        <param>
+          <type>nfuneval</type>
+          <defname>nfuneval</defname>
+        </param>
+        <param>
+          <type>nvar</type>
+          <defname>nvar</defname>
+        </param>
+        <param>
+          <type>xl_log</type>
+          <defname>xl_log</defname>
+        </param>
+        <param>
+          <type>xu_log</type>
+          <defname>xu_log</defname>
+        </param>
+        <param>
+          <type>contador</type>
+          <defname>contador</defname>
+        </param>
+        <param>
+          <type>matrixR</type>
+          <defname>matrixR</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1ac18ba44fca8c62ec265e8f9718941536" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::check_the_improvement_of_fbest</definition>
+        <argsstring>(results, opts1, fbest, xbest, fbest_lastiter, nreset, cputime2, fin, nfuneval)</argsstring>
+        <name>check_the_improvement_of_fbest</name>
+        <param>
+          <type>results</type>
+          <defname>results</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>fbest</type>
+          <defname>fbest</defname>
+        </param>
+        <param>
+          <type>xbest</type>
+          <defname>xbest</defname>
+        </param>
+        <param>
+          <type>fbest_lastiter</type>
+          <defname>fbest_lastiter</defname>
+        </param>
+        <param>
+          <type>nreset</type>
+          <defname>nreset</defname>
+        </param>
+        <param>
+          <type>cputime2</type>
+          <defname>cputime2</defname>
+        </param>
+        <param>
+          <type>fin</type>
+          <defname>fin</defname>
+        </param>
+        <param>
+          <type>nfuneval</type>
+          <defname>nfuneval</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a020041289959a93ed30a36acdbddfacc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::apply_beyond_to_members_to_update</definition>
+        <argsstring>(exp1, opts1, fitnessfunction, problem1, members_to_update, nfuneval, refset, candidateset, nconst, nrand, nvar)</argsstring>
+        <name>apply_beyond_to_members_to_update</name>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>fitnessfunction</type>
+          <defname>fitnessfunction</defname>
+        </param>
+        <param>
+          <type>problem1</type>
+          <defname>problem1</defname>
+        </param>
+        <param>
+          <type>members_to_update</type>
+          <defname>members_to_update</defname>
+        </param>
+        <param>
+          <type>nfuneval</type>
+          <defname>nfuneval</defname>
+        </param>
+        <param>
+          <type>refset</type>
+          <defname>refset</defname>
+        </param>
+        <param>
+          <type>candidateset</type>
+          <defname>candidateset</defname>
+        </param>
+        <param>
+          <type>nconst</type>
+          <defname>nconst</defname>
+        </param>
+        <param>
+          <type>nrand</type>
+          <defname>nrand</defname>
+        </param>
+        <param>
+          <type>nvar</type>
+          <defname>nvar</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a077be158373d1f0ef555df4ee585e97e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::apply_beyond_to_members_to_update_det</definition>
+        <argsstring>(exp1, opts1, fitnessfunction, problem1, members_to_update, nfuneval, refset, candidateset, nconst, nrand, nvar, contador, matrixR)</argsstring>
+        <name>apply_beyond_to_members_to_update_det</name>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>fitnessfunction</type>
+          <defname>fitnessfunction</defname>
+        </param>
+        <param>
+          <type>problem1</type>
+          <defname>problem1</defname>
+        </param>
+        <param>
+          <type>members_to_update</type>
+          <defname>members_to_update</defname>
+        </param>
+        <param>
+          <type>nfuneval</type>
+          <defname>nfuneval</defname>
+        </param>
+        <param>
+          <type>refset</type>
+          <defname>refset</defname>
+        </param>
+        <param>
+          <type>candidateset</type>
+          <defname>candidateset</defname>
+        </param>
+        <param>
+          <type>nconst</type>
+          <defname>nconst</defname>
+        </param>
+        <param>
+          <type>nrand</type>
+          <defname>nrand</defname>
+        </param>
+        <param>
+          <type>nvar</type>
+          <defname>nvar</defname>
+        </param>
+        <param>
+          <type>contador</type>
+          <defname>contador</defname>
+        </param>
+        <param>
+          <type>matrixR</type>
+          <defname>matrixR</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a2c186479ff919ee0c7f498e367031d68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::reajustchild</definition>
+        <argsstring>(childset, cont, nvar, nconst)</argsstring>
+        <name>reajustchild</name>
+        <param>
+          <type>childset</type>
+          <defname>childset</defname>
+        </param>
+        <param>
+          <type>cont</type>
+          <defname>cont</defname>
+        </param>
+        <param>
+          <type>nvar</type>
+          <defname>nvar</defname>
+        </param>
+        <param>
+          <type>nconst</type>
+          <defname>nconst</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a25d73f489cc60684b8c12047eefff40c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::serializerefset</definition>
+        <argsstring>(refset, nvar, tam, servector, rest)</argsstring>
+        <name>serializerefset</name>
+        <param>
+          <type>refset</type>
+          <defname>refset</defname>
+        </param>
+        <param>
+          <type>nvar</type>
+          <defname>nvar</defname>
+        </param>
+        <param>
+          <type>tam</type>
+          <defname>tam</defname>
+        </param>
+        <param>
+          <type>servector</type>
+          <defname>servector</defname>
+        </param>
+        <param>
+          <type>rest</type>
+          <defname>rest</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1aaec5333de3c4eca7edec00b1829112fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::deserializerefset</definition>
+        <argsstring>(refset, nvar, tam, servector)</argsstring>
+        <name>deserializerefset</name>
+        <param>
+          <type>refset</type>
+          <defname>refset</defname>
+        </param>
+        <param>
+          <type>nvar</type>
+          <defname>nvar</defname>
+        </param>
+        <param>
+          <type>tam</type>
+          <defname>tam</defname>
+        </param>
+        <param>
+          <type>servector</type>
+          <defname>servector</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a856a43dd09b27e006bcad1a502e97129" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::sizeseriallize</definition>
+        <argsstring>(nvar, nconst, size)</argsstring>
+        <name>sizeseriallize</name>
+        <param>
+          <type>nvar</type>
+          <defname>nvar</defname>
+        </param>
+        <param>
+          <type>nconst</type>
+          <defname>nconst</defname>
+        </param>
+        <param>
+          <type>size</type>
+          <defname>size</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1ade544bac611e11bf6d43b2c2148c5ede" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::checkbounds</definition>
+        <argsstring>(problem1, st)</argsstring>
+        <name>checkbounds</name>
+        <param>
+          <type>problem1</type>
+          <defname>problem1</defname>
+        </param>
+        <param>
+          <type>st</type>
+          <defname>st</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1aeb17409fc6e2c59bdf69a41e6afb2f32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::initbestvars</definition>
+        <argsstring>(problem1, xbest, fbest, nvar)</argsstring>
+        <name>initbestvars</name>
+        <param>
+          <type>problem1</type>
+          <defname>problem1</defname>
+        </param>
+        <param>
+          <type>xbest</type>
+          <defname>xbest</defname>
+        </param>
+        <param>
+          <type>fbest</type>
+          <defname>fbest</defname>
+        </param>
+        <param>
+          <type>nvar</type>
+          <defname>nvar</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a10e9a0ce44b273348f5c8d2cc0a1a3f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::initintbinvars</definition>
+        <argsstring>(problem1)</argsstring>
+        <name>initintbinvars</name>
+        <param>
+          <type>problem1</type>
+          <defname>problem1</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1ae17b6306784beeef4a724a995f0accb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::initlocaloptions</definition>
+        <argsstring>(opts1)</argsstring>
+        <name>initlocaloptions</name>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a097f6f3316f76685e5c8de72836967e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::calcnconst</definition>
+        <argsstring>(problem1, nconst)</argsstring>
+        <name>calcnconst</name>
+        <param>
+          <type>problem1</type>
+          <defname>problem1</defname>
+        </param>
+        <param>
+          <type>nconst</type>
+          <defname>nconst</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a71ab78e6a7f377acbc57203c1be47a17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::check_output_obj_funct</definition>
+        <argsstring>(problem1, opts1, status, nconst)</argsstring>
+        <name>check_output_obj_funct</name>
+        <param>
+          <type>problem1</type>
+          <defname>problem1</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>status</type>
+          <defname>status</defname>
+        </param>
+        <param>
+          <type>nconst</type>
+          <defname>nconst</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a83be4a09add7c1cfcf5a0316df27ba61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::finalize_algorithm</definition>
+        <argsstring>(exp1, problem1, results, opts1, fitnessfunction, refset, xbest, fbest, fin, nfuneval, NPROC, cputime3, nconst, nvar, local_solver_var, idp)</argsstring>
+        <name>finalize_algorithm</name>
+        <param>
+          <type>exp1</type>
+          <defname>exp1</defname>
+        </param>
+        <param>
+          <type>problem1</type>
+          <defname>problem1</defname>
+        </param>
+        <param>
+          <type>results</type>
+          <defname>results</defname>
+        </param>
+        <param>
+          <type>opts1</type>
+          <defname>opts1</defname>
+        </param>
+        <param>
+          <type>fitnessfunction</type>
+          <defname>fitnessfunction</defname>
+        </param>
+        <param>
+          <type>refset</type>
+          <defname>refset</defname>
+        </param>
+        <param>
+          <type>xbest</type>
+          <defname>xbest</defname>
+        </param>
+        <param>
+          <type>fbest</type>
+          <defname>fbest</defname>
+        </param>
+        <param>
+          <type>fin</type>
+          <defname>fin</defname>
+        </param>
+        <param>
+          <type>nfuneval</type>
+          <defname>nfuneval</defname>
+        </param>
+        <param>
+          <type>NPROC</type>
+          <defname>NPROC</defname>
+        </param>
+        <param>
+          <type>cputime3</type>
+          <defname>cputime3</defname>
+        </param>
+        <param>
+          <type>nconst</type>
+          <defname>nconst</defname>
+        </param>
+        <param>
+          <type>nvar</type>
+          <defname>nvar</defname>
+        </param>
+        <param>
+          <type>local_solver_var</type>
+          <defname>local_solver_var</defname>
+        </param>
+        <param>
+          <type>idp</type>
+          <defname>idp</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1aff4d139fb41ee819ab67b03d2aa1844f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::calc_indexes</definition>
+        <argsstring>(ncomb1, ncomb2, index1, index2, index, diff_index, auxsize)</argsstring>
+        <name>calc_indexes</name>
+        <param>
+          <type>ncomb1</type>
+          <defname>ncomb1</defname>
+        </param>
+        <param>
+          <type>ncomb2</type>
+          <defname>ncomb2</defname>
+        </param>
+        <param>
+          <type>index1</type>
+          <defname>index1</defname>
+        </param>
+        <param>
+          <type>index2</type>
+          <defname>index2</defname>
+        </param>
+        <param>
+          <type>index</type>
+          <defname>index</defname>
+        </param>
+        <param>
+          <type>diff_index</type>
+          <defname>diff_index</defname>
+        </param>
+        <param>
+          <type>auxsize</type>
+          <defname>auxsize</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a95fc2d0f49529d0b5c0b6a2a769ed793" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::calc_ppp</definition>
+        <argsstring>(auxsize, ppp, dim_refset, diff_index)</argsstring>
+        <name>calc_ppp</name>
+        <param>
+          <type>auxsize</type>
+          <defname>auxsize</defname>
+        </param>
+        <param>
+          <type>ppp</type>
+          <defname>ppp</defname>
+        </param>
+        <param>
+          <type>dim_refset</type>
+          <defname>dim_refset</defname>
+        </param>
+        <param>
+          <type>diff_index</type>
+          <defname>diff_index</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      <memberdef kind="function" id="classscattersearchfunctions_1a418e3a0c92d02ba52822cd17818aa8ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>subroutine</type>
+        <definition>subroutine scattersearchfunctions::calc_hyper</definition>
+        <argsstring>(nvar, hyper_x_L, hyper_x_U, MaxSubSet, XU, XL)</argsstring>
+        <name>calc_hyper</name>
+        <param>
+          <type>nvar</type>
+          <defname>nvar</defname>
+        </param>
+        <param>
+          <type>hyper_x_L</type>
+          <defname>hyper_x_L</defname>
+        </param>
+        <param>
+          <type>hyper_x_U</type>
+          <defname>hyper_x_U</defname>
+        </param>
+        <param>
+          <type>MaxSubSet</type>
+          <defname>MaxSubSet</defname>
+        </param>
+        <param>
+          <type>XU</type>
+          <defname>XU</defname>
+        </param>
+        <param>
+          <type>XL</type>
+          <defname>XL</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchfunctions.f90" line="1" bodyfile="/home/david/traballos/paralleltestbed/REPO_GIT/REPOSITORIO/SACESS_TOOLS/src/method_module_fortran/eSS/scattersearchfunctions.f90" bodystart="3" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classscattersearchfunctions_1a020041289959a93ed30a36acdbddfacc" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>apply_beyond_to_members_to_update</name></member>
+      <member refid="classscattersearchfunctions_1a077be158373d1f0ef555df4ee585e97e" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>apply_beyond_to_members_to_update_det</name></member>
+      <member refid="classscattersearchfunctions_1acb16092f20ccb4d7c8a44dd0eff63f3d" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>calc_dim_refset</name></member>
+      <member refid="classscattersearchfunctions_1a418e3a0c92d02ba52822cd17818aa8ce" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>calc_hyper</name></member>
+      <member refid="classscattersearchfunctions_1aff4d139fb41ee819ab67b03d2aa1844f" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>calc_indexes</name></member>
+      <member refid="classscattersearchfunctions_1a9fcad831ec55e4c9d45a9a5421f5af4e" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>calc_ndiverse</name></member>
+      <member refid="classscattersearchfunctions_1a95fc2d0f49529d0b5c0b6a2a769ed793" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>calc_ppp</name></member>
+      <member refid="classscattersearchfunctions_1a097f6f3316f76685e5c8de72836967e9" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>calcnconst</name></member>
+      <member refid="classscattersearchfunctions_1a07567b2af6ded79fb1f567e081d51193" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>check_best_value</name></member>
+      <member refid="classscattersearchfunctions_1a370ce8279ff86a0f7d7be2879cbafd89" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>check_duplicated_replace</name></member>
+      <member refid="classscattersearchfunctions_1aa4dc250dba4df06e310a3e95e7244c39" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>check_duplicated_replace_det</name></member>
+      <member refid="classscattersearchfunctions_1a71ab78e6a7f377acbc57203c1be47a17" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>check_output_obj_funct</name></member>
+      <member refid="classscattersearchfunctions_1ad78a752b087ef9a7420fc67878111dd9" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>check_stopping_criteria</name></member>
+      <member refid="classscattersearchfunctions_1ac18ba44fca8c62ec265e8f9718941536" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>check_the_improvement_of_fbest</name></member>
+      <member refid="classscattersearchfunctions_1aeebf0937ca54c4d9c79e5bafef8c6ff0" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>check_vector_in_hyper_bounds</name></member>
+      <member refid="classscattersearchfunctions_1a9b483c90cd9a0fd021f104cc76f1b854" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>check_vector_in_hyper_bounds_det</name></member>
+      <member refid="classscattersearchfunctions_1ade544bac611e11bf6d43b2c2148c5ede" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>checkbounds</name></member>
+      <member refid="classscattersearchfunctions_1add07a7ab22c636d720f6ba1e71bf0e4e" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>create_candidate</name></member>
+      <member refid="classscattersearchfunctions_1a9b4ba7d5d9ef23dec76a1ca7bf2dda0e" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>create_childset</name></member>
+      <member refid="classscattersearchfunctions_1a5b9acae6a027f6d538ede1941b1aabde" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>create_init_solutions</name></member>
+      <member refid="classscattersearchfunctions_1a8b32427896096ecea0dd15c81bff8b01" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>create_init_solutions_det</name></member>
+      <member refid="classscattersearchfunctions_1ac6ad21bb22e669ef3d116739525d9b28" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>create_new_opts</name></member>
+      <member refid="classscattersearchfunctions_1a7ade840c63f4a07f6308e4c63ea22efc" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>create_new_problem</name></member>
+      <member refid="classscattersearchfunctions_1a293007e9db84899d65f9d814a4253610" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>create_refset</name></member>
+      <member refid="classscattersearchfunctions_1a7a1b919ff5cf82582d5ceab2ec7a3120" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>create_refset_det</name></member>
+      <member refid="classscattersearchfunctions_1a667f397fd1bc01739f6dba3fb3cd2c87" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>create_refset_empty</name></member>
+      <member refid="classscattersearchfunctions_1adcc6b415ffb629e2632042a271470389" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>create_results</name></member>
+      <member refid="classscattersearchfunctions_1aaec5333de3c4eca7edec00b1829112fd" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>deserializerefset</name></member>
+      <member refid="classscattersearchfunctions_1acb54b750819a4bf535dbfa3613fcd79b" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>destroy_opts</name></member>
+      <member refid="classscattersearchfunctions_1a077e78542f1721d2303020ab66c5aef8" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>destroy_problem</name></member>
+      <member refid="classscattersearchfunctions_1a9268b3057be8cac8265edb5ac2df2d01" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>destroy_refsettype</name></member>
+      <member refid="classscattersearchfunctions_1ae9d49ca40348d2b7a40f9ccaa0df362b" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>destroy_resultsf</name></member>
+      <member refid="classscattersearchfunctions_1a8e59605301c5a93c24b9239451aae7e6" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>evaluate_solutions_set</name></member>
+      <member refid="classscattersearchfunctions_1a83be4a09add7c1cfcf5a0316df27ba61" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>finalize_algorithm</name></member>
+      <member refid="classscattersearchfunctions_1a8c2706119d75ce70eecbc424c9930962" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>generate_new_comb_matrix</name></member>
+      <member refid="classscattersearchfunctions_1ab6df72edaba95f281e94c58fe0c750a8" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>generate_new_comb_matrix_det</name></member>
+      <member refid="classscattersearchfunctions_1abf70a2b066521bd370029f0971377858" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>init_inequality_constraints</name></member>
+      <member refid="classscattersearchfunctions_1aeb17409fc6e2c59bdf69a41e6afb2f32" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>initbestvars</name></member>
+      <member refid="classscattersearchfunctions_1a10e9a0ce44b273348f5c8d2cc0a1a3f3" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>initintbinvars</name></member>
+      <member refid="classscattersearchfunctions_1ae17b6306784beeef4a724a995f0accb8" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>initlocaloptions</name></member>
+      <member refid="classscattersearchfunctions_1a6dc839ba9b0401a21b4fbbfe27938b95" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>log_vector</name></member>
+      <member refid="classscattersearchfunctions_1a9b773a5853b018bd28a45fa641c8d6f9" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>print_opts</name></member>
+      <member refid="classscattersearchfunctions_1acc2293da2b8fd2df57c526be9b6437cb" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>print_problems</name></member>
+      <member refid="classscattersearchfunctions_1a435159c89689e3dc7792a40c377fb437" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>problem_specifications</name></member>
+      <member refid="classscattersearchfunctions_1a2c186479ff919ee0c7f498e367031d68" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>reajustchild</name></member>
+      <member refid="classscattersearchfunctions_1ad27df2c635f286af97d1122ef29ba61c" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>remove_possible_stuck_members_in_refset</name></member>
+      <member refid="classscattersearchfunctions_1a9df010f2ee84a1bae194c1898895faee" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>remove_possible_stuck_members_in_refset_det</name></member>
+      <member refid="classscattersearchfunctions_1a3ee9b202b280a1cec6e8db852f3e01a7" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>select_better_solution</name></member>
+      <member refid="classscattersearchfunctions_1a25d73f489cc60684b8c12047eefff40c" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>serializerefset</name></member>
+      <member refid="classscattersearchfunctions_1a856a43dd09b27e006bcad1a502e97129" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>sizeseriallize</name></member>
+      <member refid="classscattersearchfunctions_1ada4b556b8ef1c78b9cbf6498cfbf446e" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>sort_refset</name></member>
+      <member refid="classscattersearchfunctions_1aded0a4c1802c5063d93a7f5faa8025e8" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>ssm_beyond</name></member>
+      <member refid="classscattersearchfunctions_1aee5f52d21f7487f3d951c9d8b44ee393" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>ssm_beyond_det</name></member>
+      <member refid="classscattersearchfunctions_1aefb857d242fbcaef49e3c3ac317753bd" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>ssm_default</name></member>
+      <member refid="classscattersearchfunctions_1a7f28c5f60448d43fccd58bde5cbf8277" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>ssm_optset</name></member>
+      <member refid="classscattersearchfunctions_1a736cc70ca6cc817f57eec2cbfa2d2e3d" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>update_candidateset_with_new_comb</name></member>
+      <member refid="classscattersearchfunctions_1a1286b5e666c9d584bef1bd21d4eb9d80" prot="public" virt="non-virtual"><scope>scattersearchfunctions</scope><name>update_refset_change</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

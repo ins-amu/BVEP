@@ -1,0 +1,82 @@
+.TH "parallelscattersearchfunctions" 3 "Wed May 11 2016" "Version 0.1" "SACESS TOOLBOX" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+parallelscattersearchfunctions \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "subroutine \fBasynchronous_master_acess\fP (exp1, opts1, problem1, refset, fin, nfuneval, fbest, stopOptimization, sizeser, nconst, nvar, starttime, vector_proc, ocurrences_send, common_vars)"
+.br
+.ti -1c
+.RI "subroutine \fBadapt_slave\fP (exp1, opts1, problem1, fitnessfunction, common_vars, nfuneval, xl_log, xu_log, hyper_x_L, hyper_x_U, MaxSubSet, MaxSubSet2, ppp, index1, index2, index, nconst, refset, fbest, xbest, refset_change, local_solver_var, time, ncounter_slave_recv_sol, ncounter_slave_send_sol, pending_adaptation, last_evals)"
+.br
+.ti -1c
+.RI "subroutine \fBasynchronous_slave_acess\fP (exp1, opts1, problem1, refset, common_vars, nconst, BKS_M_x, BKS_M_f, time, refset_change, fitnessfunction, xl_log, xu_log, nfuneval, fbest, xbest, ncounter_slave_recv_sol, ncounter_slave_send_sol, last_evals)"
+.br
+.ti -1c
+.RI "subroutine \fBcalc_percentage\fP (fbest, candidate, percentage)"
+.br
+.ti -1c
+.RI "subroutine \fBupdate_index_cooperative\fP (aux_val_cooperative, refset, index_cooperative)"
+.br
+.ti -1c
+.RI "subroutine \fBadaptation_configuration\fP (exp1, opts1, problem1, refset, common_vars, fbest, xbest, refset_change, local_solver_var, new_dim_refset, new_balance, new_counter_local, index1, index2, index, MaxSubSet, MaxSubSet2, hyper_x_L, hyper_x_U, ppp, nconst, xl_log, xu_log, fitnessfunction, nfuneval)"
+.br
+.ti -1c
+.RI "subroutine \fBadaptation_threshold2\fP (threshold, nrejects, nslaves)"
+.br
+.ti -1c
+.RI "subroutine \fBhete_param_ess\fP (exp1, problem1, opts1, NPROC, dim_refset, idp, nvar)"
+.br
+.ti -1c
+.RI "subroutine \fBhete_param_ess2\fP (exp1, problem1, opts1, NPROC, dim_refset, idp2, nvar)"
+.br
+.ti -1c
+.RI "subroutine \fBevaluate_solutions_set_parallel\fP (exp1, fitnessfunction, solutionset, problem1, opts1, solutions, nvar, nfuneval, nconst, xl_log, xu_log)"
+.br
+.ti -1c
+.RI "subroutine \fBapply_beyond_to_members_to_update_parallel\fP (exp1, opts1, fitnessfunction, problem1, members_to_update, nfuneval, refset, candidateset, nconst, nrand, nvar, timeparallel)"
+.br
+.ti -1c
+.RI "subroutine \fBupdate_candidateset_with_new_comb_parallel\fP (exp1, opts1, fitnessfunction, problem1, new_comb, candidateset, childset, candidate_update, members_update, MaxSubSet2, nvar, nconst, nfuneval, counter, index3)"
+.br
+.ti -1c
+.RI "subroutine \fBcreate_refset_local\fP (exp1, problem1, opts1, refsetglobal, refset, nvar, nconst, tam)"
+.br
+.ti -1c
+.RI "subroutine \fBadd_vect_proc\fP (vector_proc, id)"
+.br
+.ti -1c
+.RI "subroutine \fBrestart_acess\fP (exp1, problem1, opts1, fitnessfunction, refset, nvar, xl_log, xu_log, xbest, fbest, nconst, timeparallel, nfuneval, refset_change, stage_1, stage_2, use_bestx)"
+.br
+.ti -1c
+.RI "subroutine \fBunique_solution\fP (problem1, XVAR, FVAR, nvar)"
+.br
+.ti -1c
+.RI "subroutine \fBinitoldbestvars\fP (oldbestx, oldfbest, nvar)"
+.br
+.ti -1c
+.RI "subroutine \fBcreate_migration_master\fP (migration_master, NPROC)"
+.br
+.ti -1c
+.RI "subroutine \fBdestroy_migration_master\fP (migration_master)"
+.br
+.ti -1c
+.RI "subroutine \fBasynchronous_acess_dist\fP (exp1, opts1, problem1, refset, sizeser, nvar, nconst, oldbestx, oldfbest, fbest, xbest, init, idp, starttime, refset_change)"
+.br
+.ti -1c
+.RI "subroutine \fBinit_adapt_vars\fP (exp1, adapt_master, NPROC, nvar)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 1 of file parallelscattersearchfunctions\&.f90\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for SACESS TOOLBOX from the source code\&.
