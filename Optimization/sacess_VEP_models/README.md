@@ -32,20 +32,31 @@ sbatch ./send_1proc_time_short.sh  ./bin/paralleltestbed  inputs/Python_P1_SEQ.x
 
 ### 6 processors
 sbatch ./send_6proc_time_short.sh  ./bin/paralleltestbed  inputs/Python_P1.xml output/P1_output_6proc_run01
+
 sbatch ./send_6proc_time_short.sh  ./bin/paralleltestbed  inputs/Python_P1.xml output/P1_output_6proc_run02
+
 ...
+
 sbatch ./send_6proc_time_short.sh  ./bin/paralleltestbed  inputs/Python_P1.xml output/P1_output_6proc_run10
+
 
 ### 12 processors
 sbatch ./send_12proc_time_short.sh ./bin/paralleltestbed  inputs/Python_P1.xml output/P1_output_12proc_run01
+
 sbatch ./send_12proc_time_short.sh ./bin/paralleltestbed  inputs/Python_P1.xml output/P1_output_12proc_run02
-..
+
+...
+
 sbatch ./send_12proc_time_short.sh ./bin/paralleltestbed  inputs/Python_P1.xml output/P1_output_12proc_run10
+
 
 ### 24 processors
 sbatch ./send_24proc_time_short.sh ./bin/paralleltestbed  inputs/Python_P1.xml output/P1_output_24proc_run01
+
 sbatch ./send_24proc_time_short.sh ./bin/paralleltestbed  inputs/Python_P1.xml output/P1_output_24proc_run02
-..
+
+...
+
 sbatch ./send_24proc_time_short.sh ./bin/paralleltestbed  inputs/Python_P1.xml output/P1_output_24proc_run10
 
 ## Example PROBLEM 4
@@ -58,20 +69,30 @@ sbatch ./send_1proc_time_long.sh  ./bin/paralleltestbed  inputs/Python_P4_SEQ.xm
 
 ### 6 processors
 sbatch ./send_6proc_time_long.sh  ./bin/paralleltestbed  inputs/Python_P4.xml output/P4_output_6proc_run01
+
 sbatch ./send_6proc_time_long.sh  ./bin/paralleltestbed  inputs/Python_P4.xml output/P4_output_6proc_run02
+
 ...
+
 sbatch ./send_6proc_time_long.sh  ./bin/paralleltestbed  inputs/Python_P4.xml output/P4_output_6proc_run10
+
 
 #### 12 processors
 sbatch ./send_12proc_time_long.sh ./bin/paralleltestbed  inputs/Python_P4.xml output/P4_output_12proc_run01
+
 sbatch ./send_12proc_time_long.sh ./bin/paralleltestbed  inputs/Python_P4.xml output/P4_output_12proc_run02
-..
+
+...
+
 sbatch ./send_12proc_time_long.sh ./bin/paralleltestbed  inputs/Python_P4.xml output/P4_output_12proc_run10
 
 #### 24 processors
 sbatch ./send_24proc_time_long.sh ./bin/paralleltestbed  inputs/Python_P4.xml output/P4_output_24proc_run01
+
 sbatch ./send_24proc_time_long.sh ./bin/paralleltestbed  inputs/Python_P4.xml output/P4_output_24proc_run02
-..
+
+...
+
 sbatch ./send_24proc_time_long.sh ./bin/paralleltestbed  inputs/Python_P4.xml output/P4_output_24proc_run10
 
 
