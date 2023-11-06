@@ -1,6 +1,6 @@
 # BVEP
 **Bayesian Virtual Epileptic Patient (BVEP)**: A probabilistic framework designed to invert a individualized whole-brain model of epilepsy spread by PPLs using No-U-Turn Sam-
-pler (NUTS), Automatic Differentiation Variational Inference (ADVI), Simuation-based Inference (SBI), and global optimization algorithms.
+pler (NUTS), Automatic Differentiation Variational Inference (ADVI), Simulation-based Inference (SBI), and global optimization algorithms.
 
 *Installation*: 
 
