@@ -150,7 +150,11 @@ function setup_benchmark(experiment_total *exp, int idp, int *first) {
        if ( exp->test.bench.current_bench == 5)       name_file = "P4_ForwardSimulation_VEPmodel_stochastic_estimateTau_Sensorlevel";
        if ( exp->test.bench.current_bench == 6)       name_file = "P5_ForwardSimulation_VEPmodel_Sourcelevel_SDE_stiff_withpropagation";
        if ( exp->test.bench.current_bench == 7)       name_file = "P6_ForwardSimulation_VEPmodel_Sensorlevel_SDE_stiff_withpropagation";
-
+       if ( exp->test.bench.current_bench == 8)       name_file = "P6_ForwardSimulation_VEPmodel_Sensorlevel_SDE_stiff_withpropagation_100sim";
+       if ( exp->test.bench.current_bench == 9)       name_file = "Problem1_ForwardSimulation_VEPmodel_Sourcelevel_nopropagation_NN42";
+       if ( exp->test.bench.current_bench == 10)      name_file = "Problem1_ForwardSimulation_VEPmodel_Sourcelevel_nopropagation_NN84";
+       if ( exp->test.bench.current_bench == 11)      name_file = "Problem1_ForwardSimulation_VEPmodel_Sourcelevel_nopropagation_NN162";
+       if ( exp->test.bench.current_bench == 12)      name_file = "Problem1_ForwardSimulation_VEPmodel_Sourcelevel_nopropagation_NN400";
        const char *string2 = "cost_function";
 
        int NPROC_OPENMP=1;
@@ -167,6 +171,7 @@ function setup_benchmark(experiment_total *exp, int idp, int *first) {
 //	}
 //	func = call_to_obj_function_python;
 //# else
+
        (*exp).test.bench.openmp=0;
        init_python(name_file, string2, exp);
        func = call_to_obj_function_python;
@@ -231,12 +236,12 @@ void manage_options(int id, int i, const char* solver){
         }
     }
 	
-    if (id==4){
-        if ((i<1)||(i>7)) {
-            perror(error14);
-            exit(14);
-        }
-    }
+//    if (id==4){
+//        if ((i<1)||(i>7)) {
+//            perror(error14);
+//            exit(14);
+//        }
+//    }
 }
 
 

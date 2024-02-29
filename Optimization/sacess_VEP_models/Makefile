@@ -6,7 +6,7 @@ export ROOT_DIR
 LIBRARY=$(BUILDDIR)/lib
 AMIGO_PATH=$(LIBRARY)/libAMIGO
 
-PYTHON_INC=/usr/include/python3.10
+PYTHON_INC=/opt/cesga/2020/software/Core/python/3.9.9/include/python3.9#/usr/include/python3.10
 #############################################################################
 ## PARALLEL GCC/GFORTRAN - OPENMP
 #############################################################################
@@ -19,7 +19,7 @@ FLIBS+=
 FFLAGS+= -O3 -cpp -DGNU  -fallow-argument-mismatch -std=gnu 
 FPARALLEL+=-DOPENMP -DMPI2 -DGNU -fopenmp
 
-LIBS+= -L$(LIBRARY)/BLAS -lblas  -Dnullptr=0 -lpython3.10
+LIBS+= -L$(LIBRARY)/BLAS -lblas  -Dnullptr=0 -lpython3.9#-lpython3.10
 INC+=  -I$(LIBRARY)/misqp/gnu  -I$(PYTHON_INC)
 LIBS+= -L$(LIBRARY)/misqp/gnu
 #MISQP= -L$(LIBRARY)/misqp/gnu -lmisqp -I$(LIBRARY)/misqp/gnu -lgfortran  $(LIBRARY)/misqp/gnu/libmisqp.so
@@ -143,9 +143,9 @@ LIBS+=-L$(LIBRARY)/hdf5-1.8.12/lib  -lhdf5
 #############################################################################
 ## R
 #############################################################################
-R_HOME = /usr/share/R
-INC+=-I$(R_HOME)/include
-LIBS+=-L$(R_HOME)/bin -L$(R_HOME)/lib -lR #-lRblas
+#R_HOME = /usr/share/R
+#INC+=-I$(R_HOME)/include
+#LIBS+=-L$(R_HOME)/bin -L$(R_HOME)/lib -lR #-lRblas
 #############################################################################
 
 export AR
