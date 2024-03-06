@@ -16,10 +16,15 @@ For inference using Stan:
 https://mc-stan.org/
 
 
-
 For inference using PyMC3:
 
 https://docs.pymc.io/
+
+
+For inference using Simuation-based Inference (SBI):
+
+https://github.com/sbi-dev/sbi
+
 
 
 ### Refs:
